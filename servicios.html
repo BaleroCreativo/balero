@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios — Polar Construct</title>
+  <meta name="description" content="Soluciones integrales de refrigeración: cámaras, congelación, mantenimiento y refacciones para la industria alimentaria.">
+  <link rel="stylesheet" href="/src/css/main.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<!-- Hero -->
+<section class="section bg-navy-900 relative overflow-hidden">
+  <div class="absolute inset-0 -z-0 opacity-10" aria-hidden="true">
+    <svg width="100%" height="100%"><pattern id="g" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="white" stroke-width="0.5"/></pattern><rect width="100%" height="100%" fill="url(#g)"/></svg>
+  </div>
+  <div class="container mx-auto relative text-center max-w-3xl mx-auto">
+    <p class="section-label text-polar-300 reveal-up">Soluciones integrales</p>
+    <h1 class="text-4xl lg:text-5xl font-bold text-white mb-6 reveal-up text-balance">Diseñamos y fabricamos sistemas de refrigeración a medida</h1>
+    <p class="text-lg text-navy-300 leading-relaxed reveal-up">Desde la primera consulta hasta el funcionamiento óptimo de tu equipo, cubrimos cada etapa del proceso.</p>
+  </div>
+</section>
+
+<!-- Líneas de trabajo -->
+<section class="section bg-white">
+  <div class="container mx-auto">
+    <div class="text-center max-w-xl mx-auto mb-16">
+      <p class="section-label reveal-up">Categorías</p>
+      <h2 class="section-title text-center reveal-up">Nuestras líneas de trabajo</h2>
+      <p class="section-subtitle mx-auto reveal-up">Soluciones completas para su industria alimentaria.</p>
+    </div>
+
+    <div class="space-y-6">
+      ${[
+        {
+          num: '01', tag: 'Refrigeración', href: '/refrigeracion.html',
+          title: 'Cámaras de refrigeración llave en mano',
+          desc: 'Temperatura controlada para conservación óptima de alimentos. Diseñamos y construimos cámaras adaptadas a tu espacio y volumen de producción.',
+          features: ['Temperatura: 0°C a +8°C', 'Diseño a medida', 'Monitoreo remoto', 'Instalación completa'],
+        },
+        {
+          num: '02', tag: 'Congelación', href: '/congelacion.html',
+          title: 'Cámaras de congelación de alto rendimiento',
+          desc: 'Preservación a temperaturas extremas con tecnología de aislamiento de última generación. Desde −18°C hasta −40°C según tus necesidades.',
+          features: ['Hasta −40°C', 'Aislamiento premium', 'Sensores inteligentes', 'Alta eficiencia'],
+        },
+        {
+          num: '03', tag: 'Mantenimiento', href: '/mantenimiento.html',
+          title: 'Mantenimiento preventivo y correctivo',
+          desc: 'Garantizamos el funcionamiento óptimo de tus equipos con planes de mantenimiento diseñados para minimizar tiempos de inactividad.',
+          features: ['Inspección periódica', 'Limpieza de componentes', 'Ajustes técnicos', 'Revisión eléctrica'],
+        },
+        {
+          num: '04', tag: 'Refacciones', href: '/refacciones.html',
+          title: 'Piezas originales y de reemplazo',
+          desc: 'Disponemos de todas las refacciones necesarias para mantener tus sistemas en óptimo funcionamiento. Disponibles cuando las necesitas.',
+          features: ['Válvulas', 'Controladores', 'Compresores', 'Tuberías'],
+        },
+      ].map(s => `
+        <div class="border border-navy-200 rounded-2xl p-8 hover:border-polar-300 transition-colors reveal-up">
+          <div class="grid lg:grid-cols-3 gap-8 items-start">
+            <div class="lg:col-span-2">
+              <div class="flex items-center gap-3 mb-4">
+                <span class="text-xs font-bold text-polar-700 bg-polar-50 border border-polar-100 px-3 py-1 rounded-full">${s.num}</span>
+                <span class="text-xs font-semibold tracking-widest text-navy-500 uppercase">${s.tag}</span>
+              </div>
+              <h3 class="text-xl font-bold text-navy-900 mb-3">${s.title}</h3>
+              <p class="text-navy-500 leading-relaxed mb-6 text-sm">${s.desc}</p>
+              <a href="${s.href}" class="btn-primary">Ver más</a>
+            </div>
+            <div>
+              <p class="text-xs font-semibold text-navy-500 uppercase tracking-wider mb-3">Incluye</p>
+              <ul class="space-y-2">
+                ${s.features.map(f => `
+                  <li class="flex items-center gap-2 text-sm text-navy-700">
+                    <svg class="text-polar-700 flex-shrink-0" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                    ${f}
+                  </li>`).join('')}
+              </ul>
+            </div>
+          </div>
+        </div>`).join('')}
+    </div>
+  </div>
+</section>
+
+<!-- Ventajas -->
+<section class="section bg-polar-50 border-y border-polar-100">
+  <div class="container mx-auto">
+    <div class="text-center max-w-xl mx-auto mb-14">
+      <p class="section-label reveal-up">Ventajas</p>
+      <h2 class="section-title text-center reveal-up">Por qué confiar en nosotros</h2>
+      <p class="section-subtitle mx-auto reveal-up">Respaldo técnico y comercial en cada paso del proceso.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 stagger-group">
+      ${[
+        { title: 'Asistencia técnica permanente', desc: 'Equipo disponible para resolver problemas rápidamente.', link: '/contacto.html', cta: 'Contactar' },
+        { title: 'Cumplimiento normativo', desc: 'Sistemas que cumplen estándares sanitarios vigentes.', link: '/sectores.html', cta: 'Verificar' },
+        { title: 'Rendimiento energético', desc: 'Reducción de costos operativos garantizada.', link: '/contacto.html', cta: 'Calcular ahorro' },
+        { title: 'Garantía integral', desc: 'Protección de su inversión a largo plazo.', link: '/contacto.html', cta: 'Ver detalles' },
+      ].map(v => `
+        <div class="card bg-white stagger-item">
+          <h3 class="font-bold text-navy-900 mb-2 text-sm">${v.title}</h3>
+          <p class="text-xs text-navy-500 leading-relaxed mb-4">${v.desc}</p>
+          <a href="${v.link}" class="btn-ghost px-0 text-xs text-polar-700">${v.cta} →</a>
+        </div>`).join('')}
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section bg-white">
+  <div class="container mx-auto text-center">
+    <h2 class="section-title text-center reveal-up">Consulta con nuestros expertos</h2>
+    <p class="section-subtitle mx-auto mb-10 reveal-up">Contáctenos hoy para conocer soluciones personalizadas para su negocio.</p>
+    <div class="flex flex-wrap justify-center gap-4 reveal-up">
+      <a href="/contacto.html" class="btn-primary">Consultar ahora</a>
+      <a href="/contacto.html" class="btn-secondary">Agendar visita</a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+
+<script type="module">
+  import { initNav, initFooter, initAnimations } from '/src/js/main.js'
+  initNav(); initFooter(); initAnimations()
+</script>
+</body>
+</html>
