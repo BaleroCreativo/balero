@@ -116,17 +116,26 @@
     </div>
 
     <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-group">
-      ${[
-        { n: 'Uno', title: 'Diseño personalizado', desc: 'Escuchamos tus necesidades y creamos planos detallados. Cada dimensión y especificación responde a tu realidad operativa.' },
-        { n: 'Dos', title: 'Fabricación rigurosa', desc: 'Nuestro equipo construye con precisión usando materiales premium. Control de calidad en cada etapa del proceso.' },
-        { n: 'Tres', title: 'Instalación profesional', desc: 'Técnicos especializados montan la cámara en el lugar designado. Conexiones eléctricas y de refrigeración con precisión.' },
-        { n: 'Cuatro', title: 'Puesta en marcha', desc: 'Activamos el sistema y entrenamos a tu personal. Garantía de funcionamiento óptimo desde el primer día.' },
-      ].map((p, i) => `
-        <div class="stagger-item">
-          <div class="w-8 h-8 rounded-full bg-polar-700 text-white text-xs font-bold flex items-center justify-center mb-4">${i+1}</div>
-          <h3 class="font-bold text-navy-900 mb-2">${p.title}</h3>
-          <p class="text-sm text-navy-500 leading-relaxed">${p.desc}</p>
-        </div>`).join('')}
+      <div class="stagger-item">
+        <div class="w-8 h-8 rounded-full bg-polar-700 text-white text-xs font-bold flex items-center justify-center mb-4">1</div>
+        <h3 class="font-bold text-navy-900 mb-2">Diseño personalizado</h3>
+        <p class="text-sm text-navy-500 leading-relaxed">Escuchamos tus necesidades y creamos planos detallados. Cada dimensión y especificación responde a tu realidad operativa.</p>
+      </div>
+      <div class="stagger-item">
+        <div class="w-8 h-8 rounded-full bg-polar-700 text-white text-xs font-bold flex items-center justify-center mb-4">2</div>
+        <h3 class="font-bold text-navy-900 mb-2">Fabricación rigurosa</h3>
+        <p class="text-sm text-navy-500 leading-relaxed">Nuestro equipo construye con precisión usando materiales premium. Control de calidad en cada etapa del proceso.</p>
+      </div>
+      <div class="stagger-item">
+        <div class="w-8 h-8 rounded-full bg-polar-700 text-white text-xs font-bold flex items-center justify-center mb-4">3</div>
+        <h3 class="font-bold text-navy-900 mb-2">Instalación profesional</h3>
+        <p class="text-sm text-navy-500 leading-relaxed">Técnicos especializados montan la cámara en el lugar designado. Conexiones eléctricas y de refrigeración con precisión.</p>
+      </div>
+      <div class="stagger-item">
+        <div class="w-8 h-8 rounded-full bg-polar-700 text-white text-xs font-bold flex items-center justify-center mb-4">4</div>
+        <h3 class="font-bold text-navy-900 mb-2">Puesta en marcha</h3>
+        <p class="text-sm text-navy-500 leading-relaxed">Activamos el sistema y entrenamos a tu personal. Garantía de funcionamiento óptimo desde el primer día.</p>
+      </div>
     </div>
   </div>
 </section>
@@ -141,17 +150,24 @@
     </div>
 
     <div class="grid md:grid-cols-3 gap-6 stagger-group">
-      ${[
-        { tag: 'Conservación', title: 'Preservación óptima de productos', desc: 'Mantiene la calidad y frescura sin degradación durante meses de almacenamiento.' },
-        { tag: 'Eficiencia', title: 'Reducción de costos energéticos', desc: 'Aislamiento superior disminuye el consumo eléctrico significativamente frente a equipos convencionales.' },
-        { tag: 'Cumplimiento', title: 'Normativas y regulaciones garantizadas', desc: 'Certificaciones completas aseguran operación legal en cualquier sector de la industria alimentaria.' },
-      ].map(v => `
-        <div class="card bg-white stagger-item">
-          <span class="section-label mb-3 block">${v.tag}</span>
-          <h3 class="font-bold text-navy-900 mb-2">${v.title}</h3>
-          <p class="text-sm text-navy-500 leading-relaxed mb-4">${v.desc}</p>
-          <a href="/contacto.html" class="btn-ghost px-0 text-polar-700">Saber más →</a>
-        </div>`).join('')}
+      <div class="card stagger-item">
+        <span class="section-label mb-3 block">Conservación</span>
+        <h3 class="font-bold text-navy-900 mb-2">Preservación óptima de productos</h3>
+        <p class="text-sm text-navy-500 leading-relaxed mb-4">Mantiene la calidad y frescura sin degradación durante meses de almacenamiento.</p>
+        <a href="/contacto.html" class="btn-ghost px-0 text-polar-700">Saber más →</a>
+      </div>
+      <div class="card stagger-item">
+        <span class="section-label mb-3 block">Eficiencia</span>
+        <h3 class="font-bold text-navy-900 mb-2">Reducción de costos energéticos</h3>
+        <p class="text-sm text-navy-500 leading-relaxed mb-4">Aislamiento superior disminuye el consumo eléctrico significativamente frente a equipos convencionales.</p>
+        <a href="/contacto.html" class="btn-ghost px-0 text-polar-700">Saber más →</a>
+      </div>
+      <div class="card stagger-item">
+        <span class="section-label mb-3 block">Cumplimiento</span>
+        <h3 class="font-bold text-navy-900 mb-2">Normativas y regulaciones garantizadas</h3>
+        <p class="text-sm text-navy-500 leading-relaxed mb-4">Certificaciones completas aseguran operación legal en cualquier sector de la industria alimentaria.</p>
+        <a href="/contacto.html" class="btn-ghost px-0 text-polar-700">Saber más →</a>
+      </div>
     </div>
   </div>
 </section>

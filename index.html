@@ -301,18 +301,30 @@
     </div>
 
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 stagger-group mb-10">
-      ${[
-        ['Embutidos y carnes', 'Cadena de frío perfecta para productos cárnicos'],
-        ['Productos lácteos', 'Control de temperatura exacto para derivados lácteos'],
-        ['Bebidas refrescantes', 'Conservación óptima garantizada'],
-        ['Producción de tequila', 'Almacenamiento especializado para destilería'],
-        ['Farmacéutica', 'Cumplimiento normativo asegurado'],
-        ['Hospitales y clínicas', 'Almacenamiento de medicamentos críticos'],
-      ].map(([title, desc]) => `
-        <div class="card stagger-item bg-white">
-          <h3 class="font-semibold text-navy-900 text-sm mb-1">${title}</h3>
-          <p class="text-xs text-navy-500">${desc}</p>
-        </div>`).join('')}
+      <div class="card stagger-item bg-white">
+        <h3 class="font-semibold text-navy-900 text-sm mb-1">Embutidos y carnes</h3>
+        <p class="text-xs text-navy-500">Cadena de frío perfecta para productos cárnicos</p>
+      </div>
+      <div class="card stagger-item bg-white">
+        <h3 class="font-semibold text-navy-900 text-sm mb-1">Productos lácteos</h3>
+        <p class="text-xs text-navy-500">Control de temperatura exacto para derivados lácteos</p>
+      </div>
+      <div class="card stagger-item bg-white">
+        <h3 class="font-semibold text-navy-900 text-sm mb-1">Bebidas refrescantes</h3>
+        <p class="text-xs text-navy-500">Conservación óptima garantizada</p>
+      </div>
+      <div class="card stagger-item bg-white">
+        <h3 class="font-semibold text-navy-900 text-sm mb-1">Producción de tequila</h3>
+        <p class="text-xs text-navy-500">Almacenamiento especializado para destilería</p>
+      </div>
+      <div class="card stagger-item bg-white">
+        <h3 class="font-semibold text-navy-900 text-sm mb-1">Farmacéutica</h3>
+        <p class="text-xs text-navy-500">Cumplimiento normativo asegurado</p>
+      </div>
+      <div class="card stagger-item bg-white">
+        <h3 class="font-semibold text-navy-900 text-sm mb-1">Hospitales y clínicas</h3>
+        <p class="text-xs text-navy-500">Almacenamiento de medicamentos críticos</p>
+      </div>
     </div>
 
     <div class="text-center reveal-up">
