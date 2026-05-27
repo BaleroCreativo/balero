@@ -1,4 +1,4 @@
-import { animate, inView, stagger } from 'motion'
+import { animate, inView, scroll, stagger } from 'motion'
 
 /* ══════════════════════════════════════════════
    NAVIGATION
@@ -271,44 +271,127 @@ export function initFooter() {
    ANIMATIONS (Motion.js)
 ══════════════════════════════════════════════ */
 export function initAnimations() {
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-  if (prefersReduced) return
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+  if (reduced) return
 
-  // Scroll-reveal for .reveal-up elements
+  // ── Scroll progress bar ──────────────────────
+  const bar = document.createElement('div')
+  bar.setAttribute('aria-hidden', 'true')
+  Object.assign(bar.style, {
+    position: 'fixed', top: '0', left: '0', right: '0', height: '3px',
+    background: 'linear-gradient(to right, #0369A1, #0EA5E9)',
+    transformOrigin: '0 0', transform: 'scaleX(0)', zIndex: '9999',
+    pointerEvents: 'none',
+  })
+  document.body.appendChild(bar)
+  scroll(animate(bar, { scaleX: [0, 1] }))
+
+  // ── Standard reveal-up (spring deceleration) ─
   inView('.reveal-up', ({ target }) => {
-    animate(target, { opacity: [0, 1], y: [28, 0] }, { duration: 0.5, easing: [0.22, 0.61, 0.36, 1] })
+    animate(target, { opacity: [0, 1], y: [48, 0] }, {
+      duration: 0.7, easing: [0.16, 1, 0.3, 1],
+    })
+  }, { margin: '0px 0px -80px 0px' })
+
+  // ── Reveal from left (2-col left side) ───────
+  inView('.reveal-left', ({ target }) => {
+    animate(target, { opacity: [0, 1], x: [-64, 0] }, {
+      duration: 0.75, easing: [0.16, 1, 0.3, 1],
+    })
+  }, { margin: '0px 0px -80px 0px' })
+
+  // ── Reveal from right (2-col right side) ─────
+  inView('.reveal-right', ({ target }) => {
+    animate(target, { opacity: [0, 1], x: [64, 0] }, {
+      duration: 0.75, easing: [0.16, 1, 0.3, 1],
+    })
+  }, { margin: '0px 0px -80px 0px' })
+
+  // ── Scale-in (for dashboard panels) ──────────
+  inView('.reveal-scale', ({ target }) => {
+    animate(target, { opacity: [0, 1], scale: [0.88, 1] }, {
+      duration: 0.65, easing: [0.16, 1, 0.3, 1],
+    })
+  }, { margin: '0px 0px -80px 0px' })
+
+  // ── Section labels: spring bounce pop ────────
+  inView('.section-label', ({ target }) => {
+    animate(target, { opacity: [0, 1], scale: [0.7, 1], y: [10, 0] }, {
+      duration: 0.4, easing: [0.34, 1.56, 0.64, 1],
+    })
+  }, { margin: '0px 0px -40px 0px' })
+
+  // ── Stagger card groups (more dramatic) ──────
+  inView('.stagger-group', ({ target }) => {
+    animate(target.querySelectorAll('.stagger-item'),
+      { opacity: [0, 1], y: [44, 0], scale: [0.94, 1] },
+      { duration: 0.6, delay: stagger(0.09), easing: [0.16, 1, 0.3, 1] }
+    )
   }, { margin: '0px 0px -60px 0px' })
 
-  // Stagger card groups
-  inView('.stagger-group', ({ target }) => {
-    const children = target.querySelectorAll('.stagger-item')
-    animate(children, { opacity: [0, 1], y: [24, 0] }, {
-      duration: 0.45,
-      delay: stagger(0.08),
-      easing: [0.22, 0.61, 0.36, 1],
+  // ── Continuous float on hero badges ──────────
+  document.querySelectorAll('.float-badge').forEach((el, i) => {
+    animate(el, { y: [0, -12, 0] }, {
+      duration: 3 + i * 0.9,
+      repeat: Infinity,
+      easing: 'ease-in-out',
     })
-  }, { margin: '0px 0px -60px 0px' })
+  })
+
+  // ── Pulsing status dots ───────────────────────
+  document.querySelectorAll('.status-dot').forEach(el => {
+    animate(el, { opacity: [1, 0.35, 1], scale: [1, 1.5, 1] }, {
+      duration: 2.5, repeat: Infinity, easing: 'ease-in-out',
+    })
+  })
+
+  // ── Animated progress bars ───────────────────
+  document.querySelectorAll('.animated-bar').forEach(el => { el.style.width = '0' })
+  inView('.animated-bar', ({ target }) => {
+    animate(target, { width: `${target.dataset.w ?? 50}%` }, {
+      duration: 1.3, delay: 0.4, easing: [0.16, 1, 0.3, 1],
+    })
+  })
+
+  // ── Hero visual parallax ─────────────────────
+  const heroVis = document.querySelector('.hero-visual')
+  if (heroVis) {
+    const section = heroVis.closest('section')
+    if (section) {
+      scroll(animate(heroVis, { y: [0, 36] }), {
+        target: section, offset: ['start start', 'end start'],
+      })
+    }
+  }
+
+  // ── Magnetic CTA buttons ─────────────────────
+  document.querySelectorAll('.btn-primary').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const r = btn.getBoundingClientRect()
+      animate(btn,
+        { x: (e.clientX - r.left - r.width / 2) * 0.22, y: (e.clientY - r.top - r.height / 2) * 0.22 },
+        { duration: 0.2, easing: 'ease-out' }
+      )
+    })
+    btn.addEventListener('mouseleave', () => {
+      animate(btn, { x: 0, y: 0 }, { duration: 0.5, easing: [0.16, 1, 0.3, 1] })
+    })
+  })
 }
 
-/* ── Counter animation ─── */
+/* ── Counter animation ─────────────────────── */
 export function initCounters() {
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-
+  const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
   inView('.stat-counter', ({ target }) => {
     const end    = parseFloat(target.dataset.value)
     const suffix = target.dataset.suffix || ''
     const prefix = target.dataset.prefix || ''
-
-    if (prefersReduced) {
-      target.textContent = prefix + end + suffix
-      return
-    }
-
+    if (reduced) { target.textContent = prefix + end + suffix; return }
     animate(0, end, {
-      duration: 1.8,
+      duration: 2,
       easing: [0.22, 0.61, 0.36, 1],
-      onUpdate(value) {
-        target.textContent = prefix + (Number.isInteger(end) ? Math.round(value) : value.toFixed(1)) + suffix
+      onUpdate: v => {
+        target.textContent = prefix + (Number.isInteger(end) ? Math.round(v) : v.toFixed(1)) + suffix
       },
     })
   })

@@ -52,7 +52,21 @@
   /* ── Buttons ── */
   .btn-primary {
     @apply inline-flex items-center gap-2 px-6 py-3 bg-polar-700 text-white font-semibold text-sm rounded-lg
-           hover:bg-polar-800 active:bg-polar-900 transition-colors duration-150 cursor-pointer;
+           hover:bg-polar-800 active:bg-polar-900 cursor-pointer;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+  }
+  .btn-primary::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(105deg, transparent 40%, rgba(255,255,255,0.22) 50%, transparent 62%);
+    transform: translateX(-100%) skewX(-12deg);
+    transition: none;
+  }
+  .btn-primary:hover::after {
+    animation: btn-shimmer 0.55s ease-out forwards;
   }
   .btn-secondary {
     @apply inline-flex items-center gap-2 px-6 py-3 border border-navy-200 text-navy-700 font-semibold text-sm rounded-lg
@@ -73,7 +87,16 @@
 
   /* ── Cards ── */
   .card {
-    @apply border border-navy-200 rounded-xl p-6 hover:border-polar-300 hover:bg-polar-50 transition-all duration-200;
+    @apply border border-navy-200 rounded-xl p-6 hover:border-polar-300 hover:bg-polar-50;
+    transition: transform 0.3s cubic-bezier(0.16,1,0.3,1),
+                box-shadow 0.3s cubic-bezier(0.16,1,0.3,1),
+                border-color 0.2s ease,
+                background-color 0.2s ease;
+    will-change: transform;
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -12px rgba(3, 105, 161, 0.14);
   }
   .card-icon {
     @apply w-10 h-10 text-polar-700 mb-4;
@@ -91,8 +114,29 @@
     @apply text-base text-navy-500 leading-relaxed max-w-xl;
   }
 
-  /* ── Animations (Motion.js) — initial state set by JS, not CSS ── */
-  .reveal-up { }
+  /* ── Animations — initial state managed by Motion.js ── */
+  .reveal-up    { }
+  .reveal-left  { }
+  .reveal-right { }
+  .reveal-scale { }
+  .float-badge  { }
+
+  /* ── Animated gradient CTA sections ── */
+  .cta-animated {
+    background: linear-gradient(135deg, #0C4A6E 0%, #0369A1 40%, #0284C7 75%, #0369A1 100%);
+    background-size: 240% 240%;
+    animation: cta-gradient 9s ease infinite;
+  }
+}
+
+@keyframes btn-shimmer {
+  to { transform: translateX(160%) skewX(-12deg); }
+}
+
+@keyframes cta-gradient {
+  0%   { background-position: 0%   50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0%   50%; }
 }
 
 @layer utilities {
