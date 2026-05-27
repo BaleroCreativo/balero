@@ -1,0 +1,62 @@
+/* Hallmark tokens — Polar Construct · cold precision · anchor hue 215° */
+:root {
+  /* Palette */
+  --color-paper:     oklch(97%  0.008 215);
+  --color-paper-2:   oklch(93%  0.010 215);
+  --color-paper-3:   oklch(87%  0.013 215);
+  --color-rule:      oklch(79%  0.010 215);
+  --color-neutral:   oklch(55%  0.010 215);
+  --color-muted:     oklch(40%  0.010 215);
+  --color-ink:       oklch(15%  0.012 215);
+  --color-accent:    oklch(58%  0.18  212);
+  --color-accent-hi: oklch(70%  0.13  212);
+  --color-focus:     oklch(58%  0.18  212);
+  --color-success:   oklch(52%  0.14  155);
+  --color-error:     oklch(55%  0.22   28);
+
+  /* Typography */
+  --font-display:  "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-body:     "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono:     "IBM Plex Mono", ui-monospace, monospace;
+
+  /* Scale — major third 1.25 */
+  --text-xs:        0.64rem;
+  --text-sm:        0.8rem;
+  --text-base:      1rem;
+  --text-md:        1.25rem;
+  --text-lg:        1.5625rem;
+  --text-xl:        1.9531rem;
+  --text-2xl:       2.4414rem;
+  --text-3xl:       3.0518rem;
+  --text-4xl:       3.8147rem;
+  --text-display:   clamp(2.75rem, 5vw + 1rem, 5.25rem);
+  --text-display-s: clamp(1.9rem, 3.5vw + 0.5rem, 3.2rem);
+
+  /* Spacing — 4pt scale */
+  --space-2xs: 0.25rem;
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4.5rem;
+  --space-4xl: 6rem;
+  --space-5xl: 9rem;
+
+  /* Motion */
+  --dur-fast:    150ms;
+  --dur-base:    250ms;
+  --dur-slow:    450ms;
+  --ease-out:    cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in:     cubic-bezier(0.4, 0, 1, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  /* Borders */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   14px;
+  --radius-full: 9999px;
+  --rule-light:  1px solid oklch(79%  0.010 215);
+  --rule-muted:  1px solid oklch(87%  0.013 215);
+}
