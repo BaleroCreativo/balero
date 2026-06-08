@@ -8,3 +8,4 @@ build/
 .nuxt/
 .cache/
 *.log
+.claude/skills/ui-ux-pro-max/scripts/__pycache__/
