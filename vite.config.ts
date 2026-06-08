@@ -22,7 +22,7 @@ export default defineConfig({
         contacto:      resolve(__dirname, 'contacto.html'),
         legal:         resolve(__dirname, 'legal.html'),
         // Eje Ocho React app
-        ejeocho:       resolve(__dirname, 'ejeocho.html'),
+        ejeocho:       resolve(__dirname, 'ejeocho/index.html'),
       }
     }
   }
