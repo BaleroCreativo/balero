@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Daniela Rubio — Marketing Digital &amp; Negocios Internacionales</title>
+<meta name="description" content="Daniela Rubio, fundadora de Balero Creativo. Marketing digital, IA aplicada a negocios y visión estratégica internacional para PyMEs en Guadalajara y el mundo." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0f0d0b;
+    --bg-soft:#171310;
+    --paper:#faf6f0;
+    --ink:#1c1712;
+    --ink-soft:#4a4038;
+    --terra:#c96a3e;
+    --terra-light:#e08a5b;
+    --gold:#d9a441;
+    --sage:#8a9a7e;
+    --line:rgba(28,23,18,0.12);
+    --line-dark:rgba(250,246,240,0.14);
+    --shadow:0 20px 60px -25px rgba(28,23,18,0.35);
+    --radius:20px;
+    --ease:cubic-bezier(.22,1,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',system-ui,-apple-system,sans-serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.6;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    font-weight:600;
+    line-height:1.1;
+    letter-spacing:-0.01em;
+  }
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  section{position:relative;}
+  .container{max-width:1180px;margin:0 auto;padding:0 6vw;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:.5em;
+    font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--terra);
+  }
+  .eyebrow::before{content:"";width:26px;height:1.5px;background:var(--terra);display:inline-block;}
+
+  /* ===== Scroll reveal ===== */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.is-visible{opacity:1;transform:translateY(0);}
+  .reveal-scale{opacity:0;transform:scale(.94);transition:opacity .7s var(--ease), transform .7s var(--ease);}
+  .reveal-scale.is-visible{opacity:1;transform:scale(1);}
+  .reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-left.is-visible{opacity:1;transform:translateX(0);}
+  .reveal-right{opacity:0;transform:translateX(32px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal-right.is-visible{opacity:1;transform:translateX(0);}
+  .stagger > * { transition-delay: calc(var(--i, 0) * 90ms); }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal,.reveal-scale,.reveal-left,.reveal-right{opacity:1 !important;transform:none !important;transition:none !important;}
+    html{scroll-behavior:auto;}
+  }
+
+  /* ===== Nav ===== */
+  .nav{
+    position:fixed;top:0;left:0;right:0;z-index:1000;
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 6vw;
+    background:rgba(250,246,240,0.7);
+    backdrop-filter:blur(14px) saturate(140%);
+    -webkit-backdrop-filter:blur(14px) saturate(140%);
+    border-bottom:1px solid transparent;
+    transition:background .4s var(--ease), border-color .4s var(--ease), padding .4s var(--ease);
+  }
+  .nav.scrolled{
+    background:rgba(250,246,240,0.92);
+    border-bottom-color:var(--line);
+    padding:12px 6vw;
+  }
+  .nav-logo{
+    font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;letter-spacing:-.01em;
+    display:flex;align-items:center;gap:8px;
+  }
+  .nav-logo span{color:var(--terra);}
+  .nav-links{display:flex;gap:2px;list-style:none;align-items:center;}
+  .nav-links a{
+    position:relative;padding:8px 16px;font-size:.88rem;font-weight:600;color:var(--ink-soft);
+    border-radius:999px;transition:color .3s ease;
+  }
+  .nav-links a:hover{color:var(--ink);}
+  .nav-links a.active{color:var(--ink);}
+  .nav-links a.active::after{
+    content:"";position:absolute;left:16px;right:16px;bottom:2px;height:2px;background:var(--terra);
+    border-radius:2px;
+  }
+  .nav-cta{
+    background:var(--ink);color:var(--paper);padding:10px 22px;border-radius:999px;
+    font-size:.85rem;font-weight:700;transition:transform .35s var(--ease), background .35s ease, box-shadow .35s ease;
+    box-shadow:0 6px 18px -8px rgba(28,23,18,.4);
+    white-space:nowrap;
+  }
+  .nav-cta:hover{transform:translateY(-2px) scale(1.03);background:var(--terra);}
+  .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
+  .nav-toggle span{width:22px;height:2px;background:var(--ink);border-radius:2px;transition:transform .3s ease, opacity .3s ease;}
+  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
+  .nav-toggle.open span:nth-child(2){opacity:0;}
+  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
+
+  /* ===== Progress bar ===== */
+  .progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--terra),var(--gold));z-index:1100;width:0%;transition:width .1s linear;}
+
+  /* ===== Hero ===== */
+  .hero{
+    min-height:100svh;display:flex;flex-direction:column;justify-content:center;
+    padding:140px 6vw 80px;position:relative;
+    background:
+      radial-gradient(ellipse 60% 50% at 85% 15%, rgba(201,106,62,.16), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 10% 90%, rgba(138,154,126,.18), transparent 60%),
+      var(--paper);
+    overflow:hidden;
+  }
+  .hero-blob{
+    position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;pointer-events:none;
+    will-change:transform;
+  }
+  .hero-blob.b1{width:420px;height:420px;background:var(--terra-light);top:-120px;right:-80px;}
+  .hero-blob.b2{width:320px;height:320px;background:var(--sage);bottom:-100px;left:-60px;opacity:.35;}
+  .hero-inner{max-width:900px;position:relative;z-index:2;}
+  .hero-kicker{
+    display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border:1px solid var(--line);
+    border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);
+    background:rgba(255,255,255,.5);margin-bottom:28px;
+  }
+  .hero-kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--terra);animation:pulse 2s ease-in-out infinite;}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.3);}}
+  .hero h1{
+    font-size:clamp(2.4rem, 6.4vw, 5rem);
+    color:var(--ink);
+    margin-bottom:24px;
+  }
+  .hero h1 .word{display:inline-block;opacity:0;transform:translateY(24px) rotate(2deg);animation:wordIn .7s var(--ease) forwards;}
+  @keyframes wordIn{to{opacity:1;transform:translateY(0) rotate(0);}}
+  .hero h1 em{font-style:italic;color:var(--terra);font-weight:500;}
+  .hero-sub{
+    font-size:clamp(1.05rem,2vw,1.35rem);color:var(--ink-soft);max-width:640px;margin-bottom:40px;
+    opacity:0;animation:fadeUp .9s var(--ease) forwards;animation-delay:1.05s;
+  }
+  @keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
+  .hero-cta-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;
+    opacity:0;animation:fadeUp .9s var(--ease) forwards;animation-delay:1.3s;}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:999px;
+    font-weight:700;font-size:.95rem;cursor:pointer;border:none;position:relative;overflow:hidden;
+    transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+  }
+  .btn-primary{background:var(--ink);color:var(--paper);box-shadow:0 14px 30px -12px rgba(28,23,18,.5);}
+  .btn-primary:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 18px 36px -12px rgba(201,106,62,.55);background:var(--terra);}
+  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);}
+  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-3px);background:rgba(28,23,18,.04);}
+  .btn svg{width:16px;height:16px;transition:transform .35s var(--ease);}
+  .btn-primary:hover svg{transform:translateX(4px);}
+  .hero-stats{
+    display:flex;gap:clamp(24px,5vw,56px);margin-top:64px;flex-wrap:wrap;
+    opacity:0;animation:fadeUp .9s var(--ease) forwards;animation-delay:1.5s;
+  }
+  .hero-stat b{display:block;font-family:'Fraunces',serif;font-size:clamp(1.7rem,3vw,2.4rem);color:var(--ink);}
+  .hero-stat span{font-size:.82rem;color:var(--ink-soft);}
+  .scroll-cue{
+    position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
+    display:flex;flex-direction:column;align-items:center;gap:8px;font-size:.72rem;
+    letter-spacing:.1em;color:var(--ink-soft);text-transform:uppercase;
+    opacity:0;animation:fadeUp .9s var(--ease) forwards;animation-delay:1.8s;
+  }
+  .scroll-cue .line{width:1px;height:34px;background:linear-gradient(var(--ink-soft),transparent);
+    animation:scrollLine 1.8s ease-in-out infinite;}
+  @keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}
+    50.1%{transform-origin:bottom;}100%{transform:scaleY(0);transform-origin:bottom;}}
+
+  /* ===== Section shell ===== */
+  .section{padding:120px 0;}
+  .section-dark{background:var(--bg);color:var(--paper);}
+  .section-dark .ink-soft{color:rgba(250,246,240,.65);}
+  .section-head{max-width:640px;margin-bottom:64px;}
+  .section-head h2{font-size:clamp(2rem,4.2vw,3.1rem);margin-top:14px;}
+  .section-head p{color:var(--ink-soft);font-size:1.08rem;margin-top:18px;}
+  .section-dark .section-head p{color:rgba(250,246,240,.68);}
+
+  /* ===== About ===== */
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center;}
+  .about-visual{position:relative;}
+  .about-frame{
+    aspect-ratio:4/5;border-radius:var(--radius);
+    background:linear-gradient(150deg,var(--terra) 0%, var(--gold) 55%, var(--sage) 100%);
+    position:relative;overflow:hidden;box-shadow:var(--shadow);
+  }
+  .about-frame::before{
+    content:"DR";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+    font-family:'Fraunces',serif;font-size:9rem;font-weight:600;color:rgba(255,255,255,.22);
+    letter-spacing:-.03em;
+  }
+  .about-badge{
+    position:absolute;bottom:-24px;right:-24px;background:var(--paper);border-radius:16px;
+    padding:18px 22px;box-shadow:var(--shadow);display:flex;align-items:center;gap:14px;
+    transition:transform .4s var(--ease);
+  }
+  .about-badge:hover{transform:translateY(-6px) rotate(-1deg);}
+  .about-badge b{font-family:'Fraunces',serif;font-size:1.5rem;display:block;color:var(--terra);}
+  .about-badge span{font-size:.76rem;color:var(--ink-soft);}
+  .about-copy p{margin-bottom:20px;color:var(--ink-soft);font-size:1.06rem;}
+  .about-copy strong{color:var(--ink);font-weight:700;}
+  .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
+  .pill{
+    padding:9px 18px;border:1px solid var(--line);border-radius:999px;font-size:.82rem;font-weight:600;
+    background:#fff;transition:all .3s var(--ease);
+  }
+  .pill:hover{background:var(--terra);color:#fff;border-color:var(--terra);transform:translateY(-2px);}
+
+  /* ===== Services ===== */
+  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+  .service-card{
+    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:38px 30px;
+    transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
+    position:relative;overflow:hidden;
+  }
+  .service-card::before{
+    content:"";position:absolute;inset:0;background:linear-gradient(135deg,var(--terra),var(--gold));
+    opacity:0;transition:opacity .45s ease;z-index:0;
+  }
+  .service-card:hover{transform:translateY(-10px);box-shadow:var(--shadow);border-color:transparent;}
+  .service-card > *{position:relative;z-index:1;}
+  .service-icon{
+    width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
+    background:rgba(201,106,62,.1);margin-bottom:22px;transition:all .45s var(--ease);
+  }
+  .service-card:hover .service-icon{background:rgba(255,255,255,.2);transform:scale(1.08) rotate(-4deg);}
+  .service-icon svg{width:24px;height:24px;stroke:var(--terra);transition:stroke .45s ease;}
+  .service-card:hover .service-icon svg{stroke:#fff;}
+  .service-card h3{font-size:1.28rem;margin-bottom:12px;transition:color .45s ease;}
+  .service-card:hover h3{color:#fff;}
+  .service-card p{color:var(--ink-soft);font-size:.94rem;transition:color .45s ease;}
+  .service-card:hover p{color:rgba(255,255,255,.92);}
+  .service-tag{
+    display:inline-block;margin-top:18px;font-size:.74rem;font-weight:700;letter-spacing:.06em;
+    text-transform:uppercase;color:var(--terra);transition:color .45s ease;
+  }
+  .service-card:hover .service-tag{color:#fff;}
+
+  /* ===== Experience (dark, timeline) ===== */
+  .exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
+  .exp-numbers{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
+  .exp-num-card{
+    border:1px solid var(--line-dark);border-radius:18px;padding:30px 24px;
+    background:rgba(255,255,255,.03);transition:transform .4s var(--ease), background .4s ease, border-color .4s ease;
+  }
+  .exp-num-card:hover{transform:translateY(-6px);background:rgba(255,255,255,.07);border-color:var(--terra-light);}
+  .exp-num-card b{
+    font-family:'Fraunces',serif;font-size:clamp(2.2rem,3.4vw,3rem);display:block;
+    background:linear-gradient(120deg,var(--terra-light),var(--gold));-webkit-background-clip:text;
+    background-clip:text;color:transparent;
+  }
+  .exp-num-card span{font-size:.85rem;color:rgba(250,246,240,.6);}
+  .timeline{border-left:1.5px solid var(--line-dark);padding-left:32px;display:flex;flex-direction:column;gap:36px;}
+  .timeline-item{position:relative;}
+  .timeline-item::before{
+    content:"";position:absolute;left:-38px;top:4px;width:11px;height:11px;border-radius:50%;
+    background:var(--terra-light);box-shadow:0 0 0 4px rgba(224,138,91,.18);
+  }
+  .timeline-item h4{font-size:1.08rem;margin-bottom:6px;color:var(--paper);}
+  .timeline-item p{font-size:.92rem;color:rgba(250,246,240,.62);}
+
+  /* ===== Differentiator ===== */
+  .diff-wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
+  .diff-list{display:flex;flex-direction:column;gap:0;}
+  .diff-item{
+    padding:26px 0;border-bottom:1px solid var(--line);display:flex;gap:20px;align-items:flex-start;
+    transition:padding-left .4s var(--ease);
+  }
+  .diff-item:hover{padding-left:10px;}
+  .diff-num{
+    font-family:'Fraunces',serif;font-size:1.3rem;color:var(--terra);flex-shrink:0;width:38px;
+  }
+  .diff-item h4{font-size:1.12rem;margin-bottom:6px;}
+  .diff-item p{color:var(--ink-soft);font-size:.94rem;}
+  .diff-visual{
+    aspect-ratio:1/1;border-radius:var(--radius);position:relative;overflow:hidden;
+    background:conic-gradient(from 180deg at 50% 50%, #c96a3e, #d9a441, #8a9a7e, #c96a3e);
+    box-shadow:var(--shadow);
+  }
+  .diff-visual::after{
+    content:"";position:absolute;inset:14px;background:var(--paper);border-radius:calc(var(--radius) - 6px);
+    display:flex;
+  }
+  .diff-quote{
+    position:absolute;inset:14px;z-index:2;display:flex;align-items:center;justify-content:center;
+    padding:40px;text-align:center;
+  }
+  .diff-quote p{font-family:'Fraunces',serif;font-style:italic;font-size:1.35rem;color:var(--ink);line-height:1.4;}
+
+  /* ===== Contact ===== */
+  .contact-section{
+    background:linear-gradient(180deg,var(--bg) 0%, #211a15 100%);color:var(--paper);
+    position:relative;overflow:hidden;
+  }
+  .contact-glow{position:absolute;width:600px;height:600px;border-radius:50%;
+    background:radial-gradient(circle, rgba(201,106,62,.25), transparent 65%);
+    top:-200px;left:50%;transform:translateX(-50%);pointer-events:none;}
+  .contact-inner{position:relative;z-index:2;text-align:center;max-width:760px;margin:0 auto;}
+  .contact-inner h2{font-size:clamp(2.2rem,5vw,3.6rem);margin:18px 0 20px;}
+  .contact-inner > p{color:rgba(250,246,240,.68);font-size:1.1rem;margin-bottom:48px;}
+  .contact-actions{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-bottom:64px;}
+  .btn-light{background:var(--paper);color:var(--ink);box-shadow:0 14px 30px -12px rgba(0,0,0,.4);}
+  .btn-light:hover{transform:translateY(-3px) scale(1.02);background:var(--terra-light);color:#fff;}
+  .btn-outline-light{background:transparent;color:var(--paper);border:1.5px solid rgba(250,246,240,.3);}
+  .btn-outline-light:hover{border-color:var(--paper);background:rgba(255,255,255,.06);transform:translateY(-3px);}
+
+  .contact-form{
+    text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--line-dark);
+    border-radius:var(--radius);padding:36px;display:grid;gap:18px;margin-bottom:56px;
+    backdrop-filter:blur(8px);
+  }
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
+  .field{display:flex;flex-direction:column;gap:8px;}
+  .field label{font-size:.8rem;font-weight:600;color:rgba(250,246,240,.7);}
+  .field input,.field textarea{
+    background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:12px;
+    padding:13px 16px;color:var(--paper);font-family:inherit;font-size:.95rem;
+    transition:border-color .3s ease, background .3s ease;
+  }
+  .field input::placeholder,.field textarea::placeholder{color:rgba(250,246,240,.35);}
+  .field input:focus,.field textarea:focus{outline:none;border-color:var(--terra-light);background:rgba(255,255,255,.1);}
+  .form-submit{
+    justify-self:start;margin-top:4px;
+  }
+  .form-note{font-size:.78rem;color:rgba(250,246,240,.5);}
+
+  .social-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
+  .social-chip{
+    display:flex;align-items:center;gap:9px;padding:11px 20px;border-radius:999px;
+    border:1px solid rgba(250,246,240,.2);font-size:.86rem;font-weight:600;
+    transition:all .35s var(--ease);
+  }
+  .social-chip:hover{background:var(--paper);color:var(--ink);transform:translateY(-3px);}
+
+  footer{
+    padding:36px 6vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
+    border-top:1px solid var(--line-dark);font-size:.8rem;color:rgba(250,246,240,.5);
+    position:relative;z-index:2;
+  }
+
+  /* Floating WhatsApp */
+  .float-wa{
+    position:fixed;bottom:26px;right:26px;z-index:900;
+    width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 12px 28px -8px rgba(37,211,102,.6);transition:transform .35s var(--ease);
+  }
+  .float-wa:hover{transform:scale(1.1) rotate(6deg);}
+  .float-wa svg{width:28px;height:28px;fill:#fff;}
+
+  @media (max-width:960px){
+    .about-grid,.exp-grid,.diff-wrap{grid-template-columns:1fr;gap:44px;}
+    .services-grid{grid-template-columns:1fr 1fr;}
+    .diff-visual{order:-1;max-width:360px;margin:0 auto;}
+    .form-row{grid-template-columns:1fr;}
+  }
+  @media (max-width:720px){
+    .nav-links{
+      position:fixed;top:0;right:0;height:100svh;width:min(78vw,320px);flex-direction:column;
+      background:var(--paper);align-items:flex-start;padding:100px 28px 40px;gap:6px;
+      transform:translateX(100%);transition:transform .45s var(--ease);box-shadow:-20px 0 50px rgba(0,0,0,.15);
+    }
+    .nav-links.open{transform:translateX(0);}
+    .nav-links a{width:100%;padding:14px 10px;font-size:1.05rem;}
+    .nav-toggle{display:flex;}
+    .nav-cta{display:none;}
+    .services-grid{grid-template-columns:1fr;}
+    .exp-numbers{grid-template-columns:1fr 1fr;}
+    .hero{padding-top:120px;}
+    .section{padding:80px 0;}
+    .contact-form{padding:24px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<nav class="nav" id="nav">
+  <a href="#inicio" class="nav-logo">Daniela <span>Rubio</span></a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#inicio" data-nav>Inicio</a></li>
+    <li><a href="#sobre-mi" data-nav>Sobre mí</a></li>
+    <li><a href="#que-hago" data-nav>Qué hago</a></li>
+    <li><a href="#trayectoria" data-nav>Trayectoria</a></li>
+    <li><a href="#diferenciador" data-nav>Diferenciador</a></li>
+    <li><a href="#contacto" data-nav>Contacto</a></li>
+  </ul>
+  <a href="#contacto" class="nav-cta">Agenda una llamada</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-blob b1"></div>
+  <div class="hero-blob b2"></div>
+  <div class="hero-inner">
+    <div class="hero-kicker"><span class="dot"></span> Fundadora de Balero Creativo · Guadalajara, México</div>
+    <h1 id="heroTitle" aria-label="Estrategia con visión global. Creatividad con acento propio.">
+      <!-- filled by JS -->
+    </h1>
+    <p class="hero-sub">Ayudo a PyMEs mexicanas y de otros países a crecer con marketing digital estratégico, contenido con criterio de negocio y, cada vez más, inteligencia artificial aplicada a decisiones reales.</p>
+    <div class="hero-cta-row">
+      <a href="#contacto" class="btn btn-primary">Agenda una llamada
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#sobre-mi" class="btn btn-ghost">Conóceme</a>
+    </div>
+    <div class="hero-stats">
+      <div class="hero-stat"><b>10+</b><span>años en comunicación &amp; social media</span></div>
+      <div class="hero-stat"><b>MX / Global</b><span>clientes nacionales e internacionales</span></div>
+      <div class="hero-stat"><b>IA aplicada</b><span>a marketing y negocios</span></div>
+    </div>
+  </div>
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- SOBRE MI -->
+<section class="section" id="sobre-mi">
+  <div class="container about-grid">
+    <div class="about-visual reveal-left">
+      <div class="about-frame"></div>
+      <div class="about-badge">
+        <b>10</b>
+        <span>años construyendo marcas con estrategia y datos</span>
+      </div>
+    </div>
+    <div class="about-copy reveal-right">
+      <span class="eyebrow">Sobre mí</span>
+      <h2 style="margin:16px 0 22px;font-size:clamp(1.8rem,3.6vw,2.6rem);">De los negocios internacionales al marketing que sí mueve resultados</h2>
+      <p>Estudié <strong>Negocios Internacionales</strong> y desde ahí empecé a mirar el marketing distinto: no como estética, sino como una palanca de crecimiento con números detrás. Esa mezcla me llevó a especializarme en <strong>Marketing Digital</strong> y, con el tiempo, a fundar <strong>Balero Creativo</strong>.</p>
+      <p>Llevo <strong>10 años</strong> trabajando en comunicación, publicidad y social media, acompañando a pequeñas y medianas empresas —de Guadalajara y de otros países— a construir marcas que se sienten cercanas y que además venden.</p>
+      <p>Hoy le sumo otra capa: la <strong>inteligencia artificial</strong>. Me apasiona el Machine Learning y el Deep Learning, y los estoy llevando a la práctica con las marcas que asesoro, para tomar mejores decisiones y hacer más con menos.</p>
+      <div class="pill-row">
+        <span class="pill">Negocios Internacionales</span>
+        <span class="pill">Marketing Digital</span>
+        <span class="pill">IA aplicada a negocios</span>
+        <span class="pill">Branding</span>
+        <span class="pill">Liderazgo</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- QUE HAGO -->
+<section class="section" id="que-hago" style="background:var(--bg-soft);">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Qué hago</span>
+      <h2>Estrategia, creatividad y tecnología en un mismo lugar</h2>
+      <p>Desde Balero Creativo combinamos visión de negocio con ejecución creativa, para que cada peso invertido en marketing tenga un porqué claro.</p>
+    </div>
+    <div class="services-grid stagger">
+      <div class="service-card reveal-scale" style="--i:0">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
+        <h3>Social Media &amp; contenido</h3>
+        <p>Estrategia de contenido, comunidad y presencia de marca pensada para conectar y convertir, no solo para verse bonita.</p>
+        <span class="service-tag">Estrategia · Producción · Comunidad</span>
+      </div>
+      <div class="service-card reveal-scale" style="--i:1">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <h3>Meta Ads &amp; Google Ads</h3>
+        <p>Campañas de pauta digital con objetivos de negocio claros: leads, ventas o posicionamiento, medidos de verdad.</p>
+        <span class="service-tag">Performance · ROAS · Escalamiento</span>
+      </div>
+      <div class="service-card reveal-scale" style="--i:2">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v0"/></svg></div>
+        <h3>Desarrollo web</h3>
+        <p>Sitios y landing pages rápidas, claras y hechas para convertir visitas en clientes, no solo para existir.</p>
+        <span class="service-tag">UX · Velocidad · Conversión</span>
+      </div>
+      <div class="service-card reveal-scale" style="--i:3">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
+        <h3>Branding</h3>
+        <p>Identidad de marca con carácter propio: cómo se ve, cómo suena y cómo se siente tu negocio para tu cliente ideal.</p>
+        <span class="service-tag">Identidad · Voz de marca</span>
+      </div>
+      <div class="service-card reveal-scale" style="--i:4">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
+        <h3>Producción audiovisual</h3>
+        <p>Video y fotografía con dirección creativa, pensados para redes, campañas y comunicación de marca.</p>
+        <span class="service-tag">Video · Foto · Dirección creativa</span>
+      </div>
+      <div class="service-card reveal-scale" style="--i:5">
+        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M4 7h16l-1.5 13a2 2 0 01-2 2h-9a2 2 0 01-2-2L4 7z"/></svg></div>
+        <h3>IA aplicada a negocios</h3>
+        <p>Implementación práctica de inteligencia artificial y machine learning en procesos de marketing y toma de decisiones.</p>
+        <span class="service-tag">IA · Automatización · Datos</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRAYECTORIA -->
+<section class="section section-dark" id="trayectoria">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" style="color:var(--terra-light);">Experiencia &amp; trayectoria</span>
+      <h2>Una década construyendo marcas que sí crecen</h2>
+      <p class="ink-soft">Trabajo con dueños de negocio que quieren resultados, no solo reportes. Aquí un vistazo a mi camino.</p>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-numbers reveal-left">
+        <div class="exp-num-card"><b>10+</b><span>años en comunicación, publicidad y social media</span></div>
+        <div class="exp-num-card"><b>MX+</b><span>clientes nacionales e internacionales</span></div>
+        <div class="exp-num-card"><b>360°</b><span>marketing, branding y producción bajo un mismo techo</span></div>
+        <div class="exp-num-card"><b>IA</b><span>integrada activamente en procesos de clientes reales</span></div>
+      </div>
+      <div class="timeline reveal-right">
+        <div class="timeline-item">
+          <h4>Formación en Negocios Internacionales</h4>
+          <p>Base estratégica para entender mercados, cifras y operación —no solo creatividad.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Especialización en Marketing Digital</h4>
+          <p>Profundicé en social media, pauta digital y comunicación de marca para PyMEs.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>10 años en comunicación y publicidad</h4>
+          <p>Acompañando marcas nacionales e internacionales a crecer con estrategia sostenida.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>Fundación de Balero Creativo</h4>
+          <p>Agencia de marketing digital en Guadalajara: social media, Meta Ads, Google Ads, web, branding y producción audiovisual.</p>
+        </div>
+        <div class="timeline-item">
+          <h4>IA aplicada a negocios</h4>
+          <p>Incorporo Machine Learning y Deep Learning en los procesos de las marcas con las que trabajo hoy.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIADOR -->
+<section class="section" id="diferenciador">
+  <div class="container diff-wrap">
+    <div class="diff-visual reveal-scale">
+      <div class="diff-quote">
+        <p>"No hago marketing bonito. Hago marketing que entiende el negocio detrás."</p>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <span class="eyebrow">Diferenciador</span>
+      <h2 style="margin:16px 0 30px;font-size:clamp(1.8rem,3.6vw,2.6rem);">Visión de negocios internacionales + creatividad aplicada</h2>
+      <div class="diff-list">
+        <div class="diff-item"><span class="diff-num">01</span><div><h4>Pienso en negocio antes que en post</h4><p>Cada estrategia parte de un objetivo comercial claro, no de una tendencia.</p></div></div>
+        <div class="diff-item"><span class="diff-num">02</span><div><h4>Mirada internacional, ejecución local</h4><p>Entiendo mercados distintos y aterrizo esa visión en resultados concretos para tu negocio.</p></div></div>
+        <div class="diff-item"><span class="diff-num">03</span><div><h4>Creatividad con métricas</h4><p>La creatividad se sostiene cuando se mide. Trabajo con datos, no solo con intuición.</p></div></div>
+        <div class="diff-item"><span class="diff-num">04</span><div><h4>IA como ventaja, no como moda</h4><p>Aplico inteligencia artificial donde realmente mejora decisiones y eficiencia.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="section contact-section" id="contacto">
+  <div class="contact-glow"></div>
+  <div class="container contact-inner reveal">
+    <span class="eyebrow" style="color:var(--terra-light);">Trabajemos juntos</span>
+    <h2>¿Listo para llevar tu marca al siguiente nivel?</h2>
+    <p>Agenda una llamada de 20 minutos, sin compromiso, y platiquemos de tu negocio, tus retos y por dónde podemos empezar.</p>
+
+    <div class="contact-actions">
+      <a href="https://wa.me/523300000000" target="_blank" rel="noopener" class="btn btn-light">Escríbeme por WhatsApp</a>
+      <a href="mailto:hola@balerocreativo.com" class="btn btn-outline-light">Enviar correo</a>
+    </div>
+
+    <form class="contact-form reveal" id="contactForm">
+      <div class="form-row">
+        <div class="field">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+        </div>
+        <div class="field">
+          <label for="email">Correo</label>
+          <input id="email" name="email" type="email" placeholder="tucorreo@empresa.com" required>
+        </div>
+      </div>
+      <div class="field">
+        <label for="business">Empresa / proyecto</label>
+        <input id="business" name="business" type="text" placeholder="¿Cómo se llama tu marca?">
+      </div>
+      <div class="field">
+        <label for="message">Cuéntame de tu negocio</label>
+        <textarea id="message" name="message" rows="4" placeholder="¿Qué te gustaría lograr?" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-light form-submit">Enviar mensaje
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="form-note" id="formNote">Respondo personalmente en menos de 24 horas hábiles.</p>
+    </form>
+
+    <div class="social-row">
+      <a href="https://instagram.com/balerocreativo" target="_blank" rel="noopener" class="social-chip">Instagram</a>
+      <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-chip">LinkedIn</a>
+      <a href="https://balerocreativo.com" target="_blank" rel="noopener" class="social-chip">Balero Creativo</a>
+    </div>
+  </div>
+
+  <footer>
+    <span>© <span id="year"></span> Daniela Rubio · Balero Creativo, Guadalajara, México</span>
+    <span>Hecho con estrategia, creatividad y un poco de IA.</span>
+  </footer>
+</section>
+
+<a class="float-wa" href="https://wa.me/523300000000" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.6 6.3A8.9 8.9 0 0012 4a8.9 8.9 0 00-7.7 13.4L3 21l3.7-1.2A8.9 8.9 0 0012 21a8.9 8.9 0 006.3-14.7zM12 19.3a7.3 7.3 0 01-3.7-1l-.3-.2-2.7.9.9-2.6-.2-.3A7.3 7.3 0 1119.3 12 7.3 7.3 0 0112 19.3zm4-5.5c-.2-.1-1.3-.7-1.5-.7s-.4-.1-.5.1-.5.7-.6.8-.2.2-.4.1a6 6 0 01-1.8-1.1 6.6 6.6 0 01-1.2-1.5c-.1-.2 0-.3.1-.4l.3-.4.2-.3a.5.5 0 000-.4c0-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.4a.9.9 0 00-.6.3 2.7 2.7 0 00-.9 2 4.7 4.7 0 001 2.5 10.6 10.6 0 004.1 3.6c.6.2 1 .4 1.4.5a3.3 3.3 0 001.5.1 2.5 2.5 0 001.6-1.1 2 2 0 00.1-1.1c-.1-.1-.2-.2-.4-.3z"/></svg>
+</a>
+
+<script>
+(function(){
+  // Scroll progress bar
+  const progress = document.getElementById('progress');
+  function updateProgress(){
+    const h = document.documentElement;
+    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
+    progress.style.width = scrolled + '%';
+  }
+  document.addEventListener('scroll', updateProgress, {passive:true});
+  updateProgress();
+
+  // Nav background on scroll
+  const nav = document.getElementById('nav');
+  function toggleNavBg(){
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }
+  document.addEventListener('scroll', toggleNavBg, {passive:true});
+  toggleNavBg();
+
+  // Mobile nav toggle
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', function(){
+    navToggle.classList.toggle('open');
+    navLinks.classList.toggle('open');
+  });
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    navToggle.classList.remove('open');
+    navLinks.classList.remove('open');
+  }));
+
+  // Active section highlight
+  const sections = document.querySelectorAll('section[id]');
+  const navItems = document.querySelectorAll('[data-nav]');
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        navItems.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
+      }
+    });
+  }, {rootMargin:'-40% 0px -50% 0px', threshold:0});
+  sections.forEach(s => navObserver.observe(s));
+
+  // Scroll reveal
+  const revealEls = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right');
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
+  revealEls.forEach(el => revealObserver.observe(el));
+
+  // Hero animated headline — word by word
+  const heroTitle = document.getElementById('heroTitle');
+  const heroText = [
+    {text:'Estrategia', em:false}, {text:'con', em:false}, {text:'visión', em:false}, {text:'global.', em:false},
+    {br:true},
+    {text:'Creatividad', em:false}, {text:'con', em:false}, {text:'acento', em:true}, {text:'propio.', em:true}
+  ];
+  let delay = 0.15;
+  heroText.forEach(item => {
+    if(item.br){ heroTitle.appendChild(document.createElement('br')); return; }
+    const span = document.createElement('span');
+    span.className = 'word';
+    span.style.animationDelay = delay + 's';
+    if(item.em){
+      const em = document.createElement('em');
+      em.textContent = item.text + ' ';
+      span.appendChild(em);
+    } else {
+      span.textContent = item.text + ' ';
+    }
+    heroTitle.appendChild(span);
+    delay += 0.09;
+  });
+
+  // Hero parallax blobs
+  const blobs = document.querySelectorAll('.hero-blob');
+  document.addEventListener('mousemove', (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5);
+    const y = (e.clientY / window.innerHeight - 0.5);
+    blobs.forEach((b, i) => {
+      const factor = (i + 1) * 18;
+      b.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
+    });
+  }, {passive:true});
+
+  window.addEventListener('scroll', () => {
+    const y = window.scrollY;
+    blobs.forEach((b, i) => {
+      b.style.marginTop = (y * (0.08 + i*0.04)) + 'px';
+    });
+  }, {passive:true});
+
+  // Contact form (demo submit — no backend)
+  const form = document.getElementById('contactForm');
+  const note = document.getElementById('formNote');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    note.textContent = '¡Gracias! Tu mensaje quedó registrado. Te contacto muy pronto por correo o WhatsApp.';
+    note.style.color = 'var(--terra-light)';
+    form.reset();
+  });
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
