@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "manyreach": {
+      "type": "http",
+      "url": "https://mcp.manyreach.com/mcp"
+    }
+  }
+}
