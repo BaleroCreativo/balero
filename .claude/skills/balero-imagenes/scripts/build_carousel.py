@@ -189,6 +189,13 @@ def build(spec_path, out_dir):
                        stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
         if extra_h and shutil.which("convert"):
             subprocess.run(["convert", png, "-crop", f"{W}x{H}+0+0", "+repage", png], check=True)
+    # Exportación en alta resolución (2x): slide-N@2x.png, p. ej. 2160x2880. Se desactiva con "export_2x": false.
+    if spec.get("export_2x", True) and headless_shell:
+        hi_cmd = [c if not c.startswith("--force-device-scale-factor") else "--force-device-scale-factor=2" for c in base_cmd]
+        for i in range(1, len(slides) + 1):
+            subprocess.run(hi_cmd + [f"--window-size={W},{H}", f"--screenshot={os.path.join(out_dir, f'slide-{i}@2x.png')}",
+                                     "file://" + os.path.join(out_dir, "html", f"slide-{i}.html")],
+                           stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)
     pdf = os.path.join(out_dir, spec.get("name", "carrusel") + ".pdf")
     subprocess.run(base_cmd + ["--no-pdf-header-footer", f"--print-to-pdf={pdf}", "file://" + all_html],
                    stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL, check=True)

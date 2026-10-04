@@ -32,3 +32,11 @@ Cohete (lanzamiento), candado (seguridad), moneda o alcancía (presupuesto), tro
 - Sin texto dentro de la ilustración (el texto va en el diseño).
 - Si el resultado trae otros colores fuertes (rojo, verde), regenerar: la paleta es índigo, amarillo y blanco.
 - Marcar como **borrador de IA** y pedir al usuario la versión grande desde Canva para publicar.
+
+## Alta resolución (importante)
+Canva entrega las ilustraciones en 200 px; si se estiran con un resize normal se ven pixeladas. Flujo correcto:
+1. `scripts/upscale.py` (Real-ESRGAN x4, funciona sin GPU, ~25 s por imagen) para llegar a 800 px reales.
+2. `scripts/cutout.sh` sobre el resultado (tolerancia 9, o 3 en objetos blancos).
+3. En objetos blancos (celular, robot, megáfono, calendario, portapapeles) el recorte se come brillos blancos del borde. Cerrar los huecos del alfa:
+   `convert recorte.png -resize 800x800 -alpha extract -threshold 50% -morphology Close Disk:20 -blur 0x1 mascara.png` y volver a aplicar la máscara a la imagen ampliada (`-compose CopyOpacity`). El celular necesita `Disk:60`.
+4. Guardar a 1200 px. El generador exporta además `slide-N@2x.png` (2160×2880) para publicar en alta resolución.
