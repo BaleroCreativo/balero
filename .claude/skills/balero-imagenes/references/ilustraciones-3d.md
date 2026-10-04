@@ -6,7 +6,7 @@ A 3D render of [OBJETO, con 1 o 2 detalles], glossy clay-style, soft inflated ro
 ```
 - Herramienta: `generate-image` de Canva con `aspectRatio: SQUARE_1_1`.
 - Un objeto por imagen. Máximo dos elementos (por ejemplo reloj + globo de chat).
-- Después: recortar fondo con `scripts/cutout.sh`.
+- Después: recortar fondo con `scripts/cutout.sh`. Para objetos con cuerpo blanco (celular, robot, megáfono) usar tolerancia 3: `bash scripts/cutout.sh in.jpg out.png 3`; con la tolerancia por defecto (9) el relleno se come las partes blancas.
 
 ## Banco de objetos ya usados (por tema)
 | Tema | Objeto |
@@ -18,9 +18,14 @@ A 3D render of [OBJETO, con 1 o 2 detalles], glossy clay-style, soft inflated ro
 | Tiempo, seguimiento | Reloj despertador amarillo con globo de chat índigo |
 | Planeación | Calendario con palomita blanca y chincheta amarilla |
 | Mensajes, contacto | Dos globos de chat superpuestos (índigo y amarillo) |
+| Mensajes entrantes | Celular blanco con dos globos de chat (índigo y amarillo) |
+| Investigar, revisar | Lupa con aro índigo y destello amarillo |
+| Agente de IA | Robot pequeño blanco con pantalla índigo y globo de chat |
+| Anuncios, difusión | Megáfono blanco con campana índigo y mango amarillo |
+| Presupuesto, costo | Pila de monedas amarillas con una moneda índigo |
 
 ## Objetos sugeridos para próximas piezas
-Megáfono (anuncios), lupa (investigación), cohete (lanzamiento), candado (seguridad), moneda o alcancía (presupuesto), trofeo (casos de éxito), engranes (automatización), robot pequeño con globo de chat (agente de IA).
+Cohete (lanzamiento), candado (seguridad), moneda o alcancía (presupuesto), trofeo (casos de éxito), engranes (automatización), robot pequeño con globo de chat (agente de IA).
 
 ## Reglas
 - Sin rostros ni personas.

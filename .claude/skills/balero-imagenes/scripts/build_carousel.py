@@ -116,6 +116,7 @@ def build(spec_path, out_dir):
                 f'<div class="foot">Balero Creativo</div>'
                 f'{"<div class=next>Desliza" + arrow + "</div>" if s.get("swipe") else ""}</div>')
         elif t == "lesson":
+            kick_text = s.get("kicker", f"Lección {s.get('number', '')}")  # "kicker" opcional: p. ej. "Dato 1"
             m = M_INNER
             if s.get("layout") == "top":
                 pic = img(s.get("illustration"), f"left:{round(W*m)}px;top:{round(H*MY) + 64*sy}px;width:{380*sx}px")  # debajo de los puntos de progreso
@@ -125,7 +126,7 @@ def build(spec_path, out_dir):
                 top = 270 * sy
             slides.append(
                 f'<div class="slide" style="{style_vars(m)}">{logo}{dots(idx)}{pic}'
-                f'<div class="pad" style="top:{top}px"><div class="kick">Lección {s["number"]}</div>'
+                f'<div class="pad" style="top:{top}px"><div class="kick">{kick_text}</div>'
                 f'<div class="heavy" style="margin-top:34px">{s["title"]}</div>'
                 f'<div class="body" style="margin-top:56px">{s["body"]}</div></div>'
                 f'<div class="foot">Balero Creativo</div></div>')
