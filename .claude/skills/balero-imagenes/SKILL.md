@@ -49,6 +49,8 @@ El índigo sobre lavanda da 4,4:1: úsalo solo en texto grande (titulares y énf
 - Portada: línea fina + titular fuerte en la mitad inferior, ilustración arriba a la derecha, subtítulo, "DESLIZA" con flecha larga solo en la portada.
 - Cierre: pregunta en Poppins (línea fina + índigo extranegrita), oferta en Source Sans Pro (negrita, con "gratis de 15 minutos" en índigo), acción en texto plano.
 
+- **Reseñas y testimonios:** slide tipo `quote` (rótulo, 5 estrellas SVG en índigo, cita en Source Sans Pro de 54 px con la palabra clave en negrita índigo, autor en Poppins Light). Campos: `kicker`, `quote`, `author`, `stars`, `illustration`. Nombres abreviados (nombre e inicial del apellido).
+
 ## Lo que Balero NO usa
 Subtítulos en forma de píldora o "pill", botones, números decorativos de fondo, ni fuentes distintas de Poppins y Source Sans Pro (cuidado con símbolos como flechas que caen a otra fuente: dibújalos en SVG).
 

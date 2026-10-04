@@ -142,6 +142,18 @@ def build(spec_path, out_dir):
                 f'<div class="heavy" style="margin-top:34px">{s["title"]}</div>'
                 f'<div class="body" style="margin-top:56px">{s["body"]}</div></div>'
                 f'<div class="foot">Balero Creativo</div></div>')
+        elif t == "quote":
+            # Reseña / testimonio: rótulo, 5 estrellas SVG (índigo), cita en Source Sans Pro, autor en Poppins Light
+            m = M_INNER
+            star = ('<svg width="40" height="40" viewBox="0 0 24 24"><path fill="%s" d="M12 1.8l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.5 5.7 21.2l1.5-7.1L1.8 9.2 9 8.4z"/></svg>' % INDIGO)
+            pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{380*sx}px")
+            slides.append(
+                f'<div class="slide" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}'
+                f'<div class="pad" style="top:{270*sy}px"><div class="kick">{s.get("kicker", "Reseña en Google")}</div>'
+                f'<div style="display:flex;gap:8px;margin-top:30px">{star * int(s.get("stars", 5))}</div>'
+                f'<div class="body" style="margin-top:44px;font-size:{54*sx}px;line-height:1.28;max-width:{900*sx}px">“{s["quote"]}”</div>'
+                f'<div class="kick" style="margin-top:44px">{s["author"]}</div></div>'
+                f'<div class="foot">Balero Creativo</div></div>')
         elif t == "closing":
             m = M_INNER
             slides.append(
