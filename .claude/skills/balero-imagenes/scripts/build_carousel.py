@@ -22,7 +22,7 @@ FONTS_CSS = os.path.join(SKILL, "fonts", "fonts.css")
 INDIGO, INK, LAVENDER = "#665FE9", "#000000", "#F6F5FF"
 COVER_BG = "linear-gradient(180deg,#F4D9EE 0%,#F8E6DA 45%,#FFF3D6 100%)"
 CLOSING_BG = "linear-gradient(180deg,#FFF8E3 0%,#F6EEFA 100%)"
-M_COVER, M_INNER = 0.05, 0.08  # márgenes como fracción del borde
+M_COVER, M_INNER = 0.08, 0.08  # márgenes como fracción del borde (todas las piezas al 8%)
 
 CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
@@ -81,7 +81,7 @@ def build(spec_path, out_dir):
     css = CSS % dict(W=W, H=H, LAV=LAVENDER, INK=INK, INDIGO=INDIGO, COVER_BG=COVER_BG,
                      CLOSING_BG=CLOSING_BG, logo=96 * sx, foot=30 * sx, kick=38 * sx, light=80 * sx,
                      heavy=96 * sx, dark=104 * sx, body=48 * sx, bodyw=860 * sx,
-                     dot=16 * sx, dotgap=12 * sx, dotoff=40 * sx)
+                     dot=16 * sx, dotgap=12 * sx, dotoff=0)
     css = open(FONTS_CSS).read() + css
     logo = f'<img class="logo" src="file://{LOGO}">'
     arrow = ('<svg width="70" height="20" viewBox="0 0 70 20" style="vertical-align:middle;margin-left:14px">'
