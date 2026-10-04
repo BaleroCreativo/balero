@@ -25,6 +25,9 @@ Reglas confirmadas por la dueña de la marca durante el diseño del carrusel de 
 | Portada: degradado vertical | `#F4D9EE` → `#F8E6DA` → `#FFF3D6` (rosa a crema) |
 | Cierre: degradado vertical | `#FFF8E3` → `#F6EEFA` |
 
+### Fondos alternativos (4 oct 2026)
+Para variar un carrusel sin salirse de la marca, cada slide acepta `"bg"` en el JSON: `lila` (plano), `lila-profundo` (lavanda que se oscurece a morado suave abajo, `#DDD9FB`), `lila-diagonal`, `blanco` (`#FAFAFA`), `portada-diagonal` y `cierre-diagonal` (los degradados de portada y cierre en ángulo). Sin `bg` se usa el fondo clásico. Combínalos alternando, por ejemplo: portada diagonal, lila profundo, blanco, lila diagonal, cierre diagonal.
+
 El índigo sobre lavanda da 4,4:1: úsalo solo en texto grande (titulares y énfasis de 40 px o más).
 
 ## Tipografías
