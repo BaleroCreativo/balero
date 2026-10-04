@@ -9,3 +9,4 @@ build/
 .cache/
 *.log
 .claude/skills/ui-ux-pro-max/scripts/__pycache__/
+.claude/skills/balero-imagenes/fonts/

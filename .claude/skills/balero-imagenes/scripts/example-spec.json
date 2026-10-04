@@ -1,0 +1,36 @@
+{
+  "name": "Balero-carrusel-linkedin",
+  "width": 1080,
+  "height": 1440,
+  "slides": [
+    {
+      "type": "cover",
+      "light": "+6 años, +150 proyectos:",
+      "heavy": "Lo que ya no haríamos igual",
+      "subtitle": "5 lecciones que nos costó aprender.",
+      "illustration": "ilustraciones/bars-cut.png",
+      "swipe": true
+    },
+    {
+      "type": "lesson", "number": 1, "layout": "bottom",
+      "title": "Medíamos clics. Hoy medimos conversaciones.",
+      "body": "Un clic es barato y luce bien en un reporte. Una <b>conversación de WhatsApp</b> es lo que se convierte en cita.",
+      "illustration": "ilustraciones/target-cut.png"
+    },
+    {
+      "type": "lesson", "number": 2, "layout": "top",
+      "title": "No sabíamos de dónde venía cada lead.",
+      "body": "Sin la fuente en el CRM no sabes qué canal funciona. La regla: <b>cada lead entra con su origen.</b>",
+      "illustration": "ilustraciones/clip-cut.png"
+    },
+    {
+      "type": "closing",
+      "light": "¿Quieres trabajar con una agencia que ya se equivocó",
+      "heavy": "Por ti, no contigo?",
+      "offer_bold": "Diagnóstico",
+      "offer_accent": "gratis de 15 minutos.",
+      "action": "Escríbenos por mensaje directo",
+      "illustration": "ilustraciones/bubbles-cut.png"
+    }
+  ]
+}
