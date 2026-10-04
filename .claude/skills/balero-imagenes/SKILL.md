@@ -41,12 +41,13 @@ El índigo sobre lavanda da 4,4:1: úsalo solo en texto grande (titulares y énf
 
 ## Composición
 - Una idea por slide y una ilustración 3D por slide.
+- **Puntos de progreso: permitidos (opcionales).** Arriba a la izquierda, alineados con el logo, punto activo en índigo `#665FE9` y los demás en `#DAD7F5`. Se activan con `"progress_dots": true` en el JSON.
 - Alternar composiciones en lecciones consecutivas: ilustración abajo a la derecha, e ilustración arriba a la izquierda con el texto más abajo. Evita que todos los slides se vean iguales.
 - Portada: línea fina + titular fuerte en la mitad inferior, ilustración arriba a la derecha, subtítulo, "DESLIZA" con flecha larga solo en la portada.
 - Cierre: pregunta en Poppins (línea fina + índigo extranegrita), oferta en Source Sans Pro (negrita, con "gratis de 15 minutos" en índigo), acción en texto plano.
 
 ## Lo que Balero NO usa
-Subtítulos en forma de píldora o "pill", botones, puntos de progreso, números decorativos de fondo, ni fuentes distintas de Poppins y Source Sans Pro (cuidado con símbolos como flechas que caen a otra fuente: dibújalos en SVG).
+Subtítulos en forma de píldora o "pill", botones, números decorativos de fondo, ni fuentes distintas de Poppins y Source Sans Pro (cuidado con símbolos como flechas que caen a otra fuente: dibújalos en SVG).
 
 ## Ilustraciones 3D
 Estilo: objetos tipo arcilla brillante e inflada, como un emoji 3D, en índigo, amarillo y blanco, fondo liso lavanda `#F6F5FF`, un solo objeto por imagen, sin texto ni logos. Prompt base y banco de objetos en `references/ilustraciones-3d.md`. Se generan con la herramienta `generate-image` de Canva (formato cuadrado) y se marcan siempre como **borrador de IA**: las miniaturas son de 200 px, y para publicar hay que descargar la versión grande desde Canva.
@@ -63,7 +64,7 @@ Frases cortas y directas, cercanas y un poco provocadoras. Lema: "No prometemos 
 - [ ] Tamaño de cada PNG exacto (p. ej. 1080×1440).
 - [ ] Márgenes medidos: portada 5%, interiores 8% (el script imprime la caja de contenido).
 - [ ] Ninguna ilustración pisa texto ni logo.
-- [ ] Sin pills, botones, puntos de progreso ni números de fondo.
+- [ ] Sin pills, botones ni números de fondo (los puntos de progreso sí se permiten).
 - [ ] Titulares sin viudas; contraste correcto.
 - [ ] Ilustraciones marcadas como borrador si son de baja resolución.
 

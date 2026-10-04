@@ -46,6 +46,9 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .body b{font-weight:700;color:%(INDIGO)s}
 .body .strong{font-weight:700;color:%(INK)s}
 .ill{position:absolute}
+.dots{position:absolute;left:var(--mx);top:calc(var(--my) + %(dotoff)dpx);display:flex;gap:%(dotgap)dpx}
+.dots i{width:%(dot)dpx;height:%(dot)dpx;border-radius:50%%;background:#DAD7F5}
+.dots i.on{background:%(INDIGO)s}
 """
 
 
@@ -76,7 +79,8 @@ def build(spec_path, out_dir):
 
     css = CSS % dict(W=W, H=H, LAV=LAVENDER, INK=INK, INDIGO=INDIGO, COVER_BG=COVER_BG,
                      CLOSING_BG=CLOSING_BG, logo=96 * sx, foot=30 * sx, kick=38 * sx, light=80 * sx,
-                     heavy=96 * sx, dark=104 * sx, body=48 * sx, bodyw=860 * sx)
+                     heavy=96 * sx, dark=104 * sx, body=48 * sx, bodyw=860 * sx,
+                     dot=16 * sx, dotgap=12 * sx, dotoff=40 * sx)
     css = open(FONTS_CSS).read() + css
     logo = f'<img class="logo" src="file://{LOGO}">'
     arrow = ('<svg width="70" height="20" viewBox="0 0 70 20" style="vertical-align:middle;margin-left:14px">'
@@ -88,13 +92,21 @@ def build(spec_path, out_dir):
     def img(path, style):
         return f'<img class="ill" src="file://{ill(path)}" style="{style}">' if path else ""
 
+    total = len(spec["slides"])
+    show_dots = spec.get("progress_dots", False)
+
+    def dots(i):
+        if not show_dots:
+            return ""
+        return '<div class="dots">' + "".join(f'<i class="{"on" if k == i else ""}"></i>' for k in range(1, total + 1)) + "</div>"
+
     slides = []
-    for s in spec["slides"]:
+    for idx, s in enumerate(spec["slides"], 1):
         t = s["type"]
         if t == "cover":
             m = M_COVER
             slides.append(
-                f'<div class="slide cover" style="{style_vars(m)}">{logo}'
+                f'<div class="slide cover" style="{style_vars(m)}">{logo}{dots(idx)}'
                 f'{img(s.get("illustration"), f"left:{390*sx}px;top:{105*sy}px;width:{580*sx}px")}'
                 f'<div class="pad" style="top:{690*sy}px"><div class="light">{s["light"]}</div>'
                 f'<div class="dark" style="margin-top:8px">{s["heavy"]}</div></div>'
@@ -110,7 +122,7 @@ def build(spec_path, out_dir):
                 pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*m)}px;width:{420*sx}px")
                 top = 270 * sy
             slides.append(
-                f'<div class="slide" style="{style_vars(m)}">{logo}{pic}'
+                f'<div class="slide" style="{style_vars(m)}">{logo}{dots(idx)}{pic}'
                 f'<div class="pad" style="top:{top}px"><div class="kick">Lección {s["number"]}</div>'
                 f'<div class="heavy" style="margin-top:34px">{s["title"]}</div>'
                 f'<div class="body" style="margin-top:56px">{s["body"]}</div></div>'
@@ -118,7 +130,7 @@ def build(spec_path, out_dir):
         elif t == "closing":
             m = M_INNER
             slides.append(
-                f'<div class="slide closing" style="{style_vars(m)}">{logo}'
+                f'<div class="slide closing" style="{style_vars(m)}">{logo}{dots(idx)}'
                 f'{img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*m)}px;width:{240*sx}px")}'
                 f'<div class="pad" style="top:{400*sy}px"><div class="light" style="font-size:{72*sx}px">{s["light"]}</div>'
                 f'<div class="heavy" style="margin-top:10px;font-size:{100*sx}px">{s["heavy"]}</div></div>'
