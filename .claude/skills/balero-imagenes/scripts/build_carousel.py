@@ -66,6 +66,7 @@ def find_chrome():
 
 
 def build(spec_path, out_dir):
+    out_dir = os.path.abspath(out_dir)
     spec = json.load(open(spec_path, encoding="utf-8"))
     base = os.path.dirname(os.path.abspath(spec_path))
     W, H = spec.get("width", 1080), spec.get("height", 1440)
@@ -116,8 +117,8 @@ def build(spec_path, out_dir):
         elif t == "lesson":
             m = M_INNER
             if s.get("layout") == "top":
-                pic = img(s.get("illustration"), f"left:{round(W*m)}px;top:{round(H*m)}px;width:{400*sx}px")
-                top = 580 * sy
+                pic = img(s.get("illustration"), f"left:{round(W*m)}px;top:{round(H*m) + 64*sy}px;width:{380*sx}px")  # debajo de los puntos de progreso
+                top = 600 * sy
             else:
                 pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*m)}px;width:{420*sx}px")
                 top = 270 * sy
@@ -174,6 +175,8 @@ def verify(out_dir, pdf, n, W, H):
         names = subprocess.run(["pdffonts", pdf], capture_output=True, text=True).stdout.splitlines()[2:]
         fonts = sorted({ln.split()[0].split("+")[-1] for ln in names if ln.strip()})
         bad = [f for f in fonts if not f.startswith(("Poppins", "SourceSansPro"))]
+        if not fonts:
+            sys.exit("ERROR: el PDF salió sin texto; revisa las rutas (salida y spec).")
         print("Fuentes en el PDF:", ", ".join(fonts))
         print("OK: solo Poppins y Source Sans Pro" if not bad else f"ATENCIÓN, fuentes ajenas: {bad}")
     if shutil.which("convert"):
