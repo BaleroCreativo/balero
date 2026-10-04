@@ -36,12 +36,12 @@ El índigo sobre lavanda da 4,4:1: úsalo solo en texto grande (titulares y énf
 
 ## Formatos y márgenes
 - **Formato por defecto: 1080×1440** (carruseles). Otros: 1080×1350 (post Instagram 4:5), 1080×1920 (stories).
-- **Márgenes: 8% del borde en todas las piezas, portada incluida** (86 px laterales, 115 px arriba y abajo en 1080×1440). Texto, logo, pie, puntos de progreso e ilustraciones quedan dentro del margen.
+- **Márgenes: 8% del borde a los lados y 6% arriba y abajo, en todas las piezas, portada incluida** (86 px laterales y 86 px verticales en 1080×1440). Texto, logo, pie, puntos de progreso e ilustraciones quedan dentro del margen.
 - Logo arriba a la derecha, 96 px de ancho, sobre el margen. Archivo: `assets/logo-balero.png` (negro, fondo transparente).
 
 ## Composición
 - Una idea por slide y una ilustración 3D por slide.
-- **Puntos de progreso: permitidos (opcionales).** Arriba a la izquierda, con su borde superior sobre la línea del margen (misma altura que el borde superior del logo), punto activo en índigo `#665FE9` y los demás en `#DAD7F5`. Se activan con `"progress_dots": true` en el JSON.
+- **Puntos de progreso: permitidos (opcionales).** Arriba a la izquierda, con su borde superior sobre la línea del margen superior (misma altura que el borde superior del logo), punto activo en índigo `#665FE9` y los demás en `#DAD7F5`. Se activan con `"progress_dots": true` en el JSON.
 - Alternar composiciones en lecciones consecutivas: ilustración abajo a la derecha, e ilustración arriba a la izquierda con el texto más abajo. Evita que todos los slides se vean iguales.
 - Portada: línea fina + titular fuerte en la mitad inferior, ilustración arriba a la derecha, subtítulo, "DESLIZA" con flecha larga solo en la portada.
 - Cierre: pregunta en Poppins (línea fina + índigo extranegrita), oferta en Source Sans Pro (negrita, con "gratis de 15 minutos" en índigo), acción en texto plano.
@@ -62,7 +62,7 @@ Frases cortas y directas, cercanas y un poco provocadoras. Lema: "No prometemos 
 ## Lista de verificación antes de entregar
 - [ ] `pdffonts salida/*.pdf` muestra solo Poppins y SourceSansPro (ninguna otra, ni DejaVu ni serif).
 - [ ] Tamaño de cada PNG exacto (p. ej. 1080×1440).
-- [ ] Márgenes medidos al 8% en todos los slides (el script imprime la caja de contenido: debe empezar en x≈86 e y≈115).
+- [ ] Márgenes medidos: 8% laterales y 6% verticales en todos los slides (el script imprime la caja de contenido: debe empezar en x≈86 e y≈86 en 1080×1440).
 - [ ] Ninguna ilustración pisa texto ni logo.
 - [ ] Sin pills, botones ni números de fondo (los puntos de progreso sí se permiten).
 - [ ] Titulares sin viudas; contraste correcto.

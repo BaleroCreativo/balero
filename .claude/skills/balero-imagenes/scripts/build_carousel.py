@@ -22,7 +22,8 @@ FONTS_CSS = os.path.join(SKILL, "fonts", "fonts.css")
 INDIGO, INK, LAVENDER = "#665FE9", "#000000", "#F6F5FF"
 COVER_BG = "linear-gradient(180deg,#F4D9EE 0%,#F8E6DA 45%,#FFF3D6 100%)"
 CLOSING_BG = "linear-gradient(180deg,#FFF8E3 0%,#F6EEFA 100%)"
-M_COVER, M_INNER = 0.08, 0.08  # márgenes como fracción del borde (todas las piezas al 8%)
+MX, MY = 0.08, 0.06  # márgenes como fracción del borde: 8% laterales, 6% vertical (todas las piezas)
+M_COVER = M_INNER = MX
 
 CSS = """
 *{box-sizing:border-box;margin:0;padding:0}
@@ -88,7 +89,7 @@ def build(spec_path, out_dir):
              '<path d="M0 10H66M58 2l8 8-8 8" fill="none" stroke="#000" stroke-width="2"/></svg>')
 
     def style_vars(m):
-        return f"--mx:{round(W * m)}px;--my:{round(H * m)}px"
+        return f"--mx:{round(W * m)}px;--my:{round(H * MY)}px"
 
     def img(path, style):
         return f'<img class="ill" src="file://{ill(path)}" style="{style}">' if path else ""
@@ -117,10 +118,10 @@ def build(spec_path, out_dir):
         elif t == "lesson":
             m = M_INNER
             if s.get("layout") == "top":
-                pic = img(s.get("illustration"), f"left:{round(W*m)}px;top:{round(H*m) + 64*sy}px;width:{380*sx}px")  # debajo de los puntos de progreso
+                pic = img(s.get("illustration"), f"left:{round(W*m)}px;top:{round(H*MY) + 64*sy}px;width:{380*sx}px")  # debajo de los puntos de progreso
                 top = 600 * sy
             else:
-                pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*m)}px;width:{420*sx}px")
+                pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{420*sx}px")
                 top = 270 * sy
             slides.append(
                 f'<div class="slide" style="{style_vars(m)}">{logo}{dots(idx)}{pic}'
@@ -132,7 +133,7 @@ def build(spec_path, out_dir):
             m = M_INNER
             slides.append(
                 f'<div class="slide closing" style="{style_vars(m)}">{logo}{dots(idx)}'
-                f'{img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*m)}px;width:{240*sx}px")}'
+                f'{img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{240*sx}px")}'
                 f'<div class="pad" style="top:{400*sy}px"><div class="light" style="font-size:{72*sx}px">{s["light"]}</div>'
                 f'<div class="heavy" style="margin-top:10px;font-size:{100*sx}px">{s["heavy"]}</div></div>'
                 f'<div class="pad" style="top:{940*sy}px"><div class="body" style="font-weight:700">'
