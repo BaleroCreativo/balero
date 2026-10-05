@@ -58,7 +58,8 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .body{font-family:'Source Sans Pro';font-weight:400;font-size:%(body)dpx;line-height:1.3;max-width:%(bodyw)dpx}
 .body b{font-weight:700;color:%(INDIGO)s}
 .body .strong{font-weight:700;color:%(INK)s}
-.ill{position:absolute}
+.ill{position:absolute;filter:drop-shadow(0 26px 30px rgba(70,58,170,.20))}
+.inv .ill{filter:none}
 .dots{position:absolute;left:var(--mx);top:calc(var(--my) + %(dotoff)dpx);display:flex;gap:%(dotgap)dpx}
 .dots i{width:%(dot)dpx;height:%(dot)dpx;border-radius:50%%;background:#DAD7F5}
 .dots i.on{background:%(INDIGO)s}

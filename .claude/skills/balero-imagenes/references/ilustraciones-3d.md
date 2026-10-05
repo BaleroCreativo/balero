@@ -40,3 +40,11 @@ Canva entrega las ilustraciones en 200 px; si se estiran con un resize normal se
 3. En objetos blancos (celular, robot, megáfono, calendario, portapapeles) el recorte se come brillos blancos del borde. Cerrar los huecos del alfa:
    `convert recorte.png -resize 800x800 -alpha extract -threshold 50% -morphology Close Disk:20 -blur 0x1 mascara.png` y volver a aplicar la máscara a la imagen ampliada (`-compose CopyOpacity`). El celular necesita `Disk:60`.
 4. Guardar a 1200 px. El generador exporta además `slide-N@2x.png` (2160×2880) para publicar en alta resolución.
+
+## Método actual: fondo negro (recomendado desde el 5 oct 2026)
+Recortar iconos sobre fondo lavanda come las partes blancas y deja huecos. Método que sí funciona:
+1. Subir el icono de referencia a Canva (`create-upload-url` y POST de los bytes) y pedir con `generate-image` (`imageReferences`) "same exact 3D icon … on a completely plain pure black (#000000) background, no shadow, nothing cropped". Conserva el diseño y el estilo.
+2. `scripts/blackkey.py entrada.jpg salida.png`: amplía x4 con Real-ESRGAN y recorta por luminancia (el negro puro se separa limpio de blancos, amarillos e índigos).
+3. Quitar también las zonas negras grandes encerradas dentro del objeto (por ejemplo, entre las campanas del reloj): componentes de píxeles con máximo canal menor a 14 y área mayor a 500.
+4. Guardar a 1200 px como `nombre-cut.png`. Sirve igual sobre fondo claro (el generador añade una sombra suave con `drop-shadow`) y sobre negro (sin sombra).
+Ya no se usan las variantes `*-dark.png` ni las máscaras con relleno de huecos.
