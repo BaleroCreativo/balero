@@ -81,3 +81,6 @@ Frases cortas y directas, cercanas y un poco provocadoras. Lema: "No prometemos 
 
 ## Ajustes de composición por slide (opcionales, en px sobre 1080×1440)
 Cuando un slide quede vacío o apretado, el JSON acepta estos campos: portada `ill_x`, `ill_y`, `ill_w`, `title_y`, `sub_y`; lección `text_y`, `title_px`, `body_px`, `body_w`, `ill_w`; cierre `text_y`, `light_px`, `heavy_px`, `offer_y`, `ill_w`. Reglas que funcionaron: ilustración de 460 a 700 px en piezas de pocos slides, titular de 104 a 124 px, y reducir `body_w` para que el texto no choque con la ilustración.
+
+## Fondos oscuros de impacto (4 oct 2026)
+`"bg": "negro"` pone el slide en `#000000` y el generador invierte solo textos, logo, flecha y puntos. Sirve para portadas y cierres que paren el scroll y para alternar ritmo con lila (negro, lila, negro…). Reglas: usar las ilustraciones `*-dark.png` (sin la sombra lavanda, que sobre negro se ve como mancha); titulares en índigo o blanco; texto de apoyo en `#F6F5FF`; acento de énfasis `#A9A4F7`. En la portada, `light_px` y `heavy_px` agrandan el titular (probado: 78 y 124). Para titulares largos usa `layout: "top"` y no más de dos líneas a 124 px.

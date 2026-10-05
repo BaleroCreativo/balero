@@ -24,6 +24,7 @@ COVER_BG = "linear-gradient(180deg,#F4D9EE 0%,#F8E6DA 45%,#FFF3D6 100%)"
 CLOSING_BG = "linear-gradient(180deg,#FFF8E3 0%,#F6EEFA 100%)"
 MX, MY = 0.08, 0.06  # márgenes como fracción del borde: 8% laterales, 6% vertical (todas las piezas)
 M_COVER = M_INNER = MX
+INV_BG = {"negro"}  # fondos oscuros: el generador invierte textos, logo y puntos
 
 # Fondos alternativos (clave "bg" en cada slide del JSON). Sin "bg" se usa el fondo clásico de cada tipo.
 BACKGROUNDS = {
@@ -32,6 +33,7 @@ BACKGROUNDS = {
     "lila-diagonal": "linear-gradient(160deg,#F6F5FF 0%,#EFEDFF 55%,#D6D1F8 100%)",    # igual, en diagonal
     "blanco": "#FAFAFA",                                                               # blanco suave
     "portada-diagonal": "linear-gradient(155deg,#F4D9EE 0%,#F8E6DA 50%,#FFF3D6 100%)", # portada en diagonal
+    "negro": "#000000",                                                                # fondo de impacto (texto claro automático)
     "cierre-diagonal": "linear-gradient(150deg,#FFF8E3 0%,#F6EEFA 60%,#E4DCFA 100%)",  # cierre en diagonal con morado abajo
 }
 
@@ -60,6 +62,13 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .dots{position:absolute;left:var(--mx);top:calc(var(--my) + %(dotoff)dpx);display:flex;gap:%(dotgap)dpx}
 .dots i{width:%(dot)dpx;height:%(dot)dpx;border-radius:50%%;background:#DAD7F5}
 .dots i.on{background:%(INDIGO)s}
+.inv .light,.inv .kick,.inv .foot,.inv .next,.inv .body{color:#F6F5FF}
+.inv .dark{color:#fff}
+.inv .body b{color:#A9A4F7}
+.inv .logo{filter:invert(1)}
+.inv .dots i{background:#3A3A4A}
+.inv .dots i.on{background:#fff}
+.inv svg path{stroke:#fff}
 """
 
 
@@ -119,14 +128,15 @@ def build(spec_path, out_dir):
             return s.get(key, default)
         bg = BACKGROUNDS.get(s.get("bg", ""))
         bgcss = f";background:{bg}" if bg else ""
+        inv = " inv" if s.get("bg") in INV_BG else ""
         if t == "cover":
             m = M_COVER
             cover_ill = f"left:{g('ill_x', 390)*sx}px;top:{g('ill_y', 105)*sy}px;width:{g('ill_w', 580)*sx}px"
             slides.append(
-                f'<div class="slide cover" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}'
+                f'<div class="slide cover{inv}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}'
                 f'{img(s.get("illustration"), cover_ill)}'
-                f'<div class="pad" style="top:{g("title_y", 690)*sy}px"><div class="light">{s["light"]}</div>'
-                f'<div class="dark" style="margin-top:8px">{s["heavy"]}</div></div>'
+                f'<div class="pad" style="top:{g("title_y", 690)*sy}px"><div class="light" style="font-size:{g("light_px", 80)*sx}px">{s["light"]}</div>'
+                f'<div class="dark" style="margin-top:8px;font-size:{g("heavy_px", 104)*sx}px">{s["heavy"]}</div></div>'
                 f'<div class="body" style="position:absolute;left:var(--mx);top:{g("sub_y", 1170)*sy}px">{s.get("subtitle","")}</div>'
                 f'<div class="foot">Balero Creativo</div>'
                 f'{"<div class=next>Desliza" + arrow + "</div>" if s.get("swipe") else ""}</div>')
@@ -134,13 +144,13 @@ def build(spec_path, out_dir):
             kick_text = s.get("kicker", f"Lección {s.get('number', '')}")  # "kicker" opcional: p. ej. "Dato 1"
             m = M_INNER
             if s.get("layout") == "top":
-                pic = img(s.get("illustration"), f"left:{round(W*m)}px;top:{round(H*MY) + 64*sy}px;width:{380*sx}px")  # debajo de los puntos de progreso
-                top = 600 * sy
+                pic = img(s.get("illustration"), f"left:{round(W*m)}px;top:{round(H*MY) + 64*sy}px;width:{g('ill_w', 380)*sx}px")  # debajo de los puntos de progreso
+                top = g("text_y", 600) * sy
             else:
                 pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{g('ill_w', 420)*sx}px")
                 top = g("text_y", 270) * sy
             slides.append(
-                f'<div class="slide" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}'
+                f'<div class="slide{inv}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}'
                 f'<div class="pad" style="top:{top}px"><div class="kick">{kick_text}</div>'
                 f'<div class="heavy" style="margin-top:34px;font-size:{g("title_px", 96)*sx}px">{s["title"]}</div>'
                 f'<div class="body" style="margin-top:56px;font-size:{g("body_px", 48)*sx}px;max-width:{g("body_w", 860)*sx}px">{s["body"]}</div></div>'
@@ -151,7 +161,7 @@ def build(spec_path, out_dir):
             star = ('<svg width="40" height="40" viewBox="0 0 24 24"><path fill="%s" d="M12 1.8l3 6.6 7.2.8-5.4 4.9 1.5 7.1L12 17.5 5.7 21.2l1.5-7.1L1.8 9.2 9 8.4z"/></svg>' % INDIGO)
             pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{380*sx}px")
             slides.append(
-                f'<div class="slide" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}'
+                f'<div class="slide{inv}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}'
                 f'<div class="pad" style="top:{270*sy}px"><div class="kick">{s.get("kicker", "Reseña en Google")}</div>'
                 f'<div style="display:flex;gap:8px;margin-top:30px">{star * int(s.get("stars", 5))}</div>'
                 f'<div class="body" style="margin-top:44px;font-size:{54*sx}px;line-height:1.28;max-width:{900*sx}px">“{s["quote"]}”</div>'
@@ -161,7 +171,7 @@ def build(spec_path, out_dir):
             m = M_INNER
             closing_ill = f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{g('ill_w', 240)*sx}px"
             slides.append(
-                f'<div class="slide closing" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}'
+                f'<div class="slide closing{inv}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}'
                 f'{img(s.get("illustration"), closing_ill)}'
                 f'<div class="pad" style="top:{g("text_y", 400)*sy}px"><div class="light" style="font-size:{g("light_px", 72)*sx}px">{s["light"]}</div>'
                 f'<div class="heavy" style="margin-top:10px;font-size:{g("heavy_px", 100)*sx}px">{s["heavy"]}</div></div>'
