@@ -24,7 +24,7 @@ COVER_BG = "linear-gradient(180deg,#F4D9EE 0%,#F8E6DA 45%,#FFF3D6 100%)"
 CLOSING_BG = "linear-gradient(180deg,#FFF8E3 0%,#F6EEFA 100%)"
 MX, MY = 0.08, 0.06  # márgenes como fracción del borde: 8% laterales, 6% vertical (todas las piezas)
 M_COVER = M_INNER = MX
-INV_BG = {"negro"}  # fondos oscuros: el generador invierte textos, logo y puntos
+INV_BG = {"negro", "indigo"}  # fondos oscuros: el generador invierte textos, logo y puntos
 
 # Fondos alternativos (clave "bg" en cada slide del JSON). Sin "bg" se usa el fondo clásico de cada tipo.
 BACKGROUNDS = {
@@ -33,6 +33,7 @@ BACKGROUNDS = {
     "lila-diagonal": "linear-gradient(160deg,#F6F5FF 0%,#EFEDFF 55%,#D6D1F8 100%)",    # igual, en diagonal
     "blanco": "#FAFAFA",                                                               # blanco suave
     "portada-diagonal": "linear-gradient(155deg,#F4D9EE 0%,#F8E6DA 50%,#FFF3D6 100%)", # portada en diagonal
+    "indigo": "#665FE9",                                                               # portada de impacto: índigo pleno (texto claro automático)
     "negro": "#000000",                                                                # fondo de impacto (texto claro automático)
     "cierre-diagonal": "linear-gradient(150deg,#FFF8E3 0%,#F6EEFA 60%,#E4DCFA 100%)",  # cierre en diagonal con morado abajo
 }
@@ -60,6 +61,13 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .body .strong{font-weight:700;color:%(INK)s}
 .ill{position:absolute;filter:drop-shadow(0 26px 30px rgba(70,58,170,.20))}
 .inv .ill{filter:none}
+.poster-t{position:absolute;left:var(--mx);right:calc(var(--mx)*.4);font-family:'Poppins';font-weight:800;
+  text-transform:uppercase;line-height:.9;letter-spacing:-0.055em;color:#fff;z-index:2;white-space:nowrap}
+.inv .next,.inv .foot{z-index:4}
+.poster-t span.y{color:#FFD23F}.poster-t span.k{color:#000}.poster-t span.l{font-weight:300;letter-spacing:-0.03em}
+.poster-t span.box{background:#000;color:#fff;padding:0 .12em;display:inline-block;transform:rotate(-2deg)}
+.poster-t span.boxy{background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(1.5deg)}
+.poster-s{position:absolute;left:var(--mx);z-index:2;font-family:'Source Sans Pro';font-weight:600;color:#fff}
 .dots{position:absolute;left:var(--mx);top:calc(var(--my) + %(dotoff)dpx);display:flex;gap:%(dotgap)dpx}
 .dots i{width:%(dot)dpx;height:%(dot)dpx;border-radius:50%%;background:#DAD7F5}
 .dots i.on{background:%(INDIGO)s}
@@ -141,6 +149,20 @@ def build(spec_path, out_dir):
                 f'<div class="body" style="position:absolute;left:var(--mx);top:{g("sub_y", 1170)*sy}px">{s.get("subtitle","")}</div>'
                 f'<div class="foot">Balero Creativo</div>'
                 f'{"<div class=next>Desliza" + arrow + "</div>" if s.get("swipe") else ""}</div>')
+        elif t == "poster":
+            # Portada de impacto: titular gigante (HTML libre; spans .y .k .l .box .boxy), icono enorme que sangra el borde.
+            m = M_COVER
+            rot = g("ill_rot", 0)
+            pz = 3 if s.get("ill_front") else 1
+            pic = (f'<img class="ill" src="file://{ill(s.get("illustration"))}" style="z-index:{pz};left:{g("ill_x", 300)*sx}px;'
+                   f'top:{g("ill_y", 600)*sy}px;width:{g("ill_w", 900)*sx}px;transform:rotate({rot}deg);'
+                   f'filter:drop-shadow(0 40px 50px rgba(0,0,0,.35))">')
+            slides.append(
+                f'<div class="slide cover inv" style="{style_vars(m)}{bgcss or ";background:#665FE9"}">{logo}{dots(idx)}{pic}'
+                f'<div class="poster-t" style="top:{g("title_y", 170)*sy}px;font-size:{g("title_px", 190)*sx}px">{s["title"]}</div>'
+                f'<div class="poster-s" style="top:{g("sub_y", 1180)*sy}px;font-size:{g("sub_px", 46)*sx}px;max-width:{g("sub_w", 600)*sx}px">{s.get("subtitle","")}'
+                f'{"<div style=font-family:Poppins;font-weight:300;font-size:" + str(30*sx) + "px;text-transform:uppercase;margin-top:30px>Desliza" + arrow + "</div>" if s.get("swipe") else ""}</div>'
+                f'<div class="foot">Balero Creativo</div></div>')
         elif t == "lesson":
             kick_text = s.get("kicker", f"Lección {s.get('number', '')}")  # "kicker" opcional: p. ej. "Dato 1"
             m = M_INNER
