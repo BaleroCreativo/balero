@@ -115,16 +115,19 @@ def build(spec_path, out_dir):
     slides = []
     for idx, s in enumerate(spec["slides"], 1):
         t = s["type"]
+        def g(key, default):  # ajuste opcional por slide en el JSON (px sobre 1080x1440)
+            return s.get(key, default)
         bg = BACKGROUNDS.get(s.get("bg", ""))
         bgcss = f";background:{bg}" if bg else ""
         if t == "cover":
             m = M_COVER
+            cover_ill = f"left:{g('ill_x', 390)*sx}px;top:{g('ill_y', 105)*sy}px;width:{g('ill_w', 580)*sx}px"
             slides.append(
                 f'<div class="slide cover" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}'
-                f'{img(s.get("illustration"), f"left:{390*sx}px;top:{105*sy}px;width:{580*sx}px")}'
-                f'<div class="pad" style="top:{690*sy}px"><div class="light">{s["light"]}</div>'
+                f'{img(s.get("illustration"), cover_ill)}'
+                f'<div class="pad" style="top:{g("title_y", 690)*sy}px"><div class="light">{s["light"]}</div>'
                 f'<div class="dark" style="margin-top:8px">{s["heavy"]}</div></div>'
-                f'<div class="body" style="position:absolute;left:var(--mx);top:{1170*sy}px">{s.get("subtitle","")}</div>'
+                f'<div class="body" style="position:absolute;left:var(--mx);top:{g("sub_y", 1170)*sy}px">{s.get("subtitle","")}</div>'
                 f'<div class="foot">Balero Creativo</div>'
                 f'{"<div class=next>Desliza" + arrow + "</div>" if s.get("swipe") else ""}</div>')
         elif t == "lesson":
@@ -134,13 +137,13 @@ def build(spec_path, out_dir):
                 pic = img(s.get("illustration"), f"left:{round(W*m)}px;top:{round(H*MY) + 64*sy}px;width:{380*sx}px")  # debajo de los puntos de progreso
                 top = 600 * sy
             else:
-                pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{420*sx}px")
-                top = 270 * sy
+                pic = img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{g('ill_w', 420)*sx}px")
+                top = g("text_y", 270) * sy
             slides.append(
                 f'<div class="slide" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}'
                 f'<div class="pad" style="top:{top}px"><div class="kick">{kick_text}</div>'
-                f'<div class="heavy" style="margin-top:34px">{s["title"]}</div>'
-                f'<div class="body" style="margin-top:56px">{s["body"]}</div></div>'
+                f'<div class="heavy" style="margin-top:34px;font-size:{g("title_px", 96)*sx}px">{s["title"]}</div>'
+                f'<div class="body" style="margin-top:56px;font-size:{g("body_px", 48)*sx}px;max-width:{g("body_w", 860)*sx}px">{s["body"]}</div></div>'
                 f'<div class="foot">Balero Creativo</div></div>')
         elif t == "quote":
             # Reseña / testimonio: rótulo, 5 estrellas SVG (índigo), cita en Source Sans Pro, autor en Poppins Light
@@ -156,12 +159,13 @@ def build(spec_path, out_dir):
                 f'<div class="foot">Balero Creativo</div></div>')
         elif t == "closing":
             m = M_INNER
+            closing_ill = f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{g('ill_w', 240)*sx}px"
             slides.append(
                 f'<div class="slide closing" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}'
-                f'{img(s.get("illustration"), f"right:{round(W*m)}px;bottom:{round(H*MY)}px;width:{240*sx}px")}'
-                f'<div class="pad" style="top:{400*sy}px"><div class="light" style="font-size:{72*sx}px">{s["light"]}</div>'
-                f'<div class="heavy" style="margin-top:10px;font-size:{100*sx}px">{s["heavy"]}</div></div>'
-                f'<div class="pad" style="top:{940*sy}px"><div class="body" style="font-weight:700">'
+                f'{img(s.get("illustration"), closing_ill)}'
+                f'<div class="pad" style="top:{g("text_y", 400)*sy}px"><div class="light" style="font-size:{g("light_px", 72)*sx}px">{s["light"]}</div>'
+                f'<div class="heavy" style="margin-top:10px;font-size:{g("heavy_px", 100)*sx}px">{s["heavy"]}</div></div>'
+                f'<div class="pad" style="top:{g("offer_y", 940)*sy}px"><div class="body" style="font-weight:700">'
                 f'{s.get("offer_bold","")} <span style="color:{INDIGO}">{s.get("offer_accent","")}</span></div>'
                 f'<div class="body" style="margin-top:6px">{s.get("action","")}</div></div>'
                 f'<div class="foot">Balero Creativo</div></div>')

@@ -78,3 +78,6 @@ Frases cortas y directas, cercanas y un poco provocadoras. Lema: "No prometemos 
 - Para PNG de tamaño exacto usa `headless_shell` con `--window-size`; el Chrome normal en modo headless recorta alto por la barra.
 - Las ilustraciones de Canva llegan con fondo liso: se recortan con ImageMagick (`cutout.sh`) antes de colocarlas.
 - Los enlaces de trabajo de Canva son largos: cópialos exactos al consultar el estado del trabajo.
+
+## Ajustes de composición por slide (opcionales, en px sobre 1080×1440)
+Cuando un slide quede vacío o apretado, el JSON acepta estos campos: portada `ill_x`, `ill_y`, `ill_w`, `title_y`, `sub_y`; lección `text_y`, `title_px`, `body_px`, `body_w`, `ill_w`; cierre `text_y`, `light_px`, `heavy_px`, `offer_y`, `ill_w`. Reglas que funcionaron: ilustración de 460 a 700 px en piezas de pocos slides, titular de 104 a 124 px, y reducir `body_w` para que el texto no choque con la ilustración.
