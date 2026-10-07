@@ -45,7 +45,7 @@ Guarda `clientes/<slug>/ficha.md` con la estructura de `references/plantilla-fic
 - En **Conexiones** van los IDs reales: base de Notion, relación de proyecto, marca y zona horaria de Metricool, redes conectadas. Si falta alguno, queda como pendiente visible.
 
 ### 5. Sección de marca visual
-La etapa de diseño necesita colores, fuentes, estilo de ilustración y márgenes. Anótalos en la ficha con valores exactos (hex y nombre de fuente). Hoy el generador de carruseles (`balero-imagenes/scripts/build_carousel.py`) tiene los colores de Balero escritos dentro del código, así que para un cliente con otra marca habrá que parametrizarlo antes de diseñar. Deja esa nota en la ficha del cliente como pendiente de diseño; no cambies el script desde este skill.
+La etapa de diseño necesita colores, fuentes, estilo de ilustración y márgenes. Anótalos en la ficha con valores exactos (hex y nombre de fuente). Con esos valores crea `clientes/<slug>/marca/brand.json` (formato en `balero-imagenes/references/marca-por-cliente.md`) y descarga las fuentes con `balero-imagenes/scripts/brand_fonts.py`. Deja la ficha apuntando a ese archivo.
 
 ### 6. Cerrar con un resumen
 Termina siempre con tres bloques cortos, sin repetir la ficha completa:

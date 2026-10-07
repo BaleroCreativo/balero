@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Revisiones mecánicas de un carrusel ya renderizado.
 
-Uso: python3 checks.py <carpeta-con-pngs> [--ancho 1080] [--alto 1440] [--escala 2]
+Uso: python3 checks.py <carpeta-con-pngs> [--ancho 1080] [--alto 1440] [--escala 2] [--fuentes Montserrat,OpenSans]
 
 Revisa lo que se puede medir sin criterio humano:
   1. Tamaño exacto de cada PNG (ancho*escala por alto*escala).
@@ -20,6 +20,8 @@ ap.add_argument("carpeta")
 ap.add_argument("--ancho", type=int, default=1080)
 ap.add_argument("--alto", type=int, default=1440)
 ap.add_argument("--escala", type=int, default=2)
+ap.add_argument("--fuentes", default="Poppins,SourceSans",
+                help="familias de la marca, separadas por coma (nombre sin espacios; ej. Montserrat,OpenSans)")
 a = ap.parse_args()
 
 W, H = a.ancho * a.escala, a.alto * a.escala
@@ -55,7 +57,7 @@ for p in pngs:
 pdfs = sorted(glob.glob(os.path.join(a.carpeta, "*.pdf")))
 if pdfs and shutil.which("pdffonts"):
     print()
-    permitidas = ("poppins", "sourcesans")
+    permitidas = tuple(f.strip().replace(" ", "").lower() for f in a.fuentes.split(",") if f.strip())
     for p in pdfs:
         out = subprocess.run(["pdffonts", p], capture_output=True, text=True).stdout.splitlines()[2:]
         nombres = {l.split()[0].split("+")[-1] for l in out if l.strip()}

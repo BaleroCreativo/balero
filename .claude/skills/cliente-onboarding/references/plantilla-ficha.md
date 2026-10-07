@@ -58,7 +58,7 @@ Marca cada dato con su origen: [sitio] [redes] [documento] [cliente] o [POR CONF
 - **Estilo de ilustración o fotografía:**
 - **Formatos y márgenes:** (ej. 1080×1440, márgenes 8% y 6%)
 - **Lo que nunca se usa:**
-- **Pendiente de diseño:** parametrizar el generador de carruseles para esta marca (colores y fuentes hoy están fijos para Balero).
+- **brand.json:** `clientes/<slug>/marca/brand.json` (colores, fuentes, logo, nombre para el generador). Pendiente si aún no existe.
 
 ## 8. Conexiones
 - **Notion:** base de contenidos [ID de colección] · relación de proyecto [URL de la página]

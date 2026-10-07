@@ -5,6 +5,8 @@ description: Guía y herramientas para generar imágenes de marca de Balero Crea
 
 # Balero Creativo: imágenes de marca
 
+> Los valores de este archivo son los de Balero y son los predeterminados del generador. Para un cliente con otra marca, el generador y `brand_fonts.py` aceptan un `brand.json` (colores, fuentes, logo, nombre): ver `references/marca-por-cliente.md`. Las reglas de composición sí valen para todas las marcas.
+
 Reglas confirmadas por la dueña de la marca durante el diseño del carrusel de LinkedIn "Lo que ya no haríamos igual" (octubre 2026). Si una petición contradice algo de aquí, gana la petición, y conviene actualizar este archivo.
 
 ## Flujo rápido
@@ -12,7 +14,7 @@ Reglas confirmadas por la dueña de la marca durante el diseño del carrusel de 
 2. Escribe el contenido en un archivo JSON (ver `scripts/example-spec.json`).
 3. Prepara las tipografías una sola vez: `bash scripts/setup_fonts.sh`.
 4. Genera las ilustraciones 3D (ver `references/ilustraciones-3d.md`) y recórtalas con `scripts/cutout.sh`.
-5. Genera las piezas: `python3 scripts/build_carousel.py mi-spec.json salida/`.
+5. Genera las piezas: `python3 scripts/build_carousel.py mi-spec.json salida/` (para otro cliente, añade `--brand clientes/<slug>/marca/brand.json`; ver `references/marca-por-cliente.md`).
 6. Revisa la lista de verificación y entrega PDF + PNG.
 
 ## Colores

@@ -53,7 +53,7 @@ Muestra este diagnóstico en una tabla corta y confirma por dónde empezar.
 Entrega un resumen corto: qué se hizo, qué decide la persona, qué sigue. No sigas hasta recibir la decisión. Si una aprobación vuelve con cambios, reabre solo la etapa afectada y rehaz lo que depende de ella (un cambio de dato obliga a revisar guion y diseño de esa pieza).
 
 ### 5. Antes de la etapa de diseño, comprueba la marca
-El generador de carruseles hoy tiene los colores de Balero escritos dentro del código. Si el cliente no es Balero y la ficha marca "pendiente de diseño: parametrizar el generador", detén el flujo antes del paso 5 y avisa. Se puede seguir con las etapas 1 a 4 y diseñar cuando la marca esté lista; no generes imágenes con la marca equivocada.
+Antes de diseñar, comprueba que existe `clientes/<slug>/marca/brand.json` (Balero usa la marca predeterminada). Si falta, créalo con `cliente-onboarding` y descarga fuentes con `brand_fonts.py`; no generes imágenes con la marca equivocada. Renderiza primero una pieza de prueba y pídele a la dueña que valide la marca.
 
 ### 6. Cierre del mes
 Corre `reporte-estado`, entrega el informe con pendientes por cliente y propone los aprendizajes que alimentarán el plan del mes siguiente. Pregunta si arrancas el siguiente mes con `plan-mensual`.

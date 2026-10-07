@@ -14,7 +14,7 @@ Mira las imágenes terminadas como las vería un lector que desliza rápido, y c
 ## Flujo
 
 ### 1. Revisiones mecánicas (rápidas)
-Corre `scripts/checks.py <carpeta> [--ancho 1080 --alto 1440 --escala 2]`. Verifica tamaño exacto de cada PNG, informa dónde cae el contenido respecto a los márgenes (8 % laterales y 6 % verticales) y revisa las fuentes de los PDF contra Poppins y Source Sans. Un sangrado en portada y cierre es intencional; lo demás es motivo de revisar. El script no entiende composición, así que un resultado limpio no significa que la pieza esté bien.
+Corre `scripts/checks.py <carpeta> [--ancho 1080 --alto 1440 --escala 2 --fuentes Poppins,SourceSans]`. Verifica tamaño exacto de cada PNG, informa dónde cae el contenido respecto a los márgenes (8 % laterales y 6 % verticales) y revisa las fuentes de los PDF contra las fuentes de la marca (`--fuentes`, por defecto Poppins y Source Sans; nombres sin espacios). Un sangrado en portada y cierre es intencional; lo demás es motivo de revisar. El script no entiende composición, así que un resultado limpio no significa que la pieza esté bien.
 
 ### 2. Mirar cada imagen, una por una
 Abre cada PNG con la herramienta de lectura de imágenes y revisa la lista de `references/lista-de-revision.md`. Mira primero el slide completo y luego las zonas de riesgo: bordes, cruces entre ilustración y texto, pie y logo. No des un slide por bueno desde una miniatura.
