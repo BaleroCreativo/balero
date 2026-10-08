@@ -9,16 +9,9 @@
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:#000;width:1080px;height:1080px;font-family:'Inter',sans-serif;color:#fff}
   .flyer{position:relative;width:1080px;height:1080px;overflow:hidden;
-    background:linear-gradient(180deg,#16215a 0,#1b2766 24%,#141d4a 60%,#0a1232 100%)}
-  .photo{position:absolute;left:0;top:236px;width:1080px;height:719px;
-    background:url(assets/sagrada.jpg) center/1080px 719px no-repeat;filter:brightness(1.12) saturate(1.15);
-    -webkit-mask-image:linear-gradient(180deg,transparent 0,#000 10%,#000 72%,transparent 100%);
-            mask-image:linear-gradient(180deg,transparent 0,#000 10%,#000 72%,transparent 100%)}
-  /* velo azul: da contraste al texto blanco sobre el cielo claro */
-  .tint{position:absolute;left:0;right:0;top:0;height:640px;
-    background:linear-gradient(180deg,rgba(18,76,160,.94) 0,rgba(26,92,172,.74) 30%,rgba(36,108,184,.46) 52%,rgba(36,108,184,0) 70%)}
-  .shade{position:absolute;left:0;right:0;top:660px;height:420px;
-    background:linear-gradient(180deg,rgba(8,16,44,0),rgba(8,16,44,.8) 30%,rgba(8,16,44,.92))}
+    background:#101b4d}
+  .photo{position:absolute;left:0;top:270px;width:1080px;height:430px;
+    background:url(assets/sagrada.jpg) 0 -22px/1080px 720px no-repeat}
   .t{position:absolute;left:var(--m);right:var(--m);text-align:center;text-shadow:0 2px 14px rgba(0,0,0,.3)}
   .title{top:60px;font-weight:800;font-size:100px;line-height:1;letter-spacing:.01em;text-transform:uppercase;
     padding-right:30px /* deja libre la esquina del logo */}
@@ -28,14 +21,14 @@
   .logo{position:absolute;right:var(--m);top:var(--m);width:76px;height:76px;border-radius:50%;
     background:#fff url(assets/logo.jpg) center/118% no-repeat;box-shadow:0 4px 14px rgba(0,0,0,.35)}
 
-  .row1{position:absolute;left:var(--m);right:var(--m);top:708px;display:flex;justify-content:center;align-items:center;gap:26px;
+  .row1{position:absolute;left:var(--m);right:var(--m);top:724px;display:flex;justify-content:center;align-items:center;gap:26px;
     text-shadow:0 2px 14px rgba(0,0,0,.55)}
   .row1 .big{font-weight:300;font-size:44px;letter-spacing:.04em;text-transform:uppercase}
   .row1 .bar{width:3px;height:56px;background:#fff}
   .row1 .small{font-weight:300;font-size:24px;line-height:1.12;letter-spacing:.05em;text-transform:uppercase}
   .row1 .small b{font-weight:800}
 
-  .price{position:absolute;left:var(--m);right:var(--m);top:788px;display:flex;justify-content:center;align-items:flex-end;gap:16px}
+  .price{position:absolute;left:var(--m);right:var(--m);top:800px;display:flex;justify-content:center;align-items:flex-end;gap:16px}
   .amtwrap{position:relative}
   .por{position:absolute;left:4px;top:-2px;font-size:16px;font-weight:600;letter-spacing:.14em}
   .amt{font-weight:800;font-size:116px;line-height:1;letter-spacing:-.03em;margin-top:18px;text-shadow:0 6px 22px rgba(0,0,0,.4)}
@@ -44,7 +37,7 @@
   .note{font-size:23px;font-weight:400;line-height:1.25;padding-bottom:18px;margin-left:4px;white-space:nowrap}
   .note b{font-weight:800;display:block;text-transform:uppercase;font-size:24px;letter-spacing:.02em}
 
-  .inc{position:absolute;left:var(--m);right:var(--m);top:932px;text-align:center;font-weight:800;font-size:26px;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
+  .inc{position:absolute;left:var(--m);right:var(--m);top:944px;text-align:center;font-weight:800;font-size:26px;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap}
   .row4{position:absolute;left:var(--m);right:var(--m);bottom:var(--m);display:flex;justify-content:space-between;align-items:flex-end}
   .ph{font-weight:300;font-size:27px;letter-spacing:.05em;line-height:1}
   .ph b{font-weight:700}
@@ -54,8 +47,7 @@
 <body>
 <div class="flyer">
   <div class="photo"></div>
-    <div class="shade"></div>
-  <div class="logo"></div>
+    <div class="logo"></div>
 
   <div class="t title">Mega Europa</div>
   <div class="t sub">Vive el viaje de <b>tu vida</b></div>
