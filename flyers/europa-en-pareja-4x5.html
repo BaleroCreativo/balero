@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Europa en pareja 4:5 — HB Travel Planner</title>
+<style>
+  /* márgenes de seguridad: 60 px; foto a sangre, sin degradados ni velos */
+  :root{ --m:60px; --navy:#0b2a55; --rose:#d4435f; --amber:#f6a53f; --serif:'Liberation Serif','FreeSerif','Times New Roman',serif; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#000;width:1080px;height:1350px;font-family:'Inter',sans-serif;color:var(--navy)}
+  .flyer{position:relative;width:1080px;height:1350px;overflow:hidden;background:#f0f0ee}
+  .photo{position:absolute;inset:0;background:url(assets/paris-pareja.jpg) -105px 0/1350px 1350px no-repeat}
+
+  /* cabecera (a la derecha de la torre) */
+  .head{position:absolute;right:var(--m);top:var(--m);width:470px;text-align:right}
+  .pill{display:inline-block;border:2.5px solid var(--navy);border-radius:999px;padding:8px 30px;
+    font-weight:800;font-size:22px;letter-spacing:.3em;padding-right:calc(30px - .3em)}
+  .cities{margin-top:26px;font-weight:700;font-size:15.5px;letter-spacing:.26em;text-transform:uppercase;margin-right:-.26em}
+  .title{margin-top:6px;font-family:var(--serif);font-weight:700;font-size:112px;line-height:1;letter-spacing:.01em;text-transform:uppercase}
+  .pareja{font-family:var(--serif);font-style:italic;font-weight:700;font-size:64px;line-height:1;color:var(--rose);margin-top:4px}
+
+  .logo{position:absolute;left:var(--m);top:var(--m);width:84px;height:84px;border-radius:50%;
+    background:#fff url(assets/logo.jpg) center/118% no-repeat;box-shadow:0 4px 14px rgba(11,42,85,.25)}
+
+  /* chip de salida */
+  .left{position:absolute;left:var(--m);bottom:var(--m);width:500px;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+  .chip{display:flex;align-items:center;gap:14px;
+    background:var(--navy);color:#fff;border-radius:12px;padding:10px 16px}
+  .chip small{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.9;line-height:1.2}
+  .chip b{font-size:15px;font-weight:800;letter-spacing:.08em}
+  .chip .d{background:var(--rose);border-radius:8px;padding:6px 12px;font-size:17px;font-weight:800;letter-spacing:.1em}
+
+  /* panel de datos (abajo izquierda) */
+  .panel{width:500px;background:var(--navy);color:#fff;border-radius:14px;padding:22px 26px}
+  .panel h3{font-size:23px;font-weight:800;letter-spacing:.03em;text-transform:uppercase}
+  .panel .v{margin-top:12px;font-size:13px;font-weight:800;letter-spacing:.2em;color:var(--amber)}
+  .panel p{margin-top:4px;font-size:15.5px;line-height:1.38;font-weight:400;opacity:.96}
+  .icons{display:flex;justify-content:space-between;margin-top:12px}
+  .ic{width:78px;text-align:center;font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;opacity:.95}
+  .ic svg{display:block;margin:0 auto 4px;width:24px;height:24px;fill:#fff}
+  .wa{margin-top:12px;padding-top:10px;border-top:1px solid rgba(255,255,255,.25);display:flex;justify-content:space-between;align-items:baseline}
+  .wa .n{font-size:19px;font-weight:300;letter-spacing:.04em}
+  .wa .n b{font-weight:800}
+  .wa .l{font-size:10.5px;opacity:.85;text-align:right;line-height:1.25;text-transform:uppercase;letter-spacing:.03em}
+
+  /* tarjeta de precio (abajo derecha) */
+  .card{position:absolute;right:var(--m);bottom:var(--m);width:372px;background:var(--navy);color:#fff;border-radius:14px;padding:18px 24px 20px;text-align:center}
+  .card .d{font-size:15px;font-weight:700;letter-spacing:.24em;color:var(--amber);text-transform:uppercase}
+  .card .p{display:flex;justify-content:center;align-items:flex-end;gap:8px;margin-top:2px}
+  .card .a{font-weight:800;font-size:70px;line-height:1;letter-spacing:-.03em}
+  .card .a small{font-weight:400;font-size:42px;margin-right:2px;position:relative;top:-4px}
+  .card .m{font-weight:300;font-size:26px;padding-bottom:8px}
+  .card .n{margin-top:4px;font-size:15px;font-weight:400;line-height:1.25}
+  .card .n b{font-weight:800;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="flyer">
+  <div class="photo"></div>
+  <div class="logo"></div>
+
+  <div class="head">
+    <div class="pill">17 DÍAS</div>
+    <div class="cities">España, Francia, Suiza e Italia</div>
+    <div class="title">Europa</div>
+    <div class="pareja">en pareja</div>
+  </div>
+
+  <div class="left">
+  <div class="chip">
+    <small>Fecha de<br>salida</small>
+    <b>2026</b>
+    <span class="d">DIC 02</span>
+  </div>
+
+  <div class="panel">
+    <h3>Saliendo de Cd. de México</h3>
+    <div class="v">VISITANDO:</div>
+    <p>Madrid, Burgos, Burdeos, París, Lucerna, Zúrich, Venecia, Roma, Florencia, Pisa, Riviera Francesa, Barcelona y Zaragoza.</p>
+    <div class="icons">
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z"/></svg>Vuelos</div>
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M7 13c1.66 0 3-1.34 3-3S8.66 7 7 7s-3 1.34-3 3 1.34 3 3 3zm12-6h-8v7H3V5H1v15h2v-3h18v3h2v-9c0-2.21-1.79-4-4-4z"/></svg>Hospedaje</div>
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M18.06 22.99h1.66c.84 0 1.53-.64 1.63-1.46L23 5.05h-5V1h-1.97v4.05h-4.97l.3 2.34c1.71.47 3.31 1.32 4.27 2.26 1.44 1.42 2.43 2.89 2.43 5.29v8.05zM1 21.99V21h15.03v.99c0 .55-.45 1-1.01 1H2.01c-.56 0-1.01-.45-1.01-1zm15.03-7c0-8-15.03-8-15.03 0h15.03zM1.02 17h15v2h-15z"/></svg>Desayunos</div>
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>Guía</div>
+      <div class="ic"><svg viewBox="0 0 24 24"><path d="M4 16c0 .88.39 1.67 1 2.22V20c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h8v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1.78c.61-.55 1-1.34 1-2.22V6c0-3.5-3.58-4-8-4s-8 .5-8 4v10zm3.5 1c-.83 0-1.5-.67-1.5-1.5S6.67 14 7.5 14s1.5.67 1.5 1.5S8.33 17 7.5 17zm9 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm1.5-6H6V6h12v5z"/></svg>Traslados</div>
+    </div>
+    <div class="wa">
+      <div class="n">WhatsApp: <b>55 5528596228</b></div>
+      <div class="l">Sujeto a cambios y<br>disponibilidad*</div>
+    </div>
+  </div>
+  </div>
+
+  <div class="card">
+    <div class="d">Desde</div>
+    <div class="p"><div class="a"><small>$</small>51,000</div><div class="m">MXN</div></div>
+    <div class="n">por persona <b>en habitación doble</b></div>
+  </div>
+</div>
+</body>
+</html>
