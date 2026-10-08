@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Europa en pareja 1:1 — HB Travel Planner</title>
+<style>
+  /* márgenes de seguridad: 60 px; foto a sangre, sin degradados ni velos */
+  :root{ --m:60px; --navy:#0b2a55; --rose:#d4435f; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#000;width:1080px;height:1080px;font-family:'Inter',sans-serif;color:var(--navy)}
+  .flyer{position:relative;width:1080px;height:1080px;overflow:hidden;background:#f0f0ee}
+  .photo{position:absolute;inset:0;background:url(assets/paris-pareja.jpg) center/1080px 1080px no-repeat}
+  .logo{position:absolute;left:var(--m);top:var(--m);width:84px;height:84px;border-radius:50%;
+    background:#fff url(assets/logo.jpg) center/118% no-repeat;box-shadow:0 4px 14px rgba(11,42,85,.25)}
+
+  /* columna derecha (a la derecha de la torre) */
+  .col{position:absolute;right:var(--m);top:62px;width:500px;text-align:right}
+  .title{font-weight:800;font-size:112px;line-height:1;letter-spacing:.005em;text-transform:uppercase}
+  .pareja{font-weight:800;font-size:62px;line-height:1;letter-spacing:.01em;text-transform:uppercase;color:var(--rose);margin-top:4px}
+  .tag{margin-top:14px;font-weight:300;font-size:27px;letter-spacing:.04em;text-transform:uppercase}
+  .tag b{font-weight:800}
+  .rule{width:64px;height:3px;background:var(--rose);margin:22px 0 20px auto}
+  .days{font-weight:300;font-size:36px;letter-spacing:.04em;text-transform:uppercase;line-height:1.1}
+  .days b{font-weight:800}
+  .countries{margin-top:8px;font-weight:700;font-size:18px;letter-spacing:.24em;text-transform:uppercase;margin-right:-.24em}
+
+  .price{margin-top:26px}
+  .por{font-size:17px;font-weight:700;letter-spacing:.22em;color:var(--rose);margin-right:-.22em}
+  .amtrow{display:flex;justify-content:flex-end;align-items:flex-end;gap:12px;margin-top:-2px}
+  .amt{font-weight:800;font-size:100px;line-height:1;letter-spacing:-.03em}
+  .amt small{font-weight:400;font-size:62px;margin-right:2px;position:relative;top:-4px}
+  .mxn{font-weight:300;font-size:36px;padding-bottom:12px}
+  .note{font-size:21px;font-weight:400;line-height:1.2;margin-top:2px}
+  .note b{font-weight:800;text-transform:uppercase}
+
+  .inc{margin-top:18px;font-weight:800;font-size:22px;line-height:1.25;letter-spacing:.05em;text-transform:uppercase}
+
+  .row4{position:absolute;left:var(--m);right:var(--m);bottom:var(--m);display:flex;justify-content:space-between;align-items:flex-end}
+  .ph{font-weight:300;font-size:27px;letter-spacing:.05em;line-height:1}
+  .ph b{font-weight:800}
+  .legal{font-size:13px;line-height:1.35;text-align:right;letter-spacing:.03em;text-transform:uppercase;font-weight:600}
+</style>
+</head>
+<body>
+<div class="flyer">
+  <div class="photo"></div>
+  <div class="logo"></div>
+
+  <div class="col">
+    <div class="title">Europa</div>
+    <div class="pareja">en pareja</div>
+    <div class="tag">El viaje de <b>tu vida</b></div>
+    <div class="rule"></div>
+    <div class="days"><b>17 días,</b> 15 noches</div>
+    <div class="countries">España · Francia · Suiza · Italia</div>
+
+    <div class="price">
+      <div class="por">DESDE</div>
+      <div class="amtrow"><div class="amt"><small>$</small>51,000</div><div class="mxn">MXN</div></div>
+      <div class="note">Precio por persona <b>en habitación doble</b></div>
+    </div>
+
+    <div class="inc">Vuelos, hospedaje, desayunos,<br>guía y traslados</div>
+  </div>
+
+  <div class="row4">
+    <div class="ph">WhatsApp: <b>55 5528596228</b></div>
+    <div class="legal">Primera salida: 2 de diciembre<br>Sujeto a cambios y disponibilidad*</div>
+  </div>
+</div>
+</body>
+</html>
