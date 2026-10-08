@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Mega Europa 1:1 Sagrada Familia (a sangre) — HB Travel Planner</title>
+<style>
+  /* márgenes de seguridad: 60 px en los cuatro bordes */
+  :root{ --m:60px; --amber:#f6a53f; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#000;width:1080px;height:1080px;font-family:'Inter',sans-serif;color:#fff}
+  .flyer{position:relative;width:1080px;height:1080px;overflow:hidden;background:#101a3f}
+  /* foto a sangre; un solo ajuste plano de brillo (sin degradados) para que el texto blanco contraste */
+  .photo{position:absolute;inset:0;background:url(assets/sagrada2.jpg) -92px -180px/1320px 1267px no-repeat;
+    filter:brightness(.74) saturate(1.1)}
+  .t{position:absolute;left:var(--m);right:var(--m);text-align:center;text-shadow:0 2px 14px rgba(0,0,0,.45)}
+  .title{top:60px;font-weight:800;font-size:100px;line-height:1;letter-spacing:.01em;text-transform:uppercase;padding-right:30px}
+  .sub{top:172px;font-weight:300;font-size:46px;line-height:1.1;letter-spacing:.01em;text-transform:uppercase}
+  .sub b{font-weight:800}
+  .logo{position:absolute;right:var(--m);top:var(--m);width:76px;height:76px;border-radius:50%;
+    background:#fff url(assets/logo.jpg) center/118% no-repeat;box-shadow:0 4px 14px rgba(0,0,0,.35)}
+
+  .row1{position:absolute;left:var(--m);right:var(--m);top:756px;display:flex;justify-content:center;align-items:center;gap:26px;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+  .row1 .big{font-weight:300;font-size:42px;letter-spacing:.04em;text-transform:uppercase}
+  .row1 .bar{width:3px;height:52px;background:#fff}
+  .row1 .small{font-weight:600;font-size:22px;line-height:1.2;letter-spacing:.07em;text-transform:uppercase}
+
+  .price{position:absolute;left:var(--m);right:var(--m);top:814px;display:flex;justify-content:center;align-items:flex-end;gap:16px;text-shadow:0 2px 12px rgba(0,0,0,.7)}
+  .amtwrap{position:relative}
+  .por{position:absolute;left:4px;top:-2px;font-size:15px;font-weight:600;letter-spacing:.14em}
+  .amt{font-weight:800;font-size:96px;line-height:1;letter-spacing:-.03em;margin-top:16px}
+  .amt small{font-weight:400;font-size:62px;margin-right:2px;position:relative;top:-4px}
+  .mxn{font-weight:300;font-size:36px;padding-bottom:12px}
+  .note{font-size:21px;font-weight:400;line-height:1.25;padding-bottom:16px;margin-left:4px;white-space:nowrap}
+  .note b{font-weight:800;display:block;text-transform:uppercase;font-size:22px;letter-spacing:.02em}
+
+  .inc{position:absolute;left:var(--m);right:var(--m);top:948px;text-align:center;font-weight:800;font-size:23px;letter-spacing:.07em;text-transform:uppercase;white-space:nowrap;text-shadow:0 2px 10px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.6)}
+  .row4{position:absolute;left:var(--m);right:var(--m);bottom:var(--m);display:flex;justify-content:space-between;align-items:flex-end;text-shadow:0 2px 10px rgba(0,0,0,.85),0 0 4px rgba(0,0,0,.6)}
+  .ph{font-weight:300;font-size:27px;letter-spacing:.05em;line-height:1}
+  .ph b{font-weight:700}
+  .legal{font-size:13px;line-height:1.35;text-align:right;letter-spacing:.03em;opacity:.95;text-transform:uppercase}
+</style>
+</head>
+<body>
+<div class="flyer">
+  <div class="photo"></div>
+  <div class="logo"></div>
+
+  <div class="t title">Mega Europa</div>
+  <div class="t sub">Vive el viaje de <b>tu vida</b></div>
+
+  <div class="row1">
+    <div class="big">17 días, 15 noches</div>
+    <div class="bar"></div>
+    <div class="small">España · Francia<br>Suiza · Italia</div>
+  </div>
+
+  <div class="price">
+    <div class="amtwrap"><div class="por">DESDE</div><div class="amt"><small>$</small>51,000</div></div>
+    <div class="mxn">MXN</div>
+    <div class="note">Precio por persona<b>en habitación doble</b></div>
+  </div>
+
+  <div class="inc">Vuelos, hospedaje, desayunos, guía y traslados</div>
+
+  <div class="row4">
+    <div class="ph">WhatsApp: <b>55 5528596228</b></div>
+    <div class="legal">Primera salida: 2 de diciembre<br>Sujeto a cambios y disponibilidad*</div>
+  </div>
+</div>
+</body>
+</html>
