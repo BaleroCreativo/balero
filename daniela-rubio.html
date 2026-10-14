@@ -3,735 +3,365 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Daniela Rubio — Marketing Digital &amp; Negocios Internacionales</title>
-<meta name="description" content="Daniela Rubio, fundadora de Balero Creativo. Marketing digital, IA aplicada a negocios y visión estratégica internacional para PyMEs en Guadalajara y el mundo." />
+<title>Daniela Rubio — Paid Media</title>
+<meta name="description" content="Daniela Rubio, especialista en paid media. Gestión de pauta en Meta Ads y Google Ads con criterio de negocio, medición honesta y foco en margen." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..800&family=Bodoni+Moda:ital,opsz,wght@0,6..96,500..900;1,6..96,500..900&display=swap" rel="stylesheet">
 <style>
+  /* Design language: see DESIGN.md */
   :root{
-    --bg:#0f0d0b;
-    --bg-soft:#171310;
-    --paper:#faf6f0;
-    --ink:#1c1712;
-    --ink-soft:#4a4038;
-    --terra:#c96a3e;
-    --terra-light:#e08a5b;
-    --gold:#d9a441;
-    --sage:#8a9a7e;
-    --line:rgba(28,23,18,0.12);
-    --line-dark:rgba(250,246,240,0.14);
-    --shadow:0 20px 60px -25px rgba(28,23,18,0.35);
-    --radius:20px;
+    --paper:#F2EBDC;
+    --paper-2:#E6DCC8;
+    --ink:#14110F;
+    --acc:#C8401A;        /* big type + blocks only (4.21:1 on paper) */
+    --acc-deep:#A93212;   /* small text on paper (5.61:1) */
+    --acc-light:#E2562B;  /* small text on ink (5.01:1) */
+    --muted:#5C5249;
+    --serif:'Bodoni Moda','Didot','Bodoni 72',Georgia,serif;
+    --sans:'Archivo',system-ui,-apple-system,sans-serif;
+    --rule:2px solid var(--ink);
     --ease:cubic-bezier(.22,1,.36,1);
+    --pad:clamp(20px,5vw,72px);
   }
   *{box-sizing:border-box;margin:0;padding:0;}
   html{scroll-behavior:smooth;}
   body{
-    font-family:'Inter',system-ui,-apple-system,sans-serif;
-    background:var(--paper);
-    color:var(--ink);
-    line-height:1.6;
-    overflow-x:hidden;
-    -webkit-font-smoothing:antialiased;
+    font-family:var(--sans);font-size:1.0625rem;line-height:1.6;
+    background:var(--paper);color:var(--ink);
+    overflow-x:hidden;-webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3,h4{
-    font-family:'Fraunces',serif;
-    font-weight:600;
-    line-height:1.1;
-    letter-spacing:-0.01em;
-  }
+  h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1;letter-spacing:-.025em;text-wrap:balance;}
+  h1 em,h2 em{font-style:italic;font-weight:600;}
   a{color:inherit;text-decoration:none;}
-  img{max-width:100%;display:block;}
-  section{position:relative;}
-  .container{max-width:1180px;margin:0 auto;padding:0 6vw;}
-  .eyebrow{
-    display:inline-flex;align-items:center;gap:.5em;
-    font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-    color:var(--terra);
+  :focus-visible{outline:3px solid var(--acc);outline-offset:3px;}
+  .wrap{padding-left:var(--pad);padding-right:var(--pad);}
+  .label{
+    font-family:var(--sans);font-stretch:115%;font-size:.75rem;font-weight:600;
+    letter-spacing:.14em;text-transform:uppercase;
   }
-  .eyebrow::before{content:"";width:26px;height:1.5px;background:var(--terra);display:inline-block;}
+  .label.on-paper{color:var(--acc-deep);}
+  .label.on-ink{color:var(--acc-light);}
 
-  /* ===== Scroll reveal ===== */
-  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
-  .reveal.is-visible{opacity:1;transform:translateY(0);}
-  .reveal-scale{opacity:0;transform:scale(.94);transition:opacity .7s var(--ease), transform .7s var(--ease);}
-  .reveal-scale.is-visible{opacity:1;transform:scale(1);}
-  .reveal-left{opacity:0;transform:translateX(-32px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
-  .reveal-left.is-visible{opacity:1;transform:translateX(0);}
-  .reveal-right{opacity:0;transform:translateX(32px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
-  .reveal-right.is-visible{opacity:1;transform:translateX(0);}
-  .stagger > * { transition-delay: calc(var(--i, 0) * 90ms); }
-
-  @media (prefers-reduced-motion: reduce){
-    .reveal,.reveal-scale,.reveal-left,.reveal-right{opacity:1 !important;transform:none !important;transition:none !important;}
+  /* ===== Reveal (sober) ===== */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .8s var(--ease),transform .8s var(--ease);}
+  .reveal.in{opacity:1;transform:none;}
+  @media (prefers-reduced-motion:reduce){
+    .reveal{opacity:1;transform:none;transition:none;}
+    .line > span{animation:none !important;transform:none !important;}
     html{scroll-behavior:auto;}
   }
 
-  /* ===== Nav ===== */
-  .nav{
-    position:fixed;top:0;left:0;right:0;z-index:1000;
-    display:flex;align-items:center;justify-content:space-between;
-    padding:18px 6vw;
-    background:rgba(250,246,240,0.7);
-    backdrop-filter:blur(14px) saturate(140%);
-    -webkit-backdrop-filter:blur(14px) saturate(140%);
-    border-bottom:1px solid transparent;
-    transition:background .4s var(--ease), border-color .4s var(--ease), padding .4s var(--ease);
+  /* ===== Masthead ===== */
+  .mast{
+    position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:var(--rule);
+    display:flex;align-items:center;justify-content:space-between;gap:24px;
+    padding:14px var(--pad);
   }
-  .nav.scrolled{
-    background:rgba(250,246,240,0.92);
-    border-bottom-color:var(--line);
-    padding:12px 6vw;
+  .wordmark{font-family:var(--serif);font-weight:800;font-size:1.35rem;letter-spacing:-.02em;white-space:nowrap;}
+  .mast nav{display:flex;gap:28px;align-items:center;}
+  .mast nav a:not(.btn){font-stretch:115%;font-size:.75rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:6px 0;border-bottom:2px solid transparent;}
+  .mast nav a:not(.btn):hover{border-bottom-color:var(--acc);}
+  .btn{
+    display:inline-block;font-stretch:115%;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+    padding:14px 24px;border:var(--rule);background:var(--ink);color:var(--paper);cursor:pointer;
+    transition:background .25s ease,color .25s ease;
   }
-  .nav-logo{
-    font-family:'Fraunces',serif;font-weight:700;font-size:1.15rem;letter-spacing:-.01em;
-    display:flex;align-items:center;gap:8px;
-  }
-  .nav-logo span{color:var(--terra);}
-  .nav-links{display:flex;gap:2px;list-style:none;align-items:center;}
-  .nav-links a{
-    position:relative;padding:8px 16px;font-size:.88rem;font-weight:600;color:var(--ink-soft);
-    border-radius:999px;transition:color .3s ease;
-  }
-  .nav-links a:hover{color:var(--ink);}
-  .nav-links a.active{color:var(--ink);}
-  .nav-links a.active::after{
-    content:"";position:absolute;left:16px;right:16px;bottom:2px;height:2px;background:var(--terra);
-    border-radius:2px;
-  }
-  .nav-cta{
-    background:var(--ink);color:var(--paper);padding:10px 22px;border-radius:999px;
-    font-size:.85rem;font-weight:700;transition:transform .35s var(--ease), background .35s ease, box-shadow .35s ease;
-    box-shadow:0 6px 18px -8px rgba(28,23,18,.4);
-    white-space:nowrap;
-  }
-  .nav-cta:hover{transform:translateY(-2px) scale(1.03);background:var(--terra);}
-  .nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:8px;}
-  .nav-toggle span{width:22px;height:2px;background:var(--ink);border-radius:2px;transition:transform .3s ease, opacity .3s ease;}
-  .nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg);}
-  .nav-toggle.open span:nth-child(2){opacity:0;}
-  .nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg);}
-
-  /* ===== Progress bar ===== */
-  .progress{position:fixed;top:0;left:0;height:3px;background:linear-gradient(90deg,var(--terra),var(--gold));z-index:1100;width:0%;transition:width .1s linear;}
+  .btn:hover{background:var(--acc);border-color:var(--acc);color:var(--paper);}
+  .btn.ghost{background:transparent;color:var(--ink);}
+  .btn.ghost:hover{background:var(--ink);border-color:var(--ink);color:var(--paper);}
+  .btn.sm{padding:10px 18px;}
 
   /* ===== Hero ===== */
-  .hero{
-    min-height:100svh;display:flex;flex-direction:column;justify-content:center;
-    padding:140px 6vw 80px;position:relative;
-    background:
-      radial-gradient(ellipse 60% 50% at 85% 15%, rgba(201,106,62,.16), transparent 60%),
-      radial-gradient(ellipse 50% 40% at 10% 90%, rgba(138,154,126,.18), transparent 60%),
-      var(--paper);
-    overflow:hidden;
-  }
-  .hero-blob{
-    position:absolute;border-radius:50%;filter:blur(60px);opacity:.5;pointer-events:none;
-    will-change:transform;
-  }
-  .hero-blob.b1{width:420px;height:420px;background:var(--terra-light);top:-120px;right:-80px;}
-  .hero-blob.b2{width:320px;height:320px;background:var(--sage);bottom:-100px;left:-60px;opacity:.35;}
-  .hero-inner{max-width:900px;position:relative;z-index:2;}
-  .hero-kicker{
-    display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border:1px solid var(--line);
-    border-radius:999px;font-size:.78rem;font-weight:600;letter-spacing:.04em;color:var(--ink-soft);
-    background:rgba(255,255,255,.5);margin-bottom:28px;
-  }
-  .hero-kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--terra);animation:pulse 2s ease-in-out infinite;}
-  @keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.4;transform:scale(1.3);}}
+  .hero{padding-top:clamp(28px,5vw,56px);padding-bottom:0;}
+  .hero-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:20px;border-bottom:1px solid var(--ink);margin-bottom:clamp(28px,5vw,56px);}
   .hero h1{
-    font-size:clamp(2.4rem, 6.4vw, 5rem);
-    color:var(--ink);
-    margin-bottom:24px;
+    font-size:clamp(2.8rem,10vw,8.5rem);font-weight:800;line-height:.92;letter-spacing:-.035em;
   }
-  .hero h1 .word{display:inline-block;opacity:0;transform:translateY(24px) rotate(2deg);animation:wordIn .7s var(--ease) forwards;}
-  @keyframes wordIn{to{opacity:1;transform:translateY(0) rotate(0);}}
-  .hero h1 em{font-style:italic;color:var(--terra);font-weight:500;}
-  .hero-sub{
-    font-size:clamp(1.05rem,2vw,1.35rem);color:var(--ink-soft);max-width:640px;margin-bottom:40px;
-    opacity:0;animation:fadeUp .9s var(--ease) forwards;animation-delay:1.05s;
+  .line{display:block;overflow:hidden;padding-bottom:.08em;margin-bottom:-.08em;}
+  .line > span{display:block;transform:translateY(110%);animation:lineIn 1s var(--ease) forwards;}
+  .line:nth-child(2) > span{animation-delay:.12s;}
+  .line em{color:var(--acc);}
+  @keyframes lineIn{to{transform:translateY(0);}}
+  .hero-grid{
+    display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(24px,5vw,72px);
+    margin-top:clamp(32px,5vw,64px);align-items:end;
   }
-  @keyframes fadeUp{from{opacity:0;transform:translateY(16px);}to{opacity:1;transform:translateY(0);}}
-  .hero-cta-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;
-    opacity:0;animation:fadeUp .9s var(--ease) forwards;animation-delay:1.3s;}
-  .btn{
-    display:inline-flex;align-items:center;gap:10px;padding:16px 30px;border-radius:999px;
-    font-weight:700;font-size:.95rem;cursor:pointer;border:none;position:relative;overflow:hidden;
-    transition:transform .35s var(--ease), box-shadow .35s var(--ease);
+  .hero-copy p{font-size:clamp(1.1rem,1.6vw,1.35rem);max-width:34em;margin-bottom:32px;}
+  .hero-copy .actions{display:flex;gap:12px;flex-wrap:wrap;}
+  .portrait{
+    position:relative;aspect-ratio:4/5;background:var(--ink);color:var(--paper);overflow:hidden;
+    border:var(--rule);
   }
-  .btn-primary{background:var(--ink);color:var(--paper);box-shadow:0 14px 30px -12px rgba(28,23,18,.5);}
-  .btn-primary:hover{transform:translateY(-3px) scale(1.02);box-shadow:0 18px 36px -12px rgba(201,106,62,.55);background:var(--terra);}
-  .btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line);}
-  .btn-ghost:hover{border-color:var(--ink);transform:translateY(-3px);background:rgba(28,23,18,.04);}
-  .btn svg{width:16px;height:16px;transition:transform .35s var(--ease);}
-  .btn-primary:hover svg{transform:translateX(4px);}
-  .hero-stats{
-    display:flex;gap:clamp(24px,5vw,56px);margin-top:64px;flex-wrap:wrap;
-    opacity:0;animation:fadeUp .9s var(--ease) forwards;animation-delay:1.5s;
+  .portrait .big{
+    position:absolute;left:-.04em;bottom:-.2em;font-family:var(--serif);font-weight:900;
+    font-size:clamp(11rem,26vw,22rem);line-height:.8;letter-spacing:-.06em;color:var(--acc);
   }
-  .hero-stat b{display:block;font-family:'Fraunces',serif;font-size:clamp(1.7rem,3vw,2.4rem);color:var(--ink);}
-  .hero-stat span{font-size:.82rem;color:var(--ink-soft);}
-  .scroll-cue{
-    position:absolute;bottom:36px;left:50%;transform:translateX(-50%);
-    display:flex;flex-direction:column;align-items:center;gap:8px;font-size:.72rem;
-    letter-spacing:.1em;color:var(--ink-soft);text-transform:uppercase;
-    opacity:0;animation:fadeUp .9s var(--ease) forwards;animation-delay:1.8s;
+  .portrait .cap{
+    position:absolute;left:16px;right:16px;top:14px;display:flex;justify-content:space-between;gap:12px;
+    color:var(--paper);
   }
-  .scroll-cue .line{width:1px;height:34px;background:linear-gradient(var(--ink-soft),transparent);
-    animation:scrollLine 1.8s ease-in-out infinite;}
-  @keyframes scrollLine{0%{transform:scaleY(0);transform-origin:top;}50%{transform:scaleY(1);transform-origin:top;}
-    50.1%{transform-origin:bottom;}100%{transform:scaleY(0);transform-origin:bottom;}}
+  /* Replace .portrait contents with <img src="assets/daniela-rubio.jpg" alt="Retrato de Daniela Rubio"> in high contrast when the photo is ready */
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:var(--rule);margin-top:clamp(40px,6vw,80px);}
+  .fact{padding:22px 0 26px;border-right:1px solid var(--ink);padding-left:clamp(14px,2vw,28px);}
+  .fact:first-child{padding-left:0;}
+  .fact:last-child{border-right:0;}
+  .fact b{display:block;font-family:var(--serif);font-weight:800;font-size:clamp(1.5rem,3vw,2.6rem);letter-spacing:-.02em;line-height:1.05;}
+  .fact span{display:block;margin-top:6px;font-size:.88rem;color:var(--muted);}
 
-  /* ===== Section shell ===== */
-  .section{padding:120px 0;}
-  .section-dark{background:var(--bg);color:var(--paper);}
-  .section-dark .ink-soft{color:rgba(250,246,240,.65);}
-  .section-head{max-width:640px;margin-bottom:64px;}
-  .section-head h2{font-size:clamp(2rem,4.2vw,3.1rem);margin-top:14px;}
-  .section-head p{color:var(--ink-soft);font-size:1.08rem;margin-top:18px;}
-  .section-dark .section-head p{color:rgba(250,246,240,.68);}
+  /* ===== Monumental number ===== */
+  .mono-num{background:var(--acc);color:var(--paper);overflow:hidden;position:relative;border-top:var(--rule);border-bottom:var(--rule);}
+  .mono-num .inner{display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,4vw,64px);align-items:end;}
+  .mono-num .n{
+    font-family:var(--serif);font-weight:900;font-size:clamp(11rem,40vw,36rem);line-height:.74;letter-spacing:-.07em;
+    color:var(--ink);margin-left:-.04em;margin-bottom:-.18em;
+  }
+  .mono-num p{
+    font-family:var(--serif);font-weight:700;font-size:clamp(1.6rem,3.2vw,2.8rem);line-height:1.08;letter-spacing:-.02em;
+    max-width:14em;padding-bottom:clamp(28px,4vw,56px);padding-top:clamp(28px,4vw,56px);
+  }
 
-  /* ===== About ===== */
-  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:72px;align-items:center;}
-  .about-visual{position:relative;}
-  .about-frame{
-    aspect-ratio:4/5;border-radius:var(--radius);
-    background:linear-gradient(150deg,var(--terra) 0%, var(--gold) 55%, var(--sage) 100%);
-    position:relative;overflow:hidden;box-shadow:var(--shadow);
-  }
-  .about-frame::before{
-    content:"DR";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
-    font-family:'Fraunces',serif;font-size:9rem;font-weight:600;color:rgba(255,255,255,.22);
-    letter-spacing:-.03em;
-  }
-  .about-badge{
-    position:absolute;bottom:-24px;right:-24px;background:var(--paper);border-radius:16px;
-    padding:18px 22px;box-shadow:var(--shadow);display:flex;align-items:center;gap:14px;
-    transition:transform .4s var(--ease);
-  }
-  .about-badge:hover{transform:translateY(-6px) rotate(-1deg);}
-  .about-badge b{font-family:'Fraunces',serif;font-size:1.5rem;display:block;color:var(--terra);}
-  .about-badge span{font-size:.76rem;color:var(--ink-soft);}
-  .about-copy p{margin-bottom:20px;color:var(--ink-soft);font-size:1.06rem;}
-  .about-copy strong{color:var(--ink);font-weight:700;}
-  .pill-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;}
-  .pill{
-    padding:9px 18px;border:1px solid var(--line);border-radius:999px;font-size:.82rem;font-weight:600;
-    background:#fff;transition:all .3s var(--ease);
-  }
-  .pill:hover{background:var(--terra);color:#fff;border-color:var(--terra);transform:translateY(-2px);}
+  /* ===== Sections ===== */
+  .sec{padding-top:clamp(64px,9vw,128px);padding-bottom:clamp(64px,9vw,128px);}
+  .sec-head{display:grid;grid-template-columns:1fr 2fr;gap:clamp(20px,4vw,64px);margin-bottom:clamp(36px,5vw,72px);align-items:start;}
+  .sec-head h2{font-size:clamp(2rem,5vw,4rem);font-weight:700;}
 
-  /* ===== Services ===== */
-  .services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
-  .service-card{
-    background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:38px 30px;
-    transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
-    position:relative;overflow:hidden;
+  /* ===== Services — table, not cards ===== */
+  .rows{border-top:var(--rule);}
+  .row{
+    display:grid;grid-template-columns:70px 1.1fr 1.4fr;gap:clamp(12px,3vw,48px);
+    padding:28px 14px 30px 0;border-bottom:1px solid var(--ink);align-items:baseline;
+    transition:background .25s ease,color .25s ease,padding .25s ease;
   }
-  .service-card::before{
-    content:"";position:absolute;inset:0;background:linear-gradient(135deg,var(--terra),var(--gold));
-    opacity:0;transition:opacity .45s ease;z-index:0;
-  }
-  .service-card:hover{transform:translateY(-10px);box-shadow:var(--shadow);border-color:transparent;}
-  .service-card > *{position:relative;z-index:1;}
-  .service-icon{
-    width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;
-    background:rgba(201,106,62,.1);margin-bottom:22px;transition:all .45s var(--ease);
-  }
-  .service-card:hover .service-icon{background:rgba(255,255,255,.2);transform:scale(1.08) rotate(-4deg);}
-  .service-icon svg{width:24px;height:24px;stroke:var(--terra);transition:stroke .45s ease;}
-  .service-card:hover .service-icon svg{stroke:#fff;}
-  .service-card h3{font-size:1.28rem;margin-bottom:12px;transition:color .45s ease;}
-  .service-card:hover h3{color:#fff;}
-  .service-card p{color:var(--ink-soft);font-size:.94rem;transition:color .45s ease;}
-  .service-card:hover p{color:rgba(255,255,255,.92);}
-  .service-tag{
-    display:inline-block;margin-top:18px;font-size:.74rem;font-weight:700;letter-spacing:.06em;
-    text-transform:uppercase;color:var(--terra);transition:color .45s ease;
-  }
-  .service-card:hover .service-tag{color:#fff;}
+  .row:hover{background:var(--ink);color:var(--paper);padding-left:16px;}
+  .row .num{font-stretch:115%;font-size:.8rem;font-weight:700;letter-spacing:.1em;color:var(--acc-deep);}
+  .row:hover .num{color:var(--acc-light);}
+  .row h3{font-size:clamp(1.6rem,3vw,2.4rem);font-weight:700;}
+  .row p{color:var(--muted);max-width:32em;}
+  .row:hover p{color:rgba(242,235,220,.78);}
 
-  /* ===== Experience (dark, timeline) ===== */
-  .exp-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;}
-  .exp-numbers{display:grid;grid-template-columns:1fr 1fr;gap:28px;}
-  .exp-num-card{
-    border:1px solid var(--line-dark);border-radius:18px;padding:30px 24px;
-    background:rgba(255,255,255,.03);transition:transform .4s var(--ease), background .4s ease, border-color .4s ease;
+  /* ===== Postura (ink) ===== */
+  .posture{background:var(--ink);color:var(--paper);}
+  .quote{
+    font-family:var(--serif);font-weight:700;font-size:clamp(2.2rem,6.4vw,5.6rem);line-height:.98;letter-spacing:-.03em;
+    max-width:15em;margin:28px 0 clamp(48px,7vw,96px);text-wrap:balance;
   }
-  .exp-num-card:hover{transform:translateY(-6px);background:rgba(255,255,255,.07);border-color:var(--terra-light);}
-  .exp-num-card b{
-    font-family:'Fraunces',serif;font-size:clamp(2.2rem,3.4vw,3rem);display:block;
-    background:linear-gradient(120deg,var(--terra-light),var(--gold));-webkit-background-clip:text;
-    background-clip:text;color:transparent;
-  }
-  .exp-num-card span{font-size:.85rem;color:rgba(250,246,240,.6);}
-  .timeline{border-left:1.5px solid var(--line-dark);padding-left:32px;display:flex;flex-direction:column;gap:36px;}
-  .timeline-item{position:relative;}
-  .timeline-item::before{
-    content:"";position:absolute;left:-38px;top:4px;width:11px;height:11px;border-radius:50%;
-    background:var(--terra-light);box-shadow:0 0 0 4px rgba(224,138,91,.18);
-  }
-  .timeline-item h4{font-size:1.08rem;margin-bottom:6px;color:var(--paper);}
-  .timeline-item p{font-size:.92rem;color:rgba(250,246,240,.62);}
+  .quote em{color:var(--acc-light);}
+  .principles{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(24px,5vw,72px);}
+  .principle{border-top:1px solid rgba(242,235,220,.35);padding:22px 0 36px;}
+  .principle .num{display:block;margin-bottom:12px;}
+  .principle h3{font-size:clamp(1.3rem,2vw,1.7rem);font-weight:700;margin-bottom:8px;letter-spacing:-.015em;}
+  .principle p{color:rgba(242,235,220,.78);max-width:28em;}
 
-  /* ===== Differentiator ===== */
-  .diff-wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center;}
-  .diff-list{display:flex;flex-direction:column;gap:0;}
-  .diff-item{
-    padding:26px 0;border-bottom:1px solid var(--line);display:flex;gap:20px;align-items:flex-start;
-    transition:padding-left .4s var(--ease);
-  }
-  .diff-item:hover{padding-left:10px;}
-  .diff-num{
-    font-family:'Fraunces',serif;font-size:1.3rem;color:var(--terra);flex-shrink:0;width:38px;
-  }
-  .diff-item h4{font-size:1.12rem;margin-bottom:6px;}
-  .diff-item p{color:var(--ink-soft);font-size:.94rem;}
-  .diff-visual{
-    aspect-ratio:1/1;border-radius:var(--radius);position:relative;overflow:hidden;
-    background:conic-gradient(from 180deg at 50% 50%, #c96a3e, #d9a441, #8a9a7e, #c96a3e);
-    box-shadow:var(--shadow);
-  }
-  .diff-visual::after{
-    content:"";position:absolute;inset:14px;background:var(--paper);border-radius:calc(var(--radius) - 6px);
-    display:flex;
-  }
-  .diff-quote{
-    position:absolute;inset:14px;z-index:2;display:flex;align-items:center;justify-content:center;
-    padding:40px;text-align:center;
-  }
-  .diff-quote p{font-family:'Fraunces',serif;font-style:italic;font-size:1.35rem;color:var(--ink);line-height:1.4;}
+  /* ===== Trayectoria ===== */
+  .path-list{border-top:var(--rule);}
+  .path-item{display:grid;grid-template-columns:70px 1fr 1.3fr;gap:clamp(12px,3vw,48px);padding:24px 0 26px;border-bottom:1px solid var(--ink);align-items:baseline;}
+  .path-item .num{font-stretch:115%;font-size:.8rem;font-weight:700;letter-spacing:.1em;color:var(--acc-deep);}
+  .path-item h3{font-size:clamp(1.25rem,2vw,1.7rem);font-weight:700;letter-spacing:-.015em;}
+  .path-item p{color:var(--muted);}
 
   /* ===== Contact ===== */
-  .contact-section{
-    background:linear-gradient(180deg,var(--bg) 0%, #211a15 100%);color:var(--paper);
-    position:relative;overflow:hidden;
-  }
-  .contact-glow{position:absolute;width:600px;height:600px;border-radius:50%;
-    background:radial-gradient(circle, rgba(201,106,62,.25), transparent 65%);
-    top:-200px;left:50%;transform:translateX(-50%);pointer-events:none;}
-  .contact-inner{position:relative;z-index:2;text-align:center;max-width:760px;margin:0 auto;}
-  .contact-inner h2{font-size:clamp(2.2rem,5vw,3.6rem);margin:18px 0 20px;}
-  .contact-inner > p{color:rgba(250,246,240,.68);font-size:1.1rem;margin-bottom:48px;}
-  .contact-actions{display:flex;flex-wrap:wrap;gap:16px;justify-content:center;margin-bottom:64px;}
-  .btn-light{background:var(--paper);color:var(--ink);box-shadow:0 14px 30px -12px rgba(0,0,0,.4);}
-  .btn-light:hover{transform:translateY(-3px) scale(1.02);background:var(--terra-light);color:#fff;}
-  .btn-outline-light{background:transparent;color:var(--paper);border:1.5px solid rgba(250,246,240,.3);}
-  .btn-outline-light:hover{border-color:var(--paper);background:rgba(255,255,255,.06);transform:translateY(-3px);}
-
-  .contact-form{
-    text-align:left;background:rgba(255,255,255,.04);border:1px solid var(--line-dark);
-    border-radius:var(--radius);padding:36px;display:grid;gap:18px;margin-bottom:56px;
-    backdrop-filter:blur(8px);
-  }
-  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
-  .field{display:flex;flex-direction:column;gap:8px;}
-  .field label{font-size:.8rem;font-weight:600;color:rgba(250,246,240,.7);}
+  .contact{background:var(--paper-2);border-top:var(--rule);}
+  .contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,6vw,96px);align-items:start;}
+  .contact h2{font-size:clamp(3.4rem,11vw,9.5rem);font-weight:800;line-height:.9;letter-spacing:-.04em;}
+  .contact h2 em{color:var(--acc);}
+  .contact .lead{margin:28px 0 28px;max-width:28em;}
+  .links{display:flex;flex-direction:column;border-top:var(--rule);}
+  .links a{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:1px solid var(--ink);font-weight:600;transition:padding .25s ease,color .25s ease;}
+  .links a:hover{padding-left:10px;color:var(--acc-deep);}
+  form{display:grid;gap:22px;}
+  .field{display:flex;flex-direction:column;gap:6px;}
+  .field label{font-stretch:115%;font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;}
   .field input,.field textarea{
-    background:rgba(255,255,255,.06);border:1px solid var(--line-dark);border-radius:12px;
-    padding:13px 16px;color:var(--paper);font-family:inherit;font-size:.95rem;
-    transition:border-color .3s ease, background .3s ease;
+    font:inherit;color:var(--ink);background:var(--paper);border:var(--rule);border-radius:0;padding:13px 14px;
   }
-  .field input::placeholder,.field textarea::placeholder{color:rgba(250,246,240,.35);}
-  .field input:focus,.field textarea:focus{outline:none;border-color:var(--terra-light);background:rgba(255,255,255,.1);}
-  .form-submit{
-    justify-self:start;margin-top:4px;
-  }
-  .form-note{font-size:.78rem;color:rgba(250,246,240,.5);}
+  .field input::placeholder,.field textarea::placeholder{color:#7A7064;}
+  .field input:focus,.field textarea:focus{outline:3px solid var(--acc);outline-offset:0;}
+  .note{font-size:.85rem;color:var(--muted);}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
 
-  .social-row{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;}
-  .social-chip{
-    display:flex;align-items:center;gap:9px;padding:11px 20px;border-radius:999px;
-    border:1px solid rgba(250,246,240,.2);font-size:.86rem;font-weight:600;
-    transition:all .35s var(--ease);
-  }
-  .social-chip:hover{background:var(--paper);color:var(--ink);transform:translateY(-3px);}
+  footer{background:var(--ink);color:var(--paper);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:22px var(--pad);}
 
-  footer{
-    padding:36px 6vw;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;
-    border-top:1px solid var(--line-dark);font-size:.8rem;color:rgba(250,246,240,.5);
-    position:relative;z-index:2;
+  /* ===== Responsive ===== */
+  @media (max-width:900px){
+    .hero-grid,.sec-head,.contact-grid,.principles{grid-template-columns:1fr;}
+    .portrait{max-width:420px;}
+    .mast nav a:not(.btn){display:none;}
+    .row,.path-item{grid-template-columns:44px 1fr;}
+    .row p,.path-item p{grid-column:2;}
+    .mono-num .inner{grid-template-columns:1fr;gap:0;}
+    .mono-num p{padding-top:0;}
+    .mono-num .n{margin-bottom:-.1em;}
   }
-
-  /* Floating WhatsApp */
-  .float-wa{
-    position:fixed;bottom:26px;right:26px;z-index:900;
-    width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;
-    box-shadow:0 12px 28px -8px rgba(37,211,102,.6);transition:transform .35s var(--ease);
-  }
-  .float-wa:hover{transform:scale(1.1) rotate(6deg);}
-  .float-wa svg{width:28px;height:28px;fill:#fff;}
-
-  @media (max-width:960px){
-    .about-grid,.exp-grid,.diff-wrap{grid-template-columns:1fr;gap:44px;}
-    .services-grid{grid-template-columns:1fr 1fr;}
-    .diff-visual{order:-1;max-width:360px;margin:0 auto;}
+  @media (max-width:560px){
+    .facts{grid-template-columns:1fr;}
+    .fact{border-right:0;border-bottom:1px solid var(--ink);padding-left:0;}
+    .fact:last-child{border-bottom:0;}
     .form-row{grid-template-columns:1fr;}
-  }
-  @media (max-width:720px){
-    .nav-links{
-      position:fixed;top:0;right:0;height:100svh;width:min(78vw,320px);flex-direction:column;
-      background:var(--paper);align-items:flex-start;padding:100px 28px 40px;gap:6px;
-      transform:translateX(100%);transition:transform .45s var(--ease);box-shadow:-20px 0 50px rgba(0,0,0,.15);
-    }
-    .nav-links.open{transform:translateX(0);}
-    .nav-links a{width:100%;padding:14px 10px;font-size:1.05rem;}
-    .nav-toggle{display:flex;}
-    .nav-cta{display:none;}
-    .services-grid{grid-template-columns:1fr;}
-    .exp-numbers{grid-template-columns:1fr 1fr;}
-    .hero{padding-top:120px;}
-    .section{padding:80px 0;}
-    .contact-form{padding:24px;}
+    .hero-top .label:last-child{display:none;}
   }
 </style>
 </head>
 <body>
 
-<div class="progress" id="progress"></div>
+<header class="mast">
+  <a href="#inicio" class="wordmark">Daniela Rubio</a>
+  <nav aria-label="Principal">
+    <a href="#que-hago">Qué hago</a>
+    <a href="#postura">Postura</a>
+    <a href="#trayectoria">Trayectoria</a>
+    <a href="#contacto" class="btn sm">Hablemos</a>
+  </nav>
+</header>
 
-<nav class="nav" id="nav">
-  <a href="#inicio" class="nav-logo">Daniela <span>Rubio</span></a>
-  <ul class="nav-links" id="navLinks">
-    <li><a href="#inicio" data-nav>Inicio</a></li>
-    <li><a href="#sobre-mi" data-nav>Sobre mí</a></li>
-    <li><a href="#que-hago" data-nav>Qué hago</a></li>
-    <li><a href="#trayectoria" data-nav>Trayectoria</a></li>
-    <li><a href="#diferenciador" data-nav>Diferenciador</a></li>
-    <li><a href="#contacto" data-nav>Contacto</a></li>
-  </ul>
-  <a href="#contacto" class="nav-cta">Agenda una llamada</a>
-  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú"><span></span><span></span><span></span></button>
-</nav>
-
+<main>
 <!-- HERO -->
-<section class="hero" id="inicio">
-  <div class="hero-blob b1"></div>
-  <div class="hero-blob b2"></div>
-  <div class="hero-inner">
-    <div class="hero-kicker"><span class="dot"></span> Fundadora de Balero Creativo · Guadalajara, México</div>
-    <h1 id="heroTitle" aria-label="Estrategia con visión global. Creatividad con acento propio.">
-      <!-- filled by JS -->
-    </h1>
-    <p class="hero-sub">Ayudo a PyMEs mexicanas y de otros países a crecer con marketing digital estratégico, contenido con criterio de negocio y, cada vez más, inteligencia artificial aplicada a decisiones reales.</p>
-    <div class="hero-cta-row">
-      <a href="#contacto" class="btn btn-primary">Agenda una llamada
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </a>
-      <a href="#sobre-mi" class="btn btn-ghost">Conóceme</a>
+<section class="hero wrap" id="inicio">
+  <div class="hero-top">
+    <span class="label on-paper">Paid media · Meta Ads · Google Ads</span>
+    <span class="label">Guadalajara, México — <span id="year"></span></span>
+  </div>
+
+  <h1 aria-label="Menos ROAS bonito. Más margen real.">
+    <span class="line"><span>Menos ROAS bonito.</span></span>
+    <span class="line"><span>Más <em>margen</em> real.</span></span>
+  </h1>
+
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <p>Soy Daniela Rubio. Gestiono pauta digital para empresas que quieren saber qué canal vendió de verdad, cuánto les costó y qué hacer con el siguiente peso.</p>
+      <div class="actions">
+        <a href="#contacto" class="btn">Agenda una llamada</a>
+        <a href="#que-hago" class="btn ghost">Qué hago</a>
+      </div>
     </div>
-    <div class="hero-stats">
-      <div class="hero-stat"><b>10+</b><span>años en comunicación &amp; social media</span></div>
-      <div class="hero-stat"><b>MX / Global</b><span>clientes nacionales e internacionales</span></div>
-      <div class="hero-stat"><b>IA aplicada</b><span>a marketing y negocios</span></div>
+    <div class="portrait" role="img" aria-label="Espacio reservado para el retrato de Daniela Rubio">
+      <div class="cap label"><span>Retrato</span><span>Pendiente</span></div>
+      <div class="big" aria-hidden="true">DR</div>
     </div>
   </div>
-  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
-</section>
 
-<!-- SOBRE MI -->
-<section class="section" id="sobre-mi">
-  <div class="container about-grid">
-    <div class="about-visual reveal-left">
-      <div class="about-frame"></div>
-      <div class="about-badge">
-        <b>10</b>
-        <span>años construyendo marcas con estrategia y datos</span>
-      </div>
-    </div>
-    <div class="about-copy reveal-right">
-      <span class="eyebrow">Sobre mí</span>
-      <h2 style="margin:16px 0 22px;font-size:clamp(1.8rem,3.6vw,2.6rem);">De los negocios internacionales al marketing que sí mueve resultados</h2>
-      <p>Estudié <strong>Negocios Internacionales</strong> y desde ahí empecé a mirar el marketing distinto: no como estética, sino como una palanca de crecimiento con números detrás. Esa mezcla me llevó a especializarme en <strong>Marketing Digital</strong> y, con el tiempo, a fundar <strong>Balero Creativo</strong>.</p>
-      <p>Llevo <strong>10 años</strong> trabajando en comunicación, publicidad y social media, acompañando a pequeñas y medianas empresas —de Guadalajara y de otros países— a construir marcas que se sienten cercanas y que además venden.</p>
-      <p>Hoy le sumo otra capa: la <strong>inteligencia artificial</strong>. Me apasiona el Machine Learning y el Deep Learning, y los estoy llevando a la práctica con las marcas que asesoro, para tomar mejores decisiones y hacer más con menos.</p>
-      <div class="pill-row">
-        <span class="pill">Negocios Internacionales</span>
-        <span class="pill">Marketing Digital</span>
-        <span class="pill">IA aplicada a negocios</span>
-        <span class="pill">Branding</span>
-        <span class="pill">Liderazgo</span>
-      </div>
-    </div>
+  <div class="facts">
+    <div class="fact"><b>10+ años</b><span>en comunicación, publicidad y social media</span></div>
+    <div class="fact"><b>Meta · Google</b><span>plataformas de pauta que gestiono</span></div>
+    <div class="fact"><b>México / Global</b><span>clientes nacionales e internacionales</span></div>
   </div>
 </section>
 
-<!-- QUE HAGO -->
-<section class="section" id="que-hago" style="background:var(--bg-soft);">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Qué hago</span>
-      <h2>Estrategia, creatividad y tecnología en un mismo lugar</h2>
-      <p>Desde Balero Creativo combinamos visión de negocio con ejecución creativa, para que cada peso invertido en marketing tenga un porqué claro.</p>
-    </div>
-    <div class="services-grid stagger">
-      <div class="service-card reveal-scale" style="--i:0">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg></div>
-        <h3>Social Media &amp; contenido</h3>
-        <p>Estrategia de contenido, comunidad y presencia de marca pensada para conectar y convertir, no solo para verse bonita.</p>
-        <span class="service-tag">Estrategia · Producción · Comunidad</span>
-      </div>
-      <div class="service-card reveal-scale" style="--i:1">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/></svg></div>
-        <h3>Meta Ads &amp; Google Ads</h3>
-        <p>Campañas de pauta digital con objetivos de negocio claros: leads, ventas o posicionamiento, medidos de verdad.</p>
-        <span class="service-tag">Performance · ROAS · Escalamiento</span>
-      </div>
-      <div class="service-card reveal-scale" style="--i:2">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 4v0"/></svg></div>
-        <h3>Desarrollo web</h3>
-        <p>Sitios y landing pages rápidas, claras y hechas para convertir visitas en clientes, no solo para existir.</p>
-        <span class="service-tag">UX · Velocidad · Conversión</span>
-      </div>
-      <div class="service-card reveal-scale" style="--i:3">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M3 12h3M18 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/><circle cx="12" cy="12" r="4"/></svg></div>
-        <h3>Branding</h3>
-        <p>Identidad de marca con carácter propio: cómo se ve, cómo suena y cómo se siente tu negocio para tu cliente ideal.</p>
-        <span class="service-tag">Identidad · Voz de marca</span>
-      </div>
-      <div class="service-card reveal-scale" style="--i:4">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg></div>
-        <h3>Producción audiovisual</h3>
-        <p>Video y fotografía con dirección creativa, pensados para redes, campañas y comunicación de marca.</p>
-        <span class="service-tag">Video · Foto · Dirección creativa</span>
-      </div>
-      <div class="service-card reveal-scale" style="--i:5">
-        <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3h6l1 4H8l1-4z"/><path d="M4 7h16l-1.5 13a2 2 0 01-2 2h-9a2 2 0 01-2-2L4 7z"/></svg></div>
-        <h3>IA aplicada a negocios</h3>
-        <p>Implementación práctica de inteligencia artificial y machine learning en procesos de marketing y toma de decisiones.</p>
-        <span class="service-tag">IA · Automatización · Datos</span>
-      </div>
-    </div>
+<!-- MONUMENTAL NUMBER -->
+<section class="mono-num wrap" aria-label="Diez años de experiencia">
+  <div class="inner">
+    <div class="n" aria-hidden="true">10</div>
+    <p>años cuidando la inversión de otros como si fuera propia.</p>
+  </div>
+</section>
+
+<!-- QUÉ HAGO -->
+<section class="sec wrap" id="que-hago">
+  <div class="sec-head reveal">
+    <span class="label on-paper">01 — Qué hago</span>
+    <h2>Pauta con un porqué <em>claro</em> detrás de cada peso.</h2>
+  </div>
+  <div class="rows">
+    <div class="row reveal"><span class="num">01</span><h3>Meta Ads</h3><p>Campañas con objetivo de negocio definido: leads, ventas o posicionamiento, medidos de verdad.</p></div>
+    <div class="row reveal"><span class="num">02</span><h3>Google Ads</h3><p>Captura de demanda con intención de compra, presupuesto bajo control y reportes que se entienden.</p></div>
+    <div class="row reveal"><span class="num">03</span><h3>Medición y atribución</h3><p>Qué canal vendió de verdad. Los números se leen contra el margen, no contra métricas de vanidad.</p></div>
+    <div class="row reveal"><span class="num">04</span><h3>Escalamiento</h3><p>Cuándo subir presupuesto, cuándo cortarlo y cómo hacerlo sin romper la rentabilidad.</p></div>
+    <div class="row reveal"><span class="num">05</span><h3>IA aplicada a la pauta</h3><p>Machine learning y automatización solo donde mejoran la decisión, no como moda.</p></div>
+  </div>
+</section>
+
+<!-- POSTURA -->
+<section class="sec posture wrap" id="postura">
+  <span class="label on-ink">02 — Postura</span>
+  <p class="quote reveal">“No hago marketing bonito. Hago marketing que <em>entiende</em> el negocio detrás.”</p>
+  <div class="principles">
+    <div class="principle reveal"><span class="num label on-ink">01</span><h3>Pienso en negocio antes que en anuncio</h3><p>Cada campaña parte de un objetivo comercial claro, no de una tendencia.</p></div>
+    <div class="principle reveal"><span class="num label on-ink">02</span><h3>Mirada internacional, ejecución local</h3><p>Entiendo mercados distintos y aterrizo esa visión en resultados concretos para tu negocio.</p></div>
+    <div class="principle reveal"><span class="num label on-ink">03</span><h3>Creatividad con métricas</h3><p>La creatividad se sostiene cuando se mide. Trabajo con datos, no solo con intuición.</p></div>
+    <div class="principle reveal"><span class="num label on-ink">04</span><h3>IA como ventaja, no como moda</h3><p>La aplico donde realmente mejora decisiones y eficiencia.</p></div>
   </div>
 </section>
 
 <!-- TRAYECTORIA -->
-<section class="section section-dark" id="trayectoria">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow" style="color:var(--terra-light);">Experiencia &amp; trayectoria</span>
-      <h2>Una década construyendo marcas que sí crecen</h2>
-      <p class="ink-soft">Trabajo con dueños de negocio que quieren resultados, no solo reportes. Aquí un vistazo a mi camino.</p>
-    </div>
-    <div class="exp-grid">
-      <div class="exp-numbers reveal-left">
-        <div class="exp-num-card"><b>10+</b><span>años en comunicación, publicidad y social media</span></div>
-        <div class="exp-num-card"><b>MX+</b><span>clientes nacionales e internacionales</span></div>
-        <div class="exp-num-card"><b>360°</b><span>marketing, branding y producción bajo un mismo techo</span></div>
-        <div class="exp-num-card"><b>IA</b><span>integrada activamente en procesos de clientes reales</span></div>
-      </div>
-      <div class="timeline reveal-right">
-        <div class="timeline-item">
-          <h4>Formación en Negocios Internacionales</h4>
-          <p>Base estratégica para entender mercados, cifras y operación —no solo creatividad.</p>
-        </div>
-        <div class="timeline-item">
-          <h4>Especialización en Marketing Digital</h4>
-          <p>Profundicé en social media, pauta digital y comunicación de marca para PyMEs.</p>
-        </div>
-        <div class="timeline-item">
-          <h4>10 años en comunicación y publicidad</h4>
-          <p>Acompañando marcas nacionales e internacionales a crecer con estrategia sostenida.</p>
-        </div>
-        <div class="timeline-item">
-          <h4>Fundación de Balero Creativo</h4>
-          <p>Agencia de marketing digital en Guadalajara: social media, Meta Ads, Google Ads, web, branding y producción audiovisual.</p>
-        </div>
-        <div class="timeline-item">
-          <h4>IA aplicada a negocios</h4>
-          <p>Incorporo Machine Learning y Deep Learning en los procesos de las marcas con las que trabajo hoy.</p>
-        </div>
-      </div>
-    </div>
+<section class="sec wrap" id="trayectoria">
+  <div class="sec-head reveal">
+    <span class="label on-paper">03 — Trayectoria</span>
+    <h2>De los negocios internacionales a la <em>pauta</em> que se paga sola.</h2>
   </div>
-</section>
-
-<!-- DIFERENCIADOR -->
-<section class="section" id="diferenciador">
-  <div class="container diff-wrap">
-    <div class="diff-visual reveal-scale">
-      <div class="diff-quote">
-        <p>"No hago marketing bonito. Hago marketing que entiende el negocio detrás."</p>
-      </div>
-    </div>
-    <div class="reveal-right">
-      <span class="eyebrow">Diferenciador</span>
-      <h2 style="margin:16px 0 30px;font-size:clamp(1.8rem,3.6vw,2.6rem);">Visión de negocios internacionales + creatividad aplicada</h2>
-      <div class="diff-list">
-        <div class="diff-item"><span class="diff-num">01</span><div><h4>Pienso en negocio antes que en post</h4><p>Cada estrategia parte de un objetivo comercial claro, no de una tendencia.</p></div></div>
-        <div class="diff-item"><span class="diff-num">02</span><div><h4>Mirada internacional, ejecución local</h4><p>Entiendo mercados distintos y aterrizo esa visión en resultados concretos para tu negocio.</p></div></div>
-        <div class="diff-item"><span class="diff-num">03</span><div><h4>Creatividad con métricas</h4><p>La creatividad se sostiene cuando se mide. Trabajo con datos, no solo con intuición.</p></div></div>
-        <div class="diff-item"><span class="diff-num">04</span><div><h4>IA como ventaja, no como moda</h4><p>Aplico inteligencia artificial donde realmente mejora decisiones y eficiencia.</p></div></div>
-      </div>
-    </div>
+  <div class="path-list">
+    <div class="path-item reveal"><span class="num">01</span><h3>Negocios Internacionales</h3><p>Base estratégica para entender mercados, cifras y operación, no solo creatividad.</p></div>
+    <div class="path-item reveal"><span class="num">02</span><h3>Marketing Digital</h3><p>Especialización en social media, pauta digital y comunicación de marca.</p></div>
+    <div class="path-item reveal"><span class="num">03</span><h3>10 años en comunicación y publicidad</h3><p>Acompañando marcas nacionales e internacionales con estrategia sostenida.</p></div>
+    <div class="path-item reveal"><span class="num">04</span><h3>Fundación de Balero Creativo</h3><p>Agencia de marketing digital en Guadalajara: pauta, social media, web, branding y producción audiovisual.</p></div>
+    <div class="path-item reveal"><span class="num">05</span><h3>IA aplicada a negocios</h3><p>Machine learning y deep learning integrados en los procesos de las marcas con las que trabajo hoy.</p></div>
   </div>
 </section>
 
 <!-- CONTACTO -->
-<section class="section contact-section" id="contacto">
-  <div class="contact-glow"></div>
-  <div class="container contact-inner reveal">
-    <span class="eyebrow" style="color:var(--terra-light);">Trabajemos juntos</span>
-    <h2>¿Listo para llevar tu marca al siguiente nivel?</h2>
-    <p>Agenda una llamada de 20 minutos, sin compromiso, y platiquemos de tu negocio, tus retos y por dónde podemos empezar.</p>
-
-    <div class="contact-actions">
-      <a href="https://wa.me/523300000000" target="_blank" rel="noopener" class="btn btn-light">Escríbeme por WhatsApp</a>
-      <a href="mailto:hola@balerocreativo.com" class="btn btn-outline-light">Enviar correo</a>
+<section class="sec contact wrap" id="contacto">
+  <div class="contact-grid">
+    <div class="reveal">
+      <span class="label on-paper">04 — Contacto</span>
+      <h2 style="margin-top:20px;">Hablemos<em>.</em></h2>
+      <p class="lead">Una llamada de 20 minutos, sin compromiso. Me cuentas tu negocio, qué estás pagando hoy y qué quieres que la pauta te devuelva.</p>
+      <div class="links">
+        <a href="https://wa.me/523300000000" target="_blank" rel="noopener"><span>WhatsApp</span><span aria-hidden="true">→</span></a>
+        <a href="mailto:hola@balerocreativo.com"><span>hola@balerocreativo.com</span><span aria-hidden="true">→</span></a>
+        <a href="https://instagram.com/balerocreativo" target="_blank" rel="noopener"><span>Instagram</span><span aria-hidden="true">→</span></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener"><span>LinkedIn</span><span aria-hidden="true">→</span></a>
+      </div>
     </div>
 
-    <form class="contact-form reveal" id="contactForm">
+    <form id="contactForm" class="reveal">
       <div class="form-row">
-        <div class="field">
-          <label for="name">Nombre</label>
-          <input id="name" name="name" type="text" placeholder="Tu nombre" required>
-        </div>
-        <div class="field">
-          <label for="email">Correo</label>
-          <input id="email" name="email" type="email" placeholder="tucorreo@empresa.com" required>
-        </div>
+        <div class="field"><label for="name">Nombre</label><input id="name" name="name" type="text" placeholder="Tu nombre" required></div>
+        <div class="field"><label for="email">Correo</label><input id="email" name="email" type="email" placeholder="tucorreo@empresa.com" required></div>
       </div>
-      <div class="field">
-        <label for="business">Empresa / proyecto</label>
-        <input id="business" name="business" type="text" placeholder="¿Cómo se llama tu marca?">
-      </div>
-      <div class="field">
-        <label for="message">Cuéntame de tu negocio</label>
-        <textarea id="message" name="message" rows="4" placeholder="¿Qué te gustaría lograr?" required></textarea>
-      </div>
-      <button type="submit" class="btn btn-light form-submit">Enviar mensaje
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-      </button>
-      <p class="form-note" id="formNote">Respondo personalmente en menos de 24 horas hábiles.</p>
+      <div class="field"><label for="business">Empresa</label><input id="business" name="business" type="text" placeholder="¿Cómo se llama tu marca?"></div>
+      <div class="field"><label for="message">Qué quieres lograr con tu pauta</label><textarea id="message" name="message" rows="5" placeholder="Presupuesto actual, canal, qué no te convence..." required></textarea></div>
+      <div><button type="submit" class="btn">Enviar mensaje</button></div>
+      <p class="note" id="formNote">Se abre tu correo con el mensaje listo para enviar.</p>
     </form>
-
-    <div class="social-row">
-      <a href="https://instagram.com/balerocreativo" target="_blank" rel="noopener" class="social-chip">Instagram</a>
-      <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-chip">LinkedIn</a>
-      <a href="https://balerocreativo.com" target="_blank" rel="noopener" class="social-chip">Balero Creativo</a>
-    </div>
   </div>
-
-  <footer>
-    <span>© <span id="year"></span> Daniela Rubio · Balero Creativo, Guadalajara, México</span>
-    <span>Hecho con estrategia, creatividad y un poco de IA.</span>
-  </footer>
 </section>
+</main>
 
-<a class="float-wa" href="https://wa.me/523300000000" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
-  <svg viewBox="0 0 24 24"><path d="M17.6 6.3A8.9 8.9 0 0012 4a8.9 8.9 0 00-7.7 13.4L3 21l3.7-1.2A8.9 8.9 0 0012 21a8.9 8.9 0 006.3-14.7zM12 19.3a7.3 7.3 0 01-3.7-1l-.3-.2-2.7.9.9-2.6-.2-.3A7.3 7.3 0 1119.3 12 7.3 7.3 0 0112 19.3zm4-5.5c-.2-.1-1.3-.7-1.5-.7s-.4-.1-.5.1-.5.7-.6.8-.2.2-.4.1a6 6 0 01-1.8-1.1 6.6 6.6 0 01-1.2-1.5c-.1-.2 0-.3.1-.4l.3-.4.2-.3a.5.5 0 000-.4c0-.1-.5-1.3-.7-1.7s-.4-.4-.5-.4h-.4a.9.9 0 00-.6.3 2.7 2.7 0 00-.9 2 4.7 4.7 0 001 2.5 10.6 10.6 0 004.1 3.6c.6.2 1 .4 1.4.5a3.3 3.3 0 001.5.1 2.5 2.5 0 001.6-1.1 2 2 0 00.1-1.1c-.1-.1-.2-.2-.4-.3z"/></svg>
-</a>
+<footer>
+  <span class="label">© <span id="year2"></span> Daniela Rubio — Paid media</span>
+  <span class="label">Balero Creativo · Guadalajara, México</span>
+</footer>
 
 <script>
 (function(){
-  // Scroll progress bar
-  const progress = document.getElementById('progress');
-  function updateProgress(){
-    const h = document.documentElement;
-    const scrolled = (h.scrollTop) / (h.scrollHeight - h.clientHeight) * 100;
-    progress.style.width = scrolled + '%';
-  }
-  document.addEventListener('scroll', updateProgress, {passive:true});
-  updateProgress();
-
-  // Nav background on scroll
-  const nav = document.getElementById('nav');
-  function toggleNavBg(){
-    nav.classList.toggle('scrolled', window.scrollY > 40);
-  }
-  document.addEventListener('scroll', toggleNavBg, {passive:true});
-  toggleNavBg();
-
-  // Mobile nav toggle
-  const navToggle = document.getElementById('navToggle');
-  const navLinks = document.getElementById('navLinks');
-  navToggle.addEventListener('click', function(){
-    navToggle.classList.toggle('open');
-    navLinks.classList.toggle('open');
-  });
-  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    navToggle.classList.remove('open');
-    navLinks.classList.remove('open');
-  }));
-
-  // Active section highlight
-  const sections = document.querySelectorAll('section[id]');
-  const navItems = document.querySelectorAll('[data-nav]');
-  const navObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        navItems.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + entry.target.id));
-      }
-    });
-  }, {rootMargin:'-40% 0px -50% 0px', threshold:0});
-  sections.forEach(s => navObserver.observe(s));
+  var y = new Date().getFullYear();
+  document.getElementById('year').textContent = y;
+  document.getElementById('year2').textContent = y;
 
   // Scroll reveal
-  const revealEls = document.querySelectorAll('.reveal, .reveal-scale, .reveal-left, .reveal-right');
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('is-visible');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
-  revealEls.forEach(el => revealObserver.observe(el));
+  var els = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(el){ io.observe(el); });
+  } else {
+    els.forEach(function(el){ el.classList.add('in'); });
+  }
 
-  // Hero animated headline — word by word
-  const heroTitle = document.getElementById('heroTitle');
-  const heroText = [
-    {text:'Estrategia', em:false}, {text:'con', em:false}, {text:'visión', em:false}, {text:'global.', em:false},
-    {br:true},
-    {text:'Creatividad', em:false}, {text:'con', em:false}, {text:'acento', em:true}, {text:'propio.', em:true}
-  ];
-  let delay = 0.15;
-  heroText.forEach(item => {
-    if(item.br){ heroTitle.appendChild(document.createElement('br')); return; }
-    const span = document.createElement('span');
-    span.className = 'word';
-    span.style.animationDelay = delay + 's';
-    if(item.em){
-      const em = document.createElement('em');
-      em.textContent = item.text + ' ';
-      span.appendChild(em);
-    } else {
-      span.textContent = item.text + ' ';
-    }
-    heroTitle.appendChild(span);
-    delay += 0.09;
-  });
-
-  // Hero parallax blobs
-  const blobs = document.querySelectorAll('.hero-blob');
-  document.addEventListener('mousemove', (e) => {
-    const x = (e.clientX / window.innerWidth - 0.5);
-    const y = (e.clientY / window.innerHeight - 0.5);
-    blobs.forEach((b, i) => {
-      const factor = (i + 1) * 18;
-      b.style.transform = `translate(${x * factor}px, ${y * factor}px)`;
-    });
-  }, {passive:true});
-
-  window.addEventListener('scroll', () => {
-    const y = window.scrollY;
-    blobs.forEach((b, i) => {
-      b.style.marginTop = (y * (0.08 + i*0.04)) + 'px';
-    });
-  }, {passive:true});
-
-  // Contact form (demo submit — no backend)
-  const form = document.getElementById('contactForm');
-  const note = document.getElementById('formNote');
+  // Contact form: opens the visitor's mail client with the message prefilled (no backend)
+  var form = document.getElementById('contactForm');
   form.addEventListener('submit', function(e){
     e.preventDefault();
-    note.textContent = '¡Gracias! Tu mensaje quedó registrado. Te contacto muy pronto por correo o WhatsApp.';
-    note.style.color = 'var(--terra-light)';
-    form.reset();
+    var d = new FormData(form);
+    var body = 'Nombre: ' + d.get('name') + '\nEmpresa: ' + (d.get('business') || '-') +
+               '\nCorreo: ' + d.get('email') + '\n\n' + d.get('message');
+    window.location.href = 'mailto:hola@balerocreativo.com?subject=' +
+      encodeURIComponent('Contacto desde el sitio — ' + d.get('name')) +
+      '&body=' + encodeURIComponent(body);
   });
-
-  document.getElementById('year').textContent = new Date().getFullYear();
 })();
 </script>
 </body>
