@@ -110,4 +110,4 @@ Mínimo: transiciones de color en hover. Sin parallax, rebotes ni brillos. Respe
 - Retrato real de Daniela.
 - Resultados reales con cifras para los posts de "Cifra".
 - Confirmar el titular y reescribir las cuatro respuestas del chat en su voz.
-- Dominio, correo y WhatsApp definitivos (hoy: `hola@balerocreativo.com` y `523300000000` de ejemplo).
+- Dominio, correo y WhatsApp definitivos (WhatsApp `+52 33 4974 5225` confirmado; correo hoy `hola@balerocreativo.com` de ejemplo).
