@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniela Rubio Platiquemos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Tercera versión del sitio de Daniela Rubio, paid media: cercana, estratégica y directa, con tonos cálidos y la página escrita como conversación." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  /* Concept: the page talks like Daniela does. Real client questions, direct answers, first person.
+     Warm trio: marigold (cempasúchil), chile red, soft pink, on paper and coffee-brown ink. Left-aligned, a few hand-drawn marks. */
+  :root{
+    --sun:#FFC22E;
+    --chile:#C93018;       /* white text 5.36:1, text on paper 5.04:1. Sun on chile only for large type */
+    --pink:#FFD3DC;
+    --paper:#FFF7EA;
+    --ink:#2A1710;
+    --ink-2:#3B2217;
+    --display:'Caprasimo','Cooper Black',Georgia,serif;
+    --body:'Hanken Grotesk',system-ui,-apple-system,sans-serif;
+    --pad:clamp(16px,5vw,72px);
+    --gl:max(var(--pad),env(safe-area-inset-left,0px));
+    --gr:max(var(--pad),env(safe-area-inset-right,0px));
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--body);font-size:1.0625rem;line-height:1.6;background:var(--paper);color:var(--ink);overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+  a{color:inherit;text-decoration:none;}
+  :focus-visible{outline:3px solid var(--chile);outline-offset:3px;}
+  h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.02;letter-spacing:-.01em;text-wrap:balance;}
+  .band{padding-block:clamp(60px,9vw,128px);padding-left:var(--gl);padding-right:var(--gr);}
+  .kicker{font-weight:800;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;}
+
+  /* Header */
+  .top{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--sun);border-bottom:3px solid var(--ink);
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding-block:12px;padding-left:var(--gl);padding-right:var(--gr);
+  }
+  .top .name{font-family:var(--display);font-size:1.45rem;line-height:1;}
+  .top nav{display:flex;gap:6px;align-items:center;}
+  .top nav a{font-weight:700;font-size:.92rem;padding:8px 12px;border-radius:10px;}
+  .top nav a:hover{background:var(--ink);color:var(--sun);}
+  .top nav .cta{background:var(--ink);color:var(--sun);}
+  .top nav .cta:hover{background:var(--chile);color:#fff;}
+
+  .btn{
+    display:inline-block;font-family:var(--body);font-weight:800;font-size:1rem;padding:15px 24px;border-radius:14px;
+    border:3px solid var(--ink);background:var(--ink);color:var(--sun);cursor:pointer;transition:background .2s ease,color .2s ease;
+  }
+  .btn:hover{background:var(--chile);color:#fff;}
+  .btn.line{background:transparent;color:var(--ink);}
+  .btn.line:hover{background:var(--ink);color:var(--sun);}
+  .btn.sun{background:var(--sun);color:var(--ink);}
+  .btn.sun:hover{background:#fff;color:var(--ink);}
+
+  /* Hero */
+  .hero{background:var(--sun);padding-top:clamp(36px,6vw,80px);padding-bottom:clamp(48px,7vw,96px);}
+  .hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:clamp(28px,5vw,80px);align-items:end;}
+  .hero-grid > *{min-width:0;}
+  .hello{font-weight:700;font-size:clamp(1rem,1.6vw,1.2rem);margin-bottom:18px;}
+  .hero h1{font-size:clamp(2.7rem,8.4vw,7.6rem);line-height:.98;}
+  .hero h1 .u{position:relative;display:inline-block;white-space:nowrap;}
+  .hero h1 .u svg{position:absolute;left:-2%;bottom:-.2em;width:104%;height:.3em;overflow:visible;}
+  .hero h1 .u path{fill:none;stroke:var(--chile);stroke-width:7;stroke-linecap:round;stroke-dasharray:420;stroke-dashoffset:420;animation:draw .9s .5s ease forwards;}
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  .hero p.lead{font-size:clamp(1.1rem,1.7vw,1.4rem);max-width:30em;margin:clamp(30px,4vw,48px) 0 28px;font-weight:500;}
+  .btnrow{display:flex;gap:12px;flex-wrap:wrap;}
+  .photo-wrap{position:relative;max-width:100%;}
+  .photo{
+    aspect-ratio:3/4;background:var(--chile);border:4px solid var(--ink);border-radius:999px 999px 18px 18px;overflow:hidden;position:relative;
+  }
+  .photo .dr{position:absolute;left:50%;bottom:-.1em;transform:translateX(-50%);font-family:var(--display);font-size:clamp(7rem,15vw,12rem);line-height:1;color:var(--sun);}
+  .photo-note{display:flex;gap:10px;align-items:flex-start;margin-top:14px;font-weight:600;font-size:.95rem;}
+  .photo-note svg{flex:none;width:44px;height:34px;}
+  .facts{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(16px,3vw,40px);margin-top:clamp(40px,6vw,80px);border-top:3px solid var(--ink);padding-top:20px;}
+  .facts b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,2.8vw,2.4rem);line-height:1.05;}
+  .facts span{font-size:.95rem;font-weight:500;}
+
+  /* Chat */
+  .chat-sec h2{font-size:clamp(2.1rem,5.4vw,4.6rem);max-width:13em;}
+  .chat-sec .sub{margin:16px 0 clamp(32px,5vw,64px);font-size:1.15rem;font-weight:500;max-width:30em;}
+  .chat{display:flex;flex-direction:column;gap:20px;max-width:960px;}
+  .msg{display:flex;flex-direction:column;gap:6px;max-width:100%;}
+  .msg .who{font-size:.72rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;padding-inline:6px;}
+  .bubble{border:3px solid var(--ink);padding:16px 20px;font-size:1.05rem;}
+  .msg.q{align-self:flex-start;max-width:min(36ch,100%);}
+  .msg.q .bubble{background:var(--pink);border-radius:22px 22px 22px 4px;font-weight:700;}
+  .msg.a{align-self:flex-end;max-width:min(58ch,100%);}
+  .msg.a .who{text-align:right;}
+  .msg.a .bubble{background:var(--chile);color:#fff;border-radius:22px 22px 4px 22px;}
+  .chat .gap{height:14px;}
+
+  /* Services */
+  .svc{background:var(--chile);color:#fff;}
+  .svc h2{font-size:clamp(2.1rem,5.4vw,4.6rem);margin-bottom:clamp(28px,4vw,56px);}
+  .svc-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:clamp(12px,4vw,56px);padding:22px 0;border-top:2px dashed rgba(255,255,255,.7);align-items:baseline;}
+  .svc-row:last-child{border-bottom:2px dashed rgba(255,255,255,.7);}
+  .svc-row h3{font-size:clamp(1.6rem,3vw,2.5rem);}
+  .svc-row p{font-weight:500;max-width:34em;}
+
+  /* Camino */
+  .path-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(28px,6vw,96px);align-items:start;}
+  .path-grid > *{min-width:0;}
+  .path h2{font-size:clamp(2.1rem,5vw,4.2rem);}
+  .path p{margin-bottom:18px;max-width:36em;font-size:1.1rem;}
+  .path strong{font-weight:800;}
+  .path p.quote{margin:clamp(48px,7vw,96px) 0 0;font-family:var(--display);font-size:clamp(2rem,5.6vw,5rem);line-height:1.08;max-width:15em;text-wrap:balance;}
+  .quote mark{background:linear-gradient(transparent 58%,var(--sun) 58%);color:inherit;padding:0 .06em;}
+  .rules{display:grid;grid-template-columns:1fr 1fr;gap:28px clamp(24px,5vw,72px);margin-top:clamp(40px,6vw,80px);}
+  .rule{display:flex;gap:14px;align-items:flex-start;min-width:0;}
+  .rule svg{flex:none;width:32px;height:32px;margin-top:2px;}
+  .rule h3{font-family:var(--body);font-weight:800;font-size:1.2rem;letter-spacing:0;line-height:1.25;margin-bottom:4px;}
+  .rule p{margin:0;font-size:1rem;}
+
+  /* Contact */
+  .contact{background:var(--ink);color:var(--paper);}
+  .contact h2{font-size:clamp(3.2rem,12vw,10.5rem);color:var(--sun);line-height:.95;}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);margin-top:clamp(24px,4vw,48px);align-items:start;}
+  .contact-grid > *{min-width:0;}
+  .contact .lead{font-size:1.2rem;max-width:28em;margin-bottom:28px;font-weight:500;}
+  .links{display:flex;flex-direction:column;}
+  .links a{display:flex;justify-content:space-between;gap:12px;padding:15px 0;border-bottom:2px solid rgba(255,247,234,.35);font-weight:700;overflow-wrap:anywhere;}
+  .links a:first-child{border-top:2px solid rgba(255,247,234,.35);}
+  .links a:hover{color:var(--sun);}
+  form{display:grid;gap:18px;}
+  .f{display:flex;flex-direction:column;gap:6px;}
+  .f label{font-weight:700;font-size:.9rem;}
+  .f input,.f textarea{font:inherit;color:var(--paper);background:var(--ink-2);border:2px solid rgba(255,247,234,.5);border-radius:12px;padding:13px 14px;}
+  .f input::placeholder,.f textarea::placeholder{color:rgba(255,247,234,.62);}
+  .f input:focus,.f textarea:focus{outline:3px solid var(--sun);outline-offset:1px;}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .note{font-size:.9rem;color:rgba(255,247,234,.82);}
+  footer{background:var(--ink);color:rgba(255,247,234,.82);padding-block:20px;padding-left:var(--gl);padding-right:var(--gr);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:2px solid rgba(255,247,234,.25);font-size:.9rem;}
+
+  @media (prefers-reduced-motion:reduce){ .hero h1 .u path{animation:none;stroke-dashoffset:0;} html{scroll-behavior:auto;} .btn{transition:none;} }
+  @media (max-width:900px){
+    .hero-grid,.path-grid,.contact-grid,.rules{grid-template-columns:1fr;}
+    .photo-wrap{max-width:320px;}
+    .top nav a:not(.cta){display:none;}
+    .svc-row{grid-template-columns:1fr;gap:6px;}
+  }
+  @media (max-width:560px){ .facts{grid-template-columns:1fr;} .row2{grid-template-columns:1fr;} .hero h1 .u{white-space:normal;} }
+</style>
+
+<header class="top">
+  <a href="#inicio" class="name">Daniela Rubio</a>
+  <nav aria-label="Principal">
+    <a href="#preguntas">Preguntas</a>
+    <a href="#hago">Qué hago</a>
+    <a href="#camino">Mi camino</a>
+    <a href="#contacto" class="cta">Platiquemos</a>
+  </nav>
+</header>
+
+<main>
+<section class="band hero" id="inicio">
+  <div class="hero-grid">
+    <div>
+      <p class="hello">Hola, soy Daniela Rubio, especialista en paid media.</p>
+      <h1>Menos ROAS bonito.<br>Más <span class="u">margen real.<svg viewBox="0 0 240 20" preserveAspectRatio="none" aria-hidden="true"><path d="M3 12 C 38 2, 74 19, 112 9 S 190 16, 237 6"/></svg></span></h1>
+      <p class="lead">Gestiono pauta digital para empresas que quieren saber qué canal vendió de verdad, cuánto les costó y qué hacer con el siguiente peso. Sin rodeos y con los números sobre la mesa.</p>
+      <div class="btnrow">
+        <a href="#contacto" class="btn">Agenda una llamada</a>
+        <a href="https://wa.me/523300000000" target="_blank" rel="noopener" class="btn line">Escríbeme por WhatsApp</a>
+      </div>
+    </div>
+    <div class="photo-wrap">
+      <div class="photo" role="img" aria-label="Espacio reservado para el retrato de Daniela Rubio"><span class="dr" aria-hidden="true">DR</span></div>
+      <div class="photo-note">
+        <svg viewBox="0 0 44 34" fill="none" stroke="#2A1710" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M40 30 C 28 30, 12 24, 8 8"/><path d="M2 14 L8 6 L16 12"/></svg>
+        <span>Aquí va mi foto de verdad. Pronto.</span>
+      </div>
+    </div>
+  </div>
+  <div class="facts">
+    <div><b>10+ años</b><span>en comunicación, publicidad y social media</span></div>
+    <div><b>Meta y Google</b><span>las plataformas de pauta que gestiono</span></div>
+    <div><b>México y el mundo</b><span>clientes nacionales e internacionales</span></div>
+  </div>
+</section>
+
+<section class="band chat-sec" id="preguntas">
+  <h2>Lo que me preguntan los dueños de negocio</h2>
+  <p class="sub">Y lo que les contesto, sin rodeos.</p>
+  <div class="chat">
+    <div class="msg q"><span class="who">Te preguntan</span><div class="bubble">¿Cuánto debo invertir en pauta?</div></div>
+    <div class="msg a"><span class="who">Yo respondo</span><div class="bubble">Depende de tu margen, no de lo que gasta tu competencia. Primero hacemos la cuenta: cuánto te cuesta conseguir un cliente y cuánto te deja.</div></div>
+    <div class="gap"></div>
+    <div class="msg q"><span class="who">Te preguntan</span><div class="bubble">¿Meta o Google?</div></div>
+    <div class="msg a"><span class="who">Yo respondo</span><div class="bubble">Google capta a quien ya te está buscando. Meta te presenta a quien todavía no te conoce. Casi siempre se usan los dos, pero no con el mismo presupuesto ni el mismo objetivo.</div></div>
+    <div class="gap"></div>
+    <div class="msg q"><span class="who">Te preguntan</span><div class="bubble">Mi ROAS se ve bien, pero no hay ventas. ¿Qué pasa?</div></div>
+    <div class="msg a"><span class="who">Yo respondo</span><div class="bubble">El ROAS no descuenta tus costos. Un ROAS bonito con un margen flaco sigue siendo mal negocio. Por eso reviso el margen y no solo lo que dice la plataforma.</div></div>
+    <div class="gap"></div>
+    <div class="msg q"><span class="who">Te preguntan</span><div class="bubble">¿En cuánto tiempo veo resultados?</div></div>
+    <div class="msg a"><span class="who">Yo respondo</span><div class="bubble">Las primeras señales llegan en semanas, pero no te prometo cifras sin ver tu cuenta. Te digo qué se puede medir y desde cuándo.</div></div>
+  </div>
+</section>
+
+<section class="band svc" id="hago">
+  <h2>Lo que me encargo</h2>
+  <div>
+    <div class="svc-row"><h3>Meta Ads</h3><p>Campañas con objetivo de negocio definido: leads, ventas o posicionamiento, medidos de verdad.</p></div>
+    <div class="svc-row"><h3>Google Ads</h3><p>Captura de demanda con intención de compra, presupuesto bajo control y reportes que se entienden.</p></div>
+    <div class="svc-row"><h3>Medición y atribución</h3><p>Qué canal vendió de verdad. Los números se leen contra el margen, no contra métricas de vanidad.</p></div>
+    <div class="svc-row"><h3>Escalamiento</h3><p>Cuándo subir presupuesto, cuándo cortarlo y cómo hacerlo sin romper la rentabilidad.</p></div>
+    <div class="svc-row"><h3>IA aplicada a la pauta</h3><p>Machine learning y automatización solo donde mejoran la decisión, no como moda.</p></div>
+  </div>
+</section>
+
+<section class="band path" id="camino">
+  <div class="path-grid">
+    <h2>Mi camino</h2>
+    <div>
+      <p>Estudié <strong>Negocios Internacionales</strong> y desde ahí empecé a mirar el marketing distinto: no como estética, sino como una palanca de crecimiento con números detrás.</p>
+      <p>Esa mezcla me llevó a especializarme en <strong>Marketing Digital</strong> y, con el tiempo, a fundar <strong>Balero Creativo</strong> en Guadalajara. Llevo <strong>10 años</strong> en comunicación, publicidad y social media, acompañando a empresas de aquí y de otros países.</p>
+      <p>Hoy le sumo otra capa: la <strong>inteligencia artificial</strong>. Me apasionan el Machine Learning y el Deep Learning, y los llevo a la práctica con las marcas que asesoro, para decidir mejor y hacer más con menos.</p>
+    </div>
+  </div>
+  <p class="quote">“No hago marketing bonito. Hago marketing que <mark>entiende</mark> el negocio detrás.”</p>
+  <div class="rules">
+    <div class="rule"><svg viewBox="0 0 32 32" fill="none" stroke="#C93018" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17 L12 26 L28 6"/></svg><div><h3>Pienso en negocio antes que en anuncio</h3><p>Cada campaña parte de un objetivo comercial claro, no de una tendencia.</p></div></div>
+    <div class="rule"><svg viewBox="0 0 32 32" fill="none" stroke="#C93018" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17 L12 26 L28 6"/></svg><div><h3>Mirada internacional, ejecución local</h3><p>Entiendo mercados distintos y aterrizo esa visión en resultados concretos para tu negocio.</p></div></div>
+    <div class="rule"><svg viewBox="0 0 32 32" fill="none" stroke="#C93018" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17 L12 26 L28 6"/></svg><div><h3>Creatividad con métricas</h3><p>La creatividad se sostiene cuando se mide. Trabajo con datos, no solo con intuición.</p></div></div>
+    <div class="rule"><svg viewBox="0 0 32 32" fill="none" stroke="#C93018" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 17 L12 26 L28 6"/></svg><div><h3>IA como ventaja, no como moda</h3><p>La aplico donde de verdad mejora decisiones y eficiencia.</p></div></div>
+  </div>
+</section>
+
+<section class="band contact" id="contacto">
+  <span class="kicker" style="color:var(--sun)">Contacto</span>
+  <h2 style="margin-top:12px">Platiquemos.</h2>
+  <div class="contact-grid">
+    <div>
+      <p class="lead">Una llamada de 20 minutos, sin compromiso. Me cuentas de tu negocio, qué estás pagando hoy y qué quieres que la pauta te devuelva.</p>
+      <div class="links">
+        <a href="https://wa.me/523300000000" target="_blank" rel="noopener"><span>WhatsApp</span><span aria-hidden="true">→</span></a>
+        <a href="mailto:hola@balerocreativo.com"><span>hola@balerocreativo.com</span><span aria-hidden="true">→</span></a>
+        <a href="https://instagram.com/balerocreativo" target="_blank" rel="noopener"><span>Instagram</span><span aria-hidden="true">→</span></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener"><span>LinkedIn</span><span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <form id="contactForm">
+      <div class="row2">
+        <div class="f"><label for="name">Tu nombre</label><input id="name" name="name" type="text" placeholder="¿Cómo te llamas?" required></div>
+        <div class="f"><label for="email">Tu correo</label><input id="email" name="email" type="email" placeholder="tucorreo@empresa.com" required></div>
+      </div>
+      <div class="f"><label for="business">Tu empresa</label><input id="business" name="business" type="text" placeholder="¿Cómo se llama tu marca?"></div>
+      <div class="f"><label for="message">¿Qué quieres lograr con tu pauta?</label><textarea id="message" name="message" rows="4" placeholder="Cuánto inviertes hoy, en qué canal, qué no te convence..." required></textarea></div>
+      <div><button type="submit" class="btn sun">Enviar mensaje</button></div>
+      <p class="note" id="formNote">Vista previa del formulario.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><span>© <span id="yr"></span> Daniela Rubio · Paid media</span><span>Balero Creativo · Guadalajara, México</span></footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var form = document.getElementById('contactForm');
+  var note = document.getElementById('formNote');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var d = new FormData(form);
+    var msg = 'Para: hola@balerocreativo.com\nNombre: ' + d.get('name') + '\nEmpresa: ' + (d.get('business') || '-') +
+              '\nCorreo: ' + d.get('email') + '\n\n' + d.get('message');
+    note.textContent = 'Vista previa: en el sitio final este botón abre tu correo. Aquí queda el mensaje listo para copiar.';
+    var pre = document.getElementById('preview') || document.createElement('pre');
+    pre.id = 'preview'; pre.textContent = msg;
+    pre.style.cssText = 'white-space:pre-wrap;font:inherit;font-size:.92rem;border:2px solid rgba(255,247,234,.5);border-radius:12px;padding:12px;margin-top:4px;overflow-wrap:anywhere;';
+    note.after(pre);
+  });
+})();
+</script>
+
+</body>
+</html>
