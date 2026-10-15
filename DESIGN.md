@@ -74,7 +74,7 @@ Ambas gratuitas (SIL OFL) en Google Fonts.
 
 Primera persona, frases completas, cálida y sin rodeos. Se habla de margen, de decisiones y de dinero ajeno bien gastado. Las respuestas del sitio se escriben como ella las diría en una llamada.
 Cero "impulsa", "eleva", "soluciones integrales".
-Postura provisional (confirmar o cambiar): **"Menos ROAS bonito. Más margen real."**
+Titular confirmado por Daniela: **"Cada peso en pauta tiene que volver con margen."** ("con margen" va sobre el resaltador lima).
 
 ## Imagen
 
@@ -109,5 +109,5 @@ Mínimo: transiciones de color en hover. Sin parallax, rebotes ni brillos. Respe
 
 - Retrato real de Daniela.
 - Resultados reales con cifras para los posts de "Cifra".
-- Confirmar el titular y reescribir las cuatro respuestas del chat en su voz.
+- Reescribir las cuatro respuestas del chat en su voz.
 - Dominio, correo y WhatsApp definitivos (WhatsApp `+52 33 4974 5225` confirmado; correo hoy `hola@balerocreativo.com` de ejemplo).
