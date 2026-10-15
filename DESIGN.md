@@ -78,7 +78,7 @@ Titular confirmado por Daniela: **"Cada peso en pauta tiene que volver con marge
 
 ## Imagen
 
-- **Retrato maestro:** medio cuerpo, fondo plano en ladrillo o arcilla, luz dura lateral, mirada a cámara, sin sonrisa de stock.
+- **Retrato maestro:** `assets/daniela-rubio.jpg` (luz natural, fondo de plantas, blusa blanca, mirada a cámara). Se usa tal cual, sin filtros ni duotono. Para posts, recortar a medio cuerpo sobre el campo de color.
 - **Capturas de resultados** (Ads Manager, Google Ads) recortadas como material gráfico, con datos de clientes ocultos.
 - **Prohibido:** stock, imágenes generadas pulidas, íconos de línea genéricos, emojis como decoración.
 
@@ -107,7 +107,5 @@ Mínimo: transiciones de color en hover. Sin parallax, rebotes ni brillos. Respe
 
 ## Pendientes antes de publicar
 
-- Retrato real de Daniela.
 - Resultados reales con cifras para los posts de "Cifra".
-- Reescribir las cuatro respuestas del chat en su voz.
-- Dominio, correo y WhatsApp definitivos (WhatsApp `+52 33 4974 5225` confirmado; correo hoy `hola@balerocreativo.com` de ejemplo).
+- Confirmar los links de Instagram y LinkedIn (hoy `instagram.com/balerocreativo` y `linkedin.com` genérico).

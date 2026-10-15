@@ -55,10 +55,9 @@
   .facts{display:flex;gap:clamp(24px,4vw,64px);flex-wrap:wrap;list-style:none;color:var(--burnt);}
   .facts b{display:block;font-family:var(--display);font-weight:700;font-size:clamp(1.4rem,2.2vw,2rem);letter-spacing:-.02em;line-height:1.05;}
   .facts span{font-size:.92rem;color:var(--ink);}
-  .hero-r{background:var(--brick);position:relative;overflow:hidden;min-height:340px;padding-right:var(--gr);}
-  .hero-r .dr{position:absolute;left:clamp(16px,3vw,48px);bottom:-.12em;font-family:var(--display);font-weight:700;font-size:clamp(11rem,26vw,24rem);line-height:1;letter-spacing:-.07em;color:var(--lime);}
-  .hero-r .cap{position:absolute;left:clamp(16px,3vw,48px);top:clamp(22px,3vw,40px);color:var(--beige);max-width:20ch;}
-  .hero-r .vert{position:absolute;right:max(18px,env(safe-area-inset-right,0px));top:clamp(22px,3vw,40px);writing-mode:vertical-rl;color:var(--beige);}
+  .hero-r{background:var(--brick);position:relative;overflow:hidden;min-height:420px;}
+  .hero-r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:56% 20%;}
+  .hero-r .chip{position:absolute;left:clamp(16px,3vw,40px);bottom:clamp(16px,3vw,40px);background:var(--burnt);color:var(--beige);padding:9px 16px;border-radius:999px;}
 
   /* ===== Preguntas ===== */
   .qa{background:var(--burnt);color:var(--beige);}
@@ -116,7 +115,7 @@
     .qa-item,.svc-item,.cgrid,.path .cols{grid-template-columns:minmax(0,1fr);}
     .rules{grid-template-columns:repeat(2,minmax(0,1fr));}
   }
-  @media (max-width:560px){ .rules,.row2{grid-template-columns:minmax(0,1fr);} .hero-r .vert{display:none;} }
+  @media (max-width:560px){ .rules,.row2{grid-template-columns:minmax(0,1fr);} }
 </style>
 
 <main>
@@ -146,10 +145,9 @@
       <li><b>México y el mundo</b><span>clientes nacionales e internacionales</span></li>
     </ul>
   </div>
-  <div class="hero-r" role="img" aria-label="Espacio reservado para el retrato de Daniela Rubio">
-    <p class="cap label">Mi foto de verdad va aquí. Pronto.</p>
-    <span class="vert label">Guadalajara, México</span>
-    <span class="dr" aria-hidden="true">DR</span>
+  <div class="hero-r">
+    <img src="assets/daniela-rubio.jpg" width="1500" height="1000" alt="Daniela Rubio, especialista en paid media, con lentes y blusa blanca frente a un muro de plantas">
+    <span class="chip label">Guadalajara, México</span>
   </div>
 </section>
 
@@ -200,7 +198,7 @@
       <p class="lead">Una llamada de 20 minutos, sin compromiso. Me cuentas de tu negocio, qué estás pagando hoy y qué quieres que la pauta te devuelva.</p>
       <div class="clinks">
         <a href="https://wa.me/523349745225" target="_blank" rel="noopener">WhatsApp →</a>
-        <a href="mailto:hola@balerocreativo.com">hola@balerocreativo.com</a>
+        <a href="mailto:hola@danielarubio.com">hola@danielarubio.com</a>
         <a href="https://instagram.com/balerocreativo" target="_blank" rel="noopener">Instagram →</a>
         <a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn →</a>
       </div>
@@ -231,7 +229,7 @@
     var d = new FormData(form);
     var body = 'Nombre: ' + d.get('name') + '\nEmpresa: ' + (d.get('business') || '-') +
                '\nCorreo: ' + d.get('email') + '\n\n' + d.get('message');
-    window.location.href = 'mailto:hola@balerocreativo.com?subject=' +
+    window.location.href = 'mailto:hola@danielarubio.com?subject=' +
       encodeURIComponent('Contacto desde el sitio — ' + d.get('name')) +
       '&body=' + encodeURIComponent(body);
   });
