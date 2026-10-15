@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Daniela Rubio Orden de Inserción</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Segunda versión del sitio de Daniela Rubio, paid media, con un lenguaje gráfico tomado de la orden de inserción publicitaria." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* Concept: the page is an advertising insertion order (orden de inserción), the real document a media buyer signs.
+     Flat cobalt + signal orange + paper + ink. No gradients, no soft shadows, no rounded corners. Everything left-aligned. */
+  :root{
+    --cobalt:#2230D8;
+    --ink:#0B0B0F;
+    --paper:#F1F1EC;
+    --orange:#FF5B1F;      /* blocks only, with ink text (6.33:1). Never as text on cobalt (2.73:1) */
+    --display:'Big Shoulders Display','Arial Narrow',Impact,sans-serif;
+    --mono:'IBM Plex Mono',ui-monospace,Menlo,Consolas,monospace;
+    --pad:clamp(16px,4vw,56px);
+    --gl:max(var(--pad),env(safe-area-inset-left,0px));
+    --gr:max(var(--pad),env(safe-area-inset-right,0px));
+    --hard:8px 8px 0 var(--ink);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:var(--mono);font-size:1rem;line-height:1.6;background:var(--ink);color:var(--paper);
+    overflow-x:hidden;-webkit-font-smoothing:antialiased;
+  }
+  a{color:inherit;text-decoration:none;}
+  :focus-visible{outline:3px solid var(--orange);outline-offset:3px;}
+  .band{padding-block:clamp(56px,8vw,120px);padding-left:var(--gl);padding-right:var(--gr);}
+  .tag{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+  .disp{font-family:var(--display);font-weight:900;text-transform:uppercase;line-height:.86;letter-spacing:-.005em;text-wrap:balance;}
+
+  /* Header */
+  .top{
+    position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--ink);color:var(--paper);
+    display:flex;justify-content:space-between;align-items:center;gap:16px;
+    padding-block:12px;padding-left:var(--gl);padding-right:var(--gr);border-bottom:3px solid var(--paper);
+  }
+  .top .name{font-family:var(--display);font-weight:800;font-size:1.7rem;text-transform:uppercase;letter-spacing:.01em;line-height:1;}
+  .top nav{display:flex;gap:22px;align-items:center;}
+  .top nav a{font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;}
+  .top nav a:hover{background:var(--orange);color:var(--ink);}
+  .top nav .cta{background:var(--orange);color:var(--ink);padding:8px 14px;}
+  .top nav .cta:hover{background:var(--paper);}
+
+  /* Hero */
+  .hero{background:var(--cobalt);position:relative;overflow:hidden;padding-bottom:clamp(40px,6vw,88px);}
+  .hero .meta{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:clamp(24px,4vw,48px);border-bottom:2px solid var(--paper);padding-bottom:12px;}
+  .hero h1{font-size:clamp(3rem,12.5vw,12.5rem);}
+  .hero h1 > span{display:block;}
+  .hero s{text-decoration:none;position:relative;display:inline-block;}
+  .hero s::after{
+    content:"";position:absolute;left:-1.5%;right:-1.5%;top:52%;height:.11em;background:var(--orange);
+    transform-origin:left center;animation:strike .7s .5s cubic-bezier(.7,0,.2,1) both;
+  }
+  @keyframes strike{from{transform:scaleX(0);}to{transform:scaleX(1);}}
+  .hero mark{
+    background:var(--orange);color:var(--ink);display:inline-block;padding:.02em .12em .0em;
+    transform:rotate(-1.2deg);margin-top:.14em;box-shadow:var(--hard);
+  }
+  .hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,5vw,80px);margin-top:clamp(36px,5vw,72px);align-items:start;}
+  .hero-grid > *{min-width:0;}
+  .hero p.lead{font-size:clamp(1.05rem,1.5vw,1.3rem);max-width:34ch;margin-bottom:28px;font-weight:500;}
+  .btnrow{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{
+    display:inline-block;font-family:var(--mono);font-weight:700;font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;
+    padding:15px 22px;border:3px solid var(--ink);background:var(--orange);color:var(--ink);box-shadow:var(--hard);cursor:pointer;
+    transition:transform .15s ease,box-shadow .15s ease;
+  }
+  .btn:hover{transform:translate(4px,4px);box-shadow:4px 4px 0 var(--ink);}
+  .btn.alt{background:var(--paper);}
+  .photo{
+    position:relative;aspect-ratio:4/5;max-width:100%;background:var(--ink);border:3px solid var(--paper);
+    background-image:radial-gradient(circle,var(--cobalt) 34%,transparent 36%);background-size:13px 13px;
+  }
+  .photo .lab{position:absolute;left:0;right:0;bottom:0;background:var(--paper);color:var(--ink);padding:10px 12px;}
+  .photo .lab b{display:block;}
+  .reg{position:absolute;width:34px;height:34px;color:var(--paper);}
+  .reg.a{top:-18px;left:-18px;} .reg.b{top:-18px;right:-18px;}
+  .stamp{
+    position:absolute;right:-8px;top:46%;transform:rotate(-8deg);background:var(--orange);color:var(--ink);
+    border:3px solid var(--ink);padding:10px 16px;font-family:var(--display);font-weight:900;font-size:clamp(1.6rem,3vw,2.6rem);
+    text-transform:uppercase;line-height:.95;box-shadow:var(--hard);
+  }
+  .facts{display:flex;gap:0;flex-wrap:wrap;margin-top:clamp(36px,5vw,64px);border:3px solid var(--paper);}
+  .facts > div{flex:1 1 220px;padding:16px 18px;border-right:3px solid var(--paper);min-width:0;}
+  .facts > div:last-child{border-right:0;}
+  .facts b{display:block;font-family:var(--display);font-weight:900;font-size:clamp(1.8rem,3.4vw,3rem);text-transform:uppercase;line-height:1;}
+
+  /* Insertion order */
+  .io{background:var(--paper);color:var(--ink);}
+  .io h2{font-size:clamp(3rem,10vw,9.5rem);}
+  .io .sub{max-width:44ch;margin:18px 0 clamp(28px,4vw,52px);font-weight:500;}
+  .doc{border:3px solid var(--ink);background:#fff;box-shadow:12px 12px 0 var(--ink);position:relative;max-width:100%;}
+  .doc-head{display:grid;grid-template-columns:repeat(3,1fr);border-bottom:3px solid var(--ink);}
+  .doc-head > div{padding:12px 16px;border-right:3px solid var(--ink);min-width:0;}
+  .doc-head > div:last-child{border-right:0;}
+  .doc-head span{display:block;font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+  .doc-head i{display:block;height:1.4em;border-bottom:2px dotted var(--ink);}
+  .line-item{
+    display:grid;grid-template-columns:44px minmax(0,1fr) minmax(0,1.4fr) auto;gap:clamp(12px,2.4vw,32px);
+    align-items:center;padding:20px 16px;border-bottom:3px solid var(--ink);
+  }
+  .line-item:hover{background:var(--orange);}
+  .box{width:30px;height:30px;border:3px solid var(--ink);display:grid;place-items:center;font-weight:700;font-size:1.3rem;line-height:1;background:#fff;}
+  .line-item h3{font-family:var(--display);font-weight:900;font-size:clamp(1.7rem,3.2vw,2.8rem);text-transform:uppercase;line-height:.95;}
+  .line-item p{font-size:.95rem;}
+  .line-item .plat{font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;border:2px solid var(--ink);padding:4px 8px;white-space:nowrap;}
+  .doc-foot{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:16px;}
+  .doc-foot span{font-size:.75rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+
+  /* Postura */
+  .rules{background:var(--orange);color:var(--ink);}
+  .rules .q{font-size:clamp(2.8rem,10.5vw,10.5rem);margin:20px 0 clamp(36px,6vw,80px);max-width:12em;}
+  .rule-list{display:grid;grid-template-columns:1fr 1fr;gap:0 clamp(24px,5vw,72px);border-top:3px solid var(--ink);}
+  .rule-list > div{padding:18px 0 26px;border-bottom:3px solid var(--ink);min-width:0;}
+  .rule-list h3{font-family:var(--display);font-weight:900;font-size:clamp(1.6rem,2.6vw,2.3rem);text-transform:uppercase;line-height:.95;margin-bottom:8px;}
+  .rule-list h3::before{content:"→ ";}
+  .rule-list p{max-width:36ch;font-weight:500;}
+
+  /* Historial */
+  .log-sec h2{font-size:clamp(2.6rem,8vw,7.5rem);margin-bottom:clamp(28px,4vw,56px);}
+  .log{border-top:3px solid var(--paper);}
+  .log-row{display:grid;grid-template-columns:auto minmax(24px,1fr) minmax(0,38ch);gap:14px;align-items:baseline;padding:18px 0;border-bottom:1px solid rgba(241,241,236,.35);}
+  .log-row .k{font-family:var(--display);font-weight:800;font-size:clamp(1.3rem,2.2vw,1.9rem);text-transform:uppercase;line-height:1;}
+  .log-row .dots{border-bottom:3px dotted var(--paper);align-self:end;margin-bottom:.35em;}
+  .log-row .v{font-size:.92rem;color:rgba(241,241,236,.82);}
+
+  /* Contacto */
+  .contact{background:var(--cobalt);}
+  .contact h2{font-size:clamp(4rem,17vw,16rem);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,96px);margin-top:clamp(24px,4vw,48px);align-items:start;}
+  .contact-grid > *{min-width:0;}
+  .contact .lead{max-width:32ch;margin-bottom:26px;font-weight:500;font-size:1.1rem;}
+  .links{border-top:3px solid var(--paper);}
+  .links a{display:flex;justify-content:space-between;gap:12px;padding:14px 0;border-bottom:3px solid var(--paper);font-weight:700;overflow-wrap:anywhere;}
+  .links a:hover{background:var(--orange);color:var(--ink);padding-left:10px;padding-right:10px;}
+  form{display:grid;gap:20px;}
+  .f{display:flex;flex-direction:column;gap:4px;}
+  .f label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;}
+  .f input,.f textarea{
+    font:inherit;color:var(--paper);background:rgba(11,11,15,.28);border:0;border-bottom:3px solid var(--paper);border-radius:0;padding:12px 10px;
+  }
+  .f input::placeholder,.f textarea::placeholder{color:rgba(241,241,236,.62);}
+  .f input:focus,.f textarea:focus{outline:3px solid var(--orange);outline-offset:0;}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .note{font-size:.85rem;}
+  footer{background:var(--ink);padding-block:18px;padding-left:var(--gl);padding-right:var(--gr);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:3px solid var(--paper);}
+
+  @media (prefers-reduced-motion:reduce){ .hero s::after{animation:none;} .btn{transition:none;} html{scroll-behavior:auto;} }
+  @media (max-width:900px){
+    .hero-grid,.contact-grid,.rule-list{grid-template-columns:1fr;}
+    .photo{max-width:380px;}
+    .top nav a:not(.cta){display:none;}
+    .doc-head{grid-template-columns:1fr;}
+    .doc-head > div{border-right:0;border-bottom:3px solid var(--ink);}
+    .doc-head > div:last-child{border-bottom:0;}
+    .line-item{grid-template-columns:36px minmax(0,1fr);}
+    .line-item p,.line-item .plat{grid-column:2;}
+    .line-item .plat{justify-self:start;}
+    .log-row{grid-template-columns:1fr;gap:6px;}
+    .log-row .dots{display:none;}
+    .stamp{right:6px;}
+  }
+  @media (max-width:520px){ .row2{grid-template-columns:1fr;} .facts > div{border-right:0;border-bottom:3px solid var(--paper);} .facts > div:last-child{border-bottom:0;} }
+</style>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="reg" viewBox="0 0 34 34"><circle cx="17" cy="17" r="8" fill="none" stroke="currentColor" stroke-width="2"/><path d="M17 0v34M0 17h34" stroke="currentColor" stroke-width="2"/></symbol>
+</svg>
+
+<header class="top">
+  <a href="#inicio" class="name">Daniela Rubio</a>
+  <nav aria-label="Principal">
+    <a href="#servicio">Servicio</a>
+    <a href="#reglas">Reglas</a>
+    <a href="#historial">Historial</a>
+    <a href="#contacto" class="cta">Hablemos</a>
+  </nav>
+</header>
+
+<main>
+<section class="band hero" id="inicio">
+  <div class="meta tag"><span>Orden Nº 001 · Paid media</span><span>Meta Ads / Google Ads · Guadalajara, MX</span></div>
+  <h1 class="disp" aria-label="Menos ROAS bonito. Más margen real.">
+    <span>Menos <s>ROAS bonito.</s></span>
+    <span><mark>Más margen real.</mark></span>
+  </h1>
+  <div class="hero-grid">
+    <div>
+      <p class="lead">Soy Daniela Rubio. Gestiono pauta digital para empresas que quieren saber qué canal vendió de verdad, cuánto les costó y qué hacer con el siguiente peso.</p>
+      <div class="btnrow">
+        <a href="#contacto" class="btn">Agenda una llamada</a>
+        <a href="#servicio" class="btn alt">Ver el servicio</a>
+      </div>
+    </div>
+    <div style="position:relative">
+      <div class="photo" role="img" aria-label="Espacio reservado para el retrato de Daniela Rubio">
+        <svg class="reg a" aria-hidden="true"><use href="#reg"/></svg>
+        <svg class="reg b" aria-hidden="true"><use href="#reg"/></svg>
+        <div class="lab tag"><b>Retrato · pendiente</b>Luz dura lateral, sin sonrisa de stock</div>
+      </div>
+      <div class="stamp" aria-hidden="true">10 años<br>de pauta</div>
+    </div>
+  </div>
+  <div class="facts">
+    <div><b>10+ años</b>en comunicación, publicidad y social media</div>
+    <div><b>Meta · Google</b>plataformas que gestiono</div>
+    <div><b>MX / Global</b>clientes nacionales e internacionales</div>
+  </div>
+</section>
+
+<section class="band io" id="servicio">
+  <span class="tag">Documento de trabajo</span>
+  <h2 class="disp" style="margin-top:14px">Orden de inserción</h2>
+  <p class="sub">El documento que firma quien compra medios. Así se ve lo que cubre mi servicio.</p>
+  <div class="doc">
+    <div class="doc-head">
+      <div><span>Cliente</span><i></i></div>
+      <div><span>Plataforma</span><i></i></div>
+      <div><span>Inversión mensual</span><i></i></div>
+    </div>
+    <div class="line-item"><div class="box">×</div><h3>Meta Ads</h3><p>Campañas con objetivo de negocio definido: leads, ventas o posicionamiento, medidos de verdad.</p><span class="plat">Meta</span></div>
+    <div class="line-item"><div class="box">×</div><h3>Google Ads</h3><p>Captura de demanda con intención de compra, presupuesto bajo control y reportes que se entienden.</p><span class="plat">Google</span></div>
+    <div class="line-item"><div class="box">×</div><h3>Medición y atribución</h3><p>Qué canal vendió de verdad. Los números se leen contra el margen, no contra métricas de vanidad.</p><span class="plat">Todas</span></div>
+    <div class="line-item"><div class="box">×</div><h3>Escalamiento</h3><p>Cuándo subir presupuesto, cuándo cortarlo y cómo hacerlo sin romper la rentabilidad.</p><span class="plat">Todas</span></div>
+    <div class="line-item"><div class="box">×</div><h3>IA aplicada a la pauta</h3><p>Machine learning y automatización solo donde mejoran la decisión, no como moda.</p><span class="plat">Todas</span></div>
+    <div class="doc-foot"><span>Revisa: Daniela Rubio</span><span>Autoriza: ______________________</span></div>
+  </div>
+</section>
+
+<section class="band rules" id="reglas">
+  <span class="tag">Mis reglas</span>
+  <p class="q disp">“No hago marketing bonito. Hago marketing que entiende el negocio detrás.”</p>
+  <div class="rule-list">
+    <div><h3>Negocio antes que anuncio</h3><p>Cada campaña parte de un objetivo comercial claro, no de una tendencia.</p></div>
+    <div><h3>Mirada internacional, ejecución local</h3><p>Entiendo mercados distintos y aterrizo esa visión en resultados concretos para tu negocio.</p></div>
+    <div><h3>Creatividad con métricas</h3><p>La creatividad se sostiene cuando se mide. Trabajo con datos, no solo con intuición.</p></div>
+    <div><h3>IA como ventaja, no como moda</h3><p>La aplico donde realmente mejora decisiones y eficiencia.</p></div>
+  </div>
+</section>
+
+<section class="band log-sec" id="historial">
+  <h2 class="disp">Historial de la cuenta</h2>
+  <div class="log">
+    <div class="log-row"><span class="k">Negocios Internacionales</span><span class="dots"></span><span class="v">Base estratégica para entender mercados, cifras y operación, no solo creatividad.</span></div>
+    <div class="log-row"><span class="k">Marketing Digital</span><span class="dots"></span><span class="v">Especialización en social media, pauta digital y comunicación de marca.</span></div>
+    <div class="log-row"><span class="k">10 años en publicidad</span><span class="dots"></span><span class="v">Acompañando marcas nacionales e internacionales con estrategia sostenida.</span></div>
+    <div class="log-row"><span class="k">Balero Creativo</span><span class="dots"></span><span class="v">Agencia de marketing digital en Guadalajara: pauta, social media, web, branding y producción audiovisual.</span></div>
+    <div class="log-row"><span class="k">IA aplicada a negocios</span><span class="dots"></span><span class="v">Machine learning y deep learning en los procesos de las marcas con las que trabajo hoy.</span></div>
+  </div>
+</section>
+
+<section class="band contact" id="contacto">
+  <span class="tag">Contacto</span>
+  <h2 class="disp" style="margin-top:12px">Hablemos.</h2>
+  <div class="contact-grid">
+    <div>
+      <p class="lead">Una llamada de 20 minutos, sin compromiso. Me cuentas tu negocio, qué estás pagando hoy y qué quieres que la pauta te devuelva.</p>
+      <div class="links">
+        <a href="https://wa.me/523300000000" target="_blank" rel="noopener"><span>WhatsApp</span><span aria-hidden="true">→</span></a>
+        <a href="mailto:hola@balerocreativo.com"><span>hola@balerocreativo.com</span><span aria-hidden="true">→</span></a>
+        <a href="https://instagram.com/balerocreativo" target="_blank" rel="noopener"><span>Instagram</span><span aria-hidden="true">→</span></a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener"><span>LinkedIn</span><span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+    <form id="contactForm">
+      <div class="row2">
+        <div class="f"><label for="name">Nombre</label><input id="name" name="name" type="text" placeholder="Tu nombre" required></div>
+        <div class="f"><label for="email">Correo</label><input id="email" name="email" type="email" placeholder="tucorreo@empresa.com" required></div>
+      </div>
+      <div class="f"><label for="business">Empresa</label><input id="business" name="business" type="text" placeholder="¿Cómo se llama tu marca?"></div>
+      <div class="f"><label for="message">Qué quieres lograr con tu pauta</label><textarea id="message" name="message" rows="4" placeholder="Presupuesto actual, canal, qué no te convence..." required></textarea></div>
+      <div><button type="submit" class="btn">Enviar</button></div>
+      <p class="note" id="formNote">Vista previa del formulario.</p>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer class="tag"><span>© <span id="yr"></span> Daniela Rubio · Paid media</span><span>Balero Creativo · Guadalajara, México</span></footer>
+
+<script>
+(function(){
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  var form = document.getElementById('contactForm');
+  var note = document.getElementById('formNote');
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var d = new FormData(form);
+    var msg = 'Para: hola@balerocreativo.com\nNombre: ' + d.get('name') + '\nEmpresa: ' + (d.get('business') || '-') +
+              '\nCorreo: ' + d.get('email') + '\n\n' + d.get('message');
+    note.textContent = 'Vista previa: en el sitio final este botón abre tu correo. Aquí queda el mensaje listo para copiar.';
+    var pre = document.getElementById('preview') || document.createElement('pre');
+    pre.id = 'preview'; pre.textContent = msg;
+    pre.style.cssText = 'white-space:pre-wrap;font:inherit;font-size:.9rem;border:3px solid var(--paper);padding:12px;margin-top:4px;overflow-wrap:anywhere;';
+    note.after(pre);
+  });
+})();
+</script>
+
+</body>
+</html>
