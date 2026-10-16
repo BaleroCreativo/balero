@@ -4,48 +4,45 @@
 <meta charset="utf-8">
 <title>Infografía – 5 pasos para no perder leads por WhatsApp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Caveat:wght@600&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,800;0,900;1,700&family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#0A0A0B; --cream:#F4EFE6; --muted:#A9A3AD;
-    --accent:#B79CF0; --accent-deep:#5B2A9D; --violet:#8B5CF6; --lila:#B9A2E8; --yellow:#F7C93E;
+    --bg:#FAFAF8; --ink:#0F0D12; --muted:#58525E; --soft:#A7A2AC;
+    --accent:#B79CF0; --violet:#8B5CF6; --deep:#5B2A9D; --lila:#B9A2E8; --yellow:#F7C93E;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{width:1200px;height:1060px;background:var(--bg)}
-  .card{
-    position:relative;width:1200px;height:1060px;overflow:hidden;
-    background:
-      radial-gradient(ellipse 80% 40% at 50% 0%, rgba(91,42,157,.30), transparent 70%),
-      var(--bg);
-    padding:60px 84px 52px;display:flex;flex-direction:column;
+  .card{position:relative;width:1200px;height:1060px;overflow:hidden;background:var(--bg);padding:54px 84px 48px;display:flex;flex-direction:column}
+  .eyebrow{
+    align-self:flex-start;font:800 18px/1 'Archivo',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--ink);
+    padding-bottom:8px;border-bottom:4px solid var(--accent);margin-bottom:24px;
   }
-  .eyebrow{font:700 20px/1 'Source Sans 3',sans-serif;letter-spacing:.4em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
-  h1{
-    font:900 54px/1.06 'Archivo',sans-serif;text-transform:uppercase;color:var(--cream);letter-spacing:-.01em;
-  }
-  h1 em{font-style:normal;color:var(--accent);text-shadow:0 0 32px rgba(139,92,246,.5)}
-  ol{list-style:none;flex:1;display:flex;flex-direction:column;justify-content:space-between;margin:34px 0 28px}
+  h1{font:400 74px/.98 'Instrument Serif',serif;color:var(--ink);letter-spacing:-.02em}
+  h1 i{font-style:italic}
+  h1 b{font:900 62px/1 'Archivo',sans-serif;letter-spacing:-.035em;text-transform:uppercase}
+  h1 mark{display:inline-block;line-height:.92;background:var(--accent);color:var(--ink);padding:.02em .14em .06em;margin:.06em 0 0 -.02em}
+  ol{list-style:none;flex:1;display:flex;flex-direction:column;justify-content:space-between;margin:32px 0 36px}
   li{display:flex;align-items:center;gap:30px}
   .num{
-    flex:none;width:86px;height:86px;border-radius:18px;
-    background:var(--accent);color:var(--bg);
-    font:900 56px/86px 'Archivo',sans-serif;text-align:center;
-    box-shadow:0 0 0 3px var(--bg),0 0 0 5px var(--accent-deep),0 0 36px rgba(139,92,246,.35);
+    flex:none;width:84px;height:84px;border-radius:18px;background:var(--accent);color:var(--ink);
+    border:4px solid var(--ink);box-shadow:5px 5px 0 var(--ink);
+    font:900 54px/76px 'Archivo',sans-serif;text-align:center;letter-spacing:-.04em;
   }
-  .txt h2{font:900 27px/1.1 'Archivo',sans-serif;text-transform:uppercase;color:var(--cream);letter-spacing:.005em;margin-bottom:8px}
+  .txt h2{font:900 26px/1.08 'Archivo',sans-serif;letter-spacing:-.015em;color:var(--ink);margin-bottom:7px;text-transform:uppercase}
   .txt p{font:400 22px/1.35 'Source Sans 3',sans-serif;color:var(--muted);max-width:900px}
-  .foot{
-    border-top:1px solid rgba(244,239,230,.18);padding-top:24px;
-    display:flex;justify-content:space-between;align-items:center;gap:40px;
+  .foot{display:flex;justify-content:space-between;align-items:center;gap:30px}
+  .cta{
+    background:var(--ink);color:var(--bg);padding:20px 28px;border-radius:6px;
+    font:400 33px/1.08 'Instrument Serif',serif;letter-spacing:-.005em;max-width:760px;
   }
-  .foot p{font:600 24px/1.3 'Source Sans 3',sans-serif;color:var(--cream);max-width:760px}
-  .sig{font:600 58px/1 'Caveat',cursive;color:var(--cream);transform:rotate(-5deg);white-space:nowrap}
+  .cta b{display:inline-block;margin-top:8px;font:800 25px/1 'Archivo',sans-serif;color:var(--accent);letter-spacing:-.02em}
+  .sig{font:italic 700 26px/1 'Archivo',sans-serif;letter-spacing:-.02em;color:var(--soft);white-space:nowrap}
 </style>
 </head>
 <body>
 <div class="card">
   <div class="eyebrow">Seguimiento de leads en WhatsApp</div>
-  <h1>Los 5 pasos para no <em>perder un lead más</em> por WhatsApp</h1>
+  <h1>Los 5 pasos para no <mark>perder un lead más</mark><br>por <b>WhatsApp</b></h1>
   <ol>
     <li><div class="num">1</div><div class="txt"><h2>Saca el registro de WhatsApp</h2><p>El chat es una bitácora, no un sistema de seguimiento. Necesitas un registro aparte: nombre, fecha, etapa.</p></div></li>
     <li><div class="num">2</div><div class="txt"><h2>Define un tiempo máximo de respuesta</h2><p>“Respondemos rápido” no es una regla. Un número concreto que todo el equipo conozca, sí.</p></div></li>
@@ -54,8 +51,8 @@
     <li><div class="num">5</div><div class="txt"><h2>Revisa el pipeline completo cada semana</h2><p>Cuántos leads entraron, cuántos siguen activos, cuántos se perdieron y en qué punto.</p></div></li>
   </ol>
   <div class="foot">
-    <p>Sin estas 5 piezas, los leads se siguen escapando por WhatsApp.</p>
-    <div class="sig">Balero</div>
+    <div class="cta">Sin estas 5 piezas, los leads se siguen<br><b>escapando por WhatsApp.</b></div>
+    <div class="sig">Balero Creativo</div>
   </div>
 </div>
 </body>
