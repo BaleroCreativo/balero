@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>El pipeline de WhatsApp – Balero Creativo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#0A0A0B; --cream:#F4EFE6; --muted:#A9A3AD; --violet:#8B5CF6; --accent:#B79CF0; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;background:var(--bg)}
+  .card{position:relative;width:1200px;height:630px;overflow:hidden;background:var(--bg);padding:60px 72px 0}
+  .eyebrow{font:700 22px/1 'Source Sans 3',sans-serif;letter-spacing:.42em;text-transform:uppercase;color:var(--cream)}
+  .eyebrow::after{content:"";display:block;width:64px;height:4px;background:var(--accent);margin-top:16px}
+  .flow{display:grid;grid-template-columns:1fr 36px 1fr 36px 1fr 36px 1.25fr;align-items:start;margin-top:84px}
+  .stage{display:flex;flex-direction:column;gap:26px}
+  .plate{
+    height:176px;border:2px solid rgba(244,239,230,.28);border-radius:18px;padding:18px 20px 20px;
+    display:flex;flex-direction:column;justify-content:space-between;
+  }
+  .plate .n{font:700 18px/1 'Source Sans 3',sans-serif;letter-spacing:.3em;color:var(--muted)}
+  .plate h2{font:900 27px/1 'Archivo',sans-serif;text-transform:uppercase;letter-spacing:-.025em;color:var(--cream)}
+  .stage.end .plate{background:var(--violet);border-color:var(--violet)}
+  .stage.end .n{color:rgba(10,10,11,.6)} .stage.end h2{color:var(--bg)}
+  .desc{font:400 25px/1.3 'Source Sans 3',sans-serif;color:var(--cream);padding:0 4px}
+  .arrow{height:176px;display:flex;align-items:center;justify-content:center}
+  .arrow svg{width:30px;height:20px}
+  .logo{position:absolute;right:72px;bottom:30px;height:76px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">El pipeline de WhatsApp</div>
+  <div class="flow">
+    <div class="stage"><div class="plate"><span class="n">01</span><h2>Primer<br>contacto</h2></div><p class="desc">Confirmar y preguntar algo concreto</p></div>
+    <div class="arrow"><svg viewBox="0 0 30 20" fill="none" stroke="#B79CF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10h24M19 3l7 7-7 7"/></svg></div>
+    <div class="stage"><div class="plate"><span class="n">02</span><h2>Sin<br>respuesta</h2></div><p class="desc">Mensaje corto, sin presión</p></div>
+    <div class="arrow"><svg viewBox="0 0 30 20" fill="none" stroke="#B79CF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10h24M19 3l7 7-7 7"/></svg></div>
+    <div class="stage"><div class="plate"><span class="n">03</span><h2>Reintento</h2></div><p class="desc">Número de días fijo antes de insistir</p></div>
+    <div class="arrow"><svg viewBox="0 0 30 20" fill="none" stroke="#B79CF0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 10h24M19 3l7 7-7 7"/></svg></div>
+    <div class="stage end"><div class="plate"><span class="n">04</span><h2>Cerrado /<br>reactivación</h2></div><p class="desc">Cliente o lista de largo plazo</p></div>
+  </div>
+  <img class="logo" src="assets/balero-isotipo-crema.png" alt="Balero Creativo">
+</div>
+</body>
+</html>
