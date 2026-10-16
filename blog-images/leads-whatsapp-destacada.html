@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Imagen destacada – Seguimiento de leads de WhatsApp</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&family=Playfair+Display:ital,wght@1,600;1,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0A0A0B; --cream:#F4EFE6; --muted:#A9A3AD;
+    --accent:#B79CF0; --accent-deep:#5B2A9D; --lila:#B9A2E8; --yellow:#F7C93E;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;background:var(--bg)}
+  .card{
+    position:relative;width:1200px;height:630px;overflow:hidden;
+    background:
+      radial-gradient(ellipse 70% 60% at 50% 0%, rgba(91,42,157,.28), transparent 70%),
+      var(--bg);
+    padding:64px 88px;display:flex;flex-direction:column;justify-content:center;
+  }
+  .eyebrow{
+    font:600 22px/1 'Source Sans 3',sans-serif;letter-spacing:.42em;text-transform:uppercase;
+    color:var(--muted);margin-bottom:34px;
+  }
+  .eyebrow::after{content:"";display:inline-block;width:56px;height:2px;background:var(--accent);vertical-align:middle;margin-left:22px}
+  h1{
+    font:italic 700 84px/1.06 'Playfair Display',serif;color:var(--cream);letter-spacing:-.015em;
+    max-width:1000px;text-wrap:balance;
+  }
+  h1 em{color:var(--accent);font-style:italic;text-shadow:0 0 38px rgba(139,92,246,.55)}
+  .sub{
+    margin-top:34px;max-width:760px;
+    font:400 28px/1.4 'Source Sans 3',sans-serif;color:var(--muted);
+  }
+  .sig{
+    position:absolute;right:72px;bottom:44px;
+    font:600 64px/1 'Caveat',cursive;color:var(--cream);transform:rotate(-5deg);
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="eyebrow">Seguimiento de leads</div>
+  <h1>Cómo dar seguimiento a leads de <em>WhatsApp</em> sin perderlos</h1>
+  <p class="sub">5 pasos concretos para que ningún lead se quede esperando una respuesta que nunca llega.</p>
+  <div class="sig">Balero</div>
+</div>
+</body>
+</html>
