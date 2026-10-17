@@ -37,37 +37,41 @@
     </h1>
     <p class="sub">Un esquema simple de contactos, día por día, para pymes sin equipo de ventas.</p>
   </div>
-  <svg id="blocks" viewBox="0 0 330 370"></svg>
+  <svg id="blocks" viewBox="0 0 330 370" xmlns="http://www.w3.org/2000/svg">
+<line x1="40" y1="34.0" x2="40" y2="330.0" stroke="#171417" stroke-width="3" stroke-linecap="round" stroke-dasharray="0"/>
+<circle cx="40" cy="34.0" r="9" fill="#F7F5F0" stroke="#171417" stroke-width="3"/>
+<rect x="82" y="10" width="240" height="56" rx="16" fill="#171417"/>
+<rect x="78" y="6" width="240" height="56" rx="16" fill="#fff" stroke="#171417" stroke-width="3"/>
+<text x="94" y="28" font-family="Archivo" font-weight="900" font-size="13" letter-spacing="2" fill="#171417">DÍA 0</text>
+<rect x="94" y="38" width="170" height="7" rx="3.5" fill="#D8D2E2"/>
+<rect x="94" y="49" width="102" height="7" rx="3.5" fill="#D8D2E2"/>
+<circle cx="40" cy="108.0" r="9" fill="#F7F5F0" stroke="#171417" stroke-width="3"/>
+<rect x="82" y="84" width="210" height="56" rx="16" fill="#171417"/>
+<rect x="78" y="80" width="210" height="56" rx="16" fill="#fff" stroke="#171417" stroke-width="3"/>
+<text x="94" y="102" font-family="Archivo" font-weight="900" font-size="13" letter-spacing="2" fill="#171417">DÍA 1</text>
+<rect x="94" y="112" width="140" height="7" rx="3.5" fill="#D8D2E2"/>
+<rect x="94" y="123" width="84" height="7" rx="3.5" fill="#D8D2E2"/>
+<circle cx="40" cy="182.0" r="9" fill="#F7F5F0" stroke="#171417" stroke-width="3"/>
+<rect x="82" y="158" width="240" height="56" rx="16" fill="#171417"/>
+<rect x="78" y="154" width="240" height="56" rx="16" fill="#fff" stroke="#171417" stroke-width="3"/>
+<text x="94" y="176" font-family="Archivo" font-weight="900" font-size="13" letter-spacing="2" fill="#171417">DÍA 3</text>
+<rect x="94" y="186" width="170" height="7" rx="3.5" fill="#D8D2E2"/>
+<rect x="94" y="197" width="102" height="7" rx="3.5" fill="#D8D2E2"/>
+<circle cx="40" cy="256.0" r="9" fill="#B9A2E8" stroke="#171417" stroke-width="3"/>
+<rect x="82" y="232" width="190" height="56" rx="16" fill="#171417"/>
+<rect x="78" y="228" width="190" height="56" rx="16" fill="#B9A2E8" stroke="#171417" stroke-width="3"/>
+<text x="94" y="250" font-family="Archivo" font-weight="900" font-size="13" letter-spacing="2" fill="#171417">DÍA 7</text>
+<rect x="94" y="260" width="120" height="7" rx="3.5" fill="#8F77CC"/>
+<rect x="94" y="271" width="72" height="7" rx="3.5" fill="#8F77CC"/>
+<line x1="40" y1="282" x2="40" y2="330.0" stroke="#171417" stroke-width="3" stroke-dasharray="2 7" stroke-linecap="round"/>
+<circle cx="40" cy="330.0" r="9" fill="#F7F5F0" stroke="#8C8693" stroke-width="3" stroke-dasharray="4 4"/>
+<rect x="78" y="302" width="170" height="56" rx="16" fill="none" stroke="#8C8693" stroke-width="3" stroke-dasharray="7 7"/>
+<text x="94" y="324" font-family="Archivo" font-weight="900" font-size="13" letter-spacing="2" fill="#8C8693">DESPUÉS</text>
+<rect x="94" y="334" width="100" height="7" rx="3.5" fill="#DDD8E3"/>
+<rect x="94" y="345" width="60" height="7" rx="3.5" fill="#DDD8E3"/>
+<path d="M260 330.0 h26 m-8 -8 l8 8 -8 8" fill="none" stroke="#8C8693" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
   <div class="brand"><img src="assets/balero-isotipo-negro.png" alt=""><span>Balero Creativo</span></div>
 </div>
-<script>
-(function(){
-  const S=86, NS='http://www.w3.org/2000/svg', svg=document.getElementById('blocks');
-  const pal={
-    dark:{t:'#3B373D',l:'#171417',r:'#26222A'},
-    gray:{t:'#8E8993',l:'#4F4A55',r:'#6A6570'},
-    acc :{t:'#CDBBF2',l:'#9E83DB',r:'#7E5FBE'}
-  };
-  // 4 cubos: 3 en la base/oscuros y uno en lavanda arriba
-  const cubes=[[0,0,0,'dark'],[1,0,0,'gray'],[0,1,0,'dark'],[0,0,1,'acc']];
-  const P=(i,j,k)=>[(i-j)*S*.866,(i+j)*S*.5-k*S];
-  const g=document.createElementNS(NS,'g'); svg.appendChild(g);
-  const poly=(pts,fill)=>{const p=document.createElementNS(NS,'polygon');p.setAttribute('points',pts.map(a=>a.join(',')).join(' '));p.setAttribute('fill',fill);p.setAttribute('stroke','rgba(0,0,0,.28)');p.setAttribute('stroke-width','1');g.appendChild(p)};
-  const sh=document.createElementNS(NS,'ellipse');g.appendChild(sh);
-  cubes.sort((a,b)=>(a[0]+a[1]+a[2])-(b[0]+b[1]+b[2]));
-  cubes.forEach(([i,j,k,t])=>{
-    const c=pal[t],T=P(i,j,k+1),a=[T[0],T[1]-S*.5],b=[T[0]+S*.866,T[1]],d=[T[0],T[1]+S*.5],e=[T[0]-S*.866,T[1]];
-    poly([a,b,d,e],c.t);poly([e,d,[d[0],d[1]+S],[e[0],e[1]+S]],c.l);poly([d,b,[b[0],b[1]+S],[d[0],d[1]+S]],c.r);
-  });
-  // sombra elíptica bajo la base
-  const cubesBox=g.getBBox();
-  const base=P(0,0,0);
-  sh.setAttribute('cx',(P(1,0,0)[0]+P(0,1,0)[0])/2+0); sh.setAttribute('cy',P(1,1,0)[1]-S*.5+S+4);
-  sh.setAttribute('rx',S*1.9); sh.setAttribute('ry',S*.55); sh.setAttribute('fill','rgba(23,20,23,.10)');
-  g.insertBefore(sh,g.firstChild);
-  const bb=g.getBBox(), pad=4, sc=Math.min(330/(bb.width+pad*2),370/(bb.height+pad*2));
-  g.setAttribute('transform',`translate(${(330-bb.width*sc)/2-bb.x*sc},${(370-bb.height*sc)/2-bb.y*sc}) scale(${sc})`);
-})();
-</script>
 </body>
 </html>
