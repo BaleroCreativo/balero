@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Cadencia de seguimiento de leads – Balero Creativo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#F7F5F0; --ink:#171417; --muted:#6B6572; --lila:#B9A2E8; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;background:var(--bg)}
+  .card{position:relative;width:1200px;height:630px;overflow:hidden;background:var(--bg)}
+  /* zona segura: 80px en todos los bordes */
+  .text{position:absolute;left:80px;top:80px;width:690px;height:470px;display:flex;flex-direction:column;justify-content:center}
+  .eyebrow{align-self:flex-start;font:800 18px/1 'Archivo',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--ink);padding-bottom:10px;border-bottom:4px solid var(--lila);margin-bottom:28px}
+  h1{color:var(--ink);font-weight:400}
+  h1 .l1{display:block;font:italic 400 70px/1 'Instrument Serif',serif;letter-spacing:-.02em}
+  h1 .l2{display:block;margin-top:8px;font:italic 400 70px/1 'Instrument Serif',serif;letter-spacing:-.02em}
+  h1 .l2 b{font:900 58px/1 'Archivo',sans-serif;font-style:normal;letter-spacing:-.035em;text-transform:uppercase}
+  h1 .hl{display:block;margin-top:14px}
+  h1 .hl span{display:inline-block;background:var(--lila);color:var(--ink);padding:2px 14px 6px;font:italic 400 48px/1.05 'Instrument Serif',serif;letter-spacing:-.01em}
+  h1 .hl span + span{margin-top:4px}
+  .sub{margin-top:26px;width:560px;font:400 23px/1.38 'Source Sans 3',sans-serif;color:var(--muted)}
+  #blocks{position:absolute;left:790px;top:110px;width:330px;height:370px}
+  .brand{position:absolute;right:80px;bottom:80px;display:flex;align-items:center;gap:12px;font:600 19px/1 'Source Sans 3',sans-serif;color:var(--muted)}
+  .brand img{height:44px}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="text">
+    <div class="eyebrow">Seguimiento de leads</div>
+    <h1>
+      <span class="l1">Cadencia de seguimiento</span>
+      <span class="l2">de <b>Leads</b></span>
+      <span class="hl"><span>cuándo insistir</span><br><span>y cuándo dejarlo ir.</span></span>
+    </h1>
+    <p class="sub">Un esquema simple de contactos, día por día, para pymes sin equipo de ventas.</p>
+  </div>
+  <svg id="blocks" viewBox="0 0 330 370"></svg>
+  <div class="brand"><img src="assets/balero-isotipo-negro.png" alt=""><span>Balero Creativo</span></div>
+</div>
+<script>
+(function(){
+  const S=86, NS='http://www.w3.org/2000/svg', svg=document.getElementById('blocks');
+  const pal={
+    dark:{t:'#3B373D',l:'#171417',r:'#26222A'},
+    gray:{t:'#8E8993',l:'#4F4A55',r:'#6A6570'},
+    acc :{t:'#CDBBF2',l:'#9E83DB',r:'#7E5FBE'}
+  };
+  // 4 cubos: 3 en la base/oscuros y uno en lavanda arriba
+  const cubes=[[0,0,0,'dark'],[1,0,0,'gray'],[0,1,0,'dark'],[0,0,1,'acc']];
+  const P=(i,j,k)=>[(i-j)*S*.866,(i+j)*S*.5-k*S];
+  const g=document.createElementNS(NS,'g'); svg.appendChild(g);
+  const poly=(pts,fill)=>{const p=document.createElementNS(NS,'polygon');p.setAttribute('points',pts.map(a=>a.join(',')).join(' '));p.setAttribute('fill',fill);p.setAttribute('stroke','rgba(0,0,0,.28)');p.setAttribute('stroke-width','1');g.appendChild(p)};
+  const sh=document.createElementNS(NS,'ellipse');g.appendChild(sh);
+  cubes.sort((a,b)=>(a[0]+a[1]+a[2])-(b[0]+b[1]+b[2]));
+  cubes.forEach(([i,j,k,t])=>{
+    const c=pal[t],T=P(i,j,k+1),a=[T[0],T[1]-S*.5],b=[T[0]+S*.866,T[1]],d=[T[0],T[1]+S*.5],e=[T[0]-S*.866,T[1]];
+    poly([a,b,d,e],c.t);poly([e,d,[d[0],d[1]+S],[e[0],e[1]+S]],c.l);poly([d,b,[b[0],b[1]+S],[d[0],d[1]+S]],c.r);
+  });
+  // sombra elíptica bajo la base
+  const cubesBox=g.getBBox();
+  const base=P(0,0,0);
+  sh.setAttribute('cx',(P(1,0,0)[0]+P(0,1,0)[0])/2+0); sh.setAttribute('cy',P(1,1,0)[1]-S*.5+S+4);
+  sh.setAttribute('rx',S*1.9); sh.setAttribute('ry',S*.55); sh.setAttribute('fill','rgba(23,20,23,.10)');
+  g.insertBefore(sh,g.firstChild);
+  const bb=g.getBBox(), pad=4, sc=Math.min(330/(bb.width+pad*2),370/(bb.height+pad*2));
+  g.setAttribute('transform',`translate(${(330-bb.width*sc)/2-bb.x*sc},${(370-bb.height*sc)/2-bb.y*sc}) scale(${sc})`);
+})();
+</script>
+</body>
+</html>
