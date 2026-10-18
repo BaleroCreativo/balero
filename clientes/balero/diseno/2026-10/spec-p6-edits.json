@@ -1,0 +1,45 @@
+{
+ "name": "p6-edits",
+ "slides": [
+  {
+   "type": "cover",
+   "light": "Instagram Edits ya mezcla",
+   "heavy": "foto, video y texto",
+   "subtitle": "En un carrusel. Por ahora, en iOS.",
+   "illustration": "ilustraciones/panel-cut.png",
+   "swipe": true,
+   "bg": "portada-diagonal"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Qué hace",
+   "layout": "bottom",
+   "title": "Foto, video y texto en un carrusel.",
+   "body": "Un titular o una foto puede <b>continuar de un slide al siguiente</b>.",
+   "illustration": "ilustraciones/insignia-cut.png",
+   "bg": "lila"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Antes de probarlo",
+   "layout": "top",
+   "title": "Aún no está en todas las cuentas.",
+   "body": "Por ahora solo en iOS. En algunas cuentas puede estar en <b>Labs</b>: perfil, Labs, Carousel Editor.",
+   "illustration": "ilustraciones/clicchat-cut.png",
+   "bg": "blanco"
+  },
+  {
+   "type": "closing",
+   "light": "¿Tus carruseles",
+   "heavy": "ya paran el scroll?",
+   "offer_bold": "Diagnóstico",
+   "offer_accent": "gratis de 15 minutos.",
+   "action": "Fuente: Social Media Today (2026).",
+   "illustration": "ilustraciones/bubbles-cut.png",
+   "bg": "cierre-diagonal"
+  }
+ ],
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true
+}
