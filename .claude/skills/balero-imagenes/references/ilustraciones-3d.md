@@ -23,9 +23,14 @@ A 3D render of [OBJETO, con 1 o 2 detalles], glossy clay-style, soft inflated ro
 | Agente de IA | Robot pequeño blanco con pantalla índigo y globo de chat |
 | Anuncios, difusión | Megáfono blanco con campana índigo y mango amarillo |
 | Presupuesto, costo | Pila de monedas amarillas con una moneda índigo |
+| Configuración, automatización (`engranes-cut`) | Dos engranes entrelazados, uno índigo grande y uno amarillo pequeño |
+| IA, magia (`varita-cut`) | Varita mágica índigo con estrella amarilla y tres destellos |
+| Carrusel, contenido en celular (`celular-cut`) | Celular blanco con tres tarjetas de foto y un triángulo de reproducir |
+| Lanzamiento, campaña nueva (`cohete-cut`) | Cohete índigo y amarillo con humo blanco |
+| Logro, caso de éxito (`trofeo-cut`) | Copa índigo con estrella amarilla y asas amarillas |
 
 ## Objetos sugeridos para próximas piezas
-Cohete (lanzamiento), candado (seguridad), moneda o alcancía (presupuesto), trofeo (casos de éxito), engranes (automatización), robot pequeño con globo de chat (agente de IA).
+Candado (seguridad), alcancía (presupuesto), botón de reproducir (video), megáfono con estrella (campaña), carpeta de documentos (informe).
 
 ## Reglas
 - Sin rostros ni personas.
@@ -43,8 +48,8 @@ Canva entrega las ilustraciones en 200 px; si se estiran con un resize normal se
 
 ## Método actual: fondo negro (recomendado desde el 5 oct 2026)
 Recortar iconos sobre fondo lavanda come las partes blancas y deja huecos. Método que sí funciona:
-1. Subir el icono de referencia a Canva (`create-upload-url` y POST de los bytes) y pedir con `generate-image` (`imageReferences`) "same exact 3D icon … on a completely plain pure black (#000000) background, no shadow, nothing cropped". Conserva el diseño y el estilo.
-2. `scripts/blackkey.py entrada.jpg salida.png`: amplía x4 con Real-ESRGAN y recorta por luminancia (el negro puro se separa limpio de blancos, amarillos e índigos).
+1. Pasar el icono de referencia a Canva (si viene de `generate-image` ya es un MEDIA de Canva: usa su id directo en `imageReferences`; si es un archivo local, `create-upload-url` y POST de los bytes) y pedir con `generate-image` (`imageReferences`) "same exact 3D icon … on a completely plain pure black (#000000) background, no shadow, nothing cropped". Conserva el diseño y el estilo.
+2. `scripts/blackkey.py entrada.jpg salida.png` (necesita en el venv `realesrgan-ncnn-py scipy scikit-image numpy pillow`): amplía x4 con Real-ESRGAN y recorta por luminancia (el negro puro se separa limpio de blancos, amarillos e índigos).
 3. Quitar también las zonas negras grandes encerradas dentro del objeto (por ejemplo, entre las campanas del reloj): componentes de píxeles con máximo canal menor a 14 y área mayor a 500.
 4. Guardar a 1200 px como `nombre-cut.png`. Sirve igual sobre fondo claro (el generador añade una sombra suave con `drop-shadow`) y sobre negro (sin sombra).
 Ya no se usan las variantes `*-dark.png` ni las máscaras con relleno de huecos.
