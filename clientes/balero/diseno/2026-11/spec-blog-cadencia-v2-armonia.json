@@ -1,0 +1,125 @@
+{
+ "name": "blog-cadencia-v2-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "amarillo",
+   "type": "hero",
+   "title": "",
+   "layers": [
+    {
+     "html": "Los días de una",
+     "style": "left:86px;top:200px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;background:#665FE9;color:#fff;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg)\">cadencia simple</span>",
+     "style": "left:86px;top:288px;font-size:112px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "0·1·3·7",
+     "style": "left:70px;top:440px;font-size:320px;line-height:.9;",
+     "cls": ""
+    },
+    {
+     "html": "Cuándo insistir y",
+     "style": "left:86px;top:1100px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    },
+    {
+     "html": "cuándo dejarlo ir.",
+     "style": "left:86px;top:1160px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/calendario-cut.png",
+   "ill_x": 528,
+   "ill_y": 720,
+   "ill_w": 560,
+   "ill_rot": 8
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "title": "<span class=\"l\" style=\"font-size:64px;display:block;margin-bottom:16px;line-height:1\">Contactar seguido<br>es una intención.</span>UNA CADENCIA<br>ES UN <span class=\"hl it\">número.</span>",
+   "icon": {
+    "illustration": "ilustraciones/cronometro-cut.png",
+    "size": 0.54,
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.15,
+    "rot": 8
+   },
+   "body": "Sin una regla, cada quien decide según su ánimo."
+  },
+  {
+   "type": "zonas",
+   "bg": "negro-puntos",
+   "title": "APORTA<br>ALGO <span class=\"y it\">nuevo.</span>",
+   "icon": {
+    "illustration": "ilustraciones/periodico-cut.png",
+    "size": "L",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -6
+   },
+   "chip": "Día 3",
+   "chip_style": "w",
+   "body": "No repitas el primer mensaje: suma <b>un caso similar o una pregunta distinta</b>."
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "title": "CAMBIA<br>DE <span class=\"y it\">canal.</span>",
+   "icon": {
+    "illustration": "ilustraciones/phone-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.2,
+    "rot": 10
+   },
+   "chip": "Día 7",
+   "chip_style": "w",
+   "body": "Una llamada en vez de otro mensaje a veces saca la respuesta que <b>el texto no logró</b>.",
+   "body_w": 520
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "title": "MEJOR 3 <span class=\"hl it\">constantes</span><br>QUE 7 ERRÁTICOS",
+   "icon": {
+    "illustration": "ilustraciones/tijeras-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.12,
+    "rot": -8
+   },
+   "kick": "Pasado el día 7:",
+   "title_px": 88,
+   "body": "El lead va a una lista de reactivación. No se insiste cada semana.",
+   "bar": "<b style=\"font-family:Poppins;font-weight:800\">Día 0 · 1 · 3 · 7, y luego reactivación</b>"
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "title": "ANTES DE<br><span class=\"hl it\">pausar?</span>",
+   "icon": {
+    "illustration": "ilustraciones/asistente-cut.png",
+    "size": 0.56,
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.25,
+    "rot": 6
+   },
+   "kick": "¿Cuántos intentos haces",
+   "body": "Lee el blog completo en balerocreativo.com. <b>Diagnóstico gratis de 15 minutos</b> por mensaje directo.",
+   "body_w": 680
+  }
+ ]
+}

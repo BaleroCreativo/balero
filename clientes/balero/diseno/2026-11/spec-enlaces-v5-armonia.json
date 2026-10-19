@@ -1,0 +1,98 @@
+{
+ "name": "Balero-9nov-ia-enlaces-v5-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "indigo",
+   "type": "hero",
+   "title": "",
+   "layers": [
+    {
+     "html": "Google puso más enlaces",
+     "style": "left:86px;top:200px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "en <span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-size:1.25em;background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg);line-height:1\">AI Mode</span>",
+     "style": "left:86px;top:296px;font-size:112px;",
+     "cls": ""
+    },
+    {
+     "html": "Más enlaces, sin datos de clics.",
+     "style": "left:86px;top:1160px;font-family:Source Sans Pro;font-weight:600;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/catalogo-cut.png",
+   "ill_x": 110,
+   "ill_y": 470,
+   "ill_w": 640,
+   "ill_rot": -7,
+   "stickers": [
+    {
+     "html": "Más<br>enlaces",
+     "x": 730,
+     "y": 500,
+     "w": 256,
+     "h": 256,
+     "px": 48,
+     "rot": 12,
+     "round": true,
+     "css": "box-shadow:0 8px 24px rgba(0,0,0,.18)"
+    }
+   ]
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "Qué cambió",
+   "title": "MÁS <span class=\"hl it\">enlaces</span>",
+   "body": "En oct 2026 Google anunció enlaces <b>más arriba y más seguido</b> en AI Mode y AI Overviews.",
+   "body_w": 780,
+   "note": "Fuente: Google y Search Engine Journal.",
+   "icon": {
+    "illustration": "ilustraciones/catalogo-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.1,
+    "rot": -4
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "kick": "En Search Console:",
+   "title": "IMPRESIONES SÍ,<br><span class=\"y it\">clics no.</span>",
+   "body": "Las impresiones de IA se ven aparte. <b>Los clics se cuentan en Búsqueda web, sin separarlos.</b>",
+   "body_w": 780,
+   "note": "Fuente: Google Search Central.",
+   "icon": {
+    "illustration": "ilustraciones/graficaflat-cut.png",
+    "size": "L",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -5
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "¿Sabes de dónde viene",
+   "title": "EL TRÁFICO DE<br><span class=\"hl it\">tu web?</span>",
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b><br>Fuente: Google y Search Engine Journal.",
+   "body_w": 908,
+   "icon": {
+    "illustration": "ilustraciones/ruta-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 0
+   }
+  }
+ ]
+}

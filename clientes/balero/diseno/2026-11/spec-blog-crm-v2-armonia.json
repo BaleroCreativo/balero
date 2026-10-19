@@ -1,0 +1,139 @@
+{
+ "name": "blog-crm-v2-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "negro-puntos",
+   "type": "hero",
+   "title": "",
+   "layers": [
+    {
+     "html": "Pyme, antes de comprar:",
+     "style": "left:86px;top:200px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "¿CRM",
+     "style": "left:70px;top:276px;font-size:330px;line-height:.9;",
+     "cls": "y"
+    },
+    {
+     "html": "o hoja de",
+     "style": "left:86px;top:624px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg)\">cálculo?</span>",
+     "style": "left:86px;top:700px;font-size:144px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "Cuándo una pyme",
+     "style": "left:86px;top:1100px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    },
+    {
+     "html": "sí necesita un CRM.",
+     "style": "left:86px;top:1160px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/panel-cut.png",
+   "ill_x": 520,
+   "ill_y": 820,
+   "ill_w": 560,
+   "ill_rot": -8
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "title": "<span class=\"l\" style=\"font-size:64px;display:block;margin-bottom:16px;line-height:1\">Un CRM organiza<br>lo que ya existe.</span>LAS REGLAS.<br>LUEGO LA<br><span class=\"hl it\">herramienta.</span>",
+   "icon": {
+    "illustration": "ilustraciones/engranes-cut.png",
+    "size": 0.56,
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.15,
+    "rot": -8
+   },
+   "title_px": 88,
+   "body": "No inventa tu proceso: <b>lo ordena.</b>"
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "title": "UNA O DOS<br><span class=\"hl it\">personas.</span>",
+   "icon": {
+    "illustration": "ilustraciones/fuente-cut.png",
+    "size": 0.52,
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.2,
+    "rot": 8
+   },
+   "chip": "La hoja todavía basta",
+   "body": "Con menos de <b>20 a 30 leads nuevos al mes</b> y un proceso simple. Regla práctica de nuestro blog.",
+   "body_w": 680
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "title": "DOS PERSONAS<br>EN EL <span class=\"y it\">mismo archivo.</span>",
+   "icon": {
+    "illustration": "ilustraciones/trio-cut.png",
+    "size": "L",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -6
+   },
+   "title_px": 88,
+   "kick": "La señal no es un número:",
+   "body": "Aparecen versiones distintas y datos que se sobreescriben sin querer."
+  },
+  {
+   "type": "zonas",
+   "bg": "negro-puntos",
+   "title": "<span class=\"y it\">tres cosas</span>",
+   "icon": {
+    "illustration": "ilustraciones/ventana-cut.png",
+    "size": 0.72,
+    "anchor": "br",
+    "bleed": "none",
+    "bleed_pct": 0,
+    "rot": 6,
+    "dy": -48
+   },
+   "frame": true,
+   "kick": "Un CRM resuelve",
+   "list": {
+    "chip": "Lo que sí resuelve",
+    "chip_style": "w",
+    "items": [
+     "<b>Recordatorios</b>",
+     "<b>Registro central</b>",
+     "<b>Reportes sin armar</b>"
+    ]
+   },
+   "note": "Las reglas las defines tú, con o sin CRM."
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "title": "ANTES DE<br>LAS <span class=\"hl it\">reglas?</span>",
+   "icon": {
+    "illustration": "ilustraciones/tag0-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.2,
+    "rot": 10
+   },
+   "kick": "¿Compraste el CRM",
+   "body": "Lee el blog completo en balerocreativo.com. <b>Diagnóstico gratis de 15 minutos</b> por mensaje directo.",
+   "body_w": 680
+  }
+ ]
+}

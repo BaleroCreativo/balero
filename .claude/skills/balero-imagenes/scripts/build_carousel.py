@@ -213,6 +213,10 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .zn{margin-top:%(zgxn)dpx}
 .bar.zbar{position:static;width:100%%;font-size:%(zbody)dpx;padding:32px 40px;filter:drop-shadow(0 8px 24px rgba(0,0,0,.18))}
 .zbar .btn{width:80px;height:80px}
+.zlist .zli{display:flex;align-items:flex-start;gap:24px;margin-top:16px;font-size:%(zbody)dpx;line-height:1.3}
+.zlist .zli i{flex:none;width:24px;height:24px;border-radius:50%%;background:%(HL)s;margin-top:.45em}
+.zlist .zchipw{margin-bottom:8px}
+.zlist .zli{color:%(INK)s}.zlist .zli b{color:%(INDIGO)s}.inv .zlist .zli{color:%(INVTXT)s}.inv .zlist .zli b{color:%(INVACC)s}
 """
 
 
@@ -414,7 +418,7 @@ def build(spec_path, out_dir, brand_path=None):
             for st in s.get("stickers", []):  # {"html","x","y","w","h","rot","px","round":true}
                 extras += (f'<div class="sticker" style="left:{st["x"]*sx}px;top:{st["y"]*sy}px;width:{st["w"]*sx}px;height:{st["h"]*sx}px;'
                            f'font-size:{st.get("px", 40)*sx}px;transform:rotate({st.get("rot", -8)}deg);'
-                           f'border-radius:{"50%" if st.get("round") else "14px"}{";background:" + st["bg"] if st.get("bg") else ""}{";color:" + st["color"] if st.get("color") else ""}">{st["html"]}</div>')
+                           f'border-radius:{"50%" if st.get("round") else "14px"}{";background:" + st["bg"] if st.get("bg") else ""}{";color:" + st["color"] if st.get("color") else ""}{";" + st["css"] if st.get("css") else ""}">{st["html"]}</div>')
             slides.append(
                 f'<div class="slide{inv}{" ind" if s.get("bg") == "indigo" else ""}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}{kick}{extras}'
                 f'<div class="hero-t" style="{hpos};{vpos};width:{tw}px;text-align:{align};font-size:{g("title_px", 130) * sx}px;'
@@ -454,10 +458,16 @@ def build(spec_path, out_dir, brand_path=None):
                 arr_svg = ('<svg width="38" height="22" viewBox="0 0 38 22"><path d="M2 11H34M25 2l9 9-9 9" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
                 ex += (f'<div class="bar zbar{" w" if s.get("bar_style") == "w" else ""}" style="margin-top:{Z_GAP_BX}px">'
                        f'<div>{s["bar"]}</div>{"<div class=btn>" + arr_svg + "</div>" if s.get("bar_btn", True) else ""}</div>')
+            if s.get("list"):
+                # lista con viñetas amarillas (aditivo): list {chip, chip_style, items:[html]}
+                ls = s["list"]
+                lh = (f'<div class="chip zc zchipw{" w" if ls.get("chip_style") == "w" else ""}">{ls["chip"]}</div>' if ls.get("chip") else "")
+                lh += "".join(f'<div class="zli"><i></i><span>{it}</span></div>' for it in ls["items"])
+                ex += f'<div class="zx zlist" style="margin-top:{Z_GAP_BX}px">{lh}</div>'
             if s.get("note"):
                 ex += f'<div class="zn">{s["note"]}</div>'
             slides.append(
-                f'<div class="slide{inv}{" ind" if s.get("bg") == "indigo" else ""}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}'
+                f'<div class="slide{inv}{" ind" if s.get("bg") == "indigo" else ""}" style="{style_vars(m)}{bgcss}">{"<div class=frame></div>" if s.get("frame") else ""}{logo}{dots(idx)}{pic}'
                 f'<div class="zstack" style="left:{mxp}px;top:{Z_KICK_TOP * sy}px;width:{tw}px">{kr}{title}{body}{ex}</div>'
                 f'<div class="foot">{NAME}</div></div>')
         elif t == "lesson":

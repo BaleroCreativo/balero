@@ -1,0 +1,109 @@
+{
+ "name": "Balero-5nov-stanford-titulos-pregunta-v5-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "amarillo",
+   "bg_css": "#FFD23F",
+   "type": "hero",
+   "title": "",
+   "layers": [
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;\">¿Tu título</span>",
+     "style": "left:86px;top:200px;font-size:176px;line-height:.9;",
+     "cls": ""
+    },
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;background:#665FE9;color:#fff;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg)\">con pregunta?</span>",
+     "style": "left:86px;top:376px;font-size:144px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "te cuesta<br>interacción.",
+     "style": "left:86px;top:576px;font-size:88px;line-height:.93;",
+     "cls": ""
+    },
+    {
+     "html": "Lo que dice un estudio de Stanford.",
+     "style": "left:86px;top:792px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/celular-cut.png",
+   "ill_x": 430,
+   "ill_y": 900,
+   "ill_w": 518,
+   "ill_rot": 12
+  },
+  {
+   "type": "zonas",
+   "bg": "negro-puntos",
+   "chip": "Puntos clave",
+   "chip_style": "w",
+   "title": "<span class=\"l\" style=\"font-size:64px;display:block;margin-bottom:16px\">Qué analizó</span><span class=\"y it\">Stanford</span>",
+   "body": "<div style=\"display:flex;gap:20px;margin-top:0px;align-items:flex-start\"><i style=\"flex:none;width:20px;height:20px;border-radius:50%;background:#FFD23F;margin-top:12px\"></i><span><b>53,030</b> posts de Reddit</span></div><div style=\"display:flex;gap:20px;margin-top:16px;align-items:flex-start\"><i style=\"flex:none;width:20px;height:20px;border-radius:50%;background:#FFD23F;margin-top:12px\"></i><span><b>3,078,791</b> artículos académicos</span></div><div style=\"display:flex;gap:20px;margin-top:16px;align-items:flex-start\"><i style=\"flex:none;width:20px;height:20px;border-radius:50%;background:#FFD23F;margin-top:12px\"></i><span><b>22,743</b> experimentos A/B de titulares de noticias</span></div><div style=\"display:flex;gap:20px;margin-top:16px;align-items:flex-start\"><i style=\"flex:none;width:20px;height:20px;border-radius:50%;background:#FFD23F;margin-top:12px\"></i><span>Un estudio de laboratorio con <b>400</b> personas</span></div>",
+   "body_w": 908,
+   "frame": true,
+   "icon": {
+    "illustration": "ilustraciones/lupa-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "kick": "La conclusión:",
+   "title": "LA PREGUNTA<br>SUENA A <span class=\"hl it\">duda.</span>",
+   "body": "Los títulos en forma de pregunta reducen la interacción porque el lector los percibe como <b>menos informativos</b>.",
+   "body_w": 780,
+   "icon": {
+    "illustration": "ilustraciones/clicchat-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -5
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "chip": "Qué hacer",
+   "chip_style": "w",
+   "title": "AFIRMA,<br><span class=\"y it\">no preguntes.</span>",
+   "body": "Cambia «¿Cuánto cuesta un lead?» por «Cuánto cuesta un lead». <b>Pruébalo en pocas piezas</b> antes de reescribir todo.",
+   "body_w": 780,
+   "icon": {
+    "illustration": "ilustraciones/escudo-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "¿Revisamos tus",
+   "title": "TÍTULOS Y<br><span class=\"hl it\">ganchos?</span>",
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b><br>Escríbenos por mensaje directo.",
+   "body_w": 680,
+   "note": "Fuente: Fang y Wheeler, Stanford GSB,<br>Journal of Consumer Psychology 2026.",
+   "icon": {
+    "illustration": "ilustraciones/regalo-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 8
+   }
+  }
+ ]
+}

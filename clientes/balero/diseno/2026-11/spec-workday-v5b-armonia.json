@@ -1,0 +1,106 @@
+{
+ "name": "Balero-5nov-ia-workday-v5-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "negro-puntos",
+   "type": "hero",
+   "title": "",
+   "layers": [
+    {
+     "html": "La IA te ahorra tiempo,",
+     "style": "left:86px;top:200px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "pero casi <span style='color:#FFD23F'>40%</span>",
+     "style": "left:86px;top:288px;font-size:112px;",
+     "cls": ""
+    },
+    {
+     "html": "se va en corregirla",
+     "style": "left:86px;top:1136px;font-size:88px;",
+     "cls": ""
+    },
+    {
+     "html": "Encuesta de Workday, ene 2026",
+     "style": "left:86px;top:1252px;font-family:Source Sans Pro;font-weight:600;text-transform:none;letter-spacing:0;color:#A9A4F7;font-size:32px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/arena-cut.png",
+   "ill_x": 280,
+   "ill_y": 500,
+   "ill_w": 520,
+   "ill_rot": 0,
+   "stickers": []
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "kick": "Casi",
+   "title": "<span class=\"a\">40%</span><br><span class=\"hl it\">se pierde</span>",
+   "body": "Del tiempo que la IA ahorra: se va corrigiendo, reescribiendo y verificando lo que produce. <b>Encuesta de Workday, ene 2026.</b>",
+   "body_w": 908,
+   "title_px": 144,
+   "icon": {
+    "illustration": "ilustraciones/arena-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "Ojo: es un estudio de",
+   "title": "EMPRESAS<br><span class=\"hl it\">grandes</span>",
+   "body": "3,200 empleados de empresas con ingresos de <b>USD 100 millones o más</b>. No es un dato de pymes.",
+   "body_w": 680,
+   "icon": {
+    "illustration": "ilustraciones/propuesta-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "kick": "La IA ahorra tiempo",
+   "title": "SI ALGUIEN REVISA<br><span class=\"y it\">lo que sale.</span>",
+   "bar": "Mide cuánto tiempo te toma <b>corregir lo que genera la IA</b>.",
+   "title_px": 88,
+   "icon": {
+    "illustration": "ilustraciones/clock-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -5
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "¿Usas IA en tu marketing",
+   "title": "¿Y QUIÉN<br><span class=\"hl it\">la revisa?</span>",
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b><br>Fuente: Workday, comunicado del 14 ene 2026.",
+   "body_w": 908,
+   "icon": {
+    "illustration": "ilustraciones/varita-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -8
+   }
+  }
+ ]
+}

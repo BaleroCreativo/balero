@@ -1,0 +1,121 @@
+{
+ "name": "blog-metricas-v2-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "indigo",
+   "type": "hero",
+   "title": "",
+   "layers": [
+    {
+     "html": "Tu seguimiento de leads,",
+     "style": "left:86px;top:200px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "5",
+     "style": "left:441px;top:290px;font-size:900px;line-height:.8;",
+     "cls": "y"
+    },
+    {
+     "html": "métricas",
+     "style": "left:86px;top:1080px;font-size:88px;",
+     "cls": ""
+    },
+    {
+     "html": "<span style=\"background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-2deg)\">cada semana</span>",
+     "style": "left:86px;top:1184px;font-size:88px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/trofeo-cut.png",
+   "ill_x": -100,
+   "ill_y": 430,
+   "ill_w": 600,
+   "ill_rot": -12,
+   "ill_front": true
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "title": "LEADS SIN<br>ETAPA <span class=\"hl it\">clara.</span>",
+   "icon": {
+    "illustration": "ilustraciones/libreta-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -6
+   },
+   "kick": "La que avisa primero:",
+   "body": "Si el número crece semana tras semana, <b>el seguimiento se está cayendo.</b>"
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "title": "PRIMERA<br><span class=\"hl it\">respuesta.</span>",
+   "icon": {
+    "illustration": "ilustraciones/robot-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 6
+   },
+   "chip": "Métrica 2",
+   "body": "Anota la hora de llegada y la hora de la <b>primera respuesta real</b>, no un mensaje automático.",
+   "body_w": 680
+  },
+  {
+   "type": "zonas",
+   "bg": "negro-puntos",
+   "title": "ANOTA<br><span class=\"y it\">por qué.</span>",
+   "icon": {
+    "illustration": "ilustraciones/insignia-cut.png",
+    "size": 0.52,
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 6
+   },
+   "chip": "Métrica 5",
+   "chip_style": "w",
+   "body": "Si casi todos los perdidos dicen «no contestó», el problema es <b>tu cadencia de reintento</b>, no tu precio.",
+   "body_w": 680
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "title": "EMPIEZA CON<br><span class=\"hl it\">dos.</span>",
+   "icon": {
+    "illustration": "ilustraciones/cohete-cut.png",
+    "size": 0.56,
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.2,
+    "rot": 10
+   },
+   "kick": "¿No tienes tiempo?",
+   "bar": "<b style=\"font-family:Poppins;font-weight:800\">Leads nuevos +<br>leads sin etapa clara</b>",
+   "note": "Las otras tres, cuando el hábito ya exista."
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "title": "REVISAS CADA<br><span class=\"hl it\">semana?</span>",
+   "icon": {
+    "illustration": "ilustraciones/enlace-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -8
+   },
+   "kick": "¿Qué número",
+   "body": "Lee el blog completo en balerocreativo.com. <b>Diagnóstico gratis de 15 minutos</b> por mensaje directo.",
+   "body_w": 680
+  }
+ ]
+}
