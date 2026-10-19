@@ -1,0 +1,73 @@
+{
+ "name": "Balero-9nov-ia-enlaces-v3-datos",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "negro-puntos",
+   "title": "<span class=\"l\" style=\"font-size:60px;display:inline-block;margin-bottom:24px\">Google puso</span><br><span class=\"y\" style=\"font-size:118px\">MÁS ENLACES</span><br>EN <span class=\"hl it\">AI Mode</span>",
+   "title_px": 96,
+   "text_y": 190,
+   "body": "Más enlaces, sin datos de clics.",
+   "body_px": 44,
+   "body_w": 420,
+   "body_gap": 40,
+   "swipe": true,
+   "illustration": "ilustraciones/fuente-cut.png",
+   "ill_x": 430,
+   "ill_y": 720,
+   "ill_w": 650,
+   "ill_rot": 8,
+   "type": "hero"
+  },
+  {
+   "bg": "calido-puntos",
+   "title": "<span class=\"l\" style=\"font-size:52px;display:inline-block;margin-bottom:24px\">Qué cambió</span><br>MÁS <span class=\"hl it\">enlaces</span>",
+   "title_px": 116,
+   "text_bottom": 170,
+   "body": "En oct 2026 Google anunció enlaces <b>más arriba y más seguido</b> en AI Mode y AI Overviews.<div style='font-size:30px;margin-top:14px;opacity:.8'>Fuente: Google y Search Engine Journal.</div>",
+   "body_px": 38,
+   "body_w": 908,
+   "body_gap": 22,
+   "illustration": "ilustraciones/catalogo-cut.png",
+   "ill_x": 190,
+   "ill_y": 180,
+   "ill_w": 700,
+   "ill_rot": -4,
+   "type": "hero"
+  },
+  {
+   "bg": "indigo",
+   "title": "<span class=\"l\" style=\"font-size:52px;display:inline-block;margin-bottom:24px\">En Search Console:</span><br>IMPRESIONES SÍ,<br><span class=\"y it\">clics no.</span>",
+   "title_px": 96,
+   "text_y": 190,
+   "body": "Las impresiones de IA se ven aparte. <b>Los clics se cuentan en Búsqueda web, sin separarlos.</b><div style='font-size:30px;margin-top:14px;opacity:.85'>Fuente: Google Search Central.</div>",
+   "body_px": 38,
+   "body_w": 908,
+   "body_gap": 28,
+   "illustration": "ilustraciones/graficaflat-cut.png",
+   "ill_x": 360,
+   "ill_y": 740,
+   "ill_w": 700,
+   "ill_rot": -5,
+   "type": "hero"
+  },
+  {
+   "bg": "calido-puntos",
+   "title": "<span class=\"l\" style=\"font-size:56px;display:inline-block;margin-bottom:24px\">¿Sabes de dónde viene</span><br>EL TRÁFICO DE<br><span class=\"hl it\">tu web?</span>",
+   "title_px": 104,
+   "text_y": 190,
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b> Fuente: Google y Search Engine Journal.",
+   "body_px": 40,
+   "body_w": 620,
+   "body_gap": 30,
+   "illustration": "ilustraciones/ruta-cut.png",
+   "ill_x": 400,
+   "ill_y": 740,
+   "ill_w": 700,
+   "ill_rot": 0,
+   "type": "hero"
+  }
+ ]
+}
