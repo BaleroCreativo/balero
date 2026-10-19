@@ -15,7 +15,8 @@ def css(fam):
     return urllib.request.urlopen(req, timeout=20).read().decode()
 out = []
 for family, query in (("Poppins", "Poppins:wght@300;400;600;800"),
-                      ("Source Sans Pro", "Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,700")):
+                      ("Source Sans Pro", "Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,700"),
+                      ("Instrument Serif", "Instrument+Serif:ital@1")):
     for block in re.findall(r"@font-face \{(.*?)\}", css(query), re.S):
         style = re.search(r"font-style: (\w+)", block).group(1)
         weight = re.search(r"font-weight: (\d+)", block).group(1)

@@ -52,8 +52,8 @@
    "body_gap": 26,
    "illustration": "ilustraciones/embudofuga-cut.png",
    "ill_x": -60,
-   "ill_y": 170,
-   "ill_w": 720,
+   "ill_y": 150,
+   "ill_w": 680,
    "ill_rot": -8,
    "type": "hero"
   },
@@ -66,9 +66,9 @@
    "bar_px": 36,
    "bar_bottom": 140,
    "illustration": "ilustraciones/target-cut.png",
-   "ill_x": 380,
+   "ill_x": 400,
    "ill_y": 190,
-   "ill_w": 700,
+   "ill_w": 680,
    "ill_rot": 8,
    "type": "hero"
   },
