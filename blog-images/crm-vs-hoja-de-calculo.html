@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>CRM o hoja de cálculo – Balero Creativo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Playfair+Display:ital,wght@1,600;1,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#F7F5F0; --ink:#171417; --muted:#4A4550; --lila:#B9A2E8; --deep:#5B2A9D; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1200px;height:630px;background:var(--bg)}
+  .card{position:relative;width:1200px;height:630px;overflow:hidden;background:var(--bg)}
+  #blob{position:absolute;left:730px;top:56px;width:470px;height:500px}
+  #art{position:absolute;left:742px;top:104px;width:378px;height:425px;overflow:visible}
+  .text{position:absolute;left:80px;top:80px;width:650px;height:380px;display:flex;flex-direction:column;justify-content:center}
+  .eyebrow{display:flex;align-items:center;gap:16px;font:700 18px/1 'Source Sans 3',sans-serif;letter-spacing:.3em;text-transform:uppercase;color:var(--deep);margin-bottom:28px}
+  .eyebrow::before{content:"";width:44px;height:3px;background:var(--deep)}
+  h1{color:var(--ink);font-weight:800}
+  h1 .ln{display:block;white-space:nowrap}
+  h1 .ln + .ln{margin-top:8px}
+  h1 .sans{font:800 52px/1.08 'Archivo',sans-serif;letter-spacing:-.025em}
+  h1 .sans + .serif{margin-left:8px}
+  h1 .serif{font:italic 700 62px/1.04 'Playfair Display',serif;letter-spacing:-.015em}
+  h1 mark{background:var(--lila);color:var(--ink);padding:0 10px 2px;margin:0 2px 0 -2px;border-radius:3px}
+  .sub{margin-top:26px;width:560px;font:400 24px/1.4 'Source Sans 3',sans-serif;color:var(--muted)}
+  .iso{position:absolute;left:80px;bottom:80px;height:54px}
+</style>
+</head>
+<body>
+<div class="card">
+  <svg id="blob" viewBox="0 0 470 500" xmlns="http://www.w3.org/2000/svg"><path d="M70 130 C 48 46, 190 -6, 296 36 C 398 76, 480 40, 470 190 C 466 312, 452 436, 338 476 C 226 516, 96 466, 56 352 C 30 280, 90 206, 70 130 Z" fill="#B9A2E8"/></svg>
+  <svg id="art" viewBox="-6 0 392 440" overflow="visible" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#171417" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+<path d="M10 70 h96 a14 14 0 0 1 14 14 v30 a14 14 0 0 1 -14 14 h-60 l-20 18 v-18 h-16 a14 14 0 0 1 -14 -14 v-30 a14 14 0 0 1 14 -14z" fill="#fff"/>
+<line x1="26" y1="92" x2="92" y2="92" stroke="#171417"/><line x1="26" y1="108" x2="68" y2="108" stroke="#9B94A6" stroke-width="3"/>
+<rect x="0" y="238" width="150" height="184" rx="12" fill="#fff"/>
+<path d="M0 268 v-18 a12 12 0 0 1 12 -12 h126 a12 12 0 0 1 12 12 v18z" transform="translate(0,0)" fill="#B9A2E8" stroke="none"/>
+<path d="M1.5 268 v-16.5 a10.5 10.5 0 0 1 10.5 -10.5 h126 a10.5 10.5 0 0 1 10.5 10.5 v16.5z" fill="#B9A2E8" stroke="none"/>
+<rect x="0" y="238" width="150" height="184" rx="12"/>
+<line x1="0" y1="268" x2="150" y2="268" stroke-width="2.5"/>
+<line x1="0" y1="299" x2="150" y2="299" stroke-width="2.5"/>
+<line x1="0" y1="330" x2="150" y2="330" stroke-width="2.5"/>
+<line x1="0" y1="360" x2="150" y2="360" stroke-width="2.5"/>
+<line x1="0" y1="391" x2="150" y2="391" stroke-width="2.5"/>
+<line x1="50" y1="238" x2="50" y2="422" stroke-width="2.5"/>
+<line x1="100" y1="238" x2="100" y2="422" stroke-width="2.5"/>
+<rect x="5" y="273" width="40" height="21" rx="4" fill="#8B5CF6" stroke="none"/>
+<rect x="105" y="335" width="40" height="21" rx="4" fill="#8B5CF6" stroke="none"/>
+<rect x="55" y="396" width="40" height="21" rx="4" fill="#8B5CF6" stroke="none"/>
+<line x1="59" y1="283" x2="88" y2="283" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="109" y1="283" x2="138" y2="283" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="9" y1="314" x2="38" y2="314" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="59" y1="314" x2="88" y2="314" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="109" y1="314" x2="138" y2="314" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="9" y1="345" x2="38" y2="345" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="59" y1="345" x2="88" y2="345" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="9" y1="376" x2="38" y2="376" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="59" y1="376" x2="88" y2="376" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="109" y1="376" x2="138" y2="376" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="9" y1="407" x2="38" y2="407" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="109" y1="407" x2="138" y2="407" stroke="#B9B2C4" stroke-width="3"/>
+<line x1="59" y1="376" x2="88" y2="376" stroke="#B9B2C4" stroke-width="3"/>
+<rect x="214" y="6" width="160" height="84" rx="14" fill="#fff"/>
+<circle cx="244" cy="36" r="15" fill="#B9A2E8"/>
+<line x1="270" y1="30" x2="342" y2="30"/>
+<line x1="270" y1="44" x2="314" y2="44" stroke="#9B94A6" stroke-width="3"/>
+<rect x="230" y="60" width="46" height="20" rx="10" fill="#B9A2E8" stroke-width="2.5"/>
+<rect x="224" y="108" width="160" height="84" rx="14" fill="#fff"/>
+<circle cx="254" cy="138" r="15" fill="#B9A2E8"/>
+<line x1="280" y1="132" x2="352" y2="132"/>
+<line x1="280" y1="146" x2="324" y2="146" stroke="#9B94A6" stroke-width="3"/>
+<rect x="240" y="162" width="84" height="20" rx="10" fill="#B9A2E8" stroke-width="2.5"/>
+<rect x="214" y="210" width="160" height="84" rx="14" fill="#fff"/>
+<circle cx="244" cy="240" r="15" fill="#B9A2E8"/>
+<line x1="270" y1="234" x2="342" y2="234"/>
+<line x1="270" y1="248" x2="314" y2="248" stroke="#9B94A6" stroke-width="3"/>
+<rect x="230" y="264" width="54" height="20" rx="10" fill="#8B5CF6" stroke-width="2.5"/>
+<path d="M45 283 C 140 283, 120 48, 208 48" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="2 8"/>
+<circle cx="208" cy="48" r="4.5" fill="#8B5CF6" stroke="none"/>
+<path d="M145 345 C 194 345, 174 150, 218 150" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="2 8"/>
+<circle cx="218" cy="150" r="4.5" fill="#8B5CF6" stroke="none"/>
+<path d="M95 407 C 164 407, 144 252, 208 252" stroke="#8B5CF6" stroke-width="3" stroke-dasharray="2 8"/>
+<circle cx="208" cy="252" r="4.5" fill="#8B5CF6" stroke="none"/>
+</svg>
+  <div class="text">
+    <div class="eyebrow">Seguimiento de leads</div>
+    <h1>
+      <span class="ln"><span class="sans"><mark>CRM</mark> o</span> <span class="serif">hoja de cálculo:</span></span>
+      <span class="ln"><span class="serif">cuándo</span> <span class="sans">una pyme</span></span>
+      <span class="ln"><span class="sans">necesita un <mark>CRM</mark></span></span>
+    </h1>
+    <p class="sub">Las señales reales de cuándo cambiar de herramienta, sin el sesgo de los proveedores.</p>
+  </div>
+  <img class="iso" src="assets/balero-isotipo-negro.png" alt="Balero Creativo">
+</div>
+</body>
+</html>
