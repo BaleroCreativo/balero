@@ -13,7 +13,7 @@
      "cls": "l"
     },
     {
-     "html": "pero casi <span class='y'>40%</span>",
+     "html": "pero casi <span style='color:#FFD23F'>40%</span>",
      "style": "left:86px;top:300px;font-size:112px;",
      "cls": ""
     },
