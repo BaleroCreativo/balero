@@ -1,0 +1,48 @@
+{
+ "name": "Balero-6nov-trigger-portadaA",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 5,
+ "slides": [
+  {
+   "bg": "negro",
+   "bg_css": "linear-gradient(180deg,#000 0 50%,#665FE9 50% 100%)",
+   "layers": [
+    {
+     "html": "No empieces tu anuncio con",
+     "style": "left:86px;top:225px;font-size:52px;",
+     "cls": "l"
+    },
+    {
+     "html": "<span style=\"text-decoration:line-through;text-decoration-thickness:.1em;text-decoration-color:#FFD23F\">beneficios</span>",
+     "style": "left:86px;top:300px;font-size:150px;",
+     "cls": ""
+    },
+    {
+     "html": "Empieza con la",
+     "style": "left:86px;top:770px;font-size:60px;",
+     "cls": "l"
+    },
+    {
+     "html": "<span class=\"y\">situación</span>",
+     "style": "left:86px;top:850px;font-size:150px;",
+     "cls": ""
+    },
+    {
+     "html": "del cliente",
+     "style": "left:86px;top:1000px;font-size:100px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/asistente-cut.png",
+   "ill_x": 600,
+   "ill_y": 1080,
+   "ill_w": 420,
+   "ill_rot": 8,
+   "ill_front": true,
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

@@ -1,0 +1,46 @@
+{
+ "name": "Balero-5nov-stanford-portadaB",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 5,
+ "slides": [
+  {
+   "bg": "negro-puntos",
+   "layers": [
+    {
+     "html": "<span class=\"strike\" style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;\">¿Cuánto cuesta un lead?</span>",
+     "style": "left:86px;top:215px;font-size:92px;color:#A9A4F7;",
+     "cls": ""
+    },
+    {
+     "html": "Cuánto cuesta<br>un lead.",
+     "style": "left:86px;top:335px;font-size:104px;line-height:.92;",
+     "cls": "y"
+    },
+    {
+     "html": "Tu título con pregunta",
+     "style": "left:86px;top:650px;font-size:56px;",
+     "cls": "l"
+    },
+    {
+     "html": "te cuesta interacción.",
+     "style": "left:86px;top:725px;font-size:68px;",
+     "cls": ""
+    },
+    {
+     "html": "Lo que dice un estudio de Stanford.",
+     "style": "left:86px;top:835px;font-family:Source Sans Pro;font-weight:600;text-transform:none;letter-spacing:0;font-size:42px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/lupa-cut.png",
+   "ill_x": 350,
+   "ill_y": 950,
+   "ill_w": 640,
+   "ill_rot": -10,
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

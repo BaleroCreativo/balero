@@ -1,0 +1,53 @@
+{
+ "name": "Balero-3nov-roas-portadaA",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 6,
+ "slides": [
+  {
+   "bg": "negro",
+   "bg_css": "linear-gradient(180deg,#665FE9 0 50%,#000 50% 100%)",
+   "layers": [
+    {
+     "html": "Un ROAS de",
+     "style": "left:86px;top:205px;font-size:76px;",
+     "cls": "l"
+    },
+    {
+     "html": "8",
+     "style": "left:70px;top:270px;font-size:470px;",
+     "cls": "y"
+    },
+    {
+     "html": "puede ganar menos que",
+     "style": "left:86px;top:760px;font-size:62px;",
+     "cls": "l"
+    },
+    {
+     "html": "5",
+     "style": "left:70px;top:820px;font-size:470px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/calc-cut.png",
+   "ill_x": 560,
+   "ill_y": 930,
+   "ill_w": 560,
+   "ill_rot": 10,
+   "stickers": [
+    {
+     "html": "Calcula tu<br>mínimo",
+     "x": 560,
+     "y": 330,
+     "w": 260,
+     "h": 130,
+     "px": 34,
+     "rot": -6
+    }
+   ],
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

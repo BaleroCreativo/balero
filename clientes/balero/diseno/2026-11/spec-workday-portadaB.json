@@ -1,0 +1,47 @@
+{
+ "name": "Balero-5nov-workday-portadaB",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 5,
+ "slides": [
+  {
+   "bg": "indigo",
+   "layers": [
+    {
+     "html": "La IA te ahorra tiempo,",
+     "style": "left:86px;top:215px;font-size:70px;",
+     "cls": "l"
+    },
+    {
+     "html": "pero casi <span class='y'>40%</span>",
+     "style": "left:86px;top:300px;font-size:112px;",
+     "cls": ""
+    },
+    {
+     "html": "se va en corregirla",
+     "style": "left:86px;top:1130px;font-size:76px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/arena-cut.png",
+   "ill_x": 360,
+   "ill_y": 450,
+   "ill_w": 560,
+   "ill_rot": 0,
+   "stickers": [
+    {
+     "html": "Estudio<br>de Workday",
+     "x": 110,
+     "y": 600,
+     "w": 290,
+     "h": 150,
+     "px": 36,
+     "rot": -10
+    }
+   ],
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

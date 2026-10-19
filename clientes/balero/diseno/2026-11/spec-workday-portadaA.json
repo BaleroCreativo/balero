@@ -1,0 +1,41 @@
+{
+ "name": "Balero-5nov-workday-portadaA",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 5,
+ "slides": [
+  {
+   "bg": "negro-puntos",
+   "layers": [
+    {
+     "html": "La IA te ahorra tiempo, pero casi",
+     "style": "left:86px;top:215px;font-size:46px;",
+     "cls": "l"
+    },
+    {
+     "html": "40%",
+     "style": "left:50px;top:610px;font-size:440px;",
+     "cls": "y"
+    },
+    {
+     "html": "se va en",
+     "style": "left:86px;top:1040px;font-size:80px;",
+     "cls": ""
+    },
+    {
+     "html": "<span class=\"it\" style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-size:1.25em;background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg);line-height:1\">corregirla</span>",
+     "style": "left:86px;top:1130px;font-size:80px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/robot-cut.png",
+   "ill_x": 400,
+   "ill_y": 290,
+   "ill_w": 640,
+   "ill_rot": 8,
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

@@ -1,0 +1,41 @@
+{
+ "name": "Balero-5nov-stanford-portadaA",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 5,
+ "slides": [
+  {
+   "bg": "indigo",
+   "layers": [
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;\">¿Tu título</span>",
+     "style": "left:86px;top:200px;font-size:210px;line-height:.9;",
+     "cls": ""
+    },
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0; background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg)\">con pregunta?</span>",
+     "style": "left:86px;top:400px;font-size:165px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "te cuesta interacción.",
+     "style": "left:86px;top:690px;font-size:74px;",
+     "cls": ""
+    },
+    {
+     "html": "Lo que dice un estudio de Stanford.",
+     "style": "left:86px;top:790px;font-family:Source Sans Pro;font-weight:600;text-transform:none;letter-spacing:0;font-size:44px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/celular-cut.png",
+   "ill_x": 380,
+   "ill_y": 900,
+   "ill_w": 700,
+   "ill_rot": 12,
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

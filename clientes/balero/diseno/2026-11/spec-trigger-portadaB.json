@@ -1,0 +1,47 @@
+{
+ "name": "Balero-6nov-trigger-portadaB",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 5,
+ "slides": [
+  {
+   "bg": "calido-puntos",
+   "layers": [
+    {
+     "html": "No empieces tu anuncio con",
+     "style": "left:86px;top:230px;font-size:52px;",
+     "cls": "l"
+    },
+    {
+     "html": "<span style=\"display:inline-block;transform:rotate(-4deg);text-decoration:line-through;text-decoration-thickness:.09em;text-decoration-color:#665FE9\">beneficios</span>",
+     "style": "left:60px;top:330px;font-size:168px;",
+     "cls": ""
+    },
+    {
+     "html": "Empieza con la situación del cliente.",
+     "style": "left:86px;top:1180px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/idea-cut.png",
+   "ill_x": 330,
+   "ill_y": 520,
+   "ill_w": 640,
+   "ill_rot": -10,
+   "stickers": [
+    {
+     "html": "Empieza<br>aquí",
+     "x": 100,
+     "y": 780,
+     "w": 260,
+     "h": 150,
+     "px": 40,
+     "rot": -9
+    }
+   ],
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

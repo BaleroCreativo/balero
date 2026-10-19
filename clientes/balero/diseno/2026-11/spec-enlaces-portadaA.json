@@ -1,0 +1,52 @@
+{
+ "name": "Balero-9nov-enlaces-portadaA",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 4,
+ "slides": [
+  {
+   "bg": "negro-puntos",
+   "layers": [
+    {
+     "html": "+",
+     "style": "left:470px;top:150px;font-size:1300px;line-height:.8;color:#665FE9;",
+     "cls": ""
+    },
+    {
+     "html": "Google puso",
+     "style": "left:86px;top:215px;font-size:70px;",
+     "cls": "l"
+    },
+    {
+     "html": "más<br>enlaces",
+     "style": "left:86px;top:330px;font-size:200px;line-height:.82;",
+     "cls": "y"
+    },
+    {
+     "html": "en <span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-size:1.25em;background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg);line-height:1\">AI Mode</span>",
+     "style": "left:86px;top:710px;font-size:80px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/fuente-cut.png",
+   "ill_x": 470,
+   "ill_y": 860,
+   "ill_w": 600,
+   "ill_rot": 8,
+   "stickers": [
+    {
+     "html": "Sin datos<br>de clics",
+     "x": 100,
+     "y": 1020,
+     "w": 270,
+     "h": 150,
+     "px": 36,
+     "rot": -8
+    }
+   ],
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

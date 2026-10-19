@@ -1,0 +1,42 @@
+{
+ "name": "Balero-12nov-chatgpt-portadaB",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 5,
+ "slides": [
+  {
+   "bg": "negro-puntos",
+   "layers": [
+    {
+     "html": "Antes de probar ChatGPT Ads,",
+     "style": "left:86px;top:215px;font-size:48px;",
+     "cls": "l"
+    },
+    {
+     "html": "define cómo medir.",
+     "style": "left:86px;top:285px;font-size:76px;",
+     "cls": ""
+    },
+    {
+     "html": "3",
+     "style": "left:230px;top:430px;font-size:900px;line-height:.82;",
+     "cls": "y"
+    },
+    {
+     "html": "pasos antes<br>de invertir",
+     "style": "left:86px;top:1150px;font-size:66px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/cal-cut.png",
+   "ill_x": 620,
+   "ill_y": 790,
+   "ill_w": 520,
+   "ill_rot": 10,
+   "ill_front": true,
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

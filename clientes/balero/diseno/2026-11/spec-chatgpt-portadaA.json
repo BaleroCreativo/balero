@@ -1,0 +1,48 @@
+{
+ "name": "Balero-12nov-chatgpt-portadaA",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "dots_total": 5,
+ "slides": [
+  {
+   "bg": "indigo",
+   "layers": [
+    {
+     "html": "Antes de probar",
+     "style": "left:86px;top:215px;font-size:70px;",
+     "cls": "l"
+    },
+    {
+     "html": "ChatGPT Ads,",
+     "style": "left:86px;top:300px;font-size:110px;",
+     "cls": ""
+    },
+    {
+     "html": "define cómo <span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-size:1.25em;background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg);line-height:1\">medir.</span>",
+     "style": "left:86px;top:430px;font-size:86px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/megafono-cut.png",
+   "ill_x": 340,
+   "ill_y": 820,
+   "ill_w": 860,
+   "ill_rot": -10,
+   "stickers": [
+    {
+     "html": "3 pasos<br>antes de<br>invertir",
+     "x": 90,
+     "y": 700,
+     "w": 290,
+     "h": 290,
+     "px": 40,
+     "rot": -12,
+     "round": true
+    }
+   ],
+   "type": "hero",
+   "title": ""
+  }
+ ]
+}

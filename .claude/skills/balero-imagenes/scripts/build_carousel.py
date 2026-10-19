@@ -57,7 +57,7 @@ DEFAULT_BRAND = {
         "lila-puntos": "radial-gradient(circle,rgba(70,58,170,.12) 1.6px,transparent 2.2px) 0 0/16px 16px,linear-gradient(180deg,#F6F5FF 0%,#E9E6FC 100%)",
         "negro-puntos": "radial-gradient(circle,rgba(255,255,255,.09) 1.6px,transparent 2.2px) 0 0/16px 16px,#000000",
     },
-    "dark_backgrounds": ["negro", "indigo", "negro-puntos"],   # fondos oscuros: el generador invierte textos, logo y puntos
+    "dark_backgrounds": ["negro", "indigo", "negro-puntos", "oscuro"],   # fondos oscuros: el generador invierte textos, logo y puntos
 }
 
 MX, MY = 0.08, 0.06  # márgenes como fracción del borde: 8% laterales, 6% vertical (todas las piezas)
@@ -156,6 +156,12 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .inv .hero-k{color:%(INVTXT)s}
 .it{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;
   word-spacing:0;font-size:1.22em;line-height:.8}
+.strike{text-decoration:line-through;text-decoration-thickness:.1em;text-decoration-color:%(HL)s}
+.sticker{position:absolute;z-index:4;font-family:'%(FT)s';font-weight:%(WH)s;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;
+  background:%(HL)s;color:#000;text-align:center;display:flex;align-items:center;justify-content:center;box-shadow:0 14px 30px rgba(0,0,0,.28)}
+.layer{position:absolute;z-index:2;white-space:nowrap;font-family:'%(FT)s';font-weight:%(WH)s;text-transform:uppercase;line-height:.9;letter-spacing:-.045em;color:%(INK)s;word-spacing:.12em}
+.inv .layer{color:#fff}
+.layer.a{color:%(INDIGO)s}.layer.y{color:%(HL)s}.layer.l{font-weight:%(WL)s;letter-spacing:-.02em}
 .hero-t .hl{background:%(HL)s;color:#000;padding:0 .1em;display:inline-block;transform:rotate(-1.2deg);border-radius:.06em}
 .hero-b .hl{background:%(HL)s;color:#000;padding:0 .12em;border-radius:3px}
 .chip{position:absolute;z-index:3;font-family:'%(FT)s';font-weight:600;text-transform:uppercase;letter-spacing:.14em;
@@ -233,7 +239,7 @@ def build(spec_path, out_dir, brand_path=None):
     def img(path, style):
         return f'<img class="ill" src="file://{ill(path)}" style="{style}">' if path else ""
 
-    total = len(spec["slides"])
+    total = spec.get("dots_total", len(spec["slides"]))
     show_dots = spec.get("progress_dots", False)
 
     def dots(i):
@@ -319,6 +325,14 @@ def build(spec_path, out_dir, brand_path=None):
                 bk = s["block"]
                 extras += (f'<div class="hero-b" style="left:{bk.get("x", mxp / sx) * sx}px;width:{bk.get("w", 908) * sx}px;font-size:{bk.get("px", 38) * sx}px;'
                            f'{"bottom:" + str(bk["bottom"] * sy) if "bottom" in bk else "top:" + str(bk.get("top", 900) * sy)}px">{bk["html"]}</div>')
+            if s.get("bg_css"):
+                bgcss = f";background:{s['bg_css']}"
+            for ly in s.get("layers", []):  # capas libres: {"html":..., "style":"left:..;top:.." , "cls":"y|a|l"}
+                extras += f'<div class="layer {ly.get("cls", "")}" style="{ly["style"]}">{ly["html"]}</div>'
+            for st in s.get("stickers", []):  # {"html","x","y","w","h","rot","px","round":true}
+                extras += (f'<div class="sticker" style="left:{st["x"]*sx}px;top:{st["y"]*sy}px;width:{st["w"]*sx}px;height:{st["h"]*sx}px;'
+                           f'font-size:{st.get("px", 40)*sx}px;transform:rotate({st.get("rot", -8)}deg);'
+                           f'border-radius:{"50%" if st.get("round") else "14px"}{";background:" + st["bg"] if st.get("bg") else ""}{";color:" + st["color"] if st.get("color") else ""}">{st["html"]}</div>')
             slides.append(
                 f'<div class="slide{inv}{" ind" if s.get("bg") == "indigo" else ""}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}{kick}{extras}'
                 f'<div class="hero-t" style="{hpos};{vpos};width:{tw}px;text-align:{align};font-size:{g("title_px", 130) * sx}px;'
