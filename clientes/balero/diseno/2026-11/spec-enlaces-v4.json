@@ -1,0 +1,95 @@
+{
+ "name": "Balero-9nov-ia-enlaces-v4",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "indigo",
+   "layers": [
+    {
+     "html": "Google puso más enlaces",
+     "style": "left:86px;top:225px;font-size:58px;",
+     "cls": "l"
+    },
+    {
+     "html": "en <span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;font-size:1.25em;background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg);line-height:1\">AI Mode</span>",
+     "style": "left:86px;top:300px;font-size:120px;",
+     "cls": ""
+    },
+    {
+     "html": "Más enlaces, sin datos de clics.",
+     "style": "left:86px;top:1200px;font-family:Source Sans Pro;font-weight:600;text-transform:none;letter-spacing:0;font-size:46px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/catalogo-cut.png",
+   "ill_x": 120,
+   "ill_y": 480,
+   "ill_w": 700,
+   "ill_rot": -7,
+   "stickers": [
+    {
+     "html": "Más<br>enlaces",
+     "x": 720,
+     "y": 520,
+     "w": 280,
+     "h": 280,
+     "px": 52,
+     "rot": 12,
+     "round": true
+    }
+   ],
+   "type": "hero",
+   "title": ""
+  },
+  {
+   "bg": "calido-puntos",
+   "title": "<span class=\"l\" style=\"font-size:52px;display:inline-block;margin-bottom:24px\">Qué cambió</span><br>MÁS <span class=\"hl it\">enlaces</span>",
+   "title_px": 116,
+   "text_bottom": 170,
+   "body": "En oct 2026 Google anunció enlaces <b>más arriba y más seguido</b> en AI Mode y AI Overviews.<div style='font-size:30px;margin-top:14px;opacity:.8'>Fuente: Google y Search Engine Journal.</div>",
+   "body_px": 38,
+   "body_w": 908,
+   "body_gap": 22,
+   "illustration": "ilustraciones/catalogo-cut.png",
+   "ill_x": 190,
+   "ill_y": 180,
+   "ill_w": 700,
+   "ill_rot": -4,
+   "type": "hero"
+  },
+  {
+   "bg": "indigo",
+   "title": "<span class=\"l\" style=\"font-size:52px;display:inline-block;margin-bottom:24px\">En Search Console:</span><br>IMPRESIONES SÍ,<br><span class=\"y it\">clics no.</span>",
+   "title_px": 96,
+   "text_y": 190,
+   "body": "Las impresiones de IA se ven aparte. <b>Los clics se cuentan en Búsqueda web, sin separarlos.</b><div style='font-size:30px;margin-top:14px;opacity:.85'>Fuente: Google Search Central.</div>",
+   "body_px": 38,
+   "body_w": 908,
+   "body_gap": 28,
+   "illustration": "ilustraciones/graficaflat-cut.png",
+   "ill_x": 360,
+   "ill_y": 740,
+   "ill_w": 700,
+   "ill_rot": -5,
+   "type": "hero"
+  },
+  {
+   "bg": "calido-puntos",
+   "title": "<span class=\"l\" style=\"font-size:56px;display:inline-block;margin-bottom:24px\">¿Sabes de dónde viene</span><br>EL TRÁFICO DE<br><span class=\"hl it\">tu web?</span>",
+   "title_px": 104,
+   "text_y": 190,
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b> Fuente: Google y Search Engine Journal.",
+   "body_px": 40,
+   "body_w": 620,
+   "body_gap": 30,
+   "illustration": "ilustraciones/ruta-cut.png",
+   "ill_x": 400,
+   "ill_y": 740,
+   "ill_w": 700,
+   "ill_rot": 0,
+   "type": "hero"
+  }
+ ]
+}

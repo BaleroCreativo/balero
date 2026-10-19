@@ -49,6 +49,7 @@ DEFAULT_BRAND = {
         "lila-diagonal": "linear-gradient(160deg,#F6F5FF 0%,#EFEDFF 55%,#D6D1F8 100%)",
         "blanco": "#FAFAFA",
         "portada-diagonal": "linear-gradient(155deg,#F4D9EE 0%,#F8E6DA 50%,#FFF3D6 100%)",
+        "amarillo": "#FFD23F",     # fondo de impacto amarillo de marca (texto negro, acentos índigo)
         "indigo": "#665FE9",       # fondo de impacto en el color de acento (texto claro automático)
         "negro": "#000000",        # fondo de impacto negro (texto claro automático)
         "cierre-diagonal": "linear-gradient(150deg,#FFF8E3 0%,#F6EEFA 60%,#E4DCFA 100%)",

@@ -1,0 +1,119 @@
+{
+ "name": "Balero-6nov-trigger-event-v4",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "calido-puntos",
+   "layers": [
+    {
+     "html": "No empieces tu anuncio con",
+     "style": "left:86px;top:230px;font-size:52px;",
+     "cls": "l"
+    },
+    {
+     "html": "<span style=\"display:inline-block;transform:rotate(-4deg);text-decoration:line-through;text-decoration-thickness:.09em;text-decoration-color:#665FE9\">beneficios</span>",
+     "style": "left:60px;top:330px;font-size:168px;",
+     "cls": ""
+    },
+    {
+     "html": "Empieza con la situación del cliente.",
+     "style": "left:86px;top:1180px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/idea-cut.png",
+   "ill_x": 330,
+   "ill_y": 520,
+   "ill_w": 640,
+   "ill_rot": -10,
+   "stickers": [
+    {
+     "html": "Empieza<br>aquí",
+     "x": 100,
+     "y": 780,
+     "w": 260,
+     "h": 150,
+     "px": 40,
+     "rot": -9
+    }
+   ],
+   "type": "hero",
+   "title": ""
+  },
+  {
+   "bg": "lila-puntos",
+   "title": "<span class=\"l\" style=\"font-size:56px;display:inline-block;margin-bottom:24px\">El momento en que</span><br>DECIDES<br><span class=\"hl it\">actuar.</span>",
+   "title_px": 108,
+   "text_bottom": 170,
+   "body": "Un problema puede llevar meses ahí. <b>Lo que lo mueve es una situación concreta.</b>",
+   "body_px": 36,
+   "body_w": 908,
+   "body_gap": 24,
+   "illustration": "ilustraciones/luna-cut.png",
+   "ill_x": 200,
+   "ill_y": 190,
+   "ill_w": 760,
+   "ill_rot": -6,
+   "type": "hero"
+  },
+  {
+   "bg": "calido-puntos",
+   "chip": "Ejemplo",
+   "chip_x": 86,
+   "chip_y": 190,
+   "chip_px": 24,
+   "title": "<div style=\"line-height:1.06\">“HOY NO<br>ALCANCÉ A<br>CONTESTAR<br>A <span class=\"hl it\">todos.</span>”</div>",
+   "title_px": 100,
+   "text_y": 262,
+   "body": "Así puede empezar un anuncio para un negocio con WhatsApp saturado. (Ejemplo ilustrativo.)",
+   "body_px": 38,
+   "body_w": 430,
+   "body_gap": 30,
+   "illustration": "ilustraciones/llamadas-cut.png",
+   "ill_x": 560,
+   "ill_y": 720,
+   "ill_w": 560,
+   "ill_rot": 8,
+   "type": "hero"
+  },
+  {
+   "bg": "indigo",
+   "chip": "Dónde encontrarlo",
+   "chip_x": 86,
+   "chip_y": 200,
+   "chip_px": 24,
+   "chip_style": "w",
+   "title": "<span class=\"l\" style=\"font-size:56px;display:inline-block;margin-bottom:24px\">Tus clientes</span><br>YA TE LO<br><span class=\"y it\">dijeron.</span>",
+   "title_px": 108,
+   "text_bottom": 170,
+   "body": "Revisa <b>reseñas, comentarios y mensajes</b>: ¿qué pasó para que buscaran ayuda y qué habían probado antes?",
+   "body_px": 38,
+   "body_w": 908,
+   "body_gap": 24,
+   "illustration": "ilustraciones/resenas-cut.png",
+   "ill_x": 90,
+   "ill_y": 280,
+   "ill_w": 900,
+   "ill_rot": -6,
+   "type": "hero"
+  },
+  {
+   "bg": "calido-puntos",
+   "title": "<span class=\"l\" style=\"font-size:60px;display:inline-block;margin-bottom:24px\">¿Tu anuncio empieza</span><br>CON TU CLIENTE<br><span class=\"hl it\">o contigo?</span>",
+   "title_px": 84,
+   "text_y": 190,
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b> Concepto de copywriting: trigger event.",
+   "body_px": 40,
+   "body_w": 620,
+   "body_gap": 30,
+   "illustration": "ilustraciones/idea-cut.png",
+   "ill_x": 260,
+   "ill_y": 780,
+   "ill_w": 860,
+   "ill_rot": -6,
+   "type": "hero"
+  }
+ ]
+}
