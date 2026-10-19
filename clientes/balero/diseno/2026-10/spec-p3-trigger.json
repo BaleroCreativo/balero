@@ -1,0 +1,55 @@
+{
+ "name": "p3-trigger",
+ "slides": [
+  {
+   "type": "cover",
+   "light": "No empieces tu anuncio",
+   "heavy": "con beneficios",
+   "subtitle": "Empieza con la situación del cliente.",
+   "illustration": "ilustraciones/idea-cut.png",
+   "swipe": true,
+   "bg": "portada-diagonal"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Trigger event",
+   "layout": "bottom",
+   "title": "El momento en que decides actuar.",
+   "body": "Un problema puede llevar meses ahí. <b>Lo que lo mueve es una situación concreta.</b>",
+   "illustration": "ilustraciones/cronometro-cut.png",
+   "bg": "lila"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Ejemplo",
+   "layout": "top",
+   "title": "“Hoy no alcancé a contestar a todos.”",
+   "body": "Así puede empezar un anuncio para un negocio con WhatsApp saturado. (Ejemplo ilustrativo.)",
+   "illustration": "ilustraciones/asistente-cut.png",
+   "bg": "blanco",
+   "ill_w": 330
+  },
+  {
+   "type": "lesson",
+   "kicker": "Dónde encontrarlo",
+   "layout": "bottom",
+   "title": "Tus clientes ya te lo dijeron.",
+   "body": "Revisa <b>reseñas, comentarios y mensajes</b>: ¿qué pasó para que buscaran ayuda y qué habían probado antes?",
+   "illustration": "ilustraciones/resenas-cut.png",
+   "bg": "lila-diagonal"
+  },
+  {
+   "type": "closing",
+   "light": "¿Tu anuncio empieza",
+   "heavy": "con tu cliente o contigo?",
+   "offer_bold": "Diagnóstico",
+   "offer_accent": "gratis de 15 minutos.",
+   "action": "Concepto de copywriting: trigger event.",
+   "illustration": "ilustraciones/bubbles-cut.png",
+   "bg": "cierre-diagonal"
+  }
+ ],
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true
+}

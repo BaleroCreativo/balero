@@ -1,0 +1,45 @@
+{
+ "name": "p4-ia-enlaces",
+ "slides": [
+  {
+   "type": "cover",
+   "light": "Google puso más enlaces",
+   "heavy": "en AI Mode",
+   "subtitle": "Más enlaces, sin datos de clics.",
+   "illustration": "ilustraciones/periodico-cut.png",
+   "swipe": true,
+   "bg": "portada-diagonal"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Qué cambió",
+   "layout": "bottom",
+   "title": "Más enlaces, más arriba.",
+   "body": "AI Mode y AI Overviews muestran <b>más enlaces dentro de las respuestas</b>.",
+   "illustration": "ilustraciones/enlace-cut.png",
+   "bg": "lila"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Lo que falta",
+   "layout": "top",
+   "title": "Google no publicó datos de clics.",
+   "body": "No dio métricas específicas de clics en esos enlaces. <b>Tu mejor prueba es tu propio dato de referencia.</b>",
+   "illustration": "ilustraciones/graficaflat-cut.png",
+   "bg": "blanco"
+  },
+  {
+   "type": "closing",
+   "light": "¿Sabes de dónde viene",
+   "heavy": "el tráfico de tu web?",
+   "offer_bold": "Diagnóstico",
+   "offer_accent": "gratis de 15 minutos.",
+   "action": "Fuente: Search Engine Journal (oct 2026).",
+   "illustration": "ilustraciones/bubbles-cut.png",
+   "bg": "cierre-diagonal"
+  }
+ ],
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true
+}

@@ -1,0 +1,45 @@
+{
+ "name": "Balero-23oct-encuestas-LinkedIn",
+ "slides": [
+  {
+   "type": "cover",
+   "light": "Un formato que casi nadie usa en LinkedIn",
+   "heavy": "Da +158% de impresiones",
+   "subtitle": "Dato del estudio de Metricool 2026.",
+   "illustration": "ilustraciones/bars-cut.png",
+   "swipe": true,
+   "bg": "portada-diagonal"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Se llama",
+   "layout": "bottom",
+   "title": "Encuesta.",
+   "body": "Una pregunta y de 2 a 4 opciones. <b>Quien te lee contesta en un clic.</b>",
+   "illustration": "ilustraciones/clip-cut.png",
+   "bg": "lila"
+  },
+  {
+   "type": "lesson",
+   "kicker": "El dato",
+   "layout": "top",
+   "title": "+158% de impresiones.",
+   "body": "Frente a la media de LinkedIn. <b>Promedio global</b> de 2025, no una promesa para tu página.",
+   "illustration": "ilustraciones/megafono-cut.png",
+   "bg": "blanco"
+  },
+  {
+   "type": "closing",
+   "light": "¿Ya probaste una encuesta",
+   "heavy": "en tu página de empresa?",
+   "offer_bold": "Diagnóstico",
+   "offer_accent": "gratis de 15 minutos.",
+   "action": "Fuente: Estudio de Redes Sociales 2026 de Metricool.",
+   "illustration": "ilustraciones/bubbles-cut.png",
+   "bg": "cierre-diagonal"
+  }
+ ],
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true
+}

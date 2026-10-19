@@ -1,0 +1,46 @@
+{
+ "name": "Balero-28oct-YouTube",
+ "slides": [
+  {
+   "type": "cover",
+   "light": "Las vistas por video en YouTube",
+   "heavy": "Subieron 76%",
+   "subtitle": "Dato del estudio de Metricool 2026.",
+   "illustration": "ilustraciones/bars-cut.png",
+   "swipe": true,
+   "bg": "portada-diagonal"
+  },
+  {
+   "type": "lesson",
+   "kicker": "El dato",
+   "layout": "bottom",
+   "title": "687 vistas por video.",
+   "body": "Es el promedio en YouTube en 2025, <b>+76%</b> frente al año anterior.",
+   "illustration": "ilustraciones/ventana-cut.png",
+   "bg": "lila",
+   "ill_w": 620
+  },
+  {
+   "type": "lesson",
+   "kicker": "Lo que no dice",
+   "layout": "top",
+   "title": "Es un promedio global.",
+   "body": "Incluye todas las cuentas del estudio, <b>no tu sector ni tu ciudad.</b>",
+   "illustration": "ilustraciones/graficaflat-cut.png",
+   "bg": "blanco"
+  },
+  {
+   "type": "closing",
+   "light": "Antes de abrir un canal:",
+   "heavy": "¿Para qué lo quieres?",
+   "offer_bold": "Diagnóstico",
+   "offer_accent": "gratis de 15 minutos.",
+   "action": "Fuente: Estudio de Redes Sociales 2026 de Metricool.",
+   "illustration": "ilustraciones/bubbles-cut.png",
+   "bg": "cierre-diagonal"
+  }
+ ],
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true
+}

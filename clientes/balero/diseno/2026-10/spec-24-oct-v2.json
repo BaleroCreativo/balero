@@ -1,0 +1,66 @@
+{
+ "name": "Balero-24oct-carruseles-IG-v2",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "type": "poster",
+   "title": "<div style=\"word-spacing:.18em\"><span class=\"y\" style=\"font-size:225px\">30.809</span><br><span style=\"font-size:112px\">impresiones</span><br><span class=\"boxy\" style=\"font-size:112px\">por carrusel</span></div>",
+   "subtitle": "El formato que menos se usa en Instagram.",
+   "illustration": "ilustraciones/trofeo-cut.png",
+   "ill_x": 450,
+   "ill_y": 700,
+   "ill_w": 780,
+   "ill_rot": 8,
+   "title_y": 150,
+   "sub_y": 930,
+   "sub_w": 340,
+   "swipe": true
+  },
+  {
+   "type": "lesson",
+   "kicker": "Carrusel",
+   "layout": "top",
+   "title": "30.809 impresiones por publicación.",
+   "body": "Es el promedio de un <b>carrusel</b> en Instagram, según el estudio de Metricool 2026.",
+   "illustration": "ilustraciones/trio-cut.png",
+   "ill_w": 600,
+   "text_y": 660,
+   "bg": "lila"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Imagen sola",
+   "layout": "bottom",
+   "title": "10.884.",
+   "body": "Una imagen sola promedia <b>casi 3 veces menos</b> impresiones que un carrusel.",
+   "illustration": "ilustraciones/periodico-cut.png",
+   "ill_w": 520,
+   "title_px": 200,
+   "bg": "negro"
+  },
+  {
+   "type": "lesson",
+   "kicker": "El detalle",
+   "layout": "top",
+   "title": "Y es el formato que menos se publica.",
+   "body": "Menos competencia, más impresiones. <b>Son promedios globales</b>, no una promesa.",
+   "illustration": "ilustraciones/catalogo-cut.png",
+   "ill_w": 480,
+   "text_y": 650,
+   "bg": "blanco"
+  },
+  {
+   "type": "closing",
+   "light": "¿Publicas solo imágenes sueltas?",
+   "heavy": "Prueba un carrusel.",
+   "offer_bold": "Diagnóstico",
+   "offer_accent": "gratis de 15 minutos.",
+   "action": "Fuente: Estudio de Redes Sociales 2026 de Metricool.",
+   "illustration": "ilustraciones/ventana-cut.png",
+   "ill_w": 460,
+   "bg": "cierre-diagonal"
+  }
+ ]
+}

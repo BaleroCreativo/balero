@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "skills": {
+    "affiliate-check": {
+      "source": "Affitor/affiliate-skills",
+      "sourceType": "github",
+      "skillPath": "SKILL.md",
+      "computedHash": "6c39d4ab45ee527eb6815bddbed279ca85ead2671b3d1d7349967bbb5c4d6e40"
+    }
+  }
+}

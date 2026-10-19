@@ -1,0 +1,55 @@
+{
+ "name": "p7-ia-workday",
+ "slides": [
+  {
+   "type": "cover",
+   "light": "La IA te ahorra tiempo,",
+   "heavy": "pero casi 40% se va en corregirla",
+   "subtitle": "Estudio de Workday, 2026.",
+   "illustration": "ilustraciones/varita-cut.png",
+   "swipe": true,
+   "bg": "portada-diagonal",
+   "ill_w": 440
+  },
+  {
+   "type": "lesson",
+   "kicker": "El dato",
+   "layout": "bottom",
+   "title": "Casi 40% del tiempo ahorrado se pierde.",
+   "body": "Corrigiendo, reescribiendo y verificando lo que produce la IA, según <b>Workday (enero 2026)</b>.",
+   "illustration": "ilustraciones/arena-cut.png",
+   "bg": "lila"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Ojo con la muestra",
+   "layout": "top",
+   "title": "Es un estudio de empresas grandes.",
+   "body": "3,200 empleados de empresas con ingresos de <b>USD 100 millones o más</b>. No es un dato de pymes.",
+   "illustration": "ilustraciones/lupa-cut.png",
+   "bg": "blanco"
+  },
+  {
+   "type": "lesson",
+   "kicker": "La conclusión",
+   "layout": "bottom",
+   "title": "La IA ahorra tiempo si alguien revisa lo que sale.",
+   "body": "Por eso <b>nada de lo que publicamos sale sin revisión</b>.",
+   "illustration": "ilustraciones/escudo-cut.png",
+   "bg": "lila-diagonal"
+  },
+  {
+   "type": "closing",
+   "light": "¿Usas IA en tu marketing",
+   "heavy": "y quién la revisa?",
+   "offer_bold": "Diagnóstico",
+   "offer_accent": "gratis de 15 minutos.",
+   "action": "Fuente: Workday, comunicado del 14 ene 2026.",
+   "illustration": "ilustraciones/bubbles-cut.png",
+   "bg": "cierre-diagonal"
+  }
+ ],
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true
+}

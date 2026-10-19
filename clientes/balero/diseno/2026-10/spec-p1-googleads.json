@@ -1,0 +1,55 @@
+{
+ "name": "p1-googleads",
+ "slides": [
+  {
+   "type": "cover",
+   "light": "Google Ads te deja ordenar",
+   "heavy": "dónde se gasta tu presupuesto",
+   "subtitle": "Prioridad de canales, desde octubre.",
+   "illustration": "ilustraciones/engranes-cut.png",
+   "swipe": true,
+   "bg": "portada-diagonal"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Qué cambia",
+   "layout": "bottom",
+   "title": "Canales con prioridad Alta o Baja.",
+   "body": "Socios de búsqueda y Display pueden marcarse como <b>prioridad baja</b>. Google gasta primero en los de prioridad alta.",
+   "illustration": "ilustraciones/balanza-cut.png",
+   "bg": "lila"
+  },
+  {
+   "type": "lesson",
+   "kicker": "El tope",
+   "layout": "top",
+   "title": "Un tope diario para los de baja.",
+   "body": "Pones un <b>porcentaje máximo del presupuesto diario</b> para esos canales. Es un objetivo, no una garantía.",
+   "illustration": "ilustraciones/monedas-cut.png",
+   "bg": "blanco"
+  },
+  {
+   "type": "lesson",
+   "kicker": "Ojo",
+   "layout": "bottom",
+   "title": "Todos arrancan en prioridad alta.",
+   "body": "Si no lo ajustas, <b>nada cambia</b>. Se despliega poco a poco: revisa si ya aparece en tu cuenta.",
+   "illustration": "ilustraciones/lupa-cut.png",
+   "bg": "lila-diagonal",
+   "ill_w": 290
+  },
+  {
+   "type": "closing",
+   "light": "¿Sabes en qué canales",
+   "heavy": "se va tu presupuesto?",
+   "offer_bold": "Diagnóstico",
+   "offer_accent": "gratis de 15 minutos.",
+   "action": "Fuente: Google Ads (octubre 2026).",
+   "illustration": "ilustraciones/bubbles-cut.png",
+   "bg": "cierre-diagonal"
+  }
+ ],
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true
+}
