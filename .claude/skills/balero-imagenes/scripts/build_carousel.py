@@ -137,6 +137,18 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .inv .logo{filter:invert(1)}
 .inv .dots i{background:%(INVDOT)s}
 .inv .dots i.on{background:#fff}
+.hero-t{position:absolute;font-family:'%(FT)s';font-weight:%(WH)s;text-transform:uppercase;line-height:.93;
+  letter-spacing:-0.045em;color:%(INK)s;z-index:2;word-spacing:.12em}
+.hero-t .a{color:%(INDIGO)s}.hero-t .y{color:%(HL)s}.hero-t .l{font-weight:%(WL)s;letter-spacing:-0.03em}
+.hero-t .box{background:#000;color:#fff;padding:0 .12em;display:inline-block;transform:rotate(-2deg)}
+.hero-t .boxy{background:%(HL)s;color:#000;padding:0 .12em;display:inline-block;transform:rotate(1.5deg)}
+.hero-t .boxi{background:%(INDIGO)s;color:#fff;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg)}
+.inv .hero-t{color:#fff}.inv .hero-t .a{color:%(INVACC)s}
+.hero-b{position:absolute;z-index:2;text-transform:none;letter-spacing:0;word-spacing:0;font-family:'%(FB)s';font-weight:%(WB)s;line-height:1.28}
+.hero-b b{font-weight:%(WBB)s;color:%(INDIGO)s}
+.inv .hero-b{color:%(INVTXT)s}.inv .hero-b b{color:%(INVACC)s}
+.hero-k{position:absolute;z-index:2;font-family:'%(FT)s';font-weight:%(WL)s;text-transform:uppercase;line-height:1;font-size:%(kick)dpx}
+.inv .hero-k{color:%(INVTXT)s}
 .inv svg path{stroke:#fff}
 """
 
@@ -239,6 +251,39 @@ def build(spec_path, out_dir, brand_path=None):
                 f'<div class="poster-t" style="top:{g("title_y", 170)*sy}px;font-size:{g("title_px", 190)*sx}px">{s["title"]}</div>'
                 f'<div class="poster-s" style="top:{g("sub_y", 1180)*sy}px;font-size:{g("sub_px", 46)*sx}px;max-width:{g("sub_w", 600)*sx}px">{s.get("subtitle","")}'
                 f'{"<div style=font-family:" + FT.replace(" ", "") + ";font-weight:" + str(W_["light"]) + ";font-size:" + str(30*sx) + "px;text-transform:uppercase;margin-top:30px>Desliza" + arrow + "</div>" if s.get("swipe") else ""}</div>'
+                f'<div class="foot">{NAME}</div></div>')
+        elif t == "hero":
+            # Cartel: icono enorme (puede sangrar por los bordes) + titular corto + una línea de apoyo.
+            # Campos: illustration, ill_x, ill_y, ill_w, ill_rot, ill_front, bg, kicker, title (HTML: spans a y l box boxy boxi),
+            # title_px, text_x, text_y (px desde arriba) o text_bottom (px desde abajo), text_w, align (left|right|center),
+            # body, body_px, body_gap, body_w, swipe.
+            m = M_COVER
+            rot = g("ill_rot", 0)
+            pz = 3 if s.get("ill_front") else 1
+            shadow = "0 40px 50px rgba(0,0,0,.35)" if inv else "0 40px 50px rgba(%s,.30)" % C["shadow"]
+            pic = (f'<img class="ill" src="file://{ill(s.get("illustration"))}" style="z-index:{pz};left:{g("ill_x", 100)*sx}px;'
+                   f'top:{g("ill_y", 500)*sy}px;width:{g("ill_w", 900)*sx}px;transform:rotate({rot}deg);filter:drop-shadow({shadow})">')
+            tw = g("text_w", 908) * sx
+            align = g("align", "left")
+            mxp = round(W * m)
+            if align == "right":
+                hpos = f"right:{mxp}px"
+            elif align == "center":
+                hpos = f"left:{(W - tw) / 2}px"
+            else:
+                hpos = f"left:{g('text_x', mxp / sx) * sx}px"
+            vpos = f"bottom:{s['text_bottom'] * sy}px" if "text_bottom" in s else f"top:{g('text_y', 200) * sy}px"
+            kick = f'<div class="hero-k" style="{hpos};{vpos};width:{tw}px;text-align:{align}">{s["kicker"]}</div>' if s.get("kicker") else ""
+            # titular y apoyo van en un solo bloque para que no se pisen
+            body = (f'<div class="hero-b" style="position:static;margin-top:{g("body_gap", 36) * sy}px;font-size:{g("body_px", 46) * sx}px;'
+                    f'max-width:{g("body_w", 600) * sx}px;{"margin-left:auto;" if align == "right" else ("margin:" + str(g("body_gap", 36) * sy) + "px auto 0;" if align == "center" else "")}">{s["body"]}</div>') if s.get("body") else ""
+            kpad = f'<div style="height:{(38 + 30) * sx}px"></div>' if s.get("kicker") else ""
+            swipe = ('<div style="margin-top:' + str(30 * sy) + 'px;font-family:' + FT.replace(" ", "") + ';font-weight:' + str(W_["light"]) + ';font-size:' + str(30 * sx) + 'px;text-transform:uppercase;letter-spacing:0;word-spacing:0;line-height:1">Desliza' + arrow + '</div>') if s.get("swipe") else ""
+            slides.append(
+                f'<div class="slide{inv}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}{kick}'
+                f'<div class="hero-t" style="{hpos};{vpos};width:{tw}px;text-align:{align};font-size:{g("title_px", 130) * sx}px;'
+                f'{"padding-top:" + str((38 + 30) * sx) + "px;" if s.get("kicker") else ""}">'
+                f'{s["title"]}<div style="font-size:0;line-height:0">{""}</div>{body}{swipe}</div>'
                 f'<div class="foot">{NAME}</div></div>')
         elif t == "lesson":
             kick_text = s.get("kicker", f"Lección {s.get('number', '')}")  # "kicker" opcional: p. ej. "Dato 1"
