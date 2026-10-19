@@ -52,8 +52,12 @@ DEFAULT_BRAND = {
         "indigo": "#665FE9",       # fondo de impacto en el color de acento (texto claro automático)
         "negro": "#000000",        # fondo de impacto negro (texto claro automático)
         "cierre-diagonal": "linear-gradient(150deg,#FFF8E3 0%,#F6EEFA 60%,#E4DCFA 100%)",
+        # fondos con textura de puntos (halftone), cálidos y suaves
+        "calido-puntos": "radial-gradient(circle,rgba(70,58,170,.10) 1.6px,transparent 2.2px) 0 0/16px 16px,linear-gradient(160deg,#FBF1E6 0%,#F3EEE6 100%)",
+        "lila-puntos": "radial-gradient(circle,rgba(70,58,170,.12) 1.6px,transparent 2.2px) 0 0/16px 16px,linear-gradient(180deg,#F6F5FF 0%,#E9E6FC 100%)",
+        "negro-puntos": "radial-gradient(circle,rgba(255,255,255,.09) 1.6px,transparent 2.2px) 0 0/16px 16px,#000000",
     },
-    "dark_backgrounds": ["negro", "indigo"],   # fondos oscuros: el generador invierte textos, logo y puntos
+    "dark_backgrounds": ["negro", "indigo", "negro-puntos"],   # fondos oscuros: el generador invierte textos, logo y puntos
 }
 
 MX, MY = 0.08, 0.06  # márgenes como fracción del borde: 8% laterales, 6% vertical (todas las piezas)
@@ -149,6 +153,21 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .inv .hero-b{color:%(INVTXT)s}.inv .hero-b b{color:%(INVACC)s}
 .hero-k{position:absolute;z-index:2;font-family:'%(FT)s';font-weight:%(WL)s;text-transform:uppercase;line-height:1;font-size:%(kick)dpx}
 .inv .hero-k{color:%(INVTXT)s}
+.hero-t .hl{background:%(HL)s;color:#000;padding:0 .1em;display:inline-block;transform:rotate(-1.2deg);border-radius:.06em}
+.hero-b .hl{background:%(HL)s;color:#000;padding:0 .12em;border-radius:3px}
+.chip{position:absolute;z-index:3;font-family:'%(FT)s';font-weight:600;text-transform:uppercase;letter-spacing:.14em;
+  background:#000;color:#fff;padding:.5em .9em;border-radius:8px;line-height:1;white-space:nowrap}
+.chip.w{background:#FAFAFA;color:#000}
+.bar{position:absolute;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:28px;background:#000;color:#fff;
+  font-family:'%(FB)s';font-weight:600;line-height:1.22;padding:30px 36px;transform:rotate(-1.4deg);
+  clip-path:polygon(1.2%% 0,98.8%% 0,100%% 9%%,98.6%% 18%%,100%% 27%%,98.6%% 36%%,100%% 45%%,98.6%% 54%%,100%% 63%%,98.6%% 72%%,100%% 81%%,98.6%% 90%%,98.8%% 100%%,1.2%% 100%%,0 91%%,1.4%% 82%%,0 73%%,1.4%% 64%%,0 55%%,1.4%% 46%%,0 37%%,1.4%% 28%%,0 19%%,1.4%% 10%%)}
+.bar.w{background:#FAFAFA;color:#000}
+.bar b{font-weight:700;color:%(HL)s}.bar.w b{color:%(INDIGO)s}
+.btn{flex:none;width:76px;height:76px;border-radius:50%%;background:%(HL)s;display:flex;align-items:center;justify-content:center}
+.arrowbtn{position:absolute;z-index:3;right:var(--mx);bottom:var(--my);width:84px;height:84px;border-radius:50%%;background:%(HL)s;
+  display:flex;align-items:center;justify-content:center}
+.inv .btn svg path,.inv .arrowbtn svg path{stroke:#000}
+.frame{position:absolute;z-index:0;left:16px;top:16px;right:16px;bottom:16px;border:14px solid %(HL)s;border-radius:64px}
 .inv svg path{stroke:#fff}
 """
 
@@ -279,8 +298,22 @@ def build(spec_path, out_dir, brand_path=None):
                     f'max-width:{g("body_w", 600) * sx}px;{"margin-left:auto;" if align == "right" else ("margin:" + str(g("body_gap", 36) * sy) + "px auto 0;" if align == "center" else "")}">{s["body"]}</div>') if s.get("body") else ""
             kpad = f'<div style="height:{(38 + 30) * sx}px"></div>' if s.get("kicker") else ""
             swipe = ('<div style="margin-top:' + str(30 * sy) + 'px;font-family:' + FT.replace(" ", "") + ';font-weight:' + str(W_["light"]) + ';font-size:' + str(30 * sx) + 'px;text-transform:uppercase;letter-spacing:0;word-spacing:0;line-height:1">Desliza' + arrow + '</div>') if s.get("swipe") else ""
+            # extras opcionales: chip (etiqueta), bar (barra rasgada con apoyo + botón), arrow (botón → abajo a la derecha), frame (marco amarillo)
+            extras = ""
+            if s.get("frame"):
+                extras += '<div class="frame"></div>'
+            if s.get("chip"):
+                extras += (f'<div class="chip{" w" if s.get("chip_style") == "w" else ""}" style="left:{g("chip_x", mxp / sx) * sx}px;top:{g("chip_y", 300) * sy}px;'
+                           f'font-size:{g("chip_px", 26) * sx}px">{s["chip"]}</div>')
+            arr_svg = ('<svg width="38" height="22" viewBox="0 0 38 22"><path d="M2 11H34M25 2l9 9-9 9" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+            if s.get("bar"):
+                extras += (f'<div class="bar{" w" if s.get("bar_style") == "w" else ""}" style="left:{g("bar_x", mxp / sx) * sx}px;width:{g("bar_w", 908) * sx}px;'
+                           f'{"top:" + str(s["bar_y"] * sy) + "px" if "bar_y" in s else "bottom:" + str(g("bar_bottom", 140) * sy) + "px"};font-size:{g("bar_px", 38) * sx}px">'
+                           f'<div>{s["bar"]}</div>{"<div class=btn>" + arr_svg + "</div>" if s.get("bar_btn", True) else ""}</div>')
+            if s.get("arrow"):
+                extras += f'<div class="arrowbtn">{arr_svg}</div>'
             slides.append(
-                f'<div class="slide{inv}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}{kick}'
+                f'<div class="slide{inv}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}{kick}{extras}'
                 f'<div class="hero-t" style="{hpos};{vpos};width:{tw}px;text-align:{align};font-size:{g("title_px", 130) * sx}px;'
                 f'{"padding-top:" + str((38 + 30) * sx) + "px;" if s.get("kicker") else ""}">'
                 f'{s["title"]}<div style="font-size:0;line-height:0">{""}</div>{body}{swipe}</div>'
