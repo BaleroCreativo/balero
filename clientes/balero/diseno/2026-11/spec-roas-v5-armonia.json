@@ -1,0 +1,157 @@
+{
+ "name": "Balero-3nov-roas-minimo-v5-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "indigo",
+   "layers": [
+    {
+     "html": "Un ROAS de",
+     "style": "left:86px;top:200px;font-size:88px;",
+     "cls": "l"
+    },
+    {
+     "html": "8",
+     "style": "left:420px;top:300px;font-size:940px;line-height:.8;",
+     "cls": "y"
+    },
+    {
+     "html": "puede ganar menos",
+     "style": "left:86px;top:1080px;font-size:88px;letter-spacing:-.05em;",
+     "cls": ""
+    },
+    {
+     "html": "<span style=\"background:#FFD23F;color:#000;padding:0 .12em;display:inline-block;transform:rotate(-2deg)\">que uno de 5</span>",
+     "style": "left:86px;top:1184px;font-size:88px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/calc-cut.png",
+   "ill_x": -60,
+   "ill_y": 340,
+   "ill_w": 518,
+   "ill_rot": -14,
+   "ill_front": true,
+   "type": "hero",
+   "title": ""
+  },
+  {
+   "type": "zonas",
+   "bg": "negro-puntos",
+   "chip": "Ejemplo ilustrativo",
+   "chip_style": "w",
+   "kick": "",
+   "title": "<span class=\"l\" style=\"font-size:64px;display:block;margin-bottom:16px\">ROAS =</span><span class=\"y\">ventas</span><br>entre <span class=\"hl it\">inversión</span>",
+   "body": "Inviertes $400 y vendes $2,000: ROAS 5.<div style='margin-top:16px'><span class='hl'>Con 20% de margen, ROAS 5 es el punto de equilibrio</span> (utilidad $0).</div><div style='margin-top:16px'>Con 30% de margen sería +$200.</div>",
+   "body_w": 780,
+   "icon": {
+    "illustration": "ilustraciones/cobro-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.15,
+    "rot": -8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "El panel no ve",
+   "title": "TUS <span class=\"hl it\">costos</span>",
+   "body": "Mismo ROAS, distinto margen: <b>un ROAS de 3 puede ser bueno o pérdida.</b>",
+   "body_w": 600,
+   "table": {
+    "caption": "ROAS de equilibrio por margen",
+    "w": 520,
+    "rows": [
+     {
+      "label": "Margen 60%",
+      "fig": "1.67"
+     },
+     {
+      "label": "Margen 30%",
+      "fig": "3.33"
+     },
+     {
+      "label": "Margen 10%",
+      "fig": "10",
+      "tone": "a"
+     }
+    ],
+    "note": "Ejemplo ilustrativo. Cálculo: 1 ÷ margen."
+   },
+   "icon": {
+    "illustration": "ilustraciones/embudofuga-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.2,
+    "rot": -8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "kick": "Tu ROAS mínimo:",
+   "title": "DONDE DEJAS<br>DE <span class=\"hl it\">perder</span>",
+   "bar": "<b style=\"font-family:Poppins;font-weight:800\">ROAS de equilibrio = 1 ÷ margen</b>",
+   "note": "Fuente: Shopify y Triple Whale. No incluye gastos fijos.",
+   "icon": {
+    "illustration": "ilustraciones/target-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "none",
+    "bleed_pct": 0.12,
+    "rot": 6
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "negro",
+   "kick": "Más ROAS no siempre es",
+   "title": "MÁS <span class=\"y it\">ganancia</span>",
+   "table": {
+    "caption": "Margen 30% · ejemplo ilustrativo",
+    "w": 908,
+    "rows": [
+     {
+      "label": "Gasto $500 · ROAS 8",
+      "fig": "+$700",
+      "tone": "y"
+     },
+     {
+      "label": "Gasto $10,000 · ROAS 5",
+      "fig": "+$5,000"
+     }
+    ],
+    "note": "Utilidad después del costo y del gasto en anuncios."
+   },
+   "icon": {
+    "illustration": "ilustraciones/balanza-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -4
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "¿Sabes cuál es tu",
+   "title": "ROAS <span class=\"hl it\">mínimo?</span>",
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b> Los números son ejemplos ilustrativos.",
+   "body_w": 680,
+   "icon": {
+    "illustration": "ilustraciones/llave-cut.png",
+    "size": "L",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.2,
+    "rot": -8
+   }
+  }
+ ]
+}

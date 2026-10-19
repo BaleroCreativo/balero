@@ -64,6 +64,14 @@ DEFAULT_BRAND = {
 MX, MY = 0.08, 0.06  # márgenes como fracción del borde: 8% laterales, 6% vertical (todas las piezas)
 M_COVER = M_INNER = MX
 
+# Sistema de proporción para el layout "zonas" (ver ../references/proporcion-y-armonia.md). Base 8 px sobre lienzo 1080x1440.
+Z_KICK_TOP, Z_KICK_H = 200, 64            # zona de cabecera termina en 200; fila de rótulo/línea fina (alto fijo 64)
+Z_GAP_KT, Z_GAP_TB, Z_GAP_BX, Z_GAP_XN = 24, 32, 48, 24   # rótulo→titular, titular→cuerpo, cuerpo→extra, extra→nota
+Z_LABEL, Z_BODY, Z_LIGHT, Z_TITLE = 32, 40, 64, 112      # escala tipográfica (titular 88 o 144 como pasos vecinos)
+Z_FIG = 96                                # cifra de tablas
+ICON_SIZES = {"S": .48, "M": .64, "L": .82}               # ancho visible del icono / ancho del lienzo
+Z_HERO_TOP, Z_HERO_BOTTOM = .52, .95                      # zona héroe (fracción del alto)
+
 
 def _merge(base, extra):
     for k, v in extra.items():
@@ -179,6 +187,32 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .inv .btn svg path,.inv .arrowbtn svg path{stroke:#000}
 .frame{position:absolute;z-index:0;left:16px;top:16px;right:16px;bottom:16px;border:14px solid %(HL)s;border-radius:64px}
 .inv svg path{stroke:#fff}
+.zstack{position:absolute;z-index:3;display:flex;flex-direction:column;align-items:flex-start}
+.zk{height:%(zkh)dpx;display:flex;align-items:flex-start;flex:none}
+.zk.zl{font-family:'%(FT)s';font-weight:%(WL)s;text-transform:uppercase;font-size:%(zlight)dpx;line-height:%(zkh)dpx;
+  letter-spacing:-.02em;word-spacing:.1em;white-space:nowrap;color:%(INK)s}
+.inv .zk.zl{color:#fff}
+.chip.zc{position:static;display:inline-block;font-size:%(zlabel)dpx;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.hero-t.zt{position:static;width:auto;word-spacing:.1em}
+.hero-b.zb{position:static;line-height:1.3}
+.zb .hl{background:%(HL)s;color:#000;padding:.06em .28em;border-radius:6px;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.ind .zb b{color:%(HL)s}
+.inv .zb b{color:%(INVACC)s}.slide.ind .zb b{color:%(HL)s}
+.zx{width:100%%}
+.ztab .zcap{white-space:nowrap;font-family:'%(FT)s';font-weight:700;font-size:%(zlabel)dpx;letter-spacing:.08em;text-transform:uppercase;line-height:1;color:%(INK)s}
+.inv .ztab .zcap{color:%(INVACC)s}
+.ztab .zrow{display:flex;align-items:baseline;justify-content:space-between;gap:24px;margin-top:16px;line-height:1;font-size:%(zbody)dpx}
+.ztab .zrow:first-of-type{margin-top:24px}
+.ztab .zf{font-family:'%(FT)s';font-weight:%(WH)s;font-size:%(zfig)dpx;letter-spacing:-.03em;line-height:1;color:%(INK)s}
+.inv .ztab .zrow{color:%(INVTXT)s}
+.inv .ztab .zf{color:#fff}
+.ztab .zf.a{color:%(INDIGO)s}.ztab .zf.y{color:%(HL)s}
+.ztab .znote,.zn{font-size:%(zlabel)dpx;line-height:1.25;opacity:.8;white-space:nowrap}
+.ztab .znote{margin-top:24px}
+.inv .zn,.inv .ztab .znote{color:%(INVTXT)s}
+.zn{margin-top:%(zgxn)dpx}
+.bar.zbar{position:static;width:100%%;font-size:%(zbody)dpx;padding:32px 40px;filter:drop-shadow(0 8px 24px rgba(0,0,0,.18))}
+.zbar .btn{width:80px;height:80px}
 """
 
 
@@ -193,6 +227,52 @@ def find_chrome():
         if p:
             return p, False
     sys.exit("No encontré Chrome/Chromium.")
+
+
+def _img_size(path):
+    try:
+        from PIL import Image
+        with Image.open(path) as im:
+            return im.size
+    except Exception:
+        out = subprocess.run(["identify", "-format", "%w %h", path], capture_output=True, text=True).stdout.split()
+        return int(out[0]), int(out[1])
+
+
+def place_icon(ic, W, H, mx, my, size_px):
+    """Layout "zonas": devuelve (left, top, width, rot) del icono según tamaño S/M/L, ancla y sangrado de UN solo borde.
+    ic: size (S|M|L o fracción), anchor (br bl bc mr ml tr tl), bleed (r|l|b|none), bleed_pct (fracción del icono que sale, máx. .25),
+    rot (grados), dx, dy (ajustes finos). Las posiciones se calculan sobre la caja del icono ya rotado."""
+    import math
+    pct = ic.get("size", "M")
+    pct = ICON_SIZES.get(pct, pct) if isinstance(pct, str) else float(pct)
+    w = ic["w"] if "w" in ic else pct * W
+    iw, ih = size_px
+    h = w * ih / iw
+    rot = ic.get("rot", 0)
+    a = abs(math.radians(rot))
+    bw, bh = w * math.cos(a) + h * math.sin(a), w * math.sin(a) + h * math.cos(a)
+    anchor, bleed, bp = ic.get("anchor", "br"), ic.get("bleed", "none"), min(ic.get("bleed_pct", .2), .25)
+    v, hz = anchor[0], anchor[1]
+    if hz == "r":
+        right = W + bp * bw if bleed == "r" else W - mx
+        cx = right - bw / 2
+    elif hz == "l":
+        left = -bp * bw if bleed == "l" else mx
+        cx = left + bw / 2
+    else:
+        cx = W / 2
+    top_zone, bot_zone = Z_HERO_TOP * H, Z_HERO_BOTTOM * H
+    if v == "b":
+        bottom = H + bp * bh if bleed == "b" else bot_zone
+        cy = bottom - bh / 2
+    elif v == "t":
+        cy = top_zone + bh / 2
+    else:
+        cy = (top_zone + bot_zone) / 2
+    cx += ic.get("dx", 0)
+    cy += ic.get("dy", 0)
+    return cx - w / 2, cy - h / 2, w, rot
 
 
 def build(spec_path, out_dir, brand_path=None):
@@ -225,6 +305,7 @@ def build(spec_path, out_dir, brand_path=None):
                      heavy=96 * sx, dark=104 * sx, body=48 * sx, bodyw=860 * sx,
                      dot=16 * sx, dotgap=12 * sx, dotoff=0,
                      FT=FT, FB=FB, WL=W_["light"], WH=W_["heavy"], WB=W_["body"], WBB=W_["body_bold"],
+                     zkh=Z_KICK_H, zlight=Z_LIGHT, zlabel=Z_LABEL, zbody=Z_BODY, zfig=Z_FIG, zgxn=Z_GAP_XN,
                      SHADOW=C["shadow"], HL=C["highlight"], DOTOFF=C["dot_off"], INVTXT=C["inv_text"],
                      INVACC=C["inv_accent"], INVDOT=C["inv_dot"])
     css = open(FONTS_CSS).read() + css
@@ -339,6 +420,45 @@ def build(spec_path, out_dir, brand_path=None):
                 f'<div class="hero-t" style="{hpos};{vpos};width:{tw}px;text-align:{align};font-size:{g("title_px", 130) * sx}px;'
                 f'{"padding-top:" + str((38 + 30) * sx) + "px;" if s.get("kicker") else ""}">'
                 f'{s["title"]}<div style="font-size:0;line-height:0">{""}</div>{body}{swipe}</div>'
+                f'<div class="foot">{NAME}</div></div>')
+        elif t == "zonas":
+            # Layout por zonas (proporción y armonía). Lienzo 1080x1440. Pila de texto en una sola columna izquierda:
+            # fila de rótulo (chip O kick, alto fijo 64) -> titular -> cuerpo -> extra (table | bar) -> nota; espacios 24/32/48/24.
+            # Campos: bg, chip, chip_style, kick (línea fina Poppins Light en HTML), title (HTML), title_px (88|112|144), body, body_w,
+            # table {caption, rows:[{label, fig, tone: ink|a|y}], note, w}, bar, bar_btn, note, text_w,
+            # icon {illustration, size S|M|L, anchor, bleed, bleed_pct, rot, dx, dy, front}
+            m = M_COVER
+            mxp = round(W * m)
+            tw = g("text_w", 908) * sx
+            ic = s["icon"]
+            isz = _img_size(ill(ic["illustration"]))
+            il, it_, iw_, irot = place_icon(ic, W, H, mxp, round(H * MY), isz)
+            shadow = "0 40px 50px rgba(0,0,0,.35)" if inv else "0 40px 50px rgba(%s,.30)" % C["shadow"]
+            pic = (f'<img class="ill" src="file://{ill(ic["illustration"])}" style="z-index:{3 if ic.get("front") else 1};left:{il}px;top:{it_}px;'
+                   f'width:{iw_}px;transform:rotate({irot}deg);filter:drop-shadow({shadow})">')
+            if s.get("chip"):
+                kr = f'<div class="zk"><span class="chip zc{" w" if s.get("chip_style") == "w" else ""}">{s["chip"]}</span></div>'
+            elif s.get("kick"):
+                kr = f'<div class="zk zl">{s["kick"]}</div>'
+            else:
+                kr = ""
+            title = f'<div class="hero-t zt" style="margin-top:{Z_GAP_KT if kr else 0}px;font-size:{g("title_px", Z_TITLE)}px">{s["title"]}</div>'
+            body = (f'<div class="hero-b zb" style="margin-top:{Z_GAP_TB}px;font-size:{Z_BODY}px;max-width:{g("body_w", 600)}px">{s["body"]}</div>') if s.get("body") else ""
+            ex = ""
+            if s.get("table"):
+                tb = s["table"]
+                rows = "".join(f'<div class="zrow"><span>{r["label"]}</span><span class="zf {r.get("tone", "")}">{r["fig"]}</span></div>' for r in tb["rows"])
+                ex += (f'<div class="zx ztab" style="margin-top:{Z_GAP_BX}px;width:{tb.get("w", 600)}px"><div class="zcap">{tb["caption"]}</div>{rows}'
+                       f'{"<div class=znote>" + tb["note"] + "</div>" if tb.get("note") else ""}</div>')
+            if s.get("bar"):
+                arr_svg = ('<svg width="38" height="22" viewBox="0 0 38 22"><path d="M2 11H34M25 2l9 9-9 9" fill="none" stroke="#000" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/></svg>')
+                ex += (f'<div class="bar zbar{" w" if s.get("bar_style") == "w" else ""}" style="margin-top:{Z_GAP_BX}px">'
+                       f'<div>{s["bar"]}</div>{"<div class=btn>" + arr_svg + "</div>" if s.get("bar_btn", True) else ""}</div>')
+            if s.get("note"):
+                ex += f'<div class="zn">{s["note"]}</div>'
+            slides.append(
+                f'<div class="slide{inv}{" ind" if s.get("bg") == "indigo" else ""}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}'
+                f'<div class="zstack" style="left:{mxp}px;top:{Z_KICK_TOP * sy}px;width:{tw}px">{kr}{title}{body}{ex}</div>'
                 f'<div class="foot">{NAME}</div></div>')
         elif t == "lesson":
             kick_text = s.get("kicker", f"Lección {s.get('number', '')}")  # "kicker" opcional: p. ej. "Dato 1"
