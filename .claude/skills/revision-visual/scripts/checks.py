@@ -20,7 +20,7 @@ ap.add_argument("carpeta")
 ap.add_argument("--ancho", type=int, default=1080)
 ap.add_argument("--alto", type=int, default=1440)
 ap.add_argument("--escala", type=int, default=2)
-ap.add_argument("--fuentes", default="Poppins,SourceSans",
+ap.add_argument("--fuentes", default="Poppins,SourceSans,InstrumentSerif",
                 help="familias de la marca, separadas por coma (nombre sin espacios; ej. Montserrat,OpenSans)")
 a = ap.parse_args()
 

@@ -34,6 +34,7 @@ El índigo sobre lavanda da 4,4:1: úsalo solo en texto grande (titulares y énf
 
 ## Tipografías
 - **Títulos: siempre Poppins, en cualquier peso.** Incluye la línea fina de la portada y el rótulo "LECCIÓN N" (Light 300) y los titulares fuertes (ExtraBold 800, mayúsculas, interletraje −0,045 em, interlineado 1,03).
+- **Énfasis: Instrument Serif cursiva** (oficial desde noviembre 2026, aprobada por Daniela). Solo para UNA palabra o frase corta de énfasis dentro de un titular, con `<span class="it">palabra</span>` (en poster, hero, cover, lesson y closing); se puede combinar con el marcador amarillo `<span class="hl it">`. El CSS ya la sube a 1,22 em respecto a Poppins para igualar el peso visual. Nunca para cuerpo de texto ni para titulares completos.
 - **Párrafos y subtítulos de portada: Source Sans Pro** (Regular 400, Bold 700 para énfasis).
 - El pie "BALERO CREATIVO" va en Poppins Light, en mayúsculas.
 - Tamaños de referencia en 1080×1440: titular 96 px, titular portada 104 px, línea fina 80 px, párrafo 48 px, rótulo 38 px, pie 30 px.
@@ -54,7 +55,7 @@ El índigo sobre lavanda da 4,4:1: úsalo solo en texto grande (titulares y énf
 - **Reseñas y testimonios:** slide tipo `quote` (rótulo, 5 estrellas SVG en índigo, cita en Source Sans Pro de 54 px con la palabra clave en negrita índigo, autor en Poppins Light). Campos: `kicker`, `quote`, `author`, `stars`, `illustration`. Nombres abreviados (nombre e inicial del apellido).
 
 ## Lo que Balero NO usa
-Subtítulos en forma de píldora o "pill", botones, números decorativos de fondo, ni fuentes distintas de Poppins y Source Sans Pro (cuidado con símbolos como flechas que caen a otra fuente: dibújalos en SVG).
+Subtítulos en forma de píldora o "pill", botones, números decorativos de fondo, ni fuentes distintas de Poppins, Source Sans Pro e Instrument Serif cursiva (esta última solo como énfasis; cuidado con símbolos como flechas que caen a otra fuente: dibújalos en SVG).
 
 ## Ilustraciones 3D
 Estilo: objetos tipo arcilla brillante e inflada, como un emoji 3D, en índigo, amarillo y blanco, fondo liso lavanda `#F6F5FF`, un solo objeto por imagen, sin texto ni logos. Prompt base y banco de objetos en `references/ilustraciones-3d.md`. Se generan con la herramienta `generate-image` de Canva (formato cuadrado) y se marcan siempre como **borrador de IA**: las miniaturas son de 200 px, y para publicar hay que descargar la versión grande desde Canva.
@@ -67,7 +68,7 @@ Frases cortas y directas, cercanas y un poco provocadoras. Lema: "No prometemos 
 - Horario del plan: martes y jueves, 11 am (hora de Ciudad de México).
 
 ## Lista de verificación antes de entregar
-- [ ] `pdffonts salida/*.pdf` muestra solo Poppins y SourceSansPro (ninguna otra, ni DejaVu ni serif).
+- [ ] `pdffonts salida/*.pdf` muestra solo Poppins, SourceSansPro e InstrumentSerif (ninguna otra, ni DejaVu ni serif).
 - [ ] Tamaño de cada PNG exacto (p. ej. 1080×1440).
 - [ ] Márgenes medidos: 8% laterales y 6% verticales en todos los slides (el script imprime la caja de contenido: debe empezar en x≈86 e y≈86 en 1080×1440).
 - [ ] Ninguna ilustración pisa texto ni logo.
@@ -86,3 +87,8 @@ Cuando un slide quede vacío o apretado, el JSON acepta estos campos: portada `i
 
 ## Fondos oscuros de impacto (4 oct 2026)
 `"bg": "negro"` pone el slide en `#000000` y el generador invierte solo textos, logo, flecha y puntos. Sirve para portadas y cierres que paren el scroll y para alternar ritmo con lila (negro, lila, negro…). Reglas: usar las ilustraciones `*-dark.png` (sin la sombra lavanda, que sobre negro se ve como mancha); titulares en índigo o blanco; texto de apoyo en `#F6F5FF`; acento de énfasis `#A9A4F7`. En la portada, `light_px` y `heavy_px` agrandan el titular (probado: 78 y 124). Para titulares largos usa `layout: "top"` y no más de dos líneas a 124 px.
+
+## Slide tipo `hero` (cartel con objeto 3D enorme, noviembre 2026)
+Un icono 3D de 70 a 100 % del ancho (puede sangrar por los bordes, rotado, con sombra) y muy poco texto. Campos: `illustration`, `ill_x`, `ill_y`, `ill_w`, `ill_rot`, `ill_front`, `bg`, `title` (HTML con spans: `l` Poppins Light, `a` índigo, `y` amarillo, `hl` marcador amarillo inclinado, `box`/`boxy`/`boxi` cajas, `it` Instrument Serif cursiva), `title_px`, `text_x`, `text_y` o `text_bottom` (desde abajo), `text_w`, `align` (left, right, center), `kicker`, `body` (apoyo, admite `<b>` y `<span class="hl">`), `body_px`, `body_w`, `body_gap`, `swipe`.
+Extras opcionales: `chip` (etiqueta rectangular negra, `chip_style: "w"` blanca, `chip_x`, `chip_y`, `chip_px`), `bar` (barra negra de papel rasgado con frase de apoyo y botón amarillo con flecha; `bar_style: "w"`, `bar_y` o `bar_bottom`, `bar_x`, `bar_w`, `bar_px`, `bar_btn`), `arrow` (botón amarillo con flecha abajo a la derecha), `frame` (marco amarillo redondeado sobre fondo negro, para listas de puntos clave).
+Fondos nuevos con puntos (halftone): `calido-puntos`, `lila-puntos`, `negro-puntos`. Reglas: el icono no puede tapar texto, logo, puntos ni pie (los iconos que sangran por abajo se colocan con x mayor a 330 px para no pisar el pie); el titular indigo no se usa sobre fondo índigo (usa `y`, `hl` o blanco). Usa iconos recortados con `-trim` para que `ill_w` sea el ancho visible.

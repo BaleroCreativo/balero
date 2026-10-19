@@ -37,3 +37,7 @@ También se puede poner `"brand": "ruta/brand.json"` dentro del spec. Las rutas 
 - Las ilustraciones (3D, línea, fotos) no se parametrizan: se generan por cliente, con el estilo de su ficha.
 - Sin ilustración, la portada deja el titular y el subtítulo muy juntos si el titular ocupa tres líneas: acorta el texto o sube `title_px` menor.
 - Los efectos del tipo `poster` (cajas negras, texto amarillo) usan negro y `highlight`; ajusta `highlight` a la marca.
+
+
+## Instrument Serif cursiva (énfasis de Balero)
+Desde noviembre 2026 Instrument Serif cursiva (400 italic) es fuente de énfasis oficial de Balero: una palabra o frase corta dentro del titular con `<span class="it">`, nunca en cuerpo. Está en `fonts/fonts.css` (y en `setup_fonts.sh`); el generador la sube a 1,22 em y `verify` y `revision-visual/scripts/checks.py` la aceptan junto a Poppins y Source Sans Pro. Un `brand.json` de otro cliente no la incluye, así que ahí no se usa `span.it`.

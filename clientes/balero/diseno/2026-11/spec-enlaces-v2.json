@@ -1,0 +1,73 @@
+{
+ "name": "Balero-9nov-ia-enlaces-v2",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "negro-puntos",
+   "title": "<span class=\"l\" style=\"font-size:60px;display:inline-block;margin-bottom:24px\">Google puso</span><br><span class=\"y\" style=\"font-size:118px\">MÁS ENLACES</span><br>EN <span class=\"hl it\">AI Mode</span>",
+   "title_px": 96,
+   "text_y": 190,
+   "body": "Más enlaces, sin datos de clics.",
+   "body_px": 44,
+   "body_w": 420,
+   "body_gap": 40,
+   "swipe": true,
+   "illustration": "ilustraciones/fuente-cut.png",
+   "ill_x": 430,
+   "ill_y": 720,
+   "ill_w": 650,
+   "ill_rot": 8,
+   "type": "hero"
+  },
+  {
+   "bg": "calido-puntos",
+   "title": "<span class=\"l\" style=\"font-size:52px;display:inline-block;margin-bottom:24px\">Qué cambió</span><br>MÁS <span class=\"hl it\">enlaces</span>",
+   "title_px": 124,
+   "text_bottom": 170,
+   "body": "AI Mode y AI Overviews muestran <b>más enlaces dentro de las respuestas</b>.",
+   "body_px": 38,
+   "body_w": 908,
+   "body_gap": 24,
+   "illustration": "ilustraciones/catalogo-cut.png",
+   "ill_x": 140,
+   "ill_y": 180,
+   "ill_w": 800,
+   "ill_rot": -4,
+   "type": "hero"
+  },
+  {
+   "bg": "indigo",
+   "title": "<span class=\"l\" style=\"font-size:56px;display:inline-block;margin-bottom:24px\">Google no publicó</span><br>DATOS DE <span class=\"y it\">clics.</span>",
+   "title_px": 108,
+   "text_y": 190,
+   "body": "No dio métricas específicas de clics en esos enlaces. <b>Tu mejor prueba es tu propio dato de referencia.</b>",
+   "body_px": 40,
+   "body_w": 908,
+   "body_gap": 28,
+   "illustration": "ilustraciones/graficaflat-cut.png",
+   "ill_x": 70,
+   "ill_y": 600,
+   "ill_w": 940,
+   "ill_rot": -5,
+   "type": "hero"
+  },
+  {
+   "bg": "calido-puntos",
+   "title": "<span class=\"l\" style=\"font-size:56px;display:inline-block;margin-bottom:24px\">¿Sabes de dónde viene</span><br>EL TRÁFICO DE<br><span class=\"hl it\">tu web?</span>",
+   "title_px": 104,
+   "text_y": 190,
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b> Fuente: Search Engine Journal (oct 2026).",
+   "body_px": 40,
+   "body_w": 620,
+   "body_gap": 30,
+   "illustration": "ilustraciones/ruta-cut.png",
+   "ill_x": 400,
+   "ill_y": 740,
+   "ill_w": 700,
+   "ill_rot": 0,
+   "type": "hero"
+  }
+ ]
+}

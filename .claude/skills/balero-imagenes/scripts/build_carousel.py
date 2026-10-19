@@ -150,9 +150,12 @@ html,body{width:%(W)dpx;height:%(H)dpx}
 .inv .hero-t{color:#fff}.inv .hero-t .a{color:%(INVACC)s}
 .hero-b{position:absolute;z-index:2;text-transform:none;letter-spacing:0;word-spacing:0;font-family:'%(FB)s';font-weight:%(WB)s;line-height:1.28}
 .hero-b b{font-weight:%(WBB)s;color:%(INDIGO)s}
+.ind .hero-b b{color:%(HL)s}
 .inv .hero-b{color:%(INVTXT)s}.inv .hero-b b{color:%(INVACC)s}
 .hero-k{position:absolute;z-index:2;font-family:'%(FT)s';font-weight:%(WL)s;text-transform:uppercase;line-height:1;font-size:%(kick)dpx}
 .inv .hero-k{color:%(INVTXT)s}
+.it{font-family:'Instrument Serif',serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;
+  word-spacing:0;font-size:1.22em;line-height:.8}
 .hero-t .hl{background:%(HL)s;color:#000;padding:0 .1em;display:inline-block;transform:rotate(-1.2deg);border-radius:.06em}
 .hero-b .hl{background:%(HL)s;color:#000;padding:0 .12em;border-radius:3px}
 .chip{position:absolute;z-index:3;font-family:'%(FT)s';font-weight:600;text-transform:uppercase;letter-spacing:.14em;
@@ -312,8 +315,12 @@ def build(spec_path, out_dir, brand_path=None):
                            f'<div>{s["bar"]}</div>{"<div class=btn>" + arr_svg + "</div>" if s.get("bar_btn", True) else ""}</div>')
             if s.get("arrow"):
                 extras += f'<div class="arrowbtn">{arr_svg}</div>'
+            if s.get("block"):  # bloque de texto extra (p. ej. lista) con su propia posición: html, x, w, px y top o bottom
+                bk = s["block"]
+                extras += (f'<div class="hero-b" style="left:{bk.get("x", mxp / sx) * sx}px;width:{bk.get("w", 908) * sx}px;font-size:{bk.get("px", 38) * sx}px;'
+                           f'{"bottom:" + str(bk["bottom"] * sy) if "bottom" in bk else "top:" + str(bk.get("top", 900) * sy)}px">{bk["html"]}</div>')
             slides.append(
-                f'<div class="slide{inv}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}{kick}{extras}'
+                f'<div class="slide{inv}{" ind" if s.get("bg") == "indigo" else ""}" style="{style_vars(m)}{bgcss}">{logo}{dots(idx)}{pic}{kick}{extras}'
                 f'<div class="hero-t" style="{hpos};{vpos};width:{tw}px;text-align:{align};font-size:{g("title_px", 130) * sx}px;'
                 f'{"padding-top:" + str((38 + 30) * sx) + "px;" if s.get("kicker") else ""}">'
                 f'{s["title"]}<div style="font-size:0;line-height:0">{""}</div>{body}{swipe}</div>'
@@ -399,12 +406,12 @@ def verify(out_dir, pdf, n, W, H, families=("Poppins", "Source Sans Pro")):
     if shutil.which("pdffonts"):
         names = subprocess.run(["pdffonts", pdf], capture_output=True, text=True).stdout.splitlines()[2:]
         fonts = sorted({ln.split()[0].split("+")[-1] for ln in names if ln.strip()})
-        ok_prefix = tuple(f.replace(" ", "") for f in families)
+        ok_prefix = tuple(f.replace(" ", "") for f in tuple(families) + ("Instrument Serif",))  # énfasis oficial: span.it
         bad = [f for f in fonts if not f.startswith(ok_prefix)]
         if not fonts:
             sys.exit("ERROR: el PDF salió sin texto; revisa las rutas (salida y spec).")
         print("Fuentes en el PDF:", ", ".join(fonts))
-        print("OK: solo " + " y ".join(families) if not bad else f"ATENCIÓN, fuentes ajenas: {bad}")
+        print("OK: solo " + " y ".join(tuple(families) + ("Instrument Serif (énfasis)",)) if not bad else f"ATENCIÓN, fuentes ajenas: {bad}")
     if shutil.which("convert"):
         print("Cajas de contenido oscuro (ancho x alto + x + y), para revisar márgenes:")
         for i in range(1, n + 1):
