@@ -1,0 +1,139 @@
+{
+ "name": "blog-cadencia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "amarillo",
+   "title": "",
+   "layers": [
+    {
+     "html": "Los días de una",
+     "style": "left:86px;top:215px;font-size:70px;",
+     "cls": "l"
+    },
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;background:#665FE9;color:#fff;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg)\">cadencia simple</span>",
+     "style": "left:86px;top:300px;font-size:104px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "0·1·3·7",
+     "style": "left:70px;top:480px;font-size:262px;line-height:.9;",
+     "cls": ""
+    },
+    {
+     "html": "Cuándo insistir y",
+     "style": "left:86px;top:1110px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:46px;",
+     "cls": ""
+    },
+    {
+     "html": "cuándo dejarlo ir.",
+     "style": "left:86px;top:1170px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:46px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/calendario-cut.png",
+   "ill_x": 560,
+   "ill_y": 720,
+   "ill_w": 700,
+   "ill_rot": 8,
+   "type": "hero"
+  },
+  {
+   "bg": "lila-puntos",
+   "title": "<span class=\"l\" style=\"font-size:40px;display:inline-block;margin-bottom:24px\">Contactar seguido es una intención.</span><br>UNA CADENCIA<br>ES UN <span class=\"hl it\">número.</span>",
+   "title_px": 100,
+   "text_y": 190,
+   "body": "Sin una regla, cada quien decide según su ánimo.",
+   "body_px": 40,
+   "body_w": 560,
+   "body_gap": 30,
+   "illustration": "ilustraciones/cronometro-cut.png",
+   "ill_x": 440,
+   "ill_y": 860,
+   "ill_w": 660,
+   "ill_rot": 8,
+   "type": "hero"
+  },
+  {
+   "bg": "negro-puntos",
+   "chip": "Día 3",
+   "chip_style": "w",
+   "chip_x": 86,
+   "chip_y": 190,
+   "chip_px": 24,
+   "title": "APORTA<br>ALGO <span class=\"y it\">nuevo.</span>",
+   "title_px": 120,
+   "text_y": 262,
+   "body": "No repitas el primer mensaje: suma <b>un caso similar o una pregunta distinta</b>.",
+   "body_px": 40,
+   "body_w": 560,
+   "body_gap": 30,
+   "illustration": "ilustraciones/periodico-cut.png",
+   "ill_x": 330,
+   "ill_y": 860,
+   "ill_w": 800,
+   "ill_rot": -6,
+   "type": "hero"
+  },
+  {
+   "bg": "indigo",
+   "chip": "Día 7",
+   "chip_style": "w",
+   "chip_x": 86,
+   "chip_y": 190,
+   "chip_px": 24,
+   "title": "CAMBIA<br>DE <span class=\"y it\">canal.</span>",
+   "title_px": 124,
+   "text_y": 262,
+   "body": "Una llamada en vez de otro mensaje a veces saca la respuesta que <b>el texto no logró</b>.",
+   "body_px": 40,
+   "body_w": 500,
+   "body_gap": 30,
+   "illustration": "ilustraciones/phone-cut.png",
+   "ill_x": 600,
+   "ill_y": 520,
+   "ill_w": 500,
+   "ill_rot": 10,
+   "type": "hero"
+  },
+  {
+   "bg": "calido-puntos",
+   "title": "<span class=\"l\" style=\"font-size:56px;display:inline-block;margin-bottom:24px\">Pasado el día 7:</span><br>MEJOR 3 <span class=\"hl it\" style=\"display:inline-block;margin:6px 0 10px\">constantes</span><br>QUE 7 ERRÁTICOS",
+   "title_px": 92,
+   "text_y": 190,
+   "body": "El lead va a una lista de reactivación. No se insiste cada semana.",
+   "body_px": 40,
+   "body_w": 560,
+   "body_gap": 28,
+   "illustration": "ilustraciones/tijeras-cut.png",
+   "ill_x": 520,
+   "ill_y": 1000,
+   "ill_w": 560,
+   "ill_rot": -8,
+   "bar": "<b style=\"font-family:Poppins;font-weight:800\">Día 0 · 1 · 3 · 7, y luego reactivación</b>",
+   "bar_px": 34,
+   "bar_y": 860,
+   "bar_w": 908,
+   "type": "hero"
+  },
+  {
+   "bg": "lila-puntos",
+   "title": "<span class=\"l\" style=\"font-size:64px;display:inline-block;margin-bottom:24px\">¿Cuántos intentos haces</span><br>ANTES DE<br><span class=\"hl it\">pausar?</span>",
+   "title_px": 116,
+   "text_y": 190,
+   "body": "Lee el blog completo en balerocreativo.com. <b>Diagnóstico gratis de 15 minutos</b> por mensaje directo.",
+   "body_px": 40,
+   "body_w": 600,
+   "body_gap": 30,
+   "illustration": "ilustraciones/asistente-cut.png",
+   "ill_x": 480,
+   "ill_y": 800,
+   "ill_w": 640,
+   "ill_rot": 6,
+   "type": "hero"
+  }
+ ]
+}
