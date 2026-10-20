@@ -1,0 +1,145 @@
+{
+ "name": "blog-whatsapp-v2-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "amarillo",
+   "title": "",
+   "layers": [
+    {
+     "html": "Para no perder",
+     "style": "left:86px;top:200px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "tus leads de",
+     "style": "left:86px;top:264px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;background:#665FE9;color:#fff;padding:0 .12em;display:inline-block;transform:rotate(-1.5deg)\">WhatsApp</span>",
+     "style": "left:86px;top:352px;font-size:112px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "3",
+     "style": "left:63px;top:500px;font-size:560px;line-height:.9;color:#665FE9;",
+     "cls": ""
+    },
+    {
+     "html": "COSAS",
+     "style": "left:408px;top:552px;font-size:120px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "El chat no es",
+     "style": "left:86px;top:1010px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    },
+    {
+     "html": "tu sistema de",
+     "style": "left:86px;top:1070px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    },
+    {
+     "html": "<span style='background:#fff;padding:0 .2em'>seguimiento.</span>",
+     "style": "left:86px;top:1130px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    },
+    {
+     "html": "DESLIZA →",
+     "style": "left:86px;top:1236px;font-size:32px;",
+     "cls": "l"
+    }
+   ],
+   "illustration": "ilustraciones/phone-cut.png",
+   "ill_x": 500,
+   "ill_y": 720,
+   "ill_w": 518,
+   "ill_rot": 8,
+   "type": "hero"
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "chip": "Cosa 1 de 3",
+   "title": "UN REGISTRO<br><span class=\"hl it\">aparte.</span>",
+   "body": "El chat es una bitácora, no un sistema. Anota <b>nombre, fecha, etapa y próxima acción</b>.",
+   "icon": {
+    "illustration": "ilustraciones/libreta-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 6
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "negro-puntos",
+   "chip": "Cosa 2 de 3",
+   "chip_style": "w",
+   "title": "UN TIEMPO<br><span class=\"y it\">máximo.</span>",
+   "body": "“Respondemos rápido” no es una regla. Ejemplo del blog: <b>máximo 2 horas en horario laboral</b>.",
+   "icon": {
+    "illustration": "ilustraciones/cronometro-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.1,
+    "rot": -8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "chip": "Cosa 3 de 3",
+   "chip_style": "w",
+   "title": "CUÁNDO<br><span class=\"y it\">reintentar.</span>",
+   "body": "Un número de días fijo y un límite de intentos. Después, <b>lista de reactivación</b>.",
+   "body_w": 520,
+   "icon": {
+    "illustration": "ilustraciones/llamadas-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.2,
+    "rot": 10
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "Y para no improvisar:",
+   "title": "PLANTILLAS<br><span class=\"hl it\">por etapa.</span>",
+   "body": "Primer contacto, sin respuesta, cotización enviada y lead frío.",
+   "bar": "<b style=\"font-family:Poppins;font-weight:800\">Registro · tiempo · reintento</b>",
+   "icon": {
+    "illustration": "ilustraciones/propuesta-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.12,
+    "rot": 8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "kick": "¿Tus leads viven",
+   "title": "SOLO EN EL<br><span class=\"hl it\">chat?</span>",
+   "body": "Lee el blog completo en balerocreativo.com. <b>Diagnóstico gratis de 15 minutos</b> por mensaje directo.",
+   "icon": {
+    "illustration": "ilustraciones/clicchat-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 6
+   },
+   "body_w": 680
+  }
+ ]
+}
