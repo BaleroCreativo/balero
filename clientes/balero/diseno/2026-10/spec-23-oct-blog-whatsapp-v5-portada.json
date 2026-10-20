@@ -1,0 +1,135 @@
+{
+ "name": "blog-whatsapp-v2-armonia",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "amarillo",
+   "title": "",
+   "layers": [
+    {
+     "html": "3",
+     "style": "left:40px;top:196px;font-size:640px;line-height:.9;color:#665FE9;",
+     "cls": ""
+    },
+    {
+     "html": "COSAS PARA",
+     "style": "left:450px;top:236px;font-size:68px;",
+     "cls": ""
+    },
+    {
+     "html": "NO PERDER",
+     "style": "left:450px;top:318px;font-size:68px;",
+     "cls": ""
+    },
+    {
+     "html": "TUS LEADS DE",
+     "style": "left:450px;top:400px;font-size:68px;",
+     "cls": ""
+    },
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;background:#665FE9;color:#fff;padding:0 .14em;display:inline-block;transform:rotate(-1.5deg)\">WhatsApp</span>",
+     "style": "left:450px;top:490px;font-size:112px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "El chat no es tu<br>sistema de seguimiento.",
+     "style": "left:86px;top:790px;background:#111;color:#FFD23F;padding:18px 28px;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.18);font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:40px;line-height:1.2;",
+     "cls": ""
+    },
+    {
+     "html": "DESLIZA →",
+     "style": "left:86px;top:1236px;font-size:32px;",
+     "cls": "l"
+    }
+   ],
+   "illustration": "ilustraciones/phone-cut.png",
+   "ill_x": 520,
+   "ill_y": 790,
+   "ill_w": 540,
+   "ill_rot": 9,
+   "type": "hero"
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "chip": "Cosa 1 de 3",
+   "title": "UN REGISTRO<br><span class=\"hl it\">aparte.</span>",
+   "body": "El chat es una bitácora, no un sistema. Anota <b>nombre, fecha, etapa y próxima acción</b>.",
+   "icon": {
+    "illustration": "ilustraciones/libreta-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 6
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "negro-puntos",
+   "chip": "Cosa 2 de 3",
+   "chip_style": "w",
+   "title": "UN TIEMPO<br><span class=\"y it\">máximo.</span>",
+   "body": "“Respondemos rápido” no es una regla. Ejemplo del blog: <b>máximo 2 horas en horario laboral</b>.",
+   "icon": {
+    "illustration": "ilustraciones/cronometro-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.1,
+    "rot": -8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "chip": "Cosa 3 de 3",
+   "chip_style": "w",
+   "title": "CUÁNDO<br><span class=\"y it\">reintentar.</span>",
+   "body": "Un número de días fijo y un límite de intentos. Después, <b>lista de reactivación</b>.",
+   "body_w": 520,
+   "icon": {
+    "illustration": "ilustraciones/llamadas-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.2,
+    "rot": 10
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "Y para no improvisar:",
+   "title": "PLANTILLAS<br><span class=\"hl it\">por etapa.</span>",
+   "body": "Primer contacto, sin respuesta, cotización enviada y lead frío.",
+   "bar": "<b style=\"font-family:Poppins;font-weight:800\">Registro · tiempo · reintento</b>",
+   "icon": {
+    "illustration": "ilustraciones/propuesta-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "b",
+    "bleed_pct": 0.12,
+    "rot": 8
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "kick": "¿Tus leads viven",
+   "title": "SOLO EN EL<br><span class=\"hl it\">chat?</span>",
+   "body": "Lee el blog completo en balerocreativo.com. <b>Diagnóstico gratis de 15 minutos</b> por mensaje directo.",
+   "icon": {
+    "illustration": "ilustraciones/clicchat-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 6
+   },
+   "body_w": 680
+  }
+ ]
+}
