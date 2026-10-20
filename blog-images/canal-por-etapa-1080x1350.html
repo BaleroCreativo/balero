@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Qué canal usar en cada intento de contacto – Balero Creativo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@800;900&family=Playfair+Display:ital,wght@1,600;1,700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{ --bg:#F7F5F0; --ink:#171417; --muted:#6B6572; --lila:#B9A2E8; --deep:#5B2A9D; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{width:1080px;height:1350px;background:var(--bg)}
+  .page{position:relative;width:1080px;height:1350px;overflow:hidden;background:var(--bg);padding:84px 80px 80px;display:flex;flex-direction:column}
+  .eyebrow{display:flex;align-items:center;gap:16px;font:700 22px/1 'Source Sans 3',sans-serif;letter-spacing:.32em;text-transform:uppercase;color:var(--deep);margin-bottom:26px}
+  .eyebrow::before{content:"";width:48px;height:3px;background:var(--deep)}
+  h1{color:var(--ink)}
+  h1 .a{display:block;font:italic 700 80px/1.04 'Playfair Display',serif;letter-spacing:-.02em}
+  h1 .b{display:block;margin-top:8px;font:900 64px/1.06 'Archivo',sans-serif;letter-spacing:-.035em}
+  h1 .b mark{background:var(--lila);color:var(--ink);padding:0 12px 4px;margin:0 0 0 -2px;border-radius:4px}
+  .timeline{flex:1;display:flex;align-items:center}
+  .track{position:relative;width:100%;display:grid;grid-template-columns:repeat(4,1fr);column-gap:16px}
+  .track::before{content:"";position:absolute;left:calc(12.5% + 0px);right:calc(12.5% - 0px);top:36px;height:9px;background:var(--ink);border-radius:4px}
+  .step{position:relative;display:flex;flex-direction:column;align-items:center}
+  .dot{position:relative;z-index:1;width:80px;height:80px;border-radius:50%;background:var(--lila);border:6px solid var(--ink)}
+  .step.last .dot{background:#8B5CF6}
+  .stem{width:5px;height:34px;background:var(--ink)}
+  .card{width:100%;background:#fff;border:3px solid var(--ink);border-radius:24px;padding:32px 18px 34px;display:flex;flex-direction:column;align-items:center;text-align:center}
+  .day{font:900 46px/1 'Archivo',sans-serif;letter-spacing:-.03em;color:var(--ink)}
+  .icon{width:116px;height:116px;margin:28px 0 26px}
+  .card p{font:700 27px/1.25 'Source Sans 3',sans-serif;color:var(--ink)}
+  .foot{display:flex;align-items:center;gap:26px;background:var(--ink);border-radius:24px;padding:28px 34px}
+  .foot img{flex:none;height:50px}
+  .foot p{font:italic 600 34px/1.22 'Playfair Display',serif;color:#fff;letter-spacing:-.01em}
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="eyebrow">Canal por etapa</div>
+  <h1><span class="a">No todos los intentos</span><span class="b">van por el <mark>mismo canal</mark></span></h1>
+  <div class="timeline"><div class="track">
+<div class="step"><div class="dot"></div><div class="stem"></div><div class="card"><div class="day">DÍA 0</div><svg class="icon" viewBox="0 0 64 64" fill="none" stroke="#171417" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10 H52 a6 6 0 0 1 6 6 V40 a6 6 0 0 1 -6 6 H30 L18 57 V46 H12 a6 6 0 0 1 -6 -6 V16 a6 6 0 0 1 6 -6z"/><line x1="18" y1="23" x2="46" y2="23"/><line x1="18" y1="33" x2="36" y2="33"/></svg><p>Mismo canal, menos presión</p></div></div>
+<div class="step"><div class="dot"></div><div class="stem"></div><div class="card"><div class="day">DÍA 1</div><svg class="icon" viewBox="0 0 64 64" fill="none" stroke="#171417" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10 H52 a6 6 0 0 1 6 6 V40 a6 6 0 0 1 -6 6 H30 L18 57 V46 H12 a6 6 0 0 1 -6 -6 V16 a6 6 0 0 1 6 -6z"/><line x1="18" y1="23" x2="46" y2="23"/><line x1="18" y1="33" x2="36" y2="33"/></svg><p>Mismo canal, menos presión</p></div></div>
+<div class="step"><div class="dot"></div><div class="stem"></div><div class="card"><div class="day">DÍA 3</div><svg class="icon" viewBox="0 0 64 64" fill="none" stroke="#171417" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 10 H52 a6 6 0 0 1 6 6 V40 a6 6 0 0 1 -6 6 H30 L18 57 V46 H12 a6 6 0 0 1 -6 -6 V16 a6 6 0 0 1 6 -6z"/><line x1="18" y1="23" x2="46" y2="23"/><line x1="18" y1="33" x2="36" y2="33"/></svg><p>Mismo canal, menos presión</p></div></div>
+<div class="step last"><div class="dot"></div><div class="stem"></div><div class="card"><div class="day">DÍA 7</div><svg class="icon" viewBox="0 0 64 64" fill="none" stroke="#171417" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 12 L23 9 C24.4 8.6 25.8 9.4 26.3 10.8 L29 19 C29.4 20.2 29 21.4 28 22.2 L23.6 25.4 C26.8 32 31.8 37 38.6 40.4 L42 36 C42.8 35 44 34.6 45.2 35 L53.4 37.8 C54.8 38.4 55.6 39.8 55.2 41.2 L52.6 50.2 C52 52.4 50 54 47.6 53.8 C27 51.8 11.6 35 10.6 17 C10.4 14.8 11.8 12.8 14 12 Z"/><path d="M38 14 q9 1.5 12 10" stroke="#8B5CF6"/><path d="M40 4.5 q15 2.5 20 18" stroke="#8B5CF6"/></svg><p>Cambia el canal, rompe el patrón</p></div></div>
+  </div></div>
+  <div class="foot"><img src="assets/balero-isotipo-blanco.png" alt="Balero Creativo"><p>Cambiar de canal en el último intento a veces saca una respuesta que el texto no logró.</p></div>
+</div>
+</body>
+</html>
