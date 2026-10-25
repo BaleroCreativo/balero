@@ -10,7 +10,7 @@ Basado en `.claude/brand-voice-guidelines.md` (voz) y `DESIGN.md` (identidad vis
 - **Objetivo principal:** construir autoridad y reconocimiento como especialista en paid media.
 - **Objetivos secundarios:** abrir conversaciones con dueños de empresa y directores de marketing; tener un banco de contenido y una rutina que se sostenga con 3 a 5 horas por semana.
 - **Plazo:** 90 días (13 semanas).
-- **Presupuesto:** ninguno definido. El plan es orgánico. Una opción de prueba de pauta pequeña se describe en la sección 8.
+- **Presupuesto:** sin presupuesto de pauta. El plan es 100% orgánico.
 
 ## 2. Audiencia
 
@@ -60,6 +60,42 @@ Variaciones por red:
 
 **Cómo se reutiliza cada idea:** una idea por pieza, tres versiones. Por ejemplo, la pregunta "¿Meta o Google?" se vuelve un carrusel para Instagram, un post con la regla para LinkedIn y un video de 40 segundos para reel y TikTok.
 
+### Cuentas
+- Instagram: [@rubiagz](https://www.instagram.com/rubiagz)
+- TikTok: [@rubiagz](https://www.tiktok.com/@rubiagz)
+- LinkedIn: [daniela-rubio-gonzalez](https://www.linkedin.com/in/daniela-rubio-gonzalez)
+
+### Días y horas recomendados (hora de Ciudad de México)
+
+> Son **hipótesis de partida**, no datos de tus cuentas. Los estudios que encontré son globales o de Latinoamérica, no específicos de México, y varían entre sí. Se prueban 4 semanas y se ajustan con tus estadísticas.
+
+| Día | Hora | Red | Pieza |
+|---|---|---|---|
+| Lunes | 9:00 | Instagram | Carrusel (Pregunta) |
+| Martes | 9:00 | LinkedIn | Post con imagen (Pregunta, con la regla) |
+| Miércoles | 9:00 | Instagram | Imagen (Postura) |
+| Miércoles | 12:30 | LinkedIn | Post con imagen (Postura o Editorial) |
+| Jueves | 9:00 | LinkedIn | Carrusel en PDF (Editorial) |
+| Jueves | 19:00 | TikTok | Video de 30 a 45 s |
+| Viernes | 11:00 | Instagram | Reel (el mismo video de TikTok) |
+| Sábado y domingo | — | — | Sin publicaciones. Solo historias opcionales |
+
+**Por qué estas ventanas**
+- **LinkedIn, martes a jueves por la mañana y a mediodía.** [SocialPilot](https://www.socialpilot.co/es/insights/best-time-to-post-on-linkedin) recomienda martes, miércoles y jueves, de 10:00 a 12:00 y de 13:00 a 16:00, con base en más de 683,000 publicaciones. [Publer](https://publer.com/blog/es/mejor-hora-para-publicar-en-linkedin/) ubica el mejor momento entre semana, de 8:00 a 15:00, con la hora de la comida del miércoles destacada. Tu público (directores y dueños) lee al empezar el día y a la hora de comer.
+- **Instagram, lunes a miércoles a las 9:00 y viernes a media mañana.** [Neolo](https://www.neolo.com/blog/mejores-dias-y-horarios-para-publicar-en-redes-sociales.php) sugiere lunes a jueves a las 9:00 y viernes y sábado de 10:00 a 14:00, y evitar el domingo.
+- **TikTok, entre semana por la noche.** [Otto](https://joinotto.com/es/blog/best-time-to-post-tiktok) indica 18:00 a 21:00 en días de semana, y que en América Latina la actividad es alta por las noches laborables.
+
+**Cómo ahorrar tiempo con este calendario**
+- Todo se programa por adelantado en un solo bloque semanal; no hay que estar frente al teléfono a cada hora.
+- Después de cada publicación importante, reserva **15 minutos** para responder los primeros comentarios. Eso pesa más que la hora exacta.
+- Lunes, miércoles y jueves tienen una sola publicación por la mañana en cada red, para que no compitan entre sí.
+
+**Cómo ajustar con tus datos**
+1. Semanas 1 a 4: usar este calendario sin cambios.
+2. Semanas 5 y 6: probar LinkedIn a las 8:00 en lugar de las 9:00, y Instagram a las 19:00 en un día.
+3. Semanas 7 y 8: probar un fin de semana por la mañana en TikTok (10:00 a 13:00).
+4. En la semana 8, comparar alcance e interacciones en las primeras 2 horas de cada publicación, y quedarte con las franjas que ganen.
+
 ## 6. Rutina semanal (3 a 5 horas)
 
 | Bloque | Tiempo | Qué se hace |
@@ -104,11 +140,10 @@ Las columnas de pieza muestran el tema y el formato entre paréntesis.
 |---|---|---|---|
 | Plantillas de post (Pregunta, Postura, Cifra, Retrato, Editorial) | Diseño 1080×1350 con la identidad de `DESIGN.md` | Imprescindible | Antes de la semana 1 |
 | Banco de 20 preguntas | Preguntas reales de dueños, con respuesta corta | Imprescindible | Semana 0 |
-| Los primeros 12 posts redactados | Voz de las guías, revisados por Daniela | Imprescindible | Semana 0 |
+| Los primeros 12 posts redactados | Voz de las guías, revisados por Daniela (con revisión de ortografía) | Imprescindible | Semana 0 |
 | 3 videos de arranque | Respuestas habladas de 30 a 45 s | Imprescindible | Semanas 0 y 1 |
-| Bio y perfiles | Foto, titular, enlace a `daniela-rubio.html` | Imprescindible | Semana 0 |
+| Bio y perfiles | Foto, titular y enlace a `daniela-rubio.html` en Instagram, LinkedIn y TikTok | Imprescindible | Semana 0 |
 | Casos anonimizados | 2 o 3, con permiso del cliente | Deseable | Semana 8 en adelante |
-| Prueba de pauta (opcional) | Presupuesto pequeño para impulsar el mejor post, como demostración de tu oficio | Deseable | Semanas 9 a 12; monto por definir |
 
 ## 9. Métricas de éxito
 
@@ -138,8 +173,6 @@ No hay cifras de partida, así que las metas se fijan en la semana 0 con la lín
 
 ## 11. Siguientes pasos
 
-1. Enviar 3 a 5 mensajes reales para afinar la voz.
-2. Confirmar los enlaces de tus cuentas personales de Instagram, LinkedIn y TikTok.
-3. Confirmar los días y horas de publicación.
-4. Elegir si habrá pauta de prueba y con qué monto.
-5. Con eso, preparar las plantillas, el banco de preguntas y los primeros 12 posts.
+1. Enviar 3 a 5 mensajes cortos reales (WhatsApp, captions, notas de voz) para afinar la voz en formato de post. Los dos artículos de blog ya se analizaron.
+2. Confirmar los días y horas de la tabla, o ajustarlos a tu semana.
+3. Preparar las plantillas, el banco de preguntas y los primeros 12 posts.

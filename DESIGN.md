@@ -105,7 +105,10 @@ Mínimo: transiciones de color en hover. Sin parallax, rebotes ni brillos. Respe
 - Copy de relleno ("Impulsa tu marca al siguiente nivel").
 - Todo centrado y simétrico.
 
+## Cuentas oficiales
+
+- Instagram: `@rubiagz` · TikTok: `@rubiagz` · LinkedIn: `linkedin.com/in/daniela-rubio-gonzalez`
+
 ## Pendientes antes de publicar
 
 - Resultados reales con cifras para los posts de "Cifra".
-- Agregar los links de Instagram y LinkedIn **personales** de Daniela (se quitaron los de ejemplo, que apuntaban a la empresa).

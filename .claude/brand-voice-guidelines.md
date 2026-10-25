@@ -5,13 +5,13 @@
 - Versión: 1
 - Reemplaza: ninguna (primera versión)
 - Idioma de la marca: español de México, tuteo, primera persona
-- Fuentes: 5 (ver Apéndice)
-- Documentos procesados: 1 (texto del sitio original, commit `8fa9eae`)
+- Fuentes: 7 (ver Apéndice)
+- Documentos procesados: 3 (texto del sitio original, commit `8fa9eae`; 2 artículos de blog escritos por Daniela)
 - Conversaciones/transcripciones analizadas: 0
 - Aportes directos de Daniela en esta sesión: 6 (adjetivos de personalidad, rechazos de estilo, titular elegido, respuestas aprobadas, foto, contacto)
 - Discovery report usado: No
 - Confianza global: **Media-Baja**
-- Nota: guías generadas a partir de aportes directos y de un solo documento. No hay muestras de su voz hablada ni escrita en redes. Se recomienda revisión de Daniela, sobre todo en las secciones marcadas con confianza Baja.
+- Nota: guías generadas a partir de aportes directos, del texto del sitio y de dos artículos de blog suyos. Sigue sin haber muestras de su voz hablada ni de sus redes (captions, DMs, WhatsApp). Se recomienda revisión de Daniela, sobre todo en las secciones marcadas con confianza Baja.
 - Enfoque de estas guías: **marca personal Daniela Rubio** en redes sociales (posts) y sitio web.
 - Alcance: estas guías **no cubren la marca de su empresa (Balero Creativo)**, que es independiente. No se menciona en el contenido de la marca personal salvo que Daniela lo pida.
 
@@ -75,6 +75,30 @@ La voz es constante. No cambia por canal ni por audiencia.
 - **Cómo se nota**: referencias a mercados y a cifras en pesos, sin presumir.
 - **Evidencia**: formación en Negocios Internacionales y clientes "nacionales e internacionales" en el texto original.
 - **Confianza**: Media
+
+---
+
+## Evidencia de voz escrita: dos artículos de blog de Daniela
+
+Dos artículos de blog que Daniela escribió: "Lo que debes saber sobre el logotipo perfecto" y "¿Por qué tener una página web para tu negocio?". Se publicaron en el blog de su empresa, así que sirven **solo como muestra de voz**. No se reutilizan como contenido de la marca personal.
+
+**Lo que se confirma de su voz**
+- Tuteo y tono conversacional ("Ten en cuenta", "Pregúntate", "Decídete").
+- Preguntas retóricas para abrir y para titular secciones.
+- Humor ligero y expresiones mexicanas ("pues", "o sea", "pa'", "¿verdad?").
+- Exageración como énfasis: "ahora es casi un pecado no tener una web", "si no estás en internet, básicamente no existes".
+- Experiencia en primera persona cuando habla de casos reales: "Me ha tocado ver casos…".
+- Datos con fuente (por ejemplo, la cifra del INEGI sobre MiPyMEs en México).
+- Párrafos cortos, negritas para las ideas clave y títulos numerados o en forma de pregunta.
+
+**Ajustes que esto provoca en las guías**
+1. **Más calidez y coloquialismo de lo que asumían las guías.** Se permite "pues", "o sea" y frases de conversación, con moderación.
+2. **El "yo" es la persona de la marca.** En los blogs aparece "nosotros" porque hablaba como agencia. En la marca personal se habla en primera persona singular.
+3. **Los datos sí van, pero con fuente.** Abrir con una estadística funciona si se cita de dónde sale. Lo que no se hace es la estadística sin fuente.
+4. **Las frases enfáticas son válidas para opiniones, no para resultados.** "Casi es un pecado no tener una web" es énfasis; "duplica tus ventas" es una promesa. Solo lo primero va.
+5. **Revisión de ortografía antes de publicar.** En los artículos hay erratas (por ejemplo, "integrate" por "intégrate"). En redes, donde las piezas son cortas, un error se nota más.
+
+**Confianza:** Media. Hay dos textos de un mismo canal y sobre otros temas (branding y web), no sobre pauta, y ninguno es de redes.
 
 ---
 
@@ -172,7 +196,7 @@ La voz es constante; el tono se ajusta.
 **No hacer**
 - Prometer resultados ("duplica tus ventas").
 - Usar cifras de clientes sin permiso, o cifras inventadas.
-- Abrir con "¿Sabías que…?" o con listas de "5 trucos".
+- Abrir con una estadística sin fuente o con listas de "5 trucos". Un dato con fuente sí funciona.
 - Usar emojis como decoración. Si se usa uno, que cumpla una función y que sea uno solo.
 - Hablar mal de otras agencias o de otros especialistas.
 
@@ -223,7 +247,7 @@ La voz es constante; el tono se ajusta.
 
 1. **"Impulsa tu negocio con estrategias de marketing digital innovadoras"** — Problema: suena a plantilla. Mejor: "Reviso tu cuenta de anuncios y te digo qué canal vendió de verdad."
 2. **"Con mi ayuda vas a duplicar tus ventas"** — Problema: promesa sin evidencia. Mejor: "Te digo qué se puede medir y desde cuándo."
-3. **"¿Sabías que el 80% de las empresas…?"** — Problema: estadística genérica y sin fuente. Mejor: una pregunta real de un dueño.
+3. **"¿Sabías que el 80% de las empresas…?"** — Problema: estadística sin fuente, que resta credibilidad. Mejor: una pregunta real de un dueño, o el mismo dato citando de dónde sale (como en tu artículo con la cifra del INEGI).
 4. **"Hoy te traigo 5 tips para mejorar tu ROAS"** — Problema: formato de lista genérica. Mejor: una sola idea con postura.
 
 ---
@@ -255,10 +279,10 @@ La voz es constante; el tono se ajusta.
 
 | Sección | Confianza | Base | Fuentes |
 |---|---|---|---|
-| Atributos de voz | Media | Adjetivos confirmados por Daniela, corroborados por su texto original y por respuestas aprobadas; sin muestras de su voz | 3 |
+| Atributos de voz | Media | Adjetivos confirmados por Daniela, corroborados por su texto original, dos artículos de blog suyos y respuestas aprobadas; sin muestras de redes | 5 |
 | Marco de mensajes | Media | Derivado del sitio original, del titular elegido y de respuestas aprobadas | 3 |
-| Matriz de tono | Baja | Sitio web respaldado por texto; los contextos de redes son extrapolados | 1 |
-| Terminología | Baja | Basada en una sola fuente de texto más aportes puntuales | 2 |
+| Matriz de tono | Baja-Media | Sitio web y blog respaldados por texto; los contextos de redes son extrapolados | 3 |
+| Terminología | Baja | Basada en tres textos más aportes puntuales | 4 |
 | Posicionamiento competitivo | Baja | Inferido de su frase de postura | 1 |
 | **Global** | **Media-Baja** | Sin transcripciones ni muestras de redes | |
 
@@ -267,15 +291,14 @@ La voz es constante; el tono se ajusta.
 ## Preguntas abiertas
 
 ### Alta prioridad (bloquean la versión final)
-1. **Muestra real de tu voz**
-   - Hallazgo: todo lo escrito hasta ahora es texto del sitio y respuestas que redactó el asistente y que aprobaste. No hay un mensaje tuyo real.
+1. **Muestra de tu voz en redes y en conversación**
+   - Hallazgo: ya hay dos artículos tuyos de blog. Siguen faltando mensajes cortos y hablados, que son los que más se parecen a un post.
    - Recomendación del agente: pegar 3 a 5 mensajes reales (WhatsApp con clientes, DMs, captions o notas de voz transcritas) con los datos de clientes tapados.
-   - Necesito de ti: los mensajes, para ajustar muletillas, humor y ritmo.
+   - Necesito de ti: los mensajes, para ajustar ritmo, muletillas y humor en formato corto.
 
-2. **Plataformas y cuentas de redes**
-   - Hallazgo: no tengo tus cuentas personales. El sitio ya no enlaza ninguna (se quitaron las de ejemplo, que apuntaban a la empresa). No sé en qué redes publicarás.
-   - Recomendación del agente: empezar con LinkedIn (directores de marketing y empleadores) e Instagram (dueños de negocio), desde tu cuenta personal.
-   - Necesito de ti: los enlaces de tus cuentas **personales** y confirmar las dos plataformas.
+2. ~~**Plataformas y cuentas de redes**~~ **Resuelta.**
+   - Instagram `@rubiagz`, TikTok `@rubiagz` y LinkedIn `linkedin.com/in/daniela-rubio-gonzalez`.
+   - Las tres están en el sitio y en `DESIGN.md`.
 
 3. **Casos y cifras que puedes publicar**
    - Hallazgo: no hay resultados reales con cifras; el formato "Cifra" los necesita.
@@ -289,7 +312,8 @@ La voz es constante; el tono se ajusta.
    - Necesito de ti: confirmar si la mención va o no va.
 
 5. **Nivel de humor y de coloquialismos**
-   - Recomendación del agente: humor ligero y expresiones mexicanas naturales ("platicar", "peso"), sin groserías.
+   - Hallazgo: tus artículos usan "pues", "o sea", "pa'" y exageraciones suaves.
+   - Recomendación del agente: mantener ese humor ligero en redes, con moderación, sin groserías.
    - Necesito de ti: confirmar o ajustar.
 
 6. **Idioma**
@@ -304,8 +328,7 @@ La voz es constante; el tono se ajusta.
 
 ## Vacíos de datos y recomendaciones
 
-- [ ] Muestras reales de voz (mensajes, captions, notas de voz): pegarlas en el chat o guardarlas en una carpeta.
-- [ ] Enlaces definitivos de Instagram y LinkedIn.
+- [ ] Muestras de voz en formato corto (mensajes, captions, notas de voz).
 - [ ] Casos y resultados con permiso de uso.
 - [ ] Revisión del perfil actual de Instagram con `socialinsider` (si lo quieres, lo hago): sirve para ver qué ha funcionado en publicaciones anteriores.
 - [ ] Revisar estas guías a los 30 días de publicar y ajustar con lo que sí funcionó.
@@ -321,6 +344,8 @@ La voz es constante; el tono se ajusta.
 | 3 | Titular elegido por Daniela (opción 4) | Conversación | AUTHORITATIVE | 2026-10 | Propuesta de valor | Alta |
 | 4 | Cuatro respuestas "Lo que me preguntan" (redactadas por el asistente, aprobadas por Daniela) | Sitio web | OPERATIONAL (aprobada) | 2026-10 | Mensajes, ejemplos | Media |
 | 5 | `DESIGN.md` (identidad visual aprobada) | Repositorio | OPERATIONAL | 2026-10 | Alineación voz-visual, formatos de post | Media |
+| 6 | Artículo "Lo que debes saber sobre el logotipo perfecto" (blog de su empresa) | Web | OPERATIONAL (solo voz) | 2026-10 | Atributos, ajustes de voz | Media |
+| 7 | Artículo "¿Por qué tener una página web para tu negocio?" (blog de su empresa, autora Daniela Rubio) | Web | OPERATIONAL (solo voz) | 2026-10 | Atributos, ajustes de voz | Media |
 
 ---
 
