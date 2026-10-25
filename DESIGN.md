@@ -1,7 +1,7 @@
 # Daniela Rubio — Design Language
 
 Marca personal de especialista en paid media (Meta Ads, Google Ads).
-Aplica a: sitio web (`daniela-rubio.html`) y posts en redes.
+Aplica a: sitio web (`daniela-rubio.html`) y posts en redes de la **marca personal Daniela Rubio**. Es independiente de la marca de su empresa (Balero Creativo), que queda fuera de este sistema.
 Versiones exploradas y descartadas: `explorations/`.
 
 ## Dirección
@@ -108,4 +108,4 @@ Mínimo: transiciones de color en hover. Sin parallax, rebotes ni brillos. Respe
 ## Pendientes antes de publicar
 
 - Resultados reales con cifras para los posts de "Cifra".
-- Confirmar los links de Instagram y LinkedIn (hoy `instagram.com/balerocreativo` y `linkedin.com` genérico).
+- Agregar los links de Instagram y LinkedIn **personales** de Daniela (se quitaron los de ejemplo, que apuntaban a la empresa).

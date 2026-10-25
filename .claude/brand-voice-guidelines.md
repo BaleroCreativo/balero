@@ -12,13 +12,14 @@
 - Discovery report usado: No
 - Confianza global: **Media-Baja**
 - Nota: guías generadas a partir de aportes directos y de un solo documento. No hay muestras de su voz hablada ni escrita en redes. Se recomienda revisión de Daniela, sobre todo en las secciones marcadas con confianza Baja.
-- Enfoque de estas guías: **redes sociales** (posts) y sitio web.
+- Enfoque de estas guías: **marca personal Daniela Rubio** en redes sociales (posts) y sitio web.
+- Alcance: estas guías **no cubren la marca de su empresa (Balero Creativo)**, que es independiente. No se menciona en el contenido de la marca personal salvo que Daniela lo pida.
 
 ---
 
 ## Resumen ejecutivo
 
-Daniela Rubio es especialista en paid media (gestión de pauta en Meta Ads y Google Ads) y fundadora de Balero Creativo, en Guadalajara. Habla con dueños de empresa, directores de marketing, comerciales y empleadores. Lo que debe sentir quien la lee es **confianza, expertise y credibilidad**.
+Daniela Rubio es especialista en paid media (gestión de pauta en Meta Ads y Google Ads), en Guadalajara. Habla con dueños de empresa, directores de marketing, comerciales y empleadores. Lo que debe sentir quien la lee es **confianza, expertise y credibilidad**.
 
 Su voz tiene tres rasgos que ella misma confirmó: **cercana, estratégica y directa**. Se nota en cómo habla: de margen y de decisiones de presupuesto, no de métricas bonitas. Explica sin hacer sentir tonto al otro y no promete cifras que no puede sostener. Su postura de marca, que ella eligió como titular, es: **"Cada peso en pauta tiene que volver con margen."**
 
@@ -272,9 +273,9 @@ La voz es constante; el tono se ajusta.
    - Necesito de ti: los mensajes, para ajustar muletillas, humor y ritmo.
 
 2. **Plataformas y cuentas de redes**
-   - Hallazgo: el sitio enlaza `instagram.com/balerocreativo` y `linkedin.com` genérico. No sé en qué redes publicarás ni con qué cuentas.
+   - Hallazgo: no tengo tus cuentas personales. El sitio ya no enlaza ninguna (se quitaron las de ejemplo, que apuntaban a la empresa). No sé en qué redes publicarás.
    - Recomendación del agente: empezar con LinkedIn (directores de marketing y empleadores) e Instagram (dueños de negocio), desde tu cuenta personal.
-   - Necesito de ti: los enlaces de tus cuentas y confirmar las dos plataformas.
+   - Necesito de ti: los enlaces de tus cuentas **personales** y confirmar las dos plataformas.
 
 3. **Casos y cifras que puedes publicar**
    - Hallazgo: no hay resultados reales con cifras; el formato "Cifra" los necesita.
@@ -282,10 +283,10 @@ La voz es constante; el tono se ajusta.
    - Necesito de ti: casos con permiso de uso.
 
 ### Media prioridad (mejoran la calidad)
-4. **Daniela Rubio vs. Balero Creativo en redes**
-   - Hallazgo: el texto original usa ambas marcas; el sitio actual lidera con tu nombre.
-   - Recomendación del agente: marca personal al frente y Balero Creativo como "fundadora de".
-   - Necesito de ti: confirmar.
+4. **Biografía y mención de tu empresa**
+   - Hallazgo: la marca personal es independiente de Balero Creativo. El sitio y estas guías ya no la mencionan.
+   - Recomendación del agente: mantenerlas separadas. Si quieres una línea de biografía que mencione tu empresa, decídelo tú; no la agrego por defecto.
+   - Necesito de ti: confirmar si la mención va o no va.
 
 5. **Nivel de humor y de coloquialismos**
    - Recomendación del agente: humor ligero y expresiones mexicanas naturales ("platicar", "peso"), sin groserías.
