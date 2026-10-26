@@ -19,7 +19,10 @@ Marca personal de Daniela Rubio. Solo guiones y captions, sin imágenes. Sin emo
 | D | 7 de cada 10 compran en línea y en tienda | TienditAds, 21 oct (cita Ecommerce Institute, 17 oct) | Semana 3 o 4 | Medición honesta |
 | E | PMax toma tus imágenes y videos | Stacked Marketer, 23 oct (solo vi el titular) | Solo si la verificas | Decisiones de presupuesto |
 
-No usé Neil Patel ni Whitepaper: de ellos solo vi asuntos y vistas previas, y no quiero escribir sobre algo que no leí.
+| F | Tu comprador ya no hace clic para decidir | Neil Patel, 21 y 26 oct (leídos completos) | Semana 3, martes | Medición honesta |
+| G | Más tráfico no arregla una página que no convierte | Neil Patel, 21 oct (leído completo) | Alternativa para la semana 9 (21 y 22 dic) | Preguntas de dueños de negocio |
+
+No usé Whitepaper: de él solo vi asuntos y vistas previas, y no quiero escribir sobre algo que no leí. Los correos de Neil Patel son promoción de su agencia (NP Digital) y de su herramienta (Ubersuggest): tomé las ideas, no las ofertas.
 
 ---
 
@@ -243,6 +246,87 @@ Tres preguntas para tu cuenta:
 Revisarlo toma diez minutos.
 ```
 (Las tres preguntas dependen de que la función exista como lo describe el titular.)
+
+---
+
+## F. Tu comprador ya no hace clic para decidir
+
+**Fuente:** boletines de Neil Patel del 21 y 26 de octubre. Datos del correo: el comprador pregunta a ChatGPT, lee hilos de Reddit, ve un video o recibe una recomendación, y a veces nunca hace clic en un enlace; el reporte puede acreditar la visita directa y perder todo lo que ayudó a decidir. Cita una investigación según la cual quienes recibieron una recomendación de IA tenían 2.5 veces más probabilidad de visitar el sitio de esa marca en 7 días.
+
+**[VERIFICAR]** La cifra de 2.5 veces: el correo no nombra el estudio. Si no lo encuentras, publica sin la cifra.
+**Ojo:** el boletín promueve la consultoría de su empresa. El argumento se sostiene solo.
+
+### LinkedIn · Post · Semana 3, martes 9:00
+
+```
+Tu comprador ya no hace clic para decidir.
+
+Le pregunta a ChatGPT, lee un hilo de Reddit, ve un video, le recomienda alguien. Y después entra a tu web escribiendo tu nombre.
+
+En tu reporte eso aparece como visita directa o como búsqueda de marca. No aparece como "lo ayudó la IA" ni "lo convenció el video".
+
+Lo que cambia si inviertes en pauta:
+1. Si solo miras el último clic, subestimas todo lo que pasó antes.
+2. Si cortas la campaña que sembró el interés, la búsqueda de tu marca baja semanas después y no sabrás por qué.
+3. Conviene seguir tres cosas juntas: búsquedas de tu marca, conversiones y lo que te dicen los clientes sobre cómo te conocieron. Preguntarlo es gratis.
+
+[VERIFICAR, opcional: una investigación que cita Neil Patel dice que quienes recibieron una recomendación de IA tenían 2.5 veces más probabilidad de visitar el sitio de esa marca en 7 días.]
+
+[TU EJEMPLO: una vez que un cliente llegó "directo" y resultó que venía de una campaña tuya, sin nombrar al cliente.]
+
+¿Le preguntas a tus clientes cómo te conocieron?
+```
+
+---
+
+## G. Más tráfico no arregla una página que no convierte
+
+**Fuente:** boletín de Neil Patel del 21 de octubre. Datos del correo: la pérdida de conversión suele venir de cuatro cosas: mensaje (no se entiende qué ofreces), fricción (páginas lentas, formularios largos), confianza (pocas reseñas o testimonios) y experiencia (navegación confusa, sitio móvil pobre); si eso falla, más tráfico manda más gente por la misma experiencia.
+
+Encaja con la entrada "¿Mi página está tirando mi pauta?" de la semana 9. Úsala como material o como alternativa.
+
+### Instagram · Carrusel (Pregunta) · 21 dic, 9:00
+
+**Láminas (texto en pantalla):**
+1. ¿Mi página está tirando mi pauta?
+2. Si cada vez traes más gente a la misma página, pagas más por el mismo resultado.
+3. Primera revisión: mensaje. ¿En cinco segundos se entiende qué ofreces y para quién?
+4. Segunda: fricción. ¿Carga rápido en el celular? ¿El formulario pide solo lo necesario?
+5. Tercera y cuarta: confianza y navegación. ¿Hay reseñas o casos? ¿Se encuentra el siguiente paso sin buscar?
+6. Si fallan dos, ajusta la página antes de subir presupuesto. Escríbeme si quieres revisarla juntos.
+
+**Caption:**
+```
+Antes de subir presupuesto, revisa a dónde mandas a la gente.
+
+Si tu página tiene un mensaje confuso, es lenta en el celular, pide demasiado en el formulario o no da razones para confiar, más tráfico solo manda más gente por la misma experiencia.
+
+Cuatro revisiones que hago primero: mensaje, fricción, confianza y navegación.
+
+¿Cuál de las cuatro te falla hoy?
+
+#paidmedia #metaads #googleads
+```
+
+### LinkedIn · Post · 22 dic, 9:00
+
+```
+Más tráfico no arregla una página que no convierte.
+
+Cuando una cuenta de anuncios no da resultados, la primera reacción es cambiar el anuncio o subir presupuesto. Muchas veces el problema está después del clic.
+
+Cuatro cosas que reviso en la página antes de tocar la campaña:
+1. Mensaje: ¿se entiende en cinco segundos qué ofreces y para quién?
+2. Fricción: velocidad en el celular, longitud del formulario, pasos hasta el contacto.
+3. Confianza: reseñas, casos, datos que dejen claro quién está detrás.
+4. Navegación: si el siguiente paso se encuentra sin buscar.
+
+Si la página falla en dos de las cuatro, subir presupuesto solo te cuesta más por el mismo resultado.
+
+[TU EJEMPLO: el error de página que más ves en las cuentas que revisas.]
+
+¿Cuál de las cuatro revisarías primero en tu sitio?
+```
 
 ---
 
