@@ -23,6 +23,18 @@ Compites por cuatro cosas distintas, y cada una tiene un tipo de competidor dife
 
 **Pista útil de las vacantes:** las ofertas de paid media en México que aparecieron piden de 2 a 4 años de experiencia en PPC, Google Ads y Meta Ads, métricas como CPA, ROAS y CTR, y herramientas de seguimiento como GTM, GA4 y píxeles. Eso sirve para escoger las palabras de tu titular de LinkedIn y de tu sección de experiencia.
 
+## 1c. Cuentas que aportó Daniela (26 de octubre de 2026)
+
+| Cuenta | Verificada en Socialinsider | Redes encontradas | Qué se sabe |
+|---|---|---|---|
+| [@elcursales](https://www.instagram.com/elcursales) | Sí | Instagram, TikTok, YouTube | Se nombra "Mercadeo Estratégico de Redes Sociales" |
+| [@juanpicrea](https://www.instagram.com/juanpicrea) | Sí | Instagram, TikTok, YouTube, Facebook | Se nombra Juan Pablo Correa Menéndez ("Juanpi Crea") |
+| [@marketing_digital_uy](https://www.instagram.com/marketing_digital_uy) | **No apareció** | — | El handle sugiere Uruguay. Revisar si está bien escrito o si la cuenta es privada |
+| [@byanarosada](https://www.instagram.com/byanarosada) | Sí | Solo Instagram | Se nombra "By Ana Rosada" |
+| [@diegodelgadomx](https://www.instagram.com/diegodelgadomx) | Sí | Instagram, TikTok, YouTube | Se nombra Diego Delgado; el handle sugiere México |
+
+**Lo que todavía no sé:** seguidores, frecuencia, formatos, temas ni qué tan buenos son sus resultados. Esta sesión no puede abrir Instagram directamente y Socialinsider solo da esos datos si el perfil se agrega a una cuenta. Hasta entonces no voy a describir su contenido. Los países y nichos que aparecen arriba son suposiciones por el handle o el nombre, no hechos.
+
 ## 2. Qué dicen los datos disponibles
 
 Ventana: últimos 29 días, que es el máximo que permite el plan. Datos de Socialinsider.
