@@ -9,19 +9,26 @@ Tema de la semana: **¿Cuánto debo invertir en pauta?** · Postura: **Cada peso
 ## Lunes 26 oct, hoy · Instagram · Carrusel (Pregunta)
 
 **Láminas (1080×1350, campo rojo quemado, pregunta en lima):**
-1. ¿Cuánto debo invertir en pauta?
-2. Depende de tu margen, no de lo que gasta tu competencia.
-3. Paso 1. Saca cuánto te cuesta conseguir un cliente: lo que inviertes entre los clientes nuevos que compraron.
-4. Paso 2. Réstalo de lo que te deja cada cliente. Eso es lo que te queda.
-5. Paso 3. Si no te queda nada, el problema no es el presupuesto. Es lo que pagas por cada cliente.
-6. ¿Quieres que lo revisemos con tu cuenta? Escríbeme.
+**Versión corregida (el guion anterior respondía otra pregunta: calculaba cuánto te cuesta hoy un cliente y nunca llegaba a un presupuesto). Las láminas ya diseñadas corresponden a la versión anterior y hay que regenerarlas.**
+
+1. ¿Cuánto debo invertir en pauta? Te lo calculo en tres líneas.
+2. No es un monto, es una cuenta. Tu presupuesto sale de lo que te deja cada cliente, no de lo que gasta tu competencia.
+3. Línea 1. ¿Cuánto te deja de utilidad un cliente nuevo? Lo que queda después de costos, no lo que factura.
+4. Línea 2. ¿Cuánto de esa utilidad puedes pagar por conseguirlo? Esa parte es tu tope por cliente.
+5. Línea 3. Tu tope por cliente por los clientes que quieres este mes es tu presupuesto. Ejemplo con números inventados: si un cliente te deja $1,000 y decides pagar hasta $400, para 10 clientes tu presupuesto es $4,000.
+6. Si hoy conseguir un cliente te cuesta más que tu tope, el problema no es cuánto invertir. Es lo que pagas por cada cliente. Escríbeme y lo calculamos con tu negocio.
 
 **Caption:**
-Esta es la pregunta que más me hacen los dueños de negocio.
+Es la pregunta que más me hacen los dueños de negocio, y no se responde con un monto.
 
-Mi respuesta corta: depende de tu margen, no de lo que gasta tu competencia. Primero hacemos la cuenta de cuánto te cuesta conseguir un cliente y cuánto te deja. Con eso, el presupuesto casi sale solo.
+Se responde con tres líneas:
+1. Cuánto te deja de utilidad un cliente nuevo.
+2. Cuánto de eso puedes pagar por conseguirlo. Ese es tu tope por cliente.
+3. Tu tope por cliente, multiplicado por los clientes que quieres este mes, es tu presupuesto.
 
-Si quieres que la hagamos con tu cuenta de anuncios, escríbeme por mensaje.
+Si hoy conseguir un cliente te cuesta más que tu tope, el problema no es cuánto invertir: es lo que pagas por cada cliente.
+
+Si quieres que hagamos la cuenta con tu negocio, escríbeme por mensaje.
 
 #paidmedia #metaads #googleads
 
