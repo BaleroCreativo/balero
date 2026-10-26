@@ -9,7 +9,34 @@ Tema de la semana: **¿Cuánto debo invertir en pauta?** · Postura: **Cada peso
 ## Lunes 26 oct, hoy · Instagram · Carrusel (Pregunta)
 
 **Láminas (1080×1350, campo rojo quemado, pregunta en lima):**
-**Versión corregida (el guion anterior respondía otra pregunta: calculaba cuánto te cuesta hoy un cliente y nunca llegaba a un presupuesto). Las láminas ya diseñadas corresponden a la versión anterior y hay que regenerarlas.**
+**VERSIÓN 2, CON FUENTES (usar esta).** Fuentes: Avinash Kaushik, Digital Marketing Evangelist de Google, «Get a grip on incrementality», Think with Google, 8 ene 2021 (leído completo); Gartner, 2025 CMO Spend Survey, comunicado del 12 may 2025 (cifra tomada de resúmenes de prensa, no pude abrir el comunicado: **[VERIFICAR]**); ayuda de Meta para negocios sobre meta de costo por resultado y meta de ROAS (leí resúmenes, no la página completa: **[VERIFICAR]**).
+
+**Láminas:**
+1. ¿Cuánto debo invertir en pauta? La respuesta más común es un porcentaje de ventas. Ese no es tu número.
+2. El porcentaje que más se cita es 7.7 % de los ingresos. Sale de la encuesta de Gartner a directores de marketing en 2025, con empresas que en su mayoría facturan más de mil millones de dólares.
+3. Ese promedio no sabe cuánto te deja un cliente. Tu presupuesto sale de tres líneas.
+4. Línea 1: cuánto te deja de utilidad un cliente nuevo. Línea 2: cuánto de eso puedes pagar por conseguirlo. Esa parte es tu tope por cliente. Meta aconseja algo parecido: fijar la meta en el costo por compra que te mantiene rentable.
+5. Línea 3: tu tope por cliente por los clientes que quieres este mes es tu presupuesto. Ejemplo con números inventados: un cliente te deja $1,000, pagas hasta $400, quieres 10 clientes: $4,000.
+6. Una pregunta más, de Avinash Kaushik, de Google: ¿cuántas de esas ventas habrían ocurrido sin anuncios? Ejemplo con números inventados: si 10 de tus 40 clientes habrían llegado igual, tu costo real por cliente es un tercio más alto.
+7. Empieza con tu tope, revisa cada mes y ajusta con ventas reales, no con lo que reporta la plataforma. Escríbeme y hacemos la cuenta de tu negocio.
+
+**Caption:**
+Es la pregunta que más me hacen los dueños de negocio, y la respuesta que más circula es un porcentaje: 7.7 % de los ingresos, según una encuesta de Gartner. Pero ese dato sale de empresas que en su mayoría facturan más de mil millones de dólares. No dice nada de cuánto te deja a ti un cliente.
+
+Mi forma de calcularlo, en tres líneas:
+1. Cuánto te deja de utilidad un cliente nuevo.
+2. Cuánto de eso puedes pagar por conseguirlo: tu tope por cliente.
+3. Tu tope por cliente, por los clientes que quieres este mes, es tu presupuesto.
+
+Y una pregunta de Avinash Kaushik, de Google, para no engañarte: ¿cuántas de esas ventas habrían pasado sin anuncios? Si la respuesta es «varias», tu costo real por cliente es más alto de lo que muestra el reporte.
+
+Si quieres que hagamos la cuenta con tu negocio, escríbeme por mensaje.
+
+#paidmedia #metaads #googleads
+
+---
+
+**Versión 1 (reemplazada; el guion anterior respondía otra pregunta: calculaba cuánto te cuesta hoy un cliente y nunca llegaba a un presupuesto). Las láminas ya diseñadas corresponden a la versión anterior y hay que regenerarlas.**
 
 1. ¿Cuánto debo invertir en pauta? Te lo calculo en tres líneas.
 2. No es un monto, es una cuenta. Tu presupuesto sale de lo que te deja cada cliente, no de lo que gasta tu competencia.
