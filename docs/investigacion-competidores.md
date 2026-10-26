@@ -33,6 +33,8 @@ Compites por cuatro cosas distintas, y cada una tiene un tipo de competidor dife
 | [@byanarosada](https://www.instagram.com/byanarosada) | Sí | Solo Instagram | Se nombra "By Ana Rosada" |
 | [@diegodelgadomx](https://www.instagram.com/diegodelgadomx) | Sí | Instagram, TikTok, YouTube | Se nombra Diego Delgado; el handle sugiere México |
 
+**Intento de agregarlas a Socialinsider (26 de octubre de 2026):** Daniela lo autorizó para las 4 cuentas verificadas, pero la primera (`@elcursales`) fue rechazada con el error "You do not have access to this feature". El plan actual no permite agregar perfiles desde esta conexión. No se agregó ninguna cuenta y no se reintentó con las demás. Opciones: agregarlas desde la interfaz de Socialinsider, o revisar los perfiles a mano con la plantilla.
+
 **Lo que todavía no sé:** seguidores, frecuencia, formatos, temas ni qué tan buenos son sus resultados. Esta sesión no puede abrir Instagram directamente y Socialinsider solo da esos datos si el perfil se agrega a una cuenta. Hasta entonces no voy a describir su contenido. Los países y nichos que aparecen arriba son suposiciones por el handle o el nombre, no hechos.
 
 ## 2. Qué dicen los datos disponibles
