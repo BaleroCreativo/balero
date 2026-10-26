@@ -108,7 +108,7 @@ Variaciones por red:
 
 ## 7. Calendario de contenido (13 semanas)
 
-> Versión con fechas y horas: `docs/calendario-contenido.md` y `docs/calendario-contenido.csv` (del 2 de noviembre de 2026 al 31 de enero de 2027). Borradores de la semana 1: `docs/borradores-semana-1.md`.
+> Versión con fechas y horas: `docs/calendario-contenido.md` y `docs/calendario-contenido.csv` (del 26 de octubre de 2026 al 24 de enero de 2027). Borradores de la semana 1: `docs/borradores-semana-1.md`.
 
 Fases: **Postura** (semanas 1 a 4), **Criterio** (semanas 5 a 8), **Prueba** (semanas 9 a 13). Los temas son una propuesta y deben revisarse con Daniela.
 Las columnas de pieza muestran el tema y el formato entre paréntesis.

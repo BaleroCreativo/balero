@@ -1,4 +1,4 @@
-# Borradores de la semana 1 (2 al 8 de noviembre de 2026)
+# Borradores de la semana 1 (26 de octubre al 1 de noviembre de 2026)
 
 Redactados con la voz de `.claude/brand-voice-guidelines.md`. **Son propuestas para que Daniela las reescriba a su manera.** No contienen cifras de clientes ni resultados inventados, y no llevan emojis. Revisar ortografía antes de publicar.
 
@@ -6,7 +6,7 @@ Tema de la semana: **¿Cuánto debo invertir en pauta?** · Postura: **Cada peso
 
 ---
 
-## Lunes 2 nov, 9:00 · Instagram · Carrusel (Pregunta)
+## Lunes 26 oct, hoy · Instagram · Carrusel (Pregunta)
 
 **Láminas (1080×1350, campo rojo quemado, pregunta en lima):**
 1. ¿Cuánto debo invertir en pauta?
@@ -27,7 +27,7 @@ Si quieres que la hagamos con tu cuenta de anuncios, escríbeme por mensaje.
 
 ---
 
-## Martes 3 nov, 9:00 · LinkedIn · Post con imagen (Pregunta)
+## Martes 27 oct, 9:00 · LinkedIn · Post con imagen (Pregunta)
 
 **Imagen:** lámina 2 del carrusel ("Depende de tu margen, no de lo que gasta tu competencia.").
 
@@ -47,7 +47,7 @@ Si no queda margen, el problema no es el presupuesto, es lo que pagas por cada c
 
 ---
 
-## Miércoles 4 nov, 9:00 · Instagram · Imagen (Postura)
+## Miércoles 28 oct, 9:00 · Instagram · Imagen (Postura)
 
 **Imagen (campo ladrillo, "con margen" sobre resaltador lima):**
 Cada peso en pauta tiene que volver con margen.
@@ -59,7 +59,7 @@ No me importa si el reporte se ve bonito. Me importa si el peso que pusiste en a
 
 ---
 
-## Miércoles 4 nov, 12:30 · LinkedIn · Post con imagen (Postura)
+## Miércoles 28 oct, 12:30 · LinkedIn · Post con imagen (Postura)
 
 **Imagen:** la misma de Instagram.
 
@@ -72,7 +72,7 @@ No es una frase de moda. Es la pregunta que hago antes de recomendar subir, baja
 
 ---
 
-## Jueves 5 nov, 9:00 · LinkedIn · Carrusel PDF (Editorial)
+## Jueves 29 oct, 9:00 · LinkedIn · Carrusel PDF (Editorial)
 
 **Título:** Lo primero que reviso en una cuenta de anuncios
 
@@ -90,7 +90,7 @@ Antes de tocar una campaña, reviso tres cosas. Las dejé en este carrusel. ¿Cu
 
 ---
 
-## Jueves 5 nov, 19:00 · TikTok · y Viernes 6 nov, 11:00 · Instagram (reel) · Video de 30 a 45 segundos
+## Jueves 29 oct, 19:00 · TikTok · y Viernes 30 oct, 11:00 · Instagram (reel) · Video de 30 a 45 segundos
 
 **Guion hablado (para grabar a cámara, sin edición pesada, con subtítulos):**
 
@@ -109,5 +109,5 @@ Antes de tocar una campaña, reviso tres cosas. Las dejé en este carrusel. ¿Cu
 ## Pendientes antes de publicar
 - Reescribir cada pieza con las palabras de Daniela.
 - Confirmar que el "Paso 1, 2 y 3" coincide con cómo ella explica la cuenta.
-- Diseñar las láminas con las plantillas de `DESIGN.md` (aún no están hechas).
+- Las láminas ya están hechas en `assets/posts/semana-1/` (carrusel de Instagram, imagen de postura y carrusel de LinkedIn en imágenes y PDF).
 - Revisar ortografía.
