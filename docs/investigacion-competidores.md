@@ -8,6 +8,21 @@ Fecha: 25 de octubre de 2026. Alcance: especialistas en paid media que compiten 
 
 **Lo que sí se midió:** las seis cuentas de Instagram que ya sigue tu proyecto de Socialinsider (`guadamarketing`). Son agencias y no especialistas independientes, así que sirven como contexto, no como referencia directa.
 
+## 1b. Quién compite contigo (por tipo, con lo que sí está verificado)
+
+Compites por cuatro cosas distintas, y cada una tiene un tipo de competidor diferente.
+
+| Compites por… | Competidor | Verificado en esta sesión |
+|---|---|---|
+| **Clientes** (dueños de negocio de Guadalajara) | Agencias y freelancers locales de Meta Ads y Google Ads | **Funnel Go**, agencia de Meta Ads en Guadalajara (apareció en una búsqueda). Las cuentas que ya siguen tu proyecto de Socialinsider: Vleeko, Intagono, MD Marketing Digital, GuadaMarketing, Elogia e iProspect. No pude confirmar en qué ciudad opera cada una |
+| **Clientes** (el dueño que lo hace solo) | Cursos y herramientas que le enseñan a lanzar anuncios él mismo | Cursos de Meta Ads en **Platzi** y proyectos guiados de Instagram Ads en **Coursera**. Son competencia indirecta: el dueño aprende a hacerlo y no te contrata |
+| **Atención y autoridad** (el feed) | Divulgadores de marketing digital en español | Perfiles de España que aparecen en una lista de divulgadores (Jordi Segués, Vilma Núñez, Itziar Oltra). No son de pauta ni de México; compiten por la atención, no por tus clientes. Es una sola fuente y las cifras pueden estar desactualizadas |
+| **Empleo** (empleadores y reclutadores) | Otros candidatos a paid media | No tienen nombre. Se les gana con evidencia y claridad de perfil, no con presencia en redes |
+
+**Lo que no pude encontrar:** especialistas independientes de pauta en México con presencia en redes. Ninguna búsqueda devolvió un nombre confiable, y no voy a proponer nombres sin poder verificarlos. Es el grupo más importante para tu marca personal. Hay que completarlo con las cuentas que tú reconozcas (sección 6).
+
+**Pista útil de las vacantes:** las ofertas de paid media en México que aparecieron piden de 2 a 4 años de experiencia en PPC, Google Ads y Meta Ads, métricas como CPA, ROAS y CTR, y herramientas de seguimiento como GTM, GA4 y píxeles. Eso sirve para escoger las palabras de tu titular de LinkedIn y de tu sección de experiencia.
+
 ## 2. Qué dicen los datos disponibles
 
 Ventana: últimos 29 días, que es el máximo que permite el plan. Datos de Socialinsider.
