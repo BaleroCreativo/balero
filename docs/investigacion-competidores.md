@@ -29,13 +29,57 @@ Compites por cuatro cosas distintas, y cada una tiene un tipo de competidor dife
 |---|---|---|---|
 | [@elcursales](https://www.instagram.com/elcursales) | Sí | Instagram, TikTok, YouTube | Se nombra "Mercadeo Estratégico de Redes Sociales" |
 | [@juanpicrea](https://www.instagram.com/juanpicrea) | Sí | Instagram, TikTok, YouTube, Facebook | Se nombra Juan Pablo Correa Menéndez ("Juanpi Crea") |
-| [@marketing_digital_uy](https://www.instagram.com/marketing_digital_uy) | **No apareció** | — | El handle sugiere Uruguay. Revisar si está bien escrito o si la cuenta es privada |
+| [@marketing_digital_uy](https://www.instagram.com/marketing_digital_uy) | No apareció | — | Sí existe (ver 1d): es una agencia verificada de Uruguay. Socialinsider no la encontró |
 | [@byanarosada](https://www.instagram.com/byanarosada) | Sí | Solo Instagram | Se nombra "By Ana Rosada" |
 | [@diegodelgadomx](https://www.instagram.com/diegodelgadomx) | Sí | Instagram, TikTok, YouTube | Se nombra Diego Delgado; el handle sugiere México |
 
 **Intento de agregarlas a Socialinsider (26 de octubre de 2026):** Daniela lo autorizó para las 4 cuentas verificadas, pero la primera (`@elcursales`) fue rechazada con el error "You do not have access to this feature". El plan actual no permite agregar perfiles desde esta conexión. No se agregó ninguna cuenta y no se reintentó con las demás. Opciones: agregarlas desde la interfaz de Socialinsider, o revisar los perfiles a mano con la plantilla.
 
 **Lo que todavía no sé:** seguidores, frecuencia, formatos, temas ni qué tan buenos son sus resultados. Esta sesión no puede abrir Instagram directamente y Socialinsider solo da esos datos si el perfil se agrega a una cuenta. Hasta entonces no voy a describir su contenido. Los países y nichos que aparecen arriba son suposiciones por el handle o el nombre, no hechos.
+
+## 1d. Capturas de perfil aportadas por Daniela (26 de octubre de 2026)
+
+Datos tomados de cuatro capturas de pantalla de Instagram. Son una foto de un momento y de las publicaciones que se alcanzan a ver. No permiten calcular tasa de interacción ni frecuencia de publicación.
+
+| Cuenta | Seguidores | Publicaciones | Posicionamiento (en su bio) | Formato visible | Vistas visibles en reels |
+|---|---|---|---|---|---|
+| **diegodelgadomx** (Diego Delgado) | 59,400 | 675 | "Creamos campañas publicitarias para negocios (servicio 360)" | Sketches de humor sobre la relación cliente-agencia | 2.5 mill., 1.4 mill. y 2,784 |
+| **andrea.contenido** (Andrea, Estrategia y Contenido, Monterrey) | 32,500 | 84 | "Hago crecer marcas en redes sociales · Asesorías 1:1 · +5 años creando contenido para empresas" | Ella hablando a cámara con texto grande en pantalla | 6,342, 8,776 y 308 mil |
+| **marketing_digital_uy** (MDU, agencia, Uruguay) | 25,600 | 161 | "Potenciamos tu marca · +1.500 negocios impulsados en 6 años" | Diseños con mensaje de urgencia y capacitaciones | Sin datos |
+| **guille.colladomk** (Guille Collado) | 336,000 | 90 | "Antes trabajaba en TikTok. Ahora te enseño cómo crecer en redes de verdad en 2026" | Portadas tipográficas y videos hablados | Sin datos |
+
+**Vistas por seguidor en lo que se ve** (cifras visibles, no promedios):
+- Diego Delgado: 2.5 mill. ÷ 59,400 ≈ 42 veces, 1.4 mill. ÷ 59,400 ≈ 24 veces, y 2,784 ÷ 59,400 ≈ 0.05 veces.
+- Andrea: 6,342 y 8,776 ÷ 32,500 ≈ 0.2 y 0.3 veces, y 308 mil ÷ 32,500 ≈ 9.5 veces.
+
+Lo que sí muestra: **en estas cuentas, los reels tienen una dispersión enorme**. Un video llega a decenas de veces los seguidores y el siguiente a una fracción. Con una muestra de tres reels por cuenta no se puede decir cuál es el "formato que gana", pero sí que el alcance de un solo video puede cambiar mucho y que conviene probar varias veces antes de decidir.
+
+### Lo que se repite
+
+| Patrón | Dónde se ve | Qué significa para ti |
+|---|---|---|
+| **Cara y voz de la persona** en video, con texto grande en pantalla | Andrea, Guille Collado, Diego Delgado | Es el formato estándar de la marca personal. Tus reels con texto grande encajan |
+| **Oferta clara en la bio** y enlace directo (WhatsApp o sitio) | Andrea, Diego Delgado, MDU | Tu bio puede decir qué haces, en qué ciudad y cómo contactarte |
+| **Historia destacada de "Resultados" o "Testimonios"** | Andrea, MDU | Es la forma estándar de prueba social. Tú aún no tienes casos publicados |
+| **Promesa de crecimiento o ventas** | Andrea ("hago crecer marcas"), MDU ("aumentar tus ventas", "+1.500 negocios"), Diego Delgado (broma de "te aseguro ventas") | Es lo común. Tu postura de "no prometo cifras sin ver tu cuenta" es distinta |
+| **Mensajes de miedo o urgencia** | MDU ("si tus campañas no se ven así, estás perdiendo dinero") | Tu tono cercano y honesto queda al otro lado |
+
+### Quién es más relevante para ti
+
+| Cuenta | Por qué importa | Prioridad |
+|---|---|---|
+| **diegodelgadomx** | Es de México, habla a dueños de negocio y su tema es la pauta y las ventas. Su video "¿Me aseguras ventas?" llegó a 1.4 millones de vistas, lo que muestra que a los dueños les importa esa pregunta | **Alta**: competidor más directo |
+| **andrea.contenido** | Es de México, independiente, marca personal con asesorías 1:1. Es de contenido, no de pauta, pero su forma de presentarse es el modelo más cercano a lo que tú quieres hacer | **Alta**: referente de formato |
+| **marketing_digital_uy** | Es una agencia, en otro país, con un tono más de venta que de criterio | Baja |
+| **guille.colladomk** | Referente de estética y de monetización de comunidad, pero habla a creadores, no a dueños de negocio | Referencia, no competencia |
+
+### Lo que puedes aprovechar
+
+1. **Una respuesta a "¿Me aseguras ventas?"** El video de Diego Delgado plantea la pregunta en broma. Tu respuesta, en serio y con tu postura (no aseguras ventas; aseguras que sabrás si la pauta deja margen), es contenido propio y con el que tu audiencia ya se identifica. Se puede añadir al banco de preguntas.
+2. **Ordenar tu bio:** qué haces, ciudad, a quién ayudas y enlace directo para contactarte.
+3. **Destacadas en Instagram:** "Preguntas", "Cómo trabajo" y, cuando tengas permiso de un cliente, "Resultados".
+4. **Probar 4 a 6 reels antes de concluir** qué formato funciona, por la dispersión que se vio.
+5. **Mantener tu diferencia:** tono cercano, números honestos y nada de miedo ni promesas.
 
 ## 2. Qué dicen los datos disponibles
 
