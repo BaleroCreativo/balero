@@ -27,7 +27,7 @@ Compites por cuatro cosas distintas, y cada una tiene un tipo de competidor dife
 
 | Cuenta | Verificada en Socialinsider | Redes encontradas | Qué se sabe |
 |---|---|---|---|
-| [@elcursales](https://www.instagram.com/elcursales) | Sí | Instagram, TikTok, YouTube | Se nombra "Mercadeo Estratégico de Redes Sociales" |
+| [@elcursales](https://www.instagram.com/elcursales) | Sí | Instagram, TikTok, YouTube | Ver 1e: 170,000 seguidores, habla a dueños de negocio |
 | [@juanpicrea](https://www.instagram.com/juanpicrea) | Sí | Instagram, TikTok, YouTube, Facebook | Se nombra Juan Pablo Correa Menéndez ("Juanpi Crea") |
 | [@marketing_digital_uy](https://www.instagram.com/marketing_digital_uy) | No apareció | — | Sí existe (ver 1d): es una agencia verificada de Uruguay. Socialinsider no la encontró |
 | [@byanarosada](https://www.instagram.com/byanarosada) | Sí | Solo Instagram | Se nombra "By Ana Rosada" |
@@ -37,7 +37,7 @@ Compites por cuatro cosas distintas, y cada una tiene un tipo de competidor dife
 
 **Lo que todavía no sé:** seguidores, frecuencia, formatos, temas ni qué tan buenos son sus resultados. Esta sesión no puede abrir Instagram directamente y Socialinsider solo da esos datos si el perfil se agrega a una cuenta. Hasta entonces no voy a describir su contenido. Los países y nichos que aparecen arriba son suposiciones por el handle o el nombre, no hechos.
 
-## 1d. Capturas de perfil aportadas por Daniela (26 de octubre de 2026)
+## 1d. Capturas de perfil aportadas por Daniela (26 de octubre de 2026): primera tanda
 
 Datos tomados de cuatro capturas de pantalla de Instagram. Son una foto de un momento y de las publicaciones que se alcanzan a ver. No permiten calcular tasa de interacción ni frecuencia de publicación.
 
@@ -80,6 +80,36 @@ Lo que sí muestra: **en estas cuentas, los reels tienen una dispersión enorme*
 3. **Destacadas en Instagram:** "Preguntas", "Cómo trabajo" y, cuando tengas permiso de un cliente, "Resultados".
 4. **Probar 4 a 6 reels antes de concluir** qué formato funciona, por la dispersión que se vio.
 5. **Mantener tu diferencia:** tono cercano, números honestos y nada de miedo ni promesas.
+
+## 1e. Segunda tanda de capturas (26 de octubre de 2026)
+
+| Cuenta | Seguidores | Publicaciones | Posicionamiento (en su bio) | Formato visible |
+|---|---|---|---|---|
+| **byanarosada** (By Ana Rosada) | 861 | 53 | "Meta Ads - Copywriting - Mkt Digital. Ayudo a negocios a vender en redes con una estrategia efectiva de ventas. ¡Pide tu diagnóstico por WhatsApp!" | Reels hablando a cámara con texto en pantalla |
+| **juanpicrea** (Juan Pablo Correa Menéndez) | 46,600 | 480 | "Te ayudo a crear Contenido que Vende. Estrategia, IA, Marketing y Ventas. Trabajo 1 a 1" | Carruseles de diseño con título grande y reels |
+| **elcursales** (Mercadeo Estratégico de Redes Sociales) | 170,000 | 576 | "Ayudo a dueños de negocio a comunicar diferente para ganarle a su competencia. 13 años de experiencia" | Reels con texto amarillo grande y comunidad con 4.6K miembros |
+
+### Lo que cambia con estas tres
+- **By Ana Rosada es la más parecida a ti por oferta y por etapa:** ofrece Meta Ads y copywriting, y tiene 861 seguidores. Muestra cómo se presenta alguien en tu punto de partida: un diagnóstico por WhatsApp como oferta, historias destacadas de "Sobre mí", "Resultados" y "Mis clientes", y ganchos con situaciones que el dueño reconoce ("POV: el cliente que creías que te amaba, te ghostea").
+- **elcursales habla al mismo público que tú (dueños de negocio)** pero de comunicación, no de pauta. Tiene la estética de texto grande más reconocible y una comunidad propia.
+- **juanpicrea basa su prueba social en casos de clientes con cifras de ingreso**, una promesa que tú no vas a hacer. Su pieza fija "Cómo X hizo Y" es un formato que puedes usar más adelante con casos anonimizados.
+
+### Lo que se repite en las siete cuentas
+Esta lista la elegiste tú, así que puede reflejar tus referentes más que al mercado entero.
+
+| Patrón | Cuántas de las 7 |
+|---|---|
+| Cara y voz de la persona en video | 7 de 7 |
+| Promesa de crecimiento, ventas o ingresos en la bio o en las piezas | 6 de 7 (Guille Collado enseña a crecer en redes, no promete ventas) |
+| Historia destacada de prueba social (Resultados, Testimonios o Clientes) | 5 de 7 |
+| Oferta de contacto directo (WhatsApp, sitio o trabajo 1 a 1) | 5 de 7 |
+| Centradas en **pauta o margen** como tema | 2 de 7 (Diego Delgado y By Ana Rosada) |
+
+### Qué significa
+- **El tema "margen real" sigue abierto en esta muestra.** Solo dos de siete hablan de campañas o de Meta Ads, y ninguna usa el margen como idea central.
+- **El estándar es prometer.** Tu postura (no prometes cifras sin ver la cuenta) te separa de seis de siete.
+- **La prueba social ya es obligatoria en el formato.** Cinco de siete tienen una historia destacada de resultados o clientes. Hoy tú no tienes casos publicados, así que conviene reunir de 2 a 3, con permiso.
+- **La oferta de entrada es un diagnóstico o una revisión.** By Ana Rosada lo hace con "diagnóstico por WhatsApp", y tu calendario ya tiene como invitación "platiquemos 20 minutos". Puedes llamarlo "Revisión de cuenta de 20 minutos".
 
 ## 2. Qué dicen los datos disponibles
 
