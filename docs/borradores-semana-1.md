@@ -47,11 +47,11 @@ El cálculo es el de la calculadora de presupuesto de Felipe Vergara. Los númer
 **Caption:**
 Es la pregunta que más me hacen los dueños de negocio. Mi respuesta no es un monto: son tres preguntas.
 
-1. ¿Cuántas ventas necesitas? Tu meta entre tu ticket promedio.
+1. ¿Cuántas ventas necesitas? Tu meta de venta entre tu ticket promedio.
 2. ¿Cuánto puedes pagar por cada venta? Tu ticket por el porcentaje que estás dispuesto a invertir, que es tu margen menos la utilidad que quieres conservar.
-3. ¿Cuánto debes invertir? Las ventas que necesitas por lo que puedes pagar por cada una.
+3. ¿Cuánto debes invertir? Tus ventas por lo que puedes pagar por cada una.
 
-Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de lo que calculaste, el problema no es el presupuesto.
+Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de tu tope de inversión, el problema no es el presupuesto, es lo que pagas por cada venta.
 
 El cálculo es el de la calculadora de presupuesto de Felipe Vergara. Los números del carrusel son de ejemplo. Guárdalo y haz el tuyo; si quieres, escríbeme y lo calculamos juntos.
 
