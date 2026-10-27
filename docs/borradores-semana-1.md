@@ -9,7 +9,7 @@ Tema de la semana: **¿Cuánto debo invertir en pauta?** · Postura: **Cada peso
 ## Lunes 26 oct, hoy · Instagram · Carrusel (Pregunta)
 
 **Láminas (1080×1350, campo rojo quemado, pregunta en lima):**
-**VERSIÓN 6, TEXTO FINAL DE DANIELA (usar esta).** Ángulo «la llamada», formato Pregunta, 6 láminas. Cálculo de la calculadora de presupuesto para anuncios de Felipe Vergara (**[VERIFICAR]** que se puede citar con su nombre). Números de ejemplo, inventados.
+**VERSIÓN 6, TEXTO FINAL DE DANIELA (usar esta).** Ángulo «la llamada», formato Pregunta, 6 láminas. Números de ejemplo, inventados. Sin citas de terceros.
 
 **Láminas:**
 1. (Portada) ¿Cuánto debo invertir en pauta? / Te respondo como en una llamada: con tres preguntas, no con un monto.
@@ -28,7 +28,7 @@ Es la pregunta que más me hacen los dueños de negocio. Mi respuesta no es un m
 
 Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de tu tope de inversión, el problema no es el presupuesto, es lo que pagas por cada venta.
 
-El cálculo es el de la calculadora de presupuesto de Felipe Vergara. Los números del carrusel son de ejemplo. Guárdalo y haz el tuyo; si quieres, escríbeme y lo calculamos juntos.
+Los números del carrusel son de ejemplo. Guárdalo y haz el tuyo; si quieres, escríbeme y lo calculamos juntos.
 
 #paidmedia #metaads #googleads
 
@@ -53,7 +53,7 @@ Es la pregunta que más me hacen los dueños de negocio. Mi respuesta no es un m
 
 Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de tu tope de inversión, el problema no es el presupuesto, es lo que pagas por cada venta.
 
-El cálculo es el de la calculadora de presupuesto de Felipe Vergara. Los números del carrusel son de ejemplo. Guárdalo y haz el tuyo; si quieres, escríbeme y lo calculamos juntos.
+Los números del carrusel son de ejemplo. Guárdalo y haz el tuyo; si quieres, escríbeme y lo calculamos juntos.
 
 #paidmedia #metaads #googleads
 
