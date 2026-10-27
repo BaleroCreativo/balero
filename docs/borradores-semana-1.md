@@ -39,10 +39,10 @@ El cálculo es el de la calculadora de presupuesto de Felipe Vergara. Los númer
 **Láminas:**
 1. (Portada) ¿Cuánto debo invertir en pauta? / Te respondo como en una llamada: con tres preguntas, no con un monto.
 2. Mi respuesta corta: depende de cuánto quieres vender y de cuánto margen quieres conservar. No de lo que gasta tu competencia. / Las tres preguntas →
-3. PREGUNTA 1. ¿Cuántas ventas necesitas? Tu meta de ventas entre tu ticket promedio. Ejemplo: quieres vender $100,000 y tu ticket promedio es $500. Necesitas 200 ventas. / ¿Y cuánto puedes pagar por cada una? →
-4. PREGUNTA 2. ¿Cuánto puedes pagar por cada venta? Primero, el porcentaje de cada venta que estás dispuesto a invertir en conseguir al cliente: tu margen menos la utilidad que quieres conservar. Ejemplo: margen de 35 % y quieres quedarte con al menos 15 %: puedes invertir 20 %. Entonces: $500 × 20 % = $100 por venta. / Falta la última →
-5. PREGUNTA 3. ¿Cuánto debes invertir? Las ventas que necesitas por lo que puedes pagar por cada una. 200 × $100 = $20,000. Si todo sale: vendes $100,000, inviertes $20,000 y te quedan $15,000 de utilidad. / Esa es la respuesta. Falta una prueba →
-6. Ahora compáralo con lo que pagas hoy por cada venta (lo que gastas entre las ventas que logras). Si ya pagas más de $100, el problema no es cuánto invertir: es cuánto pagas por cada venta. Escríbeme y lo calculamos con tu negocio.
+3. PREGUNTA 1. ¿Cuántas ventas necesitas? Meta de venta ÷ ticket promedio. $100,000 ÷ $500 = 200 ventas.
+4. PREGUNTA 2. ¿Cuánto puedes pagar por cada venta? El porcentaje a invertir es tu margen menos la utilidad que quieres conservar. Por ejemplo: con 35 % de margen y 15 % de utilidad mínima, inviertes 20 %. $500 × 20 % = $100 por venta.
+5. PREGUNTA 3. ¿Cuánto debes invertir? 200 (ventas) × $100 (inversión por venta) = $20,000. Si todo sale, vendes $100,000, inviertes $20,000 y te quedan $15,000 de utilidad.
+6. CIERRE Y PRUEBA. Compáralo con lo que pagas hoy por venta. Si ya pagas más de tu tope de inversión, el problema no es el presupuesto, es lo que pagas por cada venta.
 
 **Caption:**
 Es la pregunta que más me hacen los dueños de negocio. Mi respuesta no es un monto: son tres preguntas.
