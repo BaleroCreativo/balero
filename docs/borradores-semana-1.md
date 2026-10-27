@@ -9,7 +9,32 @@ Tema de la semana: **¿Cuánto debo invertir en pauta?** · Postura: **Cada peso
 ## Lunes 26 oct, hoy · Instagram · Carrusel (Pregunta)
 
 **Láminas (1080×1350, campo rojo quemado, pregunta en lima):**
-**VERSIÓN 4, CON EL CÁLCULO COMPLETO Y UN GANCHO CON TENSIÓN (usar esta).** Todos los números son de ejemplo, inventados para ilustrar; la portada lo avisa. Fuentes: Avinash Kaushik, Think with Google, 8 ene 2021 (leído completo); Gartner 2025 (**[VERIFICAR]**); ayuda de Meta (**[VERIFICAR]**).
+**VERSIÓN 5, ÁNGULO «LA LLAMADA» CON EL CÁLCULO DE FELIPE VERGARA (usar esta).** Formato Pregunta, 6 láminas, tú respondes como en una llamada con un dueño de negocio. El cálculo sale de la calculadora de presupuesto para anuncios de Felipe Vergara (hoja que compartió Daniela; **[VERIFICAR]** que se puede citar con su nombre). Los números del carrusel son de ejemplo, inventados; el 35 %, 15 % y 20 % son el ejemplo de la aclaración de esa calculadora.
+
+**Láminas:**
+1. (Portada) ¿Cuánto debo invertir en pauta? / Te respondo como en una llamada: con tres preguntas, no con un monto.
+2. Mi respuesta corta: depende de cuánto quieres vender y de cuánto margen quieres conservar. No de lo que gasta tu competencia. / Las tres preguntas →
+3. PREGUNTA 1. ¿Cuántas ventas necesitas? Tu meta de ventas entre tu ticket promedio. Ejemplo: quieres vender $100,000 y tu ticket promedio es $500. Necesitas 200 ventas. / ¿Y cuánto puedes pagar por cada una? →
+4. PREGUNTA 2. ¿Cuánto puedes pagar por cada venta? Primero, el porcentaje de cada venta que estás dispuesto a invertir en conseguir al cliente: tu margen menos la utilidad que quieres conservar. Ejemplo: margen de 35 % y quieres quedarte con al menos 15 %: puedes invertir 20 %. Entonces: $500 × 20 % = $100 por venta. / Falta la última →
+5. PREGUNTA 3. ¿Cuánto debes invertir? Las ventas que necesitas por lo que puedes pagar por cada una. 200 × $100 = $20,000. Si todo sale: vendes $100,000, inviertes $20,000 y te quedan $15,000 de utilidad. / Esa es la respuesta. Falta una prueba →
+6. Ahora compáralo con lo que pagas hoy por cada venta (lo que gastas entre las ventas que logras). Si ya pagas más de $100, el problema no es cuánto invertir: es cuánto pagas por cada venta. Escríbeme y lo calculamos con tu negocio.
+
+**Caption:**
+Es la pregunta que más me hacen los dueños de negocio. Mi respuesta no es un monto: son tres preguntas.
+
+1. ¿Cuántas ventas necesitas? Tu meta entre tu ticket promedio.
+2. ¿Cuánto puedes pagar por cada venta? Tu ticket por el porcentaje que estás dispuesto a invertir, que es tu margen menos la utilidad que quieres conservar.
+3. ¿Cuánto debes invertir? Las ventas que necesitas por lo que puedes pagar por cada una.
+
+Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de lo que calculaste, el problema no es el presupuesto.
+
+El cálculo es el de la calculadora de presupuesto de Felipe Vergara. Los números del carrusel son de ejemplo. Guárdalo y haz el tuyo; si quieres, escríbeme y lo calculamos juntos.
+
+#paidmedia #metaads #googleads
+
+---
+
+**Versión 4 (reemplazada por la versión 5).** Todos los números son de ejemplo, inventados para ilustrar; la portada lo avisa. Fuentes: Avinash Kaushik, Think with Google, 8 ene 2021 (leído completo); Gartner 2025 (**[VERIFICAR]**); ayuda de Meta (**[VERIFICAR]**).
 
 **Gancho (portada):** Gastaste $10,000 en anuncios y llegaron 10 clientes. ¿Ganaste o perdiste? / Depende de un número que casi nadie calcula. Desliza. (Ejemplo con números inventados.)
 
