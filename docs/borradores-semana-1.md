@@ -175,7 +175,7 @@ Si quieres que hagamos la cuenta con tu negocio, escríbeme por mensaje.
 
 ## Martes 27 oct, 9:00 · LinkedIn · Post con imagen (Pregunta)
 
-**Imagen:** lámina 2 del carrusel final (`assets/posts/semana-1/ig-lun-carrusel-pregunta-2.png`): "Depende de cuánto quieres vender y de cuánto margen quieres conservar. No de lo que gasta tu competencia."
+**Imagen:** `assets/posts/semana-1/li-mar-imagen-pregunta.png`. Es la lámina 2 del carrusel sin número de página ni "Las tres preguntas →": "Depende de cuánto quieres vender y de cuánto margen quieres conservar. No de lo que gasta tu competencia."
 
 **Texto (versión alineada con el carrusel del lunes):**
 "¿Cuánto debo invertir en pauta?"
