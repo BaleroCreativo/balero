@@ -175,21 +175,24 @@ Si quieres que hagamos la cuenta con tu negocio, escríbeme por mensaje.
 
 ## Martes 27 oct, 9:00 · LinkedIn · Post con imagen (Pregunta)
 
-**Imagen:** lámina 2 del carrusel ("Depende de tu margen, no de lo que gasta tu competencia.").
+**Imagen:** lámina 2 del carrusel final (`assets/posts/semana-1/ig-lun-carrusel-pregunta-2.png`): "Depende de cuánto quieres vender y de cuánto margen quieres conservar. No de lo que gasta tu competencia."
 
-**Texto:**
+**Texto (versión alineada con el carrusel del lunes):**
 "¿Cuánto debo invertir en pauta?"
 
-Es la pregunta que más me hacen los dueños de negocio. Mi respuesta: depende de tu margen, no de lo que gasta tu competencia.
+Es la pregunta que más me hacen los dueños de negocio. Mi respuesta no es un monto. Son tres preguntas:
 
-Lo primero es sacar la cuenta:
-1. Cuánto te cuesta conseguir un cliente: lo que inviertes entre los clientes nuevos que compraron.
-2. Cuánto te deja cada cliente.
-3. Cuánto queda al restar lo uno de lo otro.
+1. ¿Cuántas ventas necesitas? Tu meta de venta entre tu ticket promedio.
+2. ¿Cuánto puedes pagar por cada venta? Tu ticket por el porcentaje que estás dispuesto a invertir, que es tu margen menos la utilidad que quieres conservar.
+3. ¿Cuánto debes invertir? Tus ventas por lo que puedes pagar por cada una.
 
-Si no queda margen, el problema no es el presupuesto, es lo que pagas por cada cliente. Y eso se arregla antes de invertir más.
+Con números de ejemplo: una meta de $100,000 y un ticket de $500 son 200 ventas. Con 35 % de margen y 15 % de utilidad mínima, inviertes 20 %: $100 por venta. 200 ventas por $100 son $20,000 de inversión.
 
-¿Tú sabes cuánto te cuesta hoy conseguir un cliente?
+Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de tu tope, el problema no es el presupuesto, es lo que pagas por cada venta.
+
+¿Sabes cuánto pagas hoy por cada venta?
+
+> Los números son de ejemplo; el texto lo dice. Sin cita de fuente, igual que el carrusel.
 
 ---
 
