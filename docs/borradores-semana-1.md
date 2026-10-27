@@ -9,7 +9,32 @@ Tema de la semana: **¿Cuánto debo invertir en pauta?** · Postura: **Cada peso
 ## Lunes 26 oct, hoy · Instagram · Carrusel (Pregunta)
 
 **Láminas (1080×1350, campo rojo quemado, pregunta en lima):**
-**VERSIÓN 5, ÁNGULO «LA LLAMADA» CON EL CÁLCULO DE FELIPE VERGARA (usar esta).** Formato Pregunta, 6 láminas, tú respondes como en una llamada con un dueño de negocio. El cálculo sale de la calculadora de presupuesto para anuncios de Felipe Vergara (hoja que compartió Daniela; **[VERIFICAR]** que se puede citar con su nombre). Los números del carrusel son de ejemplo, inventados; el 35 %, 15 % y 20 % son el ejemplo de la aclaración de esa calculadora.
+**VERSIÓN 6, TEXTO FINAL DE DANIELA (usar esta).** Ángulo «la llamada», formato Pregunta, 6 láminas. Cálculo de la calculadora de presupuesto para anuncios de Felipe Vergara (**[VERIFICAR]** que se puede citar con su nombre). Números de ejemplo, inventados.
+
+**Láminas:**
+1. (Portada) ¿Cuánto debo invertir en pauta? / Te respondo como en una llamada: con tres preguntas, no con un monto.
+2. Mi respuesta corta: depende de cuánto quieres vender y de cuánto margen quieres conservar. No de lo que gasta tu competencia. / Las tres preguntas →
+3. PREGUNTA 1. ¿Cuántas ventas necesitas? Meta de venta ÷ ticket promedio. $100,000 ÷ $500 = 200 ventas.
+4. PREGUNTA 2. ¿Cuánto puedes pagar por cada venta? El porcentaje a invertir es tu margen menos la utilidad que quieres conservar. Por ejemplo: con 35 % de margen y 15 % de utilidad mínima, inviertes 20 %. $500 × 20 % = $100 por venta.
+5. PREGUNTA 3. ¿Cuánto debes invertir? 200 (ventas) × $100 (inversión por venta) = $20,000. Si todo sale, vendes $100,000, inviertes $20,000 y te quedan $15,000 de utilidad.
+6. CIERRE Y PRUEBA. Compáralo con lo que pagas hoy por venta. Si ya pagas más de tu tope de inversión, el problema no es el presupuesto, es lo que pagas por cada venta.
+
+**Caption:**
+Es la pregunta que más me hacen los dueños de negocio. Mi respuesta no es un monto: son tres preguntas.
+
+1. ¿Cuántas ventas necesitas? Tu meta de venta entre tu ticket promedio.
+2. ¿Cuánto puedes pagar por cada venta? Tu ticket por el porcentaje que estás dispuesto a invertir, que es tu margen menos la utilidad que quieres conservar.
+3. ¿Cuánto debes invertir? Tus ventas por lo que puedes pagar por cada una.
+
+Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de tu tope de inversión, el problema no es el presupuesto, es lo que pagas por cada venta.
+
+El cálculo es el de la calculadora de presupuesto de Felipe Vergara. Los números del carrusel son de ejemplo. Guárdalo y haz el tuyo; si quieres, escríbeme y lo calculamos juntos.
+
+#paidmedia #metaads #googleads
+
+---
+
+**Versión 5 (reemplazada por la versión 6).** Formato Pregunta, 6 láminas, tú respondes como en una llamada con un dueño de negocio. El cálculo sale de la calculadora de presupuesto para anuncios de Felipe Vergara (hoja que compartió Daniela; **[VERIFICAR]** que se puede citar con su nombre). Los números del carrusel son de ejemplo, inventados; el 35 %, 15 % y 20 % son el ejemplo de la aclaración de esa calculadora.
 
 **Láminas:**
 1. (Portada) ¿Cuánto debo invertir en pauta? / Te respondo como en una llamada: con tres preguntas, no con un monto.
