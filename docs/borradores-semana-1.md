@@ -9,7 +9,40 @@ Tema de la semana: **¿Cuánto debo invertir en pauta?** · Postura: **Cada peso
 ## Lunes 26 oct, hoy · Instagram · Carrusel (Pregunta)
 
 **Láminas (1080×1350, campo rojo quemado, pregunta en lima):**
-**VERSIÓN 3, PARA QUE LA GENTE DESLICE HASTA EL FINAL (usar esta).** Misma base de fuentes que la versión 2. Cada lámina cierra con una línea que empuja a la siguiente.
+**VERSIÓN 4, CON EL CÁLCULO COMPLETO Y UN GANCHO CON TENSIÓN (usar esta).** Todos los números son de ejemplo, inventados para ilustrar; la portada lo avisa. Fuentes: Avinash Kaushik, Think with Google, 8 ene 2021 (leído completo); Gartner 2025 (**[VERIFICAR]**); ayuda de Meta (**[VERIFICAR]**).
+
+**Gancho (portada):** Gastaste $10,000 en anuncios y llegaron 10 clientes. ¿Ganaste o perdiste? / Depende de un número que casi nadie calcula. Desliza. (Ejemplo con números inventados.)
+
+**Láminas (9):**
+1. (Portada) Gastaste $10,000 en anuncios y llegaron 10 clientes. ¿Ganaste o perdiste? / Depende de un número que casi nadie calcula. Desliza →
+2. Cada cliente te costó $1,000 en anuncios ($10,000 ÷ 10). Falta saber cuánto te deja cada uno. Si te deja $400: perdiste $6,000. Si te deja $1,000: quedaste en cero. Si te deja $2,500: ganaste $15,000. Mismo gasto, tres resultados. / ¿Cómo sabes cuál es el tuyo? →
+3. Por eso un «invierte X % de tus ingresos» no sirve. El 7.7 % que más se cita es de una encuesta de Gartner (2025), con empresas que en su mayoría facturan más de mil millones de dólares. Tu presupuesto sale de tu utilidad por cliente. Son tres líneas →
+4. LÍNEA 1. Tu utilidad por cliente = lo que cobras − lo que cuesta entregarlo (producto o servicio, comisiones, envío, comisión de cobro, devoluciones). Ejemplo: $2,500 − $1,500 = $1,000. / Ahora, cuánto de eso puedes gastar →
+5. LÍNEA 2. Tu tope por cliente = tu utilidad × el porcentaje que decides invertir para conseguirlo. Si inviertes el 100 %, quedas en cero con cada cliente, como en el ejemplo del inicio. Ejemplo con 40 %: $1,000 × 0.40 = $400. Meta aconseja algo parecido: poner la meta en el costo por compra que te mantiene rentable. / Falta la última →
+6. LÍNEA 3. Tu presupuesto = tu tope por cliente × los clientes que quieres este mes. Ejemplo: $400 × 10 clientes = $4,000. / ¿Y si no vendes en línea? →
+7. Si te llegan mensajes o formularios, tu tope por contacto = tu tope por cliente × el porcentaje de contactos que compran. Ejemplo: $400 × 20 % (1 de cada 5) = $80 por contacto. / Queda una trampa →
+8. La trampa, de Avinash Kaushik, de Google: ¿cuántas de esas ventas habrían pasado sin anuncios? Si 2 de tus 10 clientes habrían llegado igual, solo 8 son de la pauta, y tu costo real por cliente no es $1,000 sino $1,250 ($10,000 ÷ 8). / Último paso →
+9. Revisa tu cuenta cada mes con ventas reales, no con lo que reporta la plataforma. Si ya gastas más que tu tope por cliente, el problema no es cuánto invertir: es cuánto pagas por cada cliente. Guárdalo y haz tu cuenta. Si quieres, escríbeme y la hacemos con tu negocio.
+
+**Caption:**
+Gastaste $10,000 en anuncios y llegaron 10 clientes. ¿Ganaste o perdiste? Depende de un número que casi nadie calcula.
+
+Es la pregunta que más me hacen los dueños de negocio: «¿cuánto debo invertir en pauta?». La respuesta no es un porcentaje de tus ingresos. Sale de cuánto te deja cada cliente.
+
+Mi cuenta, en tres líneas:
+1. Utilidad por cliente: lo que cobras menos lo que cuesta entregarlo.
+2. Tope por cliente: esa utilidad por el porcentaje que decides invertir para conseguirlo.
+3. Presupuesto: tu tope por los clientes que quieres este mes.
+
+Y una pregunta de Avinash Kaushik, de Google, para no engañarte: ¿cuántas de esas ventas habrían pasado sin anuncios?
+
+Todos los números del carrusel son de ejemplo. Guárdalo y haz tu cuenta; si quieres, escríbeme y la hacemos con tu negocio.
+
+#paidmedia #metaads #googleads
+
+---
+
+**Versión 3 (reemplazada por la versión 4).** Misma base de fuentes que la versión 2. Cada lámina cierra con una línea que empuja a la siguiente.
 
 **Láminas:**
 1. (Portada, cifra enorme en lima) El 7.7 % de tus ingresos no es tu presupuesto de pauta. / Desliza: te enseño el número que sí lo es.
