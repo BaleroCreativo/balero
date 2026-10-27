@@ -9,7 +9,36 @@ Tema de la semana: **¿Cuánto debo invertir en pauta?** · Postura: **Cada peso
 ## Lunes 26 oct, hoy · Instagram · Carrusel (Pregunta)
 
 **Láminas (1080×1350, campo rojo quemado, pregunta en lima):**
-**VERSIÓN 2, CON FUENTES (usar esta).** Fuentes: Avinash Kaushik, Digital Marketing Evangelist de Google, «Get a grip on incrementality», Think with Google, 8 ene 2021 (leído completo); Gartner, 2025 CMO Spend Survey, comunicado del 12 may 2025 (cifra tomada de resúmenes de prensa, no pude abrir el comunicado: **[VERIFICAR]**); ayuda de Meta para negocios sobre meta de costo por resultado y meta de ROAS (leí resúmenes, no la página completa: **[VERIFICAR]**).
+**VERSIÓN 3, PARA QUE LA GENTE DESLICE HASTA EL FINAL (usar esta).** Misma base de fuentes que la versión 2. Cada lámina cierra con una línea que empuja a la siguiente.
+
+**Láminas:**
+1. (Portada, cifra enorme en lima) El 7.7 % de tus ingresos no es tu presupuesto de pauta. / Desliza: te enseño el número que sí lo es.
+2. Ese 7.7 % es el promedio de una encuesta de Gartner (2025) a directores de marketing. Casi todas las empresas facturan más de mil millones de dólares. ¿Tu negocio se parece? / Si no, ¿de dónde sale tu número? →
+3. Sale de una sola cosa: lo que te deja un cliente. Línea 1: ¿cuánto te deja de utilidad un cliente nuevo? Lo que queda después de costos, no lo que factura. / Con ese número se hace lo que casi nadie hace →
+4. Línea 2: decide cuánto de esa utilidad pagarías por conseguirlo. Ese es tu tope por cliente. Meta aconseja algo parecido: fijar la meta en el costo por compra que te mantiene rentable. / Falta una multiplicación →
+5. Línea 3: tu tope por cliente por los clientes que quieres este mes es tu presupuesto. Ejemplo con números inventados: te deja $1,000, pagas hasta $400, quieres 10 clientes: $4,000. / Pero hay un error que infla ese número →
+6. Una pregunta de Avinash Kaushik, de Google: ¿cuántas de esas ventas habrían pasado sin anuncios? Ejemplo con números inventados: si 10 de tus 40 clientes habrían llegado igual, tu costo real por cliente es un tercio más alto. / ¿Qué haces con eso? →
+7. Empieza con tu tope y revisa cada mes con ventas reales, no con lo que reporta la plataforma. Si conseguir un cliente ya te cuesta más que tu tope, el problema no es cuánto invertir. Guárdalo para hacer tu cuenta, y si quieres, escríbeme y la hacemos con tu negocio.
+
+**Caption:**
+El 7.7 % de tus ingresos no es tu presupuesto de pauta. Desliza para ver el número que sí.
+
+Es la pregunta que más me hacen los dueños de negocio. La cifra que más circula sale de empresas que en su mayoría facturan más de mil millones de dólares, y no dice cuánto te deja a ti un cliente.
+
+Mi cuenta, en tres líneas:
+1. Cuánto te deja de utilidad un cliente nuevo.
+2. Cuánto de eso pagarías por conseguirlo: tu tope por cliente.
+3. Tu tope, por los clientes que quieres este mes, es tu presupuesto.
+
+Y una pregunta de Avinash Kaushik, de Google, para no engañarte: ¿cuántas de esas ventas habrían pasado sin anuncios?
+
+Guárdalo y escríbeme si quieres que hagamos la cuenta con tu negocio.
+
+#paidmedia #metaads #googleads
+
+---
+
+**Versión 2 (reemplazada por la versión 3).** Fuentes: Avinash Kaushik, Digital Marketing Evangelist de Google, «Get a grip on incrementality», Think with Google, 8 ene 2021 (leído completo); Gartner, 2025 CMO Spend Survey, comunicado del 12 may 2025 (cifra tomada de resúmenes de prensa, no pude abrir el comunicado: **[VERIFICAR]**); ayuda de Meta para negocios sobre meta de costo por resultado y meta de ROAS (leí resúmenes, no la página completa: **[VERIFICAR]**).
 
 **Láminas:**
 1. ¿Cuánto debo invertir en pauta? La respuesta más común es un porcentaje de ventas. Ese no es tu número.
