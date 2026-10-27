@@ -196,28 +196,48 @@ Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de tu 
 
 ---
 
-## Miércoles 28 oct, 9:00 · Instagram · Imagen (Postura)
+## Miércoles 28 oct, 9:00 · Instagram · Imagen (Postura): Meta y la navegación de productos
 
-**Imagen (campo ladrillo, "con margen" sobre resaltador lima):**
-Cada peso en pauta tiene que volver con margen.
+**Imagen:** `assets/posts/semana-1/ig-mie-meta-navegacion.png` (sin numeración). "Meta pone una página suya entre tu anuncio y tu destino." con "una página suya" resaltado en lima.
 
 **Caption:**
-Es la regla con la que reviso cualquier cuenta de anuncios.
+Desde hoy, Meta puede activar la navegación de productos en tus anuncios publicados.
 
-No me importa si el reporte se ve bonito. Me importa si el peso que pusiste en anuncios volvió con margen.
+Qué cambia: en vez de mandar a la persona a tu web, tu formulario o tu WhatsApp, puede quedarse dentro de Instagram o Facebook viendo una ficha de tu producto con sugerencias.
+
+Meta dice que, en promedio, dio 3 % más de conversiones. Ese dato salió de comercio en línea, productos de consumo y retail. Si vendes servicios o cierras por WhatsApp, no habla de tu negocio.
+
+Lo que haría yo: decidir por cuenta, no dejar que decida la plataforma. Si lo dejas activo, compara una semana antes y una semana después, con el costo por venta, no con las conversiones que reporta Meta.
+
+¿Lo vas a dejar activo o lo vas a apagar?
+
+#metaads #paidmedia
+
+> Verificar antes de publicar: fecha, opción de exclusión y dónde se apaga, en el aviso de Meta o en la cuenta publicitaria. Origen: newsletter de Felipe Vergara (no se cita en el post).
 
 ---
 
-## Miércoles 28 oct, 12:30 · LinkedIn · Post con imagen (Postura)
+## Miércoles 28 oct, 12:30 · LinkedIn · Post con imagen (Postura): Meta y la navegación de productos
 
 **Imagen:** la misma de Instagram.
 
 **Texto:**
-Una pauta puede verse muy bien en el reporte y no dejar dinero en caja.
+Meta activa hoy la navegación de productos en los anuncios que ya tienes publicados.
 
-Por eso mi regla es una sola: cada peso en pauta tiene que volver con margen.
+Antes, quien tocaba tu anuncio iba a tu web, a tu formulario o a tu WhatsApp. Ahora puede quedarse dentro de la app, en una ficha de Meta con tu producto y sugerencias.
 
-No es una frase de moda. Es la pregunta que hago antes de recomendar subir, bajar o cortar cualquier campaña.
+Meta reporta un promedio de 3 % más de conversiones. Dos cosas que leería antes de celebrar:
+
+1. Un promedio no es tu cuenta. Ese dato viene de anunciantes de comercio en línea, productos de consumo y retail.
+2. Una conversión no es una venta. Si metes un paso nuevo entre el clic y la compra, tus números se pueden mover y ya no sabrás si fue el anuncio o el cambio.
+
+Cuándo puede ayudar: tienda en línea con catálogo conectado, productos sencillos que se compran sin explicación, o una web lenta en el celular.
+
+Cuándo puede estorbar: servicios, prospectos, cierre por WhatsApp, o una página de venta que es la que convence.
+
+Si lo dejas activo, compara una semana antes y una semana después, con costo por venta.
+
+¿Ya revisaste cómo lo tienes tú?
 
 ---
 
