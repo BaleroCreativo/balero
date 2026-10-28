@@ -306,15 +306,17 @@ Las dejé en este carrusel para que las uses con tu cuenta de anuncios. Guárdal
 Los números son de ejemplo: ponlo en pantalla durante los pasos 2 a 4.
 
 **Caption reel de Instagram (viernes):**
-¿Cuánto debo invertir en pauta? No es un monto: son tres preguntas.
+Cuánto invertir en publicidad en Meta Ads y Google Ads: calcula tu presupuesto de pauta digital en 3 pasos.
 
-1. ¿Cuántas ventas necesitas? Tu meta entre tu ticket.
-2. ¿Cuánto puedes pagar por cada venta? Tu margen menos la utilidad que quieres conservar.
-3. ¿Cuánto debes invertir? Las ventas que necesitas por lo que puedes pagar por cada una.
+1. Calcula las ventas que necesitas: tu meta entre tu ticket promedio.
+2. Calcula cuánto puedes pagar por venta: tu margen menos la utilidad que quieres conservar. Ese es tu costo por venta máximo.
+3. Calcula tu inversión: las ventas que necesitas por tu costo por venta.
 
-Los números del video son de ejemplo; haz el tuyo y compáralo con lo que pagas hoy por venta. Guarda el reel para tenerlo a la mano. Si quieres, escríbeme y lo calculamos con tu negocio.
+Los números del video son de ejemplo. Haz tu cuenta y compárala con lo que pagas hoy por venta.
 
-#paidmedia #metaads #googleads #pautadigital
+Guarda este reel para tenerlo a la mano. Escríbeme por mensaje directo y calculamos el presupuesto de tu negocio.
+
+#pautadigital #metaads #googleads #presupuestopublicidad #marketingdigital
 
 ---
 
