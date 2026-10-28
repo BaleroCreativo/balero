@@ -243,35 +243,46 @@ Lo que haría yo: decidirlo por cuenta, no dejar que lo decida la plataforma. Si
 
 ## Jueves 29 oct, 9:00 · LinkedIn · Carrusel PDF (Editorial)
 
-**Título:** Lo primero que reviso en una cuenta de anuncios
+**Material:** `assets/posts/semana-1/li-jue-carrusel-editorial.pdf` y las láminas `li-jue-carrusel-editorial-1..6.png`. Fondo ladrillo, texto beige, resaltador lima, sin numeración de página.
 
-> Ajustar al método real de Daniela. Lo siguiente es una propuesta.
-
-1. Lo primero que reviso en una cuenta de anuncios.
-2. ¿Qué objetivo de negocio persigue cada campaña? Si no hay uno, no hay forma de saber si funciona.
-3. ¿Qué se mide como resultado y de dónde sale ese número? No todo lo que la plataforma llama "conversión" es una venta.
-4. ¿Cuánto cuesta conseguir un cliente y cuánto deja? Es la cuenta que decide el presupuesto.
-5. Con esas tres respuestas, ya sé si hay que subir, ajustar o cortar.
-6. Si quieres que lo revisemos con tu cuenta, escríbeme.
+**Láminas:**
+1. Antes de tocar una campaña, hago tres preguntas.
+2. Pregunta 1: ¿Qué objetivo de negocio persigue esta campaña? Si no hay uno, no hay forma de saber si funciona.
+3. Pregunta 2: ¿Qué cuento como resultado y de dónde sale ese número? No todo lo que la plataforma llama conversión es una venta.
+4. Pregunta 3: ¿Cuánto pago por cada venta y cuál es mi tope? Mi tope es lo que queda de mi margen después de la utilidad que quiero conservar.
+5. Con las tres respuestas: ya sé si hay que subir, ajustar o cortar.
+6. Tu turno: ¿Cuál de las tres no puedes responder hoy? Si quieres que revisemos tu cuenta, escríbeme.
 
 **Texto del post:**
-Antes de tocar una campaña, reviso tres cosas. Las dejé en este carrusel. ¿Cuál de las tres no sabes responder hoy?
+Antes de tocar una campaña, hago tres preguntas:
+
+1. ¿Qué objetivo de negocio persigue?
+2. ¿Qué cuento como resultado y de dónde sale ese número?
+3. ¿Cuánto pago por cada venta y cuál es mi tope?
+
+Con las tres respuestas ya sé si hay que subir, ajustar o cortar. Las dejé en este carrusel.
+
+¿Cuál de las tres no puedes responder hoy?
+
+> Confirmar que las tres preguntas coinciden con cómo Daniela revisa una cuenta.
 
 ---
 
 ## Jueves 29 oct, 19:00 · TikTok · y Viernes 30 oct, 11:00 · Instagram (reel) · Video de 30 a 45 segundos
 
-**Guion hablado (para grabar a cámara, sin edición pesada, con subtítulos):**
-
-> "¿Cuánto debo invertir en pauta? Es la pregunta que más me hacen.
-> Y mi respuesta no es un número. Depende de tu margen, no de lo que gasta tu competencia.
-> Haz esta cuenta: cuánto inviertes entre los clientes nuevos que compraron. Eso es lo que te cuesta cada cliente. Ahora réstalo de lo que te deja ese cliente.
-> Si no queda nada, el problema no es el presupuesto. Es lo que estás pagando por cada cliente.
-> Si quieres que lo revisemos con tu cuenta, escríbeme."
-
 **Texto en pantalla (primeros 3 segundos):** ¿Cuánto debo invertir en pauta?
 
-**Caption:** Depende de tu margen, no de lo que gasta tu competencia. Haz la cuenta antes de invertir más. #paidmedia #metaads #googleads
+**Guion hablado:**
+> ¿Cuánto debo invertir en pauta? Es la pregunta que más me hacen, y mi respuesta no es un monto. Son tres preguntas.
+> Uno: ¿cuántas ventas necesitas? Tu meta entre tu ticket. Un ejemplo: meta de 100 mil pesos, ticket de 500. Son 200 ventas.
+> Dos: ¿cuánto puedes pagar por cada venta? Tu margen menos la utilidad que quieres conservar. Con 35 % de margen y 15 % de utilidad, inviertes 20 %: 100 pesos por venta.
+> Tres: ¿cuánto debes invertir? 200 ventas por 100 pesos: 20 mil.
+> Y ahora compáralo con lo que pagas hoy por venta. Si ya pagas más, el problema no es el presupuesto.
+> Guarda el video y haz tu cuenta.
+
+**Caption TikTok:** Tres preguntas para saber cuánto invertir en pauta. Los números son de ejemplo; haz el tuyo. #paidmedia #metaads #googleads
+
+**Caption reel de Instagram (viernes):** Tres preguntas para saber cuánto invertir en pauta. Los números son de ejemplo; haz el tuyo. Si quieres, escríbeme y lo calculamos juntos. #paidmedia #metaads #googleads
 
 ---
 
