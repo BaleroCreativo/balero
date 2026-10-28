@@ -222,22 +222,22 @@ Lo que haría yo: decidir por cuenta, no dejar que decida la plataforma. Si lo d
 **Imagen:** la misma de Instagram.
 
 **Texto:**
-Meta activa hoy la navegación de productos en los anuncios que ya tienes publicados.
+Hoy Meta puede poner una página suya entre tu anuncio y tu venta.
 
-Antes, quien tocaba tu anuncio iba a tu web, a tu formulario o a tu WhatsApp. Ahora puede quedarse dentro de la app, en una ficha de Meta con tu producto y sugerencias.
+Se llama navegación de productos. En los anuncios que ya tienes publicados, quien los toca puede quedarse dentro de la app viendo una ficha de tu producto con sugerencias, en lugar de ir a tu web, tu formulario o tu WhatsApp.
 
-Meta reporta un promedio de 3 % más de conversiones. Dos cosas que leería antes de celebrar:
+Meta reporta 3 % más de conversiones en promedio. Antes de celebrar, dos matices:
 
-1. Un promedio no es tu cuenta. Ese dato viene de anunciantes de comercio en línea, productos de consumo y retail.
-2. Una conversión no es una venta. Si metes un paso nuevo entre el clic y la compra, tus números se pueden mover y ya no sabrás si fue el anuncio o el cambio.
+1. Es un promedio de anunciantes de comercio en línea, productos de consumo y retail. No es tu cuenta.
+2. Una conversión no es una venta. Con un paso nuevo entre el clic y la compra, no vas a saber si cambió el anuncio o cambió el recorrido.
 
-Cuándo puede ayudar: tienda en línea con catálogo conectado, productos sencillos que se compran sin explicación, o una web lenta en el celular.
+Puede ayudarte si tienes tienda en línea con catálogo conectado, vendes productos que se compran sin explicación o tu web carga lento en el celular.
 
-Cuándo puede estorbar: servicios, prospectos, cierre por WhatsApp, o una página de venta que es la que convence.
+Puede estorbarte si vendes servicios, captas prospectos, cierras por WhatsApp o tu página es la que convence.
 
-Si lo dejas activo, compara una semana antes y una semana después, con costo por venta.
+Lo que haría yo: decidirlo por cuenta, no dejar que lo decida la plataforma. Si lo dejas activo, compara una semana antes y una semana después, con el costo por venta y no con las conversiones que reporta Meta.
 
-¿Ya revisaste cómo lo tienes tú?
+¿Lo vas a dejar activo o lo vas a apagar?
 
 ---
 
