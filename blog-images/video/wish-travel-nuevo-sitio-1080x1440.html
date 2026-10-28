@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Nuevo sitio web – Wish Travel</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Instrument+Serif:ital@1&family=Source+Sans+3:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--y:#FFD23F;--i:#665FE9;--k:#111;--w:#fff}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1080px;height:1440px;background:var(--y);overflow:hidden}
+#stage{position:relative;width:1080px;height:1440px;background:var(--y);overflow:hidden}
+#cam{position:absolute;inset:0;transform-origin:50% 55%}
+h1{position:absolute;left:86px;top:170px;font:800 112px/1.0 'Poppins',sans-serif;color:var(--k);text-transform:uppercase;letter-spacing:-.02em}
+h1 .ln{display:block;white-space:nowrap}
+h1 .w{display:inline-block;margin-right:.22em;will-change:transform,opacity}
+.mk{position:absolute;left:86px;top:430px;transform:rotate(-1.5deg);transform-origin:left center}
+.mk .bar{display:block;background:var(--i);padding:6px 38px 18px;border-radius:6px;transform-origin:left center;will-change:transform}
+.mk span{display:block;font:italic 400 104px/1.05 'Instrument Serif',serif;color:var(--w);letter-spacing:-.01em;white-space:nowrap;will-change:clip-path}
+#lap{position:absolute;left:140px;top:640px;width:800px;transform-origin:50% 100%;will-change:transform}
+.lid{position:relative;width:800px;height:500px;background:var(--k);border-radius:26px 26px 6px 6px;padding:22px;box-shadow:0 2px 0 #2a2a2a inset}
+.scr{position:relative;width:100%;height:100%;border-radius:10px;overflow:hidden;background:#fff}
+.scr img{width:100%;height:100%;object-fit:cover;display:block}
+#glow{position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.75) 50%,transparent 70%);transform:translateX(-120%);mix-blend-mode:screen}
+.base{width:920px;height:22px;margin-left:-60px;background:linear-gradient(#d9d9de,#b9b9c0);border-radius:0 0 26px 26px;position:relative}
+.base::before{content:"";position:absolute;left:50%;top:0;width:150px;height:8px;margin-left:-75px;background:#9c9ca4;border-radius:0 0 10px 10px}
+#sh{position:absolute;left:100px;top:1138px;width:880px;height:60px;background:radial-gradient(closest-side,rgba(17,17,17,.38),transparent);filter:blur(10px)}
+#arr{position:absolute;left:86px;top:1234px;display:flex;align-items:center;gap:20px;font:700 44px/1 'Source Sans 3',sans-serif;color:var(--k);transform-origin:left center}
+#arr svg{width:92px;height:44px}
+/* placeholder web mockup */
+.ph{position:absolute;inset:0;display:flex;flex-direction:column;font-family:'Source Sans 3',sans-serif;background:#fff}
+.ph .nav{height:52px;display:flex;align-items:center;gap:22px;padding:0 24px;background:#fff;border-bottom:2px solid #eee}
+.ph .nav b{font:800 20px 'Poppins';color:#111;margin-right:auto}.ph .nav i{width:60px;height:8px;border-radius:4px;background:#ddd}
+.ph .hero{flex:1;background:linear-gradient(135deg,#665FE9,#8d86f5);display:flex;flex-direction:column;justify-content:center;padding:0 40px;gap:14px}
+.ph .hero p{font:800 46px/1.05 'Poppins';color:#fff;text-transform:uppercase}.ph .hero u{width:190px;height:44px;border-radius:22px;background:#FFD23F}
+.ph .row{height:120px;display:flex;gap:16px;padding:16px 24px;background:#fff}.ph .row div{flex:1;background:#f1f0fd;border-radius:12px}
+</style></head><body>
+<div id="stage"><div id="cam">
+  <h1><span class="ln"><span class="w">Nuevo</span><span class="w">sitio</span></span><span class="ln"><span class="w">web</span></span></h1>
+  <div class="mk"><span class="bar" id="bar"><span id="wt">Wish Travel</span></span></div>
+  <div id="sh"></div>
+  <div id="lap"><div class="lid"><div class="scr">
+    <!-- Sustituye por la captura real: <img src="wish-travel.png"> -->
+    <div class="ph"><div class="nav"><b>WISH TRAVEL</b><i></i><i></i><i></i></div><div class="hero"><p>Tu próximo<br>destino</p><u></u></div><div class="row"><div></div><div></div><div></div></div></div>
+    <div id="glow"></div></div></div><div class="base"></div></div>
+  <div id="arr"><span>Desliza</span><svg viewBox="0 0 92 44" fill="none" stroke="#111" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22h78M62 6l22 16-22 16"/></svg></div>
+</div></div>
+<script>
+const $=s=>document.querySelector(s),W=[...document.querySelectorAll('.w')];
+const cl=(x,a=0,b=1)=>Math.min(b,Math.max(a,x));
+const eo=x=>1-Math.pow(1-cl(x),3);              // ease-out suave
+const seg=(t,a,d)=>eo((t-a)/d);
+function render(t){
+  W.forEach((w,i)=>{const p=seg(t,.25+i*.18,.55);w.style.opacity=p;w.style.transform=`translateY(${(1-p)*90}px)`});
+  const b=seg(t,1.05,.6);$('#bar').style.transform=`scaleX(${b})`;
+  $('#wt').style.clipPath=`inset(0 ${(1-seg(t,1.25,.55))*100}% 0 0)`;
+  const l=seg(t,1.4,.7);$('#lap').style.transform=`translateY(${(1-l)*820}px) rotate(${8*l}deg)`;
+  $('#sh').style.opacity=l*.9;$('#sh').style.transform=`translateY(${(1-l)*820}px)`;
+  const g=cl((t-2.35)/.6);$('#glow').style.transform=`translateX(${-120+g*240}%)`;
+  const pu=n=>t>=3.5+n*.55&&t<3.5+(n+1)*.55?Math.sin((t-3.5-n*.55)/.55*Math.PI):0;
+  const pulse=pu(0)+pu(1), a=seg(t,3.2,.4);
+  $('#arr').style.opacity=a;$('#arr').style.transform=`translateX(${(1-a)*-30+pulse*18}px) scale(${1+pulse*.06})`;
+  $('#cam').style.transform=`scale(${1+.04*cl(t/4.6)})`;   // 1.00 → 1.04
+  $('#stage').style.opacity=1-seg(t,4.62,.38)*0;           // fade handled below
+  const f=cl((t-4.6)/.4);document.querySelectorAll('#cam>*').forEach(e=>e.style.filter=f?`opacity(${1-f})`:'');
+}
+render(0);window.render=render;
+if(!window.__capture){const t0=performance.now();(function L(){render(((performance.now()-t0)/1000)%5);requestAnimationFrame(L)})()}
+</script></body></html>
