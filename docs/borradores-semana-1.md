@@ -295,7 +295,26 @@ Las dejé en este carrusel para que las uses con tu cuenta de anuncios. Guárdal
 
 **Caption TikTok:** Tres preguntas para saber cuánto invertir en pauta. Los números son de ejemplo; haz el tuyo. #paidmedia #metaads #googleads
 
-**Caption reel de Instagram (viernes):** Tres preguntas para saber cuánto invertir en pauta. Los números son de ejemplo; haz el tuyo. Si quieres, escríbeme y lo calculamos juntos. #paidmedia #metaads #googleads
+**Portada del reel (viernes 30):** `assets/posts/semana-1/ig-vie-reel-portada.png`, formato 1080×1920, fondo burnt, "¿Cuánto debo invertir en pauta?" con "invertir" resaltado. El texto queda dentro del recuadro central que se ve en la cuadrícula del perfil.
+
+**Texto en pantalla, por momento del video:**
+1. 0–3 s: ¿Cuánto debo invertir en pauta?
+2. Uno: Ventas necesarias = meta ÷ ticket. $100,000 ÷ $500 = 200 ventas.
+3. Dos: Lo que puedes pagar por venta = margen − utilidad que quieres conservar. 35 % − 15 % = 20 %. $500 × 20 % = $100.
+4. Tres: Inversión = ventas × costo por venta. 200 × $100 = $20,000.
+5. Cierre: Compáralo con lo que pagas hoy por venta. Guarda el video y haz tu cuenta.
+Los números son de ejemplo: ponlo en pantalla durante los pasos 2 a 4.
+
+**Caption reel de Instagram (viernes):**
+¿Cuánto debo invertir en pauta? No es un monto: son tres preguntas.
+
+1. ¿Cuántas ventas necesitas? Tu meta entre tu ticket.
+2. ¿Cuánto puedes pagar por cada venta? Tu margen menos la utilidad que quieres conservar.
+3. ¿Cuánto debes invertir? Las ventas que necesitas por lo que puedes pagar por cada una.
+
+Los números del video son de ejemplo; haz el tuyo y compáralo con lo que pagas hoy por venta. Guarda el reel para tenerlo a la mano. Si quieres, escríbeme y lo calculamos con tu negocio.
+
+#paidmedia #metaads #googleads #pautadigital
 
 ---
 
