@@ -198,7 +198,7 @@ Y una prueba: compáralo con lo que pagas hoy por venta. Si ya pagas más de tu 
 
 ## Miércoles 28 oct, 9:00 · Instagram · Imagen (Postura): Meta y la navegación de productos
 
-**Imagen:** `assets/posts/semana-1/ig-mie-meta-navegacion.png` (sin numeración). "Meta pone una página suya entre tu anuncio y tu destino." con "una página suya" resaltado en lima.
+**Imagen:** `assets/posts/semana-1/ig-mie-meta-navegacion.png` (sin numeración). Fondo beige claro y texto rojo quemado. "Meta pone una página suya entre tu anuncio y tu destino." con "una página suya" resaltado en lima.
 
 **Caption:**
 Desde hoy, Meta puede activar la navegación de productos en tus anuncios publicados.
