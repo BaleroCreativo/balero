@@ -308,13 +308,22 @@ Los números son de ejemplo: ponlo en pantalla durante los pasos 2 a 4.
 **Caption reel de Instagram (viernes):**
 Cuánto invertir en publicidad en Meta Ads y Google Ads: calcula tu presupuesto de pauta digital en 3 pasos.
 
-1. Calcula las ventas que necesitas: tu meta entre tu ticket promedio.
-2. Calcula cuánto puedes pagar por venta: tu margen menos la utilidad que quieres conservar. Ese es tu costo por venta máximo.
-3. Calcula tu inversión: las ventas que necesitas por tu costo por venta.
+Es la pregunta que más me hacen y mi respuesta no es un monto. Tu presupuesto sale de tu meta de ventas y de lo que te deja cada venta, no de lo que gasta tu competencia.
 
-Los números del video son de ejemplo. Haz tu cuenta y compárala con lo que pagas hoy por venta.
+1. Calcula las ventas que necesitas.
+Tu meta de ingresos entre tu ticket promedio. Ejemplo: $100,000 entre $500 son 200 ventas.
 
-Guarda este reel para tenerlo a la mano. Escríbeme por mensaje directo y calculamos el presupuesto de tu negocio.
+2. Calcula cuánto puedes pagar por cada venta.
+Tu margen menos la utilidad que quieres conservar. Ejemplo: 35 % de margen menos 15 % de utilidad te deja 20 %, y 20 % de $500 son $100 por venta. Ese es tu costo por venta máximo.
+
+3. Calcula tu inversión en publicidad.
+Las ventas que necesitas por tu costo por venta máximo. Ejemplo: 200 ventas por $100 son $20,000.
+
+Los números son de ejemplo. Usa los de tu negocio y compara el resultado con lo que pagas hoy por cada venta. Si ya pagas más, el problema no es el presupuesto: es el costo por venta.
+
+Sirve igual para anuncios en Instagram y Facebook que para campañas en Google.
+
+Guarda este reel para hacer tu cuenta con calma. Si quieres que la hagamos con tu negocio, escríbeme por mensaje directo.
 
 #pautadigital #metaads #googleads #presupuestopublicidad #marketingdigital
 
