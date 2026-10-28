@@ -253,16 +253,29 @@ Lo que haría yo: decidirlo por cuenta, no dejar que lo decida la plataforma. Si
 5. Con las tres respuestas: ya sé si hay que subir, ajustar o cortar.
 6. Tu turno: ¿Cuál de las tres no puedes responder hoy? Si quieres que revisemos tu cuenta, escríbeme.
 
+**Título del documento (LinkedIn):** 3 preguntas antes de tocar una campaña de pauta digital
+
 **Texto del post:**
-Antes de tocar una campaña, hago tres preguntas:
+Antes de tocar una campaña de pauta digital, hago tres preguntas. Si no puedo responderlas, no hay presupuesto que alcance.
 
-1. ¿Qué objetivo de negocio persigue?
+Las uso igual en Meta Ads que en Google Ads, en una cuenta nueva o en una que lleva años corriendo.
+
+1. ¿Qué objetivo de negocio persigue esta campaña?
+Ventas, cotizaciones, citas. Si no hay uno definido, no hay forma de saber si la campaña funciona.
+
 2. ¿Qué cuento como resultado y de dónde sale ese número?
+No todo lo que la plataforma llama conversión es una venta. Un clic en WhatsApp, un formulario o una vista de página cuentan como conversión para el anuncio, pero no necesariamente son ingresos para tu negocio. Compara el reporte con tus ventas reales.
+
 3. ¿Cuánto puedo pagar por cada venta sin perder dinero?
+Es lo que te deja cada venta, menos la utilidad que quieres conservar. Ese es tu costo por venta máximo. Si hoy pagas más, el problema no es el presupuesto.
 
-Con las tres respuestas ya sé si hay que subir, ajustar o cortar. Las dejé en este carrusel.
+Con las tres respuestas ya sé si hay que subir la inversión, ajustar la campaña o cortarla.
 
-¿Cuál de las tres no puedes responder hoy?
+Las dejé en este carrusel para que las uses con tu cuenta de anuncios. Guárdalo.
+
+¿Cuál de las tres no puedes responder hoy? Cuéntamelo en comentarios, o escríbeme si quieres que revisemos tu cuenta.
+
+#PautaDigital #MetaAds #GoogleAds #MarketingDigital #CostoPorVenta
 
 > Confirmar que las tres preguntas coinciden con cómo Daniela revisa una cuenta.
 
