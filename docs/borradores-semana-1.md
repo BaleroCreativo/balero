@@ -249,7 +249,7 @@ Lo que haría yo: decidirlo por cuenta, no dejar que lo decida la plataforma. Si
 1. Antes de tocar una campaña, hago tres preguntas.
 2. Pregunta 1: ¿Qué objetivo de negocio persigue esta campaña? Si no hay uno, no hay forma de saber si funciona.
 3. Pregunta 2: ¿Qué cuento como resultado y de dónde sale ese número? No todo lo que la plataforma llama conversión es una venta.
-4. Pregunta 3: ¿Cuánto pago por cada venta y cuál es mi tope? Mi tope es lo que queda de mi margen después de la utilidad que quiero conservar.
+4. Pregunta 3: ¿Cuánto puedo pagar por cada venta sin perder dinero? Es lo que te deja cada venta, menos la utilidad que quieres conservar.
 5. Con las tres respuestas: ya sé si hay que subir, ajustar o cortar.
 6. Tu turno: ¿Cuál de las tres no puedes responder hoy? Si quieres que revisemos tu cuenta, escríbeme.
 
@@ -258,7 +258,7 @@ Antes de tocar una campaña, hago tres preguntas:
 
 1. ¿Qué objetivo de negocio persigue?
 2. ¿Qué cuento como resultado y de dónde sale ese número?
-3. ¿Cuánto pago por cada venta y cuál es mi tope?
+3. ¿Cuánto puedo pagar por cada venta sin perder dinero?
 
 Con las tres respuestas ya sé si hay que subir, ajustar o cortar. Las dejé en este carrusel.
 
