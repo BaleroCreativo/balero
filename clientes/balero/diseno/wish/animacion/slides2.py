@@ -11,7 +11,7 @@ def dots(i): return '<div class="dots">'+''.join('<i class="on"></i>' if k==i el
 CSS=f"""
 .bg-y{{background:url('file://{D}/bg-yellow.png') center/cover!important}}
 .bg-l{{background:url('file://{D}/bg-lila.png') center/cover!important}}
-.bg-l .bw,.bg-l .phone{{box-shadow:0 30px 60px rgba(50,30,140,.30)}}
+.bg-l .bw{{box-shadow:0 26px 54px rgba(60,40,160,.28),0 0 0 2px rgba(102,95,233,.18)}} .bg-l .phone{{box-shadow:0 26px 54px rgba(60,40,160,.30)}}
 .bg-l .dots i{{background:rgba(102,95,233,.35)}} .bg-l .dots i.on{{background:#665FE9}}
 .bg-k{{background:url('file://{D}/bg-black.png') center/cover!important;color:#fff}}
 .bg-k .foot,.bg-k .layer{{color:#fff}} .bg-k .logo{{filter:invert(1)}} .bg-k .dots i{{background:#3a3848}} .bg-k .dots i.on{{background:#FFD23F}}
