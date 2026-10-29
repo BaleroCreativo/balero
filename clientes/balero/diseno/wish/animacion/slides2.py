@@ -10,6 +10,9 @@ MARK=lambda txt,bg='#665FE9',col='#fff':f"<span style=\"font-family:Instrument S
 def dots(i): return '<div class="dots">'+''.join('<i class="on"></i>' if k==i else '<i></i>' for k in range(NS))+'</div>'
 CSS=f"""
 .bg-y{{background:url('file://{D}/bg-yellow.png') center/cover!important}}
+.bg-l{{background:url('file://{D}/bg-lila.png') center/cover!important}}
+.bg-l .bw,.bg-l .phone{{box-shadow:0 30px 60px rgba(50,30,140,.30)}}
+.bg-l .dots i{{background:rgba(102,95,233,.35)}} .bg-l .dots i.on{{background:#665FE9}}
 .bg-k{{background:url('file://{D}/bg-black.png') center/cover!important;color:#fff}}
 .bg-k .foot,.bg-k .layer{{color:#fff}} .bg-k .logo{{filter:invert(1)}} .bg-k .dots i{{background:#3a3848}} .bg-k .dots i.on{{background:#FFD23F}}
 .bw{{position:absolute;left:86px;top:566px;width:908px;height:626px;border-radius:22px;background:#f3f3f6;box-shadow:0 30px 60px rgba(90,50,0,.30),0 0 0 2px rgba(255,255,255,.5) inset;overflow:hidden;z-index:2}}
@@ -47,7 +50,7 @@ def labjs(t,labs):
     return f"if({op}>0)$('lab').textContent={txt!r};$('lab').style.opacity={op};$('lab').style.transform='translateY({16*(1-op)}px)';"
 SC={}
 # --- 2: menu y buscador
-SC['s2']=dict(dur=5.6,html=html(tx('t1',200,64,'La home de Wish Travel:','l')+tx('t2',288,88,'MENÚ Y BUSCADOR')+tx('t4',392,112,MARK('a la vista'))+browser('hero2x.png')+PILL,idx=1))
+SC['s2']=dict(dur=5.6,html=html(tx('t1',200,64,'La home de Wish Travel:','l')+tx('t2',288,88,'MENÚ Y BUSCADOR')+tx('t4',392,112,MARK('a la vista'))+browser('hero2x.png')+PILL,cls='bg-l',idx=1))
 def js2(t):
     e=eo(seg(t,0,0.8)); s=f"$('bw').style.translate='0 {120*(1-e)}px';$('bw').style.opacity={cl(e*1.6)};"
     s+=rise(t,[('t1',0.2),('t2',0.4),('t4',0.6)])
@@ -63,7 +66,7 @@ def js2(t):
     r=seg(t,4.6,5.2); s+=f"$('rip').style.opacity={(1-r) if 0<r<1 else 0};$('rip').style.left='{px-26}px';$('rip').style.top='{py-26}px';$('rip').style.transform='scale({0.4+1.6*r})';"
     return s+labjs(t,[(1.2,2.7,'Menú'),(3.3,5.5,'Buscador')])
 # --- 3: destino (italia)
-SC['s3']=dict(dur=5.8,html=html(tx('t1',200,64,'Cada destino,','l')+tx('t2',288,88,'SU PROPIA PÁGINA')+tx('t4',392,112,MARK('De Roma a Sicilia'))+browser('italia-comp2.png')+PILL,idx=2))
+SC['s3']=dict(dur=5.8,html=html(tx('t1',200,64,'Cada destino,','l')+tx('t2',288,88,'SU PROPIA PÁGINA')+tx('t4',392,112,MARK('De Roma a Sicilia'))+browser('italia-comp2.png')+PILL,cls='bg-l',idx=2))
 def js3(t):
     e=eo(seg(t,0,0.8)); s=f"$('bw').style.translate='0 {120*(1-e)}px';$('bw').style.opacity={cl(e*1.6)};"
     s+=rise(t,[('t1',0.2),('t2',0.4),('t4',0.6)])
@@ -76,7 +79,7 @@ def js3(t):
 STEPS=[('Inicio',640),('Por qué elegir',730),('Destinos',820)]
 steps_html=''.join(f'<div class="step" id="st{k}" style="top:{y}px">{n}</div>' for k,(n,y) in enumerate(STEPS))
 phone=f'<div class="phone" id="ph"><div class="nt"></div><div class="sc"><div class="in" id="in"><img src="file://{R}/mob-comp.png"></div></div></div>'
-SC['s4']=dict(dur=5.6,html=html(tx('t1',200,64,'También en celular:','l')+tx('t2',288,88,'VERSIÓN MÓVIL')+tx('t4',392,112,MARK('se adapta'))+steps_html+phone,idx=3))
+SC['s4']=dict(dur=5.6,html=html(tx('t1',200,64,'También en celular:','l')+tx('t2',288,88,'VERSIÓN MÓVIL')+tx('t4',392,112,MARK('se adapta'))+steps_html+phone,cls='bg-l',idx=3))
 def js4(t):
     e=eo(seg(t,0,0.8)); s=f"$('ph').style.translate='0 {160*(1-e)}px';$('ph').style.opacity={cl(e*1.6)};"
     s+=rise(t,[('t1',0.2),('t2',0.4),('t4',0.6)])
@@ -93,7 +96,7 @@ def js4(t):
 # --- 5: lo que incluye
 rows=[('1','Buscador por destino<br>y tipo de viaje',620),('2','Una página por destino,<br>con itinerario día a día',850),('3','Contacto directo por<br>WhatsApp o videollamada',1080)]
 rows_html=''.join(f'<div class="row" id="r{k}" style="top:{y}px"><b>{n}</b><span>{t}</span></div>' for k,(n,t,y) in enumerate(rows))
-SC['s5']=dict(dur=5.0,html=html(tx('t1',200,64,'Lo que incluye','l')+tx('t2',288,88,'EL SITIO DE WISH')+tx('t4',392,112,MARK('en pocas palabras'))+rows_html,idx=4))
+SC['s5']=dict(dur=5.0,html=html(tx('t1',200,64,'Lo que incluye','l')+tx('t2',288,88,'EL SITIO DE WISH')+tx('t4',392,112,MARK('en pocas palabras'))+rows_html,cls='bg-l',idx=4))
 def js5(t):
     s=rise(t,[('t1',0.2),('t2',0.4),('t4',0.6)])
     for k in range(3):
