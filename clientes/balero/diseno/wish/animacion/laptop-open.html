@@ -117,7 +117,7 @@ html,body{width:1080px;height:1440px}
 
 
 .scene{position:absolute;left:0;top:0;width:1080px;height:1440px;perspective:2400px;perspective-origin:50% 30%}
-.laptop{position:absolute;left:540px;top:1040px;width:0;height:0;transform-style:preserve-3d;transform:scale(.92) rotateX(var(--tilt,-24deg))}
+.laptop{position:absolute;left:540px;top:1030px;width:0;height:0;transform-style:preserve-3d;transform:scale(.92) rotateX(var(--tilt,-24deg))}
 .deck{position:absolute;left:-470px;top:-190px;width:940px;height:380px;transform:rotateX(90deg);background:linear-gradient(#d9dadf,#c3c5cc);border-radius:18px;box-shadow:0 0 0 2px #b9bbc2 inset}
 .pad{position:absolute;left:340px;top:268px;width:260px;height:82px;border-radius:12px;background:#cfd0d6;box-shadow:0 0 0 2px #b4b6bd inset}
 .keys{position:absolute;left:60px;top:28px;width:820px;height:215px;border-radius:10px;background:repeating-linear-gradient(90deg,#b9bbc2 0 2px,transparent 2px 54px),repeating-linear-gradient(0deg,#b9bbc2 0 2px,transparent 2px 60px);opacity:.55}
@@ -131,12 +131,31 @@ html,body{width:1080px;height:1440px}
 .glow{position:absolute;inset:0;background:#fff;opacity:var(--glow,0);mix-blend-mode:screen}
 .shadow{position:absolute;left:170px;top:1215px;width:780px;height:70px;border-radius:50%;background:rgba(40,30,120,.35);filter:blur(26px);opacity:var(--sh,.8)}
 .t{position:absolute;left:86px;white-space:nowrap}
-.scene{z-index:1}.shadow{z-index:0}</style></head><body><div class="slide" style="--mx:86px;--my:86px;background:#FFD23F">
+.scene{z-index:1}.shadow{z-index:0}
+.deck{background:linear-gradient(180deg,#8a8c93 0%,#767880 55%,#6a6c73 100%)!important;border-radius:20px!important;box-shadow:0 0 0 1.5px #9b9da4 inset,0 -2px 0 #55575d inset!important;overflow:hidden}
+.deck::before{content:'';position:absolute;left:0;right:0;top:0;height:16px;background:linear-gradient(#17171b,#2b2c31)}
+.deck::after{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 12%,rgba(150,130,255,var(--emit,0)) 0%,rgba(255,120,200,calc(var(--emit,0)*.4)) 38%,transparent 70%);mix-blend-mode:screen}
+.well{position:absolute;left:52px;top:34px;width:836px;height:208px;border-radius:12px;background:#0f0f12;box-shadow:0 0 0 2px #5b5d63}
+.kr{position:absolute;left:10px;right:10px;height:30px;display:flex;gap:6px}
+.kr i{flex:1;border-radius:5px;background:linear-gradient(#25262b,#17181c);box-shadow:0 1px 0 #3a3b41 inset}
+.kr.fn{height:16px} .kr.fn i{border-radius:4px;background:linear-gradient(#202126,#15161a)}
+.pad{background:linear-gradient(#85878e,#7a7c83)!important;box-shadow:0 0 0 2px #5f6167 inset,0 1px 0 #9fa1a8!important;left:300px!important;width:340px!important;top:262px!important;height:100px!important;border-radius:10px!important}
+.edgeF{position:absolute;left:-470px;top:0;width:940px;height:20px;transform:translateZ(190px);background:linear-gradient(#9a9ca3,#5d5f65);border-radius:0 0 18px 18px}
+.edgeF::after{content:'';position:absolute;left:50%;top:0;width:130px;height:8px;margin-left:-65px;border-radius:0 0 8px 8px;background:#4a4c52}
+.edgeL,.edgeR{position:absolute;top:0;width:380px;height:20px;background:linear-gradient(#8d8f96,#585a60)}
+.edgeL{left:-470px;transform-origin:0 0;transform:rotateY(-90deg) translateX(-0px)}
+.edgeR{left:470px;transform-origin:0 0;transform:rotateY(-90deg)}
+.face.front{background:#0b0b0d!important;border-radius:16px 16px 6px 6px!important;box-shadow:0 0 0 3px #8c8e95,0 0 0 4px #5a5c62}
+.screen{border-radius:4px!important}
+.cam{position:absolute;left:50%;top:-12px;width:7px;height:7px;margin-left:-3px;border-radius:50%;background:#26272d}
+.face.back{background:linear-gradient(135deg,#8b8d94,#74767d)!important}
+.face.back i{border-color:#a8aab1!important}
+.screen::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg,rgba(255,255,255,.10) 0%,transparent 35%,transparent 70%,rgba(255,255,255,.05) 100%);pointer-events:none}
+</style></head><body><div class="slide" style="--mx:86px;--my:86px;background:#FFD23F">
 <img class="logo" src="file:///home/user/balero/.claude/skills/balero-imagenes/assets/logo-balero.png"><div class="dots"><i class="on"></i></div>
 <div class="layer l" id="t1" style="left:86px;top:200px;font-size:64px;">Así se ve el sitio de</div>
 <div class="layer" id="t2" style="left:86px;top:288px;font-size:120px;line-height:1;"><span style="font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;background:#665FE9;color:#fff;padding:0 .14em;display:inline-block;transform:rotate(-1.5deg)">Wish Travel</span></div>
 <div class="shadow"></div>
-<div class="scene"><div class="laptop" id="lp"><div class="deck"><div class="keys"></div><div class="pad"></div></div>
-<div class="lid" id="lid"><div class="face front"><div class="screen"><img id="site" src="file:///tmp/claude-0/-home-user-balero/0dfc59f6-e69c-50c8-8e37-f37524f18834/scratchpad/wish/site-comp.png"><div class="glow" id="glow"></div></div></div><div class="face back"><i></i></div></div></div></div>
+<div class="scene"><div class="laptop" id="lp"><div class="deck"><div class="well"><div class="kr fn" style="top:10px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="kr" style="top:32px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="kr" style="top:66px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="kr" style="top:100px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="kr" style="top:134px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="kr" style="top:168px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div><div class="pad"></div></div><div class="edgeF"></div><div class="lid" id="lid"><div class="face front"><div class="cam"></div><div class="screen"><img id="site" src="file:///tmp/claude-0/-home-user-balero/0dfc59f6-e69c-50c8-8e37-f37524f18834/scratchpad/wish/site-comp.png"><div class="glow" id="glow"></div></div></div><div class="face back"><i></i></div></div></div></div>
 <div class="layer l" id="t3" style="left:86px;top:1236px;font-size:32px;z-index:3">DESLIZA →</div>
 <div class="foot">Balero Creativo</div></div></body></html>

@@ -18,12 +18,13 @@ with sync_playwright() as p:
         a=-90+94*eob(eio(seg(t,0.6,2.0))) if t>0.6 else -90
         a=min(a,6)
         glow=0.95*(1-eio(seg(t,1.3,2.0))) if t>1.1 else 0
-        tilt=-24+9*eio(seg(t,2.0,3.0))
+        tilt=-24+11*eio(seg(t,2.0,3.0))
         sy=-2300*eio(seg(t,2.6,5.6))
+        emit=0.55*eio(seg(t,1.3,2.4))
         t1=eo(seg(t,0.25,0.8));t2=eo(seg(t,0.45,1.1));t3=eo(seg(t,4.6,5.1))
         pulse=0 if t<5.1 else 10*math.sin((t-5.1)*2*math.pi*1.2)**2
         js=f"""()=>{{const $=i=>document.getElementById(i);
-        $('lid').style.setProperty('--a','{a}deg');$('lp').style.setProperty('--tilt','{tilt}deg');
+        $('lid').style.setProperty('--a','{a}deg');document.querySelector('.deck').style.setProperty('--emit','{emit}');$('lp').style.setProperty('--tilt','{tilt}deg');
         $('lp').style.translate='0 {y_in}px';$('lp').style.opacity={cl(enter*1.5)};
         $('site').style.setProperty('--sy','{sy}px');$('glow').style.opacity={glow};
         $('t1').style.opacity={t1};$('t1').style.transform='translateY({40*(1-t1)}px)';
