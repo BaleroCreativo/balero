@@ -1,0 +1,45 @@
+{
+ "name": "wish-portada",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "amarillo",
+   "title": "",
+   "layers": [
+    {
+     "html": "Proyecto entregado:",
+     "style": "left:86px;top:200px;font-size:64px;",
+     "cls": "l"
+    },
+    {
+     "html": "NUEVO SITIO",
+     "style": "left:86px;top:288px;font-size:112px;",
+     "cls": ""
+    },
+    {
+     "html": "WEB PARA",
+     "style": "left:86px;top:404px;font-size:112px;",
+     "cls": ""
+    },
+    {
+     "html": "<span style=\"font-family:Instrument Serif;font-style:italic;font-weight:400;text-transform:none;letter-spacing:0;background:#665FE9;color:#fff;padding:0 .14em;display:inline-block;transform:rotate(-1.5deg)\">Wish Travel</span>",
+     "style": "left:86px;top:540px;font-size:120px;line-height:1;",
+     "cls": ""
+    },
+    {
+     "html": "DESLIZA →",
+     "style": "left:86px;top:1180px;font-size:32px;",
+     "cls": "l"
+    }
+   ],
+   "illustration": "ilustraciones/laptop-wish.png",
+   "ill_x": 290,
+   "ill_y": 670,
+   "ill_w": 860,
+   "ill_rot": -5,
+   "type": "hero"
+  }
+ ]
+}
