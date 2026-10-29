@@ -1,6 +1,6 @@
 import math,os,sys
 from playwright.sync_api import sync_playwright
-FPS=30;DUR=9.5;N=int(FPS*DUR);OUT=sys.argv[1];os.makedirs(OUT,exist_ok=True)
+FPS=30;DUR=9.5;N=int(FPS*7.0);OUT=sys.argv[1];os.makedirs(OUT,exist_ok=True)
 cl=lambda x:max(0.0,min(1.0,x)); seg=lambda t,a,b:cl((t-a)/(b-a))
 eo=lambda x:1-(1-x)**3
 eio=lambda x:3*x*x-2*x**3
@@ -13,7 +13,7 @@ with sync_playwright() as p:
     pg.goto('file://'+os.getcwd()+'/laptop-photo.html'); pg.wait_for_timeout(1200)
     for f in range(N):
         if only and f not in only: continue
-        t=f/FPS
+        t=f/FPS*(9.5/7.0)
         enter=eo(seg(t,0,0.7)); dy=160*(1-enter)
         a=88*(1-eo(seg(t,0.5,1.9)))                      # la tapa se levanta desde atrás
         off=1-eio(seg(t,1.7,2.3)); fl=0.8*(1-eio(seg(t,1.9,2.5))) if t>1.8 else 0
