@@ -1,0 +1,114 @@
+{
+ "name": "Balero-6nov-trigger-event-v6-hook",
+ "width": 1080,
+ "height": 1440,
+ "progress_dots": true,
+ "slides": [
+  {
+   "bg": "calido-puntos",
+   "type": "hero",
+   "title": "",
+   "layers": [
+    {
+     "html": "Tu cliente no<br>compra tus",
+     "style": "left:86px;top:200px;font-size:64px;line-height:1;",
+     "cls": "l"
+    },
+    {
+     "html": "<span style=\"display:inline-block;transform:rotate(-4deg);text-decoration:line-through;text-decoration-thickness:.09em;text-decoration-color:#665FE9\">beneficios</span>",
+     "style": "left:70px;top:420px;font-size:160px;",
+     "cls": ""
+    },
+    {
+     "html": "Compra por lo que le pasó hoy.",
+     "style": "left:86px;top:1160px;font-family:Source Sans Pro;font-weight:700;text-transform:none;letter-spacing:0;font-size:48px;",
+     "cls": ""
+    }
+   ],
+   "illustration": "ilustraciones/idea-cut.png",
+   "ill_x": 430,
+   "ill_y": 640,
+   "ill_w": 518,
+   "ill_rot": -10,
+   "stickers": [
+    {
+     "html": "Empieza<br>aquí",
+     "x": 86,
+     "y": 780,
+     "w": 260,
+     "h": 152,
+     "px": 40,
+     "rot": -9,
+     "css": "border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.18)"
+    }
+   ]
+  },
+  {
+   "type": "zonas",
+   "bg": "lila-puntos",
+   "kick": "El momento en que",
+   "title": "DECIDES<br><span class=\"hl it\">actuar.</span>",
+   "body": "Un problema puede llevar meses ahí. <b>Lo que lo mueve es una situación concreta.</b>",
+   "body_w": 680,
+   "icon": {
+    "illustration": "ilustraciones/luna-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -6
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "chip": "Ejemplo",
+   "title": "“HOY NO ALCANCÉ<br>A CONTESTAR<br>A <span class=\"hl it\">todos.</span>”",
+   "body": "Así puede empezar un anuncio para un negocio con WhatsApp saturado. (Ejemplo ilustrativo.)",
+   "body_w": 908,
+   "title_px": 88,
+   "icon": {
+    "illustration": "ilustraciones/llamadas-cut.png",
+    "size": "S",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": 4,
+    "dy": 24
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "indigo",
+   "chip": "Dónde encontrarlo",
+   "chip_style": "w",
+   "title": "<span class=\"l\" style=\"font-size:64px;display:block;margin-bottom:16px\">Tus clientes</span>YA TE LO<br><span class=\"y it\">dijeron.</span>",
+   "body": "Revisa <b>reseñas, comentarios y mensajes</b>: ¿qué pasó para que buscaran ayuda y qué habían probado antes?",
+   "body_w": 780,
+   "icon": {
+    "illustration": "ilustraciones/resenas-cut.png",
+    "size": "L",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -6
+   }
+  },
+  {
+   "type": "zonas",
+   "bg": "calido-puntos",
+   "kick": "¿Tu anuncio empieza",
+   "title": "CON TU CLIENTE<br><span class=\"hl it\">o contigo?</span>",
+   "body": "<b>Diagnóstico gratis de 15 minutos.</b> Concepto de copywriting: trigger event.",
+   "body_w": 680,
+   "icon": {
+    "illustration": "ilustraciones/idea-cut.png",
+    "size": "M",
+    "anchor": "br",
+    "bleed": "r",
+    "bleed_pct": 0.15,
+    "rot": -6
+   }
+  }
+ ]
+}
