@@ -24,17 +24,21 @@ roas=[
    row2(800,'1','Suma lo que te cuesta vender')+row2(970,'2','Busca el ROAS donde dejas de perder')+tape('Diagnóstico gratis de 15 minutos',1150), foot('Los números son ejemplos ilustrativos')),
 ]
 # ---------- STANFORD ----------
-bars=lambda top:(f'<div class="meter" style="top:{top}px;height:430px;padding:36px 44px"><div class="lbl" style="left:44px;top:30px;font-size:26px;color:#3d3a42">SE PERCIBE QUÉ TAN INFORMATIVO (ILUSTRATIVO)</div>'
-  f'<div class="lbl" style="left:44px;top:100px">Con pregunta</div><div style="position:absolute;left:44px;top:150px;width:300px;height:70px;background:#e6e1ef;border:4px solid #151316;border-radius:35px"></div>'
-  f'<div class="lbl" style="left:44px;top:250px">Que afirma</div><div style="position:absolute;left:44px;top:300px;width:700px;height:70px;background:#B9A3E8;border:4px solid #151316;border-radius:35px"></div></div>')
+def hrow(top,h,num,lab,bg='#fff',fs=64):
+    return f'<div style="position:absolute;left:86px;top:{top}px;width:908px;height:{h}px;background:{bg};border:4px solid #151316;border-radius:26px;box-shadow:8px 9px 0 #151316;display:flex;flex-direction:row;align-items:center;gap:34px;padding:0 44px"><div style="font:800 {fs}px/1 Poppins;min-width:370px;white-space:nowrap">{num}</div><div style="font:600 34px/1.2 \'Source Sans Pro\',sans-serif">{lab}</div></div>'
+def hcmp(top,cls,sym,lab,txt,h=190):
+    return f'<div class="cmp {cls}" style="top:{top}px;height:{h}px"><div class="m">{sym}</div><div style="display:flex;align-items:center;gap:36px"><small style="display:inline;margin:0;white-space:nowrap">{lab}</small><span>{txt}</span></div></div>'
+bars=lambda top:(f'<div class="meter" style="top:{top}px;height:400px;padding:36px 44px"><div class="lbl" style="left:44px;top:30px;font-size:26px;color:#3d3a42">SE PERCIBE QUÉ TAN INFORMATIVO (ILUSTRATIVO)</div>'
+  f'<div class="lbl" style="left:44px;top:150px;white-space:nowrap">Con pregunta</div><div style="position:absolute;left:350px;top:135px;width:190px;height:70px;background:#e6e1ef;border:4px solid #151316;border-radius:35px"></div>'
+  f'<div class="lbl" style="left:44px;top:270px;white-space:nowrap">Que afirma</div><div style="position:absolute;left:350px;top:255px;width:500px;height:70px;background:#B9A3E8;border:4px solid #151316;border-radius:35px"></div></div>')
 stan=[
  (kick('Estudio de Stanford')+serif('Tu título con pregunta',270,92)+big('TE CUESTA',420,100)+serif('<span class="hl">interacción.</span>',540,150)+
-   '<div class="card" style="left:86px;right:86px;top:860px;height:360px;padding:46px 50px"><div style="font:800 28px Poppins;letter-spacing:.16em;color:#3d3a42">TU PUBLICACIÓN</div><div style="font:800 58px/1.1 Poppins;margin-top:20px">¿Cuánto cuesta un lead?</div><div class="sticker" style="left:50px;top:246px;transform:none;background:#B9A3E8;font-size:30px">↓ interacción</div></div>', FD),
- (chip('QUÉ ANALIZÓ')+title('Qué analizó',hl('Stanford.'))+stat(86,640,430,290,'53,030','posts de Reddit')+stat(564,640,430,290,'3,078,791','artículos académicos')+stat(86,960,430,290,'22,743','experimentos A/B de titulares','#B9A3E8')+stat(564,960,430,290,'400','personas en un estudio de laboratorio'), F),
+   '<div class="card" style="left:86px;right:86px;top:880px;height:230px;padding:0 50px;display:flex;align-items:center;justify-content:space-between;gap:30px"><div style="font:800 52px/1.1 Poppins">¿Cuánto cuesta un lead?</div><div class="sticker" style="position:static;transform:none;background:#B9A3E8;font-size:30px;white-space:nowrap">↓ interacción</div></div>', FD),
+ (chip('LOS DATOS')+title('Qué analizó',hl('Stanford.'))+hrow(620,150,'53,030','posts de Reddit')+hrow(790,150,'3,078,791','artículos académicos')+hrow(960,150,'22,743','experimentos A/B de titulares','#B9A3E8')+hrow(1130,150,'400','personas en un estudio de laboratorio'), F),
  (chip('LA CONCLUSIÓN')+title('La pregunta','suena a '+hl('duda.'))+body('Los títulos en forma de pregunta reducen la interacción porque el lector los percibe como menos informativos.')+bars(830), F),
  (chip('QUÉ HACER')+title('Afirma,','no '+hl('preguntes.'))+body('Pruébalo en pocas piezas antes de reescribir todo.')+
-   cmp(800,'bad','✗','ASÍ NO','¿Cuánto cuesta un lead?',230)+cmp(1070,'good','✓','ASÍ SÍ','Cuánto cuesta un lead',230), F),
- (kick('Revisemos juntos')+serif('¿Revisamos tus',270,104)+big('TÍTULOS Y',420,100)+serif('<span class="hl">ganchos?</span>',540,150)+body('Te decimos qué ajustar en 15 minutos, sin costo.',760)+tape('Diagnóstico gratis de 15 minutos',1150), foot('Fuente: Stanford GSB')),
+   hcmp(820,'bad','✗','ASÍ NO','¿Cuánto cuesta un lead?')+hcmp(1060,'good','✓','ASÍ SÍ','Cuánto cuesta un lead'), F),
+ (kick('Tu siguiente paso')+serif('¿Revisamos tus',270,104)+big('TÍTULOS Y',420,100)+serif('<span class="hl">ganchos?</span>',540,150)+body('Te decimos qué ajustar en 15 minutos, sin costo.',760)+tape('Diagnóstico gratis de 15 minutos',1150), foot('Fuente: Stanford GSB')),
 ]
 # ---------- WORKDAY ----------
 def flow(top):
