@@ -10,12 +10,22 @@ CSS+="""
 .sticker{position:absolute;background:#FFD23F;border:4px solid #151316;border-radius:60px;padding:14px 34px;font:800 30px Poppins;box-shadow:6px 7px 0 #151316;transform:rotate(-4deg)}
 .sc{position:absolute;font:800 72px Poppins}
 .t{line-height:1.14!important}
+.cmp.bad{opacity:1!important;background:#fff;border-style:dashed;box-shadow:none}
+.cmp.bad .m{background:#151316}
+.cmp.bad small{color:#3d3a42}
+.cmp small{font-size:28px!important;color:#3d3a42}
+.mini2 small{font-size:26px!important;color:#3d3a42}
+.dots i{width:20px!important;height:20px!important}.dots{gap:12px!important}
+.foot{font-size:32px!important}
+.lbl{position:absolute;font:800 32px Poppins;letter-spacing:.06em;text-transform:uppercase}
+.meter{position:absolute;left:86px;right:86px;background:#fff;border:4px solid #151316;border-radius:26px;box-shadow:10px 12px 0 #151316;overflow:hidden}
+
 .bigy{position:absolute;left:86px;font:800 330px/.9 Poppins;background:#FFD23F;padding:10px 30px 24px;letter-spacing:-.04em}
 """
 LOGO='<img class="logo" src="/home/user/balero/.claude/skills/balero-imagenes/assets/logo-balero.png">'
 FOOT='<div class="foot"><span>Balero Creativo</span></div>'
 def foot(note=''):
-    n=f'<div style="position:absolute;right:86px;bottom:70px;font:600 24px \'Source Sans Pro\';color:#6B6870;text-align:right;max-width:560px">{note}</div>' if note else ''
+    n=f'<div style="position:absolute;right:86px;bottom:70px;font:700 30px \'Source Sans Pro\';color:#3d3a42;text-align:right;max-width:640px">{note}</div>' if note else ''
     return FOOT+n
 def dots(i,n): return '<div class="dots">'+''.join(f'<i style="background:{"#151316" if k==i else "#cfc9dc"}"></i>' for k in range(n))+'</div>'
 def hl(w): return f'<span class="serif" style="font-size:1.25em;text-transform:none;font-weight:400;background:#FFD23F;padding:0 18px">{w}</span>'
