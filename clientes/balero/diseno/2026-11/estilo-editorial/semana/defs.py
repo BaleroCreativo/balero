@@ -68,7 +68,7 @@ work=[
    wcard(86,780,430,300,'3,200','empleados encuestados')+wcard(564,780,430,300,'USD 100 M+','ingresos mínimos de las empresas','#B9A3E8',fs=52)+
    '<div style="position:absolute;left:86px;top:1140px;width:908px;height:100px;background:#151316;color:#fff;font:800 36px/100px Poppins;text-align:center;letter-spacing:.06em;border-radius:20px">NO ES UN DATO DE PYMES</div>', F),
  (chip('LA LECCIÓN')+title('Si alguien revisa,','la IA '+hl('ahorra.'),96)+body('Mide cuánto tiempo te toma corregir lo que genera la IA.')+vflow(780), F),
- (serif('¿Y quién la',400,120)+'<div class="t" style="top:560px;font-size:150px"><span class="hl">revisa?</span></div>'+body('Compártelo con quien redacta los títulos de tu marca.',800)+tape('Compartir este carrusel',960), foot('Fuente: Workday, comunicado del 14 ene 2026')),
+ (serif('¿Y quién la',400,120)+'<div class="t" style="top:560px;font-size:150px"><span class="hl">revisa?</span></div>'+body('Compártelo con el encargado de IA de tu empresa o con quien más la usa en su trabajo.',800)+tape('Compartir este carrusel',960), foot('Fuente: Workday, comunicado del 14 ene 2026')),
 ]
 # ---------- TRIGGER ----------
 rays=''.join(f'<div style="position:absolute;left:{755+int(150*__import__("math").cos(a))-6}px;top:{855+int(150*__import__("math").sin(a))-28}px;width:12px;height:56px;background:#151316;border-radius:6px;transform:rotate({int(a*180/3.14159)+90}deg)"></div>' for a in [(-2.9+i*0.52) for i in range(0,9)])
