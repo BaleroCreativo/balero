@@ -31,11 +31,11 @@ Plan del día de arranque: `docs/hoy-26-octubre.md`.
 |---|---|---|---|---|
 | Lunes 2 nov, 09:00 | Instagram | Carrusel (Pregunta) | ¿Meta o Google? | Google capta a quien ya te busca. Meta te presenta a quien todavía no te conoce. |
 | Martes 3 nov, 09:00 | LinkedIn | Post con imagen (Pregunta) | ¿Meta o Google? | Google capta a quien ya te busca. Meta te presenta a quien todavía no te conoce. |
-| Miércoles 4 nov, 09:00 | Instagram | Imagen (Postura) | Un ROAS bonito con un margen flaco sigue siendo mal negocio | Por eso reviso el margen, no solo lo que dice la plataforma. |
-| Miércoles 4 nov, 12:30 | LinkedIn | Post con imagen (Postura) | Un ROAS bonito con un margen flaco sigue siendo mal negocio | Por eso reviso el margen, no solo lo que dice la plataforma. |
+| Miércoles 4 nov, 09:00 | Instagram | Imagen (Postura) | Cuándo pausar una campaña | Una semana no basta para apagarla. Tres señales que sí lo justifican. |
+| Miércoles 4 nov, 12:30 | LinkedIn | Post con imagen (Postura) | Cuándo pausar una campaña | Una semana no basta para apagarla. Tres señales que sí lo justifican. |
 | Jueves 5 nov, 09:00 | LinkedIn | Carrusel PDF (Editorial) | La cuenta que hago antes de invertir un peso | Cuánto te cuesta un cliente y cuánto te deja. Esa es la cuenta. |
 | Jueves 5 nov, 19:00 | TikTok | Video 30–45 s (Pregunta) | ¿Meta o Google? | Google capta a quien ya te busca. Meta te presenta a quien todavía no te conoce. |
-| Viernes 6 nov, 11:00 | Instagram | Reel (mismo video de TikTok) | ¿Meta o Google? | Google capta a quien ya te busca. Meta te presenta a quien todavía no te conoce. |
+| Viernes 6 nov, 11:00 | Instagram | Reel (video propio) | ¿Tu presupuesto es muy chico? | Si no llegan suficientes ventas, la campaña no tiene con qué aprender. |
 
 ## Semana 3 (9 nov al 15 nov)
 

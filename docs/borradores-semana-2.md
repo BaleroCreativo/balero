@@ -112,3 +112,68 @@ Si no sabes responder la tercera, el presupuesto todavía no está listo para su
 #PautaDigital #MetaAds #Rentabilidad #MarketingDigital
 
 > La tercera pregunta es propuesta: confirmar que así lo trabaja Daniela.
+
+
+---
+
+## Miércoles 4 nov, 09:00 (IG) y 12:30 (LinkedIn) · Cuándo pausar una campaña
+
+Tema nuevo (sustituye a "Un ROAS bonito con un margen flaco"). Fondo burnt, texto beige, acento lima y gauge ilustrado. Una sola imagen 1080×1350 para las dos redes: `assets/posts/semana-2/ig-mie-pausa.png` (IG) y `assets/posts/semana-2/li-mie-pausa.png` (LinkedIn).
+
+**Texto en la imagen:** Una semana no basta para apagar una campaña. Pausa cuando el costo por venta se quede arriba. Tres señales que lo confirman: 1) varios días por encima de lo que puedes pagar; 2) clics que no se vuelven venta; 3) tu reporte dice una cosa y tus ventas, otra.
+
+**Caption Instagram:**
+Cuándo pausar una campaña de Meta Ads o Google Ads. Una semana no basta para juzgarla, pero hay tres señales que sí te dicen que hay que apagarla.
+
+1. El costo por venta lleva varios días por encima de lo que puedes pagar.
+2. Hay clics, pero no se vuelven venta.
+3. El reporte de la plataforma dice una cosa y tus ventas reales, otra.
+
+Antes de apagar, revisa el destino del anuncio y compara con tus ventas. Guarda esta publicación para tu revisión semanal. ¿Cuál de las tres señales ves hoy en tu cuenta? Cuéntamelo en comentarios.
+
+#pautadigital #metaads #googleads #presupuestopublicidad #marketingdigital
+
+**Post LinkedIn (12:30):**
+Una semana no basta para apagar una campaña. Pero tampoco conviene dejarla correr sin mirar.
+
+Yo reviso tres señales antes de pausar:
+
+1. El costo por venta lleva varios días por encima de lo que puedes pagar. Ese dato sale de tu margen menos la utilidad que quieres conservar.
+2. Hay clics, pero no se vuelven venta. Antes de culpar al anuncio, revisa a dónde lleva: la página, el formulario o el mensaje.
+3. El reporte de la plataforma dice una cosa y tus ventas reales otra. Si no coinciden, primero se arregla la medición.
+
+Si las tres señales están encendidas, pausa y ajusta. Si solo una aparece un día, espera a tener más datos.
+
+¿Cuál de las tres ves hoy en tu cuenta? Cuéntamelo en los comentarios.
+
+#MetaAds #GoogleAds #PautaDigital #MarketingDigital
+
+> Confirmar con Daniela la regla de "pausar si las tres señales están encendidas" y la ventana de una semana.
+
+---
+
+## Viernes 6 nov, 11:00 · Instagram · Reel · Tu presupuesto es muy chico
+
+Tema nuevo (sustituye a "¿Meta o Google?" en este día). El jueves 5, el TikTok conserva el video de "¿Meta o Google?"; este reel necesita su propio video. Portada 1080×1920: `assets/posts/semana-2/ig-vie-reel-presupuesto.png`.
+
+**Texto en pantalla (en orden):**
+1. 0–3 s: ¿Tu presupuesto es muy chico?
+2. Si no llegan suficientes ventas, la campaña no tiene con qué aprender.
+3. Meta suele pedir cerca de 50 eventos de optimización por conjunto de anuncios cada semana. **[VERIFICAR]** en la guía oficial de Meta antes de publicar.
+4. Ejemplo hipotético: si cada venta te cuesta $100 y quieres 50 a la semana, necesitas $5,000 semanales solo para que la campaña aprenda.
+5. No es que la campaña falle: no la dejaste aprender. Haz la cuenta antes de juzgarla.
+6. Cierre: ¿cuántas ventas haces a la semana hoy? Escríbemelo.
+
+**Guion hablado (unos 40 segundos):**
+> ¿Tu presupuesto es muy chico? Si tu campaña tiene pocas ventas a la semana, el sistema no tiene con qué aprender. Meta suele pedir cerca de 50 eventos de optimización por conjunto de anuncios cada semana. Imagina que cada venta te cuesta 100 pesos y quieres 50 a la semana. Eso es 5 mil pesos semanales solo para que la campaña aprenda. Es un ejemplo hipotético. Si tu inversión no alcanza, no es que la campaña falle: no la dejaste aprender. Haz la cuenta antes de juzgarla. ¿Cuántas ventas haces a la semana hoy? Escríbemelo.
+
+**Caption Instagram:**
+¿Cuánto tiene que invertir una campaña para aprender? Tu presupuesto puede ser muy chico si no llegan suficientes ventas para que el sistema tenga datos.
+
+Así lo revisas: cuántas ventas necesitas a la semana, cuánto pagas por cada una y si esa inversión te da datos durante dos semanas antes de juzgar la campaña.
+
+Los números del video son hipotéticos; haz los tuyos. Guarda el reel para tenerlo a la mano. Escríbeme por mensaje directo y lo revisamos con tu cuenta.
+
+#pautadigital #metaads #googleads #presupuestopublicidad #marketingdigital
+
+> Confirmar la cifra de 50 eventos por semana en la guía de Meta antes de grabar.
