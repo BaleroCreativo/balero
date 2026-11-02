@@ -32,13 +32,13 @@ bars=lambda top:(f'<div class="meter" style="top:{top}px;height:400px;padding:36
   f'<div class="lbl" style="left:44px;top:150px;white-space:nowrap">Con pregunta</div><div style="position:absolute;left:350px;top:135px;width:190px;height:70px;background:#e6e1ef;border:4px solid #151316;border-radius:35px"></div>'
   f'<div class="lbl" style="left:44px;top:270px;white-space:nowrap">Que afirma</div><div style="position:absolute;left:350px;top:255px;width:500px;height:70px;background:#B9A3E8;border:4px solid #151316;border-radius:35px"></div></div>')
 stan=[
- (serif('Tu título con pregunta',230,92)+big('TE CUESTA',380,100)+serif('<span class="hl">interacción.</span>',500,150)+
-   '<div class="card" style="left:86px;right:86px;top:860px;height:230px;padding:0 50px;display:flex;align-items:center;justify-content:space-between;gap:30px"><div style="font:800 52px/1.1 Poppins">¿Cuánto cuesta un lead?</div><div class="sticker" style="position:static;transform:none;background:#B9A3E8;font-size:30px;white-space:nowrap">↓ interacción</div></div>', FD),
+ (serif('Tu título con pregunta',340,92)+big('TE CUESTA',490,100)+serif('<span class="hl">interacción.</span>',610,150)+
+   '<div class="card" style="left:86px;right:86px;top:930px;height:230px;padding:0 50px;display:flex;align-items:center;justify-content:space-between;gap:30px"><div style="font:800 52px/1.1 Poppins">¿Cuánto cuesta un lead?</div><div class="sticker" style="position:static;transform:none;background:#B9A3E8;font-size:30px;white-space:nowrap">↓ interacción</div></div>', FD),
  (chip('LOS DATOS')+title('Qué analizó',hl('Stanford.'))+hrow(620,150,'53,030','posts de Reddit')+hrow(790,150,'3,078,791','artículos académicos')+hrow(960,150,'22,743','experimentos A/B de titulares','#B9A3E8')+hrow(1130,150,'400','personas en un estudio de laboratorio'), F),
  (chip('LA CONCLUSIÓN')+title('La pregunta','suena a '+hl('duda.'))+body('Los títulos en forma de pregunta reducen la interacción porque el lector los percibe como menos informativos.')+bars(830), F),
  (chip('QUÉ HACER')+title('Afirma,','no '+hl('preguntes.'))+body('Pruébalo en pocas piezas antes de reescribir todo.')+
    hcmp(820,'bad','✗','ASÍ NO','¿Cuánto cuesta un lead?')+hcmp(1060,'good','✓','ASÍ SÍ','Cuánto cuesta un lead'), F),
- (kick('Antes de publicar')+serif('Guarda este',270,104)+big('CARRUSEL',420,100)+serif('<span class="hl">para tu próximo título.</span>',540,96)+body('Cuando redactes, afirma en lugar de preguntar.',730)+tape('Toca el ícono de guardar',1150), foot('Fuente: Stanford GSB')),
+ (kick('Antes de publicar')+serif('Guarda este',250,104)+big('CARRUSEL',370,100)+serif('<span class="hl">para tu próximo título.</span>',490,96)+tape('Toca el ícono de guardar',668)+body('Cuando redactes, afirma en lugar de preguntar.',900), foot('Fuente: Stanford GSB')),
 ]
 # ---------- WORKDAY ----------
 def flow(top):
