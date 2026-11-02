@@ -82,7 +82,7 @@ trig=[
    '<div class="card" style="left:86px;right:86px;top:790px;height:440px;padding:0 56px;background:#B9A3E8;display:flex;flex-direction:column;justify-content:center"><div style="font:800 28px Poppins;letter-spacing:.16em">TU ANUNCIO DICE</div><div class="serif" style="font-size:92px;line-height:1.05;margin-top:28px">“Hoy no alcancé a contestar a todos.”</div></div>', foot('Ejemplo ilustrativo')),
  (chip('DÓNDE ENCONTRARLO')+title('Tus clientes','ya te lo '+hl('dijeron.'),96)+body('¿Qué pasó para que buscaran ayuda y qué habían probado antes?')+
    row2(790,'★','Reseñas')+row2(930,'“','Comentarios')+row2(1070,'✉','Mensajes'), F),
- (kick('Antes de tu próximo anuncio')+serif('¿Tu anuncio empieza',270,100)+big('CON TU CLIENTE',420,84)+serif('<span class="hl">o contigo?</span>',540,150)+body('Revisemos juntos cómo empieza tu mensaje.',770)+tape('Diagnóstico gratis de 15 minutos',1150), foot('Concepto de copywriting: trigger event')),
+ (kick('Antes de tu próximo anuncio')+serif('¿Tu anuncio empieza',270,100)+big('CON TU CLIENTE',420,84)+serif('<span class="hl">o contigo?</span>',540,150)+body('Revisemos juntos cómo empieza tu mensaje.',770)+tape('Diagnóstico gratis de 15 minutos',1150), foot('Cómo escribir tu anuncio')),
 ]
 # ---------- CHATGPT ----------
 def step(i,top,h,name,bg=''):
