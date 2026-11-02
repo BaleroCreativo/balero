@@ -1,0 +1,94 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&family=Instrument+Serif:ital@0;1&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+*{box-sizing:border-box;margin:0}
+body{width:1080px;height:1920px;background:#F6F4EF;background-image:radial-gradient(#d9d4e6 2px,transparent 2px);background-size:36px 36px;font-family:'Source Sans 3',sans-serif;color:#151316;position:relative;overflow:hidden}
+.abs{position:absolute}
+.hook1{left:70px;top:150px;width:940px;font:800 104px/1.02 Poppins;text-transform:uppercase;letter-spacing:-.02em}
+.hl{background:#FFD23F;padding:0 16px;font:400 1.2em 'Instrument Serif';text-transform:none;font-style:italic}
+.hook2{left:70px;top:330px;width:940px;font:400 70px/1.1 'Instrument Serif';font-style:italic}
+.hook2 b{font-style:normal;font:800 62px Poppins;background:#B9A3E8;padding:0 14px}
+.chip{left:70px;top:150px;font:800 30px Poppins;letter-spacing:.14em;text-transform:uppercase;border:4px solid #151316;background:#fff;padding:12px 24px;border-radius:14px;box-shadow:6px 7px 0 #151316}
+.phone{left:110px;top:600px;width:860px;height:1090px;background:#fff;border:6px solid #151316;border-radius:56px;box-shadow:18px 20px 0 #151316;overflow:hidden}
+.ph-head{height:130px;background:#B9A3E8;border-bottom:6px solid #151316;padding:26px 40px;display:flex;align-items:center;gap:22px}
+.av{width:78px;height:78px;border-radius:50%;background:#FFD23F;border:4px solid #151316;font:800 34px/70px Poppins;text-align:center}
+.ph-head b{display:block;font:800 34px Poppins}.ph-head span{font:600 26px 'Source Sans 3'}
+.body{overflow:hidden;position:absolute;top:130px;bottom:0;left:0;right:0;padding:30px 34px;display:flex;flex-direction:column;justify-content:flex-end;background:#faf8f3}
+.m{overflow:hidden;flex:none}
+.m>div{max-width:620px;padding:22px 30px;font:600 40px/1.25 'Source Sans 3';border:4px solid #151316;border-radius:30px;margin-bottom:20px}
+.m.c{display:flex;justify-content:flex-start}.m.c>div{background:#fff;border-bottom-left-radius:8px}
+.m.a{display:flex;justify-content:flex-end}.m.a>div{background:#B9A3E8;border-bottom-right-radius:8px}
+.m small{display:block;font:600 22px 'Source Sans 3';opacity:.6;margin-top:6px}
+.dots{display:flex;gap:10px;padding:26px 32px!important}.dots i{width:16px;height:16px;border-radius:50%;background:#151316;display:block}
+.panel{left:100px;top:600px;width:880px;height:900px;background:#fff;border:6px solid #151316;border-radius:40px;box-shadow:18px 20px 0 #151316;padding:50px 56px}
+.panel h3{font:800 34px Poppins;letter-spacing:.12em;text-transform:uppercase;margin-bottom:34px}
+.row{display:flex;gap:20px;align-items:center;border:4px solid #151316;border-radius:22px;padding:22px 28px;margin-bottom:22px;font:600 38px 'Source Sans 3';background:#faf8f3}
+.row i{font:800 30px Poppins;font-style:normal;background:#FFD23F;border:3px solid #151316;border-radius:50%;width:54px;height:54px;line-height:48px;text-align:center;flex:none}
+.row.big{background:#B9A3E8;font:800 44px Poppins}
+.bot{left:70px;width:940px;top:1620px;font:400 82px/1.05 'Instrument Serif';font-style:italic;text-align:center}
+.tape{left:40px;top:1290px;width:1000px;height:170px;background:#151316;color:#fff;font:800 44px/170px Poppins;padding-left:60px;clip-path:polygon(0 8%,3% 0,6% 6%,10% 0,100% 5%,98% 100%,3% 94%)}
+.arrow{left:910px;top:1326px;width:100px;height:100px;border-radius:50%;background:#FFD23F;color:#151316;font:800 60px/100px Poppins;text-align:center}
+.end{left:70px;width:940px;top:500px;font:400 130px/1.05 'Instrument Serif';font-style:italic;text-align:center}.end .hl{font-size:1em}.link{left:70px;width:940px;top:1500px;text-align:center;font:800 54px Poppins}
+.foot{left:70px;top:1850px;font:700 30px 'Source Sans 3'}
+.foot2{right:70px;top:1850px;font:700 30px 'Source Sans 3';text-align:right}
+.logo{position:absolute;right:70px;top:70px;width:110px}
+</style></head><body>
+<img class="logo" src="/home/user/balero/.claude/skills/balero-imagenes/assets/logo-balero.png">
+<div class="abs hook1" id="h1">Son las <span class="hl">2 am.</span></div>
+<div class="abs hook2" id="h2">Un cliente pregunta precios.<br><b>¿Quién le contesta?</b></div>
+<div class="abs chip" id="chip">Conversación de ejemplo</div>
+<div class="abs phone" id="phone"><div class="ph-head"><div class="av">N</div><div><b>Negocio de ejemplo</b><span id="stat">en línea · 2:03 am</span></div></div><div class="body" id="body"></div></div>
+<div class="abs panel" id="panel"><h3 id="ptitle">Por la mañana · tu panel</h3>
+<div class="row big"><i>✓</i>Cita agendada</div>
+<div class="row"><i>1</i>Busca: más clientes por WhatsApp</div>
+<div class="row"><i>2</i>Invierte en anuncios: sí</div>
+<div class="row"><i>3</i>Ciudad: Guadalajara</div>
+<div class="row"><i>4</i>Diagnóstico: mañana, 10:00</div></div>
+<div class="abs bot" id="bot">Tú duermes.<br>Tu WhatsApp atiende.</div>
+<div class="abs tape" id="tape">Diagnóstico gratis de 15 minutos</div><div class="abs arrow" id="arrow">→</div>
+<div class="abs end" id="end">Tú duermes.<br>Tu WhatsApp <span class="hl">atiende.</span></div><div class="abs link" id="link">Link en la bio</div>
+<div class="abs foot">Balero Creativo</div><div class="abs foot2" id="f2">Conversación de ejemplo</div>
+<script>
+const MSG=[
+{t:0.8,k:'c',x:'Hola, vi su anuncio. ¿Cuánto cuesta?',s:'2:03 am'},
+{t:3.2,e:4.6,k:'typ'},
+{t:4.6,k:'a',x:'¡Hola! Soy el asistente de Negocio de ejemplo. ¿Qué servicio buscas?'},
+{t:9.0,k:'c',x:'Quiero más clientes por WhatsApp'},
+{t:12.2,e:13.4,k:'typ'},
+{t:13.4,k:'a',x:'¿Ya inviertes en anuncios?'},
+{t:16.0,k:'c',x:'Sí, en Facebook'},
+{t:17.8,e:18.8,k:'typ'},
+{t:18.8,k:'a',x:'¿En qué ciudad está tu negocio?'},
+{t:20.8,k:'c',x:'Guadalajara'},
+{t:22.4,e:23.6,k:'typ'},
+{t:23.6,k:'a',x:'Te propongo un diagnóstico gratis de 15 minutos. ¿Mañana a las 10:00 o a las 16:00?'},
+{t:27.4,k:'c',x:'A las 10:00'}
+];
+const body=document.getElementById('body');
+MSG.forEach(m=>{const w=document.createElement('div');w.className='m '+(m.k==='typ'?'a':m.k);
+ w.innerHTML=m.k==='typ'?'<div class="dots"><i></i><i></i><i></i></div>':'<div>'+m.x+(m.s?'<small>'+m.s+'</small>':'')+'</div>';
+ body.appendChild(w);m.el=w;m.h=0;});
+const phone=document.getElementById('phone');
+requestAnimationFrame(()=>{MSG.forEach(m=>{m.el.style.height='auto';m.h=m.el.getBoundingClientRect().height;});});
+const ease=p=>1-Math.pow(1-Math.min(Math.max(p,0),1),3), cl=(a,b,c)=>Math.min(Math.max(a,b),c);
+const $=id=>document.getElementById(id);
+function show(el,o,y){el.style.opacity=o;el.style.transform='translateY('+y+'px)';}
+function render(t){
+ MSG.forEach(m=>{let p=ease((t-m.t)/0.35);if(m.e!==undefined&&t>=m.e)p=1-ease((t-m.e)/0.2);
+  if(t<m.t)p=0;m.el.style.height=(m.h*p)+'px';m.el.style.opacity=p;});
+ // hook
+ const h1=t<3.2?1:1-ease((t-3.2)/0.4); show($('h1'),h1,(1-ease(t/0.5))*40);
+ show($('h2'),t<3.2?ease((t-0.4)/0.5):1-ease((t-3.2)/0.4),0);
+ const chipOn=ease((t-3.4)/0.4)*(t<30?1:1-ease((t-30)/0.3));show($('chip'),chipOn,0);
+ // phone / panel
+ const pin=ease((t-0.2)/0.6), pout=ease((t-29.4)/0.6);
+ show(phone,pin*(1-pout),(1-pin)*120+pout*-160);
+ $('stat').textContent=t<29.4?'en línea · 2:03 am':'';
+ const pa=ease((t-30.0)/0.6)*(t<35?1:1-ease((t-35)/0.3));show($('panel'),pa,(1-ease((t-30)/0.6))*120);
+ const ba=ease((t-31.6)/0.5)*(t<34.6?1:1-ease((t-34.6)/0.3));show($('bot'),ba,0);
+ const ta=ease((t-35.2)/0.5);show($('tape'),ta,(1-ta)*80);show($('arrow'),ta,(1-ta)*80);show($('end'),ease((t-35.0)/0.5),0);show($('link'),ta,0);
+ // 'Por la mañana' chip
+ $('ptitle').textContent=t>=30?'Por la mañana · tu panel':'';
+}
+render(0);
+</script></body></html>
