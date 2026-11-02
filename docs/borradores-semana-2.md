@@ -208,3 +208,27 @@ Antes de subir la inversión, compara el costo real por cliente con lo que puede
 #PautaDigital #MetaAds #GoogleAds #PresupuestoPublicidad #MarketingDigital
 
 > Confirmar que la tercera línea (multiplicar clientes por lo que puedes pagar) coincide con cómo Daniela calcula el presupuesto.
+
+---
+
+## Viernes 6 nov, 12:30 · LinkedIn · Post (alternativa, movida desde el miércoles 4): Lo primero que reviso en una cuenta de Performance Max
+
+Versión que no depende de un cambio de Google sin verificar. Solo afirma lo que la guía de Google Ads respalda: si una campaña de Performance Max no tiene video, Google puede crear algunos a partir de imágenes y textos. Sin imagen todavía.
+
+**Texto del post:**
+Si tu campaña de Performance Max no tiene videos, Google puede crear algunos a partir de tus imágenes y textos. No siempre es lo que tú elegirías.
+
+Por eso, la revisión que hago en cualquier cuenta de Google Ads es esta: qué imágenes y videos usa cada campaña.
+
+Tres preguntas para tu cuenta:
+1. ¿Qué activos tiene cargados cada campaña?
+2. ¿Hay alguno que no aprobaste tú?
+3. ¿Qué dice el reporte de rendimiento de cada activo?
+
+No es paranoia, es control: tu marca aparece en formatos que tú no elegiste, y si no lo miras, no sabes qué ve tu cliente.
+
+Revisarlo toma diez minutos. ¿Ya revisaste qué activos usa tu campaña?
+
+#GoogleAds #PerformanceMax #PautaDigital #MarketingDigital
+
+> Fuente de la afirmación: [Google Ads Help, 10724492](https://support.google.com/google-ads/answer/10724492?hl=en-GB), leída solo en resumen. Antes de publicar, confirmar en la página oficial.
