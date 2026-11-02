@@ -177,3 +177,34 @@ Los números del video son hipotéticos; haz los tuyos. Guarda el reel para tene
 #pautadigital #metaads #googleads #presupuestopublicidad #marketingdigital
 
 > Confirmar la cifra de 50 eventos por semana en la guía de Meta antes de grabar.
+
+---
+
+## Jueves 5 nov, 09:00 · LinkedIn · Carrusel PDF (Editorial): La cuenta que hago antes de invertir un peso
+
+Fondo ladrillo, texto beige, acento lima. Sin numeración ni flecha de deslizar. Archivos: `assets/posts/semana-2/li-jue-cuenta-1..6.png` y `assets/posts/semana-2/li-jue-cuenta.pdf`.
+
+**Láminas (texto en pantalla):**
+1. Antes de invertir un peso, hago una cuenta. Tres líneas. Ninguna necesita un software.
+2. Línea 1: cuánto te deja un cliente nuevo. $1,000 de margen. Ejemplo hipotético.
+3. Línea 2: cuánto puedes pagar por conseguirlo. Lo que te deja menos la utilidad que quieres conservar. 40 %: $400. Quieres conservar 60 %, así que puedes pagar hasta 40 %: $400 por cliente.
+4. Línea 3: cuántos clientes quieres este mes. 10 × $400 = $4,000. Ese es tu presupuesto. Ejemplo hipotético.
+5. Antes de subir la inversión, compara lo que pagas hoy. Si el costo real por cliente ya supera lo que puedes pagar, el problema no es el presupuesto.
+6. ¿Cuánto te deja hoy un cliente nuevo? Escríbemelo en comentarios y hacemos la cuenta con tu negocio.
+
+**Texto del post:**
+Antes de invertir un peso en pauta, hago una cuenta. Tres líneas:
+
+1. Cuánto te deja un cliente nuevo.
+2. Cuánto puedes pagar por conseguirlo: lo que te deja menos la utilidad que quieres conservar.
+3. Cuántos clientes quieres este mes. Multiplica y tienes tu presupuesto.
+
+Los números del carrusel son hipotéticos: $1,000 de margen, 40 % para conseguir el cliente, 10 clientes. Con eso sale un presupuesto de $4,000.
+
+Antes de subir la inversión, compara el costo real por cliente con lo que puedes pagar. Si ya supera ese número, el problema no es el presupuesto.
+
+¿Cuánto te deja hoy un cliente nuevo? Escríbemelo en comentarios.
+
+#PautaDigital #MetaAds #GoogleAds #PresupuestoPublicidad #MarketingDigital
+
+> Confirmar que la tercera línea (multiplicar clientes por lo que puedes pagar) coincide con cómo Daniela calcula el presupuesto.
