@@ -2,13 +2,13 @@
 
 ## Lunes 2 nov, 09:00 · Instagram · Carrusel (Pregunta): ¿Meta o Google?
 
-Fondo beige, texto rojo quemado, 6 láminas con numeración n/6 (carrusel de Instagram). Archivos: `assets/posts/semana-2/ig-lun-meta-google-1..6.png`.
+Fondo beige, texto rojo quemado, 6 láminas con numeración n/6 (carrusel de Instagram). Rediseño con ilustraciones planas y acento en Instrument Serif cursiva. Archivos: `assets/posts/semana-2/ig-lun-meta-google-1..6.png`.
 
 **Láminas (texto en pantalla):**
 1. ¿Meta o Google? Depende de una sola cosa: si tu cliente ya te está buscando.
 2. Google capta a quien ya te busca. Alguien escribe lo que necesita y tú apareces. Ya hay intención de compra.
 3. Meta te presenta a quien todavía no te conoce. Llegas a alguien que no estaba buscando. Primero hay que despertar su interés.
-4. ¿La gente ya busca lo que vendes? Si la respuesta es sí, empieza por Google. Si casi nadie lo busca, empieza por Meta.
+4. ¿La gente ya busca lo que vendes? Sí, ya me buscan: empiezo por Google. Casi nadie: empiezo por Meta.
 5. A los dos los mido igual: cada peso tiene que volver con margen. Cambia dónde pones el anuncio, no la cuenta que haces.
 6. ¿La gente ya busca lo que vendes? Cuéntame qué vendes y te digo por cuál empezaría.
 
@@ -35,15 +35,15 @@ Guarda este carrusel para tu próxima decisión de presupuesto. Cuéntame qué v
 
 ## Lunes 2 nov, 09:00 (alternativa) · Instagram · Carrusel (Pregunta): La Comer vende más y gana menos
 
-Fondo ladrillo, texto beige, 6 láminas con numeración n/6. Archivos: `assets/posts/semana-2/ig-lun-la-comer-1..6.png`. Origen: newsletter TienditAds (21 oct), que cita a Expansión (20 oct).
+Fondo ladrillo, texto beige, 6 láminas con numeración n/6, mismo estilo ilustrado. Archivos: `assets/posts/semana-2/ig-lun-la-comer-1..6.png`. Origen: newsletter TienditAds (21 oct), que cita a Expansión (20 oct).
 
 **[VERIFICAR]** Cifras en la nota original de Expansión o en el reporte trimestral: ventas netas +4.6 %, utilidad neta −20.8 %, gastos generales +11 %.
 
 **Láminas (texto en pantalla):**
 1. ¿Si mis ventas suben, mi negocio va mejor?
 2. No necesariamente. Mira el caso de La Comer en el tercer trimestre de 2026.
-3. Ventas netas: +4.6 %. Utilidad neta: −20.8 %. Fuente: Expansión, 20 de octubre de 2026.
-4. Gastos generales: +11 %. Entre otras cosas, por sueldos, publicidad y nuevas tiendas.
+3. Ventas netas: +4.6 %. Utilidad neta: −20.8 %. Fuente: Expansión, 20 de octubre de 2026. Barras a escala.
+4. Gastos generales: +11 %. Sueldos, publicidad y nuevas tiendas.
 5. Puedes vender más y quedarte con menos. Pasa cuando cada venta nueva cuesta más de lo que deja.
 6. ¿Cuánto cuesta cada cliente y cuánto te deja? Si no lo sabes, escríbeme y lo revisamos.
 
