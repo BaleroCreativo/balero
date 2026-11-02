@@ -41,25 +41,32 @@ stan=[
  (serif('Guarda este',370,104)+big('CARRUSEL',490,100)+serif('<span class="hl">para tu próximo título.</span>',610,96)+tape('Toca el ícono de guardar',788)+body('Cuando redactes, afirma en lugar de preguntar.',1020), foot('Fuente: Stanford GSB')),
 ]
 # ---------- WORKDAY ----------
-def flow(top):
-    cw=270
+def wbar(top):
     out=''
-    labs=[('1','La IA','genera'),('2','Alguien','revisa'),('3','Se','publica')]
-    for i,(n,a,b) in enumerate(labs):
-        x=86+i*(cw+49)
+    for i in range(10):
+        x=86+i*92
+        bg='#FFD23F' if i<4 else '#fff'
+        out+=f'<div style="position:absolute;left:{x}px;top:{top}px;width:80px;height:150px;background:{bg};border:4px solid #151316;border-radius:16px;box-shadow:6px 7px 0 #151316"></div>'
+    out+=f'<div class="lbl" style="left:86px;top:{top+184}px;font-size:26px;color:#3d3a42">4 DE CADA 10 HORAS AHORRADAS SE VAN EN CORREGIR</div>'
+    return out
+def vflow(top):
+    items=[('1','La IA genera'),('2','Alguien revisa'),('3','Se publica')]
+    out=''
+    for i,(n,t) in enumerate(items):
+        y=top+i*190
         bg='background:#B9A3E8;' if i==1 else ''
-        out+=f'<div class="stat" style="left:{x}px;top:{top}px;width:{cw}px;height:300px;{bg}padding:26px 28px"><b style="font-size:70px">{n}</b><span style="font:800 40px/1.15 Poppins;margin-top:16px">{a}<br>{b}</span></div>'
-        if i<2: out+=f'<div class="sc" style="left:{x+cw+4}px;top:{top+110}px;font-size:48px">→</div>'
+        out+=f'<div style="position:absolute;left:86px;top:{y}px;width:908px;height:140px;display:flex;align-items:center;gap:34px;padding:0 44px;background:#fff;border:4px solid #151316;border-radius:26px;box-shadow:8px 9px 0 #151316;{bg}"><b style="font:800 64px Poppins;min-width:50px">{n}</b><span style="font:800 44px Poppins">{t}</span></div>'
+        if i<2: out+=f'<div class="sc" style="left:520px;top:{y+142}px;font-size:40px">↓</div>'
     return out
 work=[
- (kick('Estudio de Workday · ene 2026')+serif('Casi',270,100)+'<div class="bigy" style="top:372px">40%</div>'+big('DEL TIEMPO QUE TE AHORRA LA IA',730,52,1.15)+serif('<span class="hl">se va en corregirla.</span>',860,84)+
-   '<div style="position:absolute;left:86px;top:1060px;width:908px;height:90px;border:4px solid #151316;border-radius:45px;overflow:hidden;background:#fff;display:flex"><div style="width:60%;background:#fff;font:700 32px/82px Source Sans Pro;padding-left:30px">tiempo ahorrado</div><div style="width:40%;background:#B9A3E8;border-left:4px solid #151316;font:800 32px/82px Poppins;text-align:center">CORREGIR</div></div>', FD),
- (chip('EL COSTO OCULTO')+title('Casi 40%','se '+hl('pierde.'))+body('Del tiempo que la IA ahorra, se va corrigiendo, reescribiendo y verificando lo que produce.',590)+
-   row2(810,'1','Corrigiendo')+row2(940,'2','Reescribiendo')+row2(1070,'3','Verificando'), foot('Encuesta de Workday, ene 2026')),
- (chip('OJO')+title('Un estudio de','empresas '+hl('grandes.'),92)+body('No es un dato de pymes y no tiene verificación independiente.')+
-   stat(86,780,430,300,'3,200','empleados encuestados')+stat(564,780,430,300,'USD 100 M+','ingresos de las empresas','#B9A3E8',fs=52)+'<div class="sticker" style="left:230px;top:1140px;background:#151316;color:#fff;transform:rotate(-2deg)">NO ES UN DATO DE PYMES</div>', F),
- (chip('LA LECCIÓN')+title('Si alguien revisa,','la IA '+hl('ahorra.'),96)+body('Mide cuánto tiempo te toma corregir lo que genera la IA.')+flow(800), F),
- (kick('Antes de usar IA en tu marketing')+serif('¿Y quién la',270,120)+'<div class="t" style="top:430px;font-size:150px"><span class="hl">revisa?</span></div>'+body('Te ayudamos a revisar cómo usas la IA en tu marketing.',640)+tape('Diagnóstico gratis de 15 minutos',1150), foot('Fuente: Workday, comunicado del 14 ene 2026')),
+ (kick('Estudio de Workday · ene 2026')+serif('Casi',250,100)+'<div class="bigy" style="top:340px">40%</div>'+big('DEL TIEMPO QUE TE AHORRA LA IA',730,52,1.15)+serif('<span class="hl">se va en corregirla.</span>',860,84)+wbar(1020), FD),
+ (chip('EL COSTO OCULTO')+title('Se va en','tres '+hl('tareas.'))+body('Corregir, reescribir y verificar lo que produce la IA.',590)+
+   row2(800,'1','Corregir errores')+row2(940,'2','Reescribir el tono')+row2(1080,'3','Verificar cada dato'), foot('Encuesta de Workday, ene 2026')),
+ (chip('OJO')+title('Es un estudio de','empresas '+hl('grandes.'),92)+body('No es un dato de pymes ni tiene verificación independiente.')+
+   stat(86,780,430,300,'3,200','empleados encuestados')+stat(564,780,430,300,'USD 100 M+','ingresos mínimos de las empresas','#B9A3E8',fs=52)+
+   '<div style="position:absolute;left:86px;top:1140px;width:908px;height:100px;background:#151316;color:#fff;font:800 36px/100px Poppins;text-align:center;letter-spacing:.06em;border-radius:20px">NO ES UN DATO DE PYMES</div>', F),
+ (chip('LA LECCIÓN')+title('Si alguien revisa,','la IA '+hl('ahorra.'),96)+body('Mide cuánto tiempo te toma corregir lo que genera la IA.')+vflow(780), F),
+ (serif('¿Y quién la',400,120)+'<div class="t" style="top:560px;font-size:150px"><span class="hl">revisa?</span></div>'+body('Te ayudamos a revisar cómo usas la IA en tu marketing.',800)+tape('Diagnóstico gratis de 15 minutos',960), foot('Fuente: Workday, comunicado del 14 ene 2026')),
 ]
 # ---------- TRIGGER ----------
 rays=''.join(f'<div style="position:absolute;left:{755+int(150*__import__("math").cos(a))-6}px;top:{855+int(150*__import__("math").sin(a))-28}px;width:12px;height:56px;background:#151316;border-radius:6px;transform:rotate({int(a*180/3.14159)+90}deg)"></div>' for a in [(-2.9+i*0.52) for i in range(0,9)])
