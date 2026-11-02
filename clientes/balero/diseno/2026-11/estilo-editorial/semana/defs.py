@@ -9,17 +9,19 @@ def mcards(items,top,h=300):
     pass
 # ---------- ROAS ----------
 roas=[
- (kick('Publicidad digital')+serif('Un ROAS de',262,100)+'<div class="bigy" style="top:380px">8</div>'+big('PUEDE GANAR MENOS',730,64)+serif('<span class="hl">que uno de 5.</span>',830,110)+tape('Calcula tu número mínimo',1110), FD),
+ (kick('Publicidad digital')+serif('Un ROAS de',250,120)+'<div class="bigy" style="top:400px">8</div>'+big('PUEDE GANAR MENOS',775,72)+serif('<span class="hl">que uno de 5.</span>',885,120)+tape('Desliza: calcula tu mínimo',1150), FD),
  (chip('LA FÓRMULA')+title('Ventas entre',hl('inversión.'),100)+body('Eso es el ROAS: lo que vendes dividido entre lo que inviertes en anuncios.')+
-   stat(86,790,250,300,'$2,000','ventas',fs=56)+'<div class="sc" style="left:350px;top:900px">÷</div>'+stat(420,790,250,300,'$400','inversión',fs=56)+'<div class="sc" style="left:684px;top:900px">=</div>'+stat(748,790,246,300,'5','ROAS','#B9A3E8'), foot('Ejemplo ilustrativo')),
+   stat(86,780,250,280,'$2,000','ventas',fs=58)+'<div class="sc" style="left:350px;top:890px">÷</div>'+stat(420,780,250,280,'$400','inversión',fs=58)+'<div class="sc" style="left:684px;top:890px">=</div>'+stat(748,780,246,280,'5','ROAS','#B9A3E8',fs=96)+
+   serif('Por cada <span class="hl">$1</span> invertido,',1130,62)+serif('$5 en ventas.',1205,62), foot('Ejemplo ilustrativo')),
  (chip('EL PUNTO CIEGO')+title('El panel no ve','tus '+hl('costos.'))+body('No sabe cuánto te cuesta vender ni tus gastos fijos. Un ROAS de 3 puede ser bueno para uno y pérdida para otro.')+
-   cmp(840,'good','✓','NEGOCIO A · ROAS 3','Le deja ganancia',200)+cmp(1070,'bad','✗','NEGOCIO B · ROAS 3','Pierde dinero',200), F),
+   cmp(815,'good','✓','NEGOCIO A · ROAS 3','Le deja ganancia',190)+cmp(1025,'bad','✗','NEGOCIO B · ROAS 3','Pierde dinero',190)+serif('El mismo número, dos resultados.',1240,50), F),
  (chip('TU NÚMERO')+title('Tu ROAS mínimo:','dejar de '+hl('perder.'),100)+body('Es el ROAS donde dejas de perder. Por encima ganas, por debajo pierdes, aunque el panel se vea bien.')+
    '<div style="position:absolute;left:86px;top:830px;width:908px;height:200px;border:4px solid #151316;border-radius:26px;box-shadow:10px 12px 0 #151316;overflow:hidden;background:#fff;display:flex"><div style="width:50%;background:#e6e1ef;font:800 40px/200px Poppins;text-align:center;letter-spacing:.1em">PIERDES</div><div style="width:50%;background:#B9A3E8;font:800 40px/200px Poppins;text-align:center;letter-spacing:.1em">GANAS</div></div>'+
-   '<div style="position:absolute;left:515px;top:790px;width:50px;height:280px;background:#151316;border-radius:25px"></div>'+sticker('Tu ROAS mínimo',356,1110,-3), F),
+   '<div style="position:absolute;left:515px;top:790px;width:50px;height:280px;background:#151316;border-radius:25px"></div>'+sticker('Tu ROAS mínimo',356,1110,-3)+serif('Sale de tus costos, no del panel.',1240,50), F),
  (chip('ESCALA')+title('¿Más ROAS =','más '+hl('ganancia?'),100)+body('No siempre: un ROAS de 8 con $500 puede dejar menos que uno de 5 con $10,000.')+
-   stat(86,900,420,380,'ROAS 8','inviertes $500')+stat(574,760,420,520,'ROAS 5','inviertes $10,000','#B9A3E8'), foot('Ejemplo ilustrativo')),
- (kick('Antes de invertir más')+serif('¿Sabes cuál es tu',270,104)+'<div class="t" style="top:420px;font-size:104px"><span class="hl">ROAS mínimo?</span></div>'+body('Calcúlalo antes de subir tu presupuesto.',620)+tape('Diagnóstico gratis de 15 minutos',1150), foot('Los números son ejemplos ilustrativos')),
+   stat(86,900,420,380,'ROAS 8','inviertes $500<br>ventas $4,000',fs=70)+stat(574,760,420,520,'ROAS 5','inviertes $10,000<br>ventas $50,000','#B9A3E8',fs=70), foot('Ejemplo ilustrativo')),
+ (kick('Antes de invertir más')+serif('¿Sabes cuál es tu',270,104)+'<div class="t" style="top:420px;font-size:104px"><span class="hl">ROAS mínimo?</span></div>'+body('Calcúlalo antes de subir tu presupuesto.',620)+
+   row2(800,'1','Suma lo que te cuesta vender')+row2(970,'2','Busca el ROAS donde dejas de perder')+tape('Diagnóstico gratis de 15 minutos',1150), foot('Los números son ejemplos ilustrativos')),
 ]
 # ---------- STANFORD ----------
 bars=lambda top:(f'<div class="meter" style="top:{top}px;height:430px;padding:36px 44px"><div class="lbl" style="left:44px;top:30px;font-size:26px;color:#3d3a42">SE PERCIBE QUÉ TAN INFORMATIVO (ILUSTRATIVO)</div>'
