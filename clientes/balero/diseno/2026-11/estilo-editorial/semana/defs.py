@@ -41,6 +41,8 @@ stan=[
  (serif('Guarda este',370,104)+big('CARRUSEL',490,100)+serif('<span class="hl">para tu próximo título.</span>',610,96)+tape('Toca el ícono de guardar',788)+body('Cuando redactes, afirma en lugar de preguntar.',1020), foot('Fuente: Stanford GSB')),
 ]
 # ---------- WORKDAY ----------
+def wcard(x,y,w,h,num,lab,bg='#fff',fs=76):
+    return f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;height:{h}px;background:{bg};border:4px solid #151316;border-radius:26px;box-shadow:8px 9px 0 #151316;display:flex;flex-direction:column;justify-content:center;padding:0 36px"><div style="font:800 {fs}px/1 Poppins">{num}</div><div style="font:600 32px/1.2 \'Source Sans Pro\',sans-serif;margin-top:14px">{lab}</div></div>'
 def wbar(top):
     out=''
     for i in range(10):
@@ -63,10 +65,10 @@ work=[
  (chip('EL COSTO OCULTO')+title('Se va en','tres '+hl('tareas.'))+body('Corregir, reescribir y verificar lo que produce la IA.',590)+
    row2(800,'1','Corregir errores')+row2(940,'2','Reescribir el tono')+row2(1080,'3','Verificar cada dato'), foot('Encuesta de Workday, ene 2026')),
  (chip('OJO')+title('Es un estudio de','empresas '+hl('grandes.'),92)+body('No es un dato de pymes ni tiene verificación independiente.')+
-   stat(86,780,430,300,'3,200','empleados encuestados')+stat(564,780,430,300,'USD 100 M+','ingresos mínimos de las empresas','#B9A3E8',fs=52)+
+   wcard(86,780,430,300,'3,200','empleados encuestados')+wcard(564,780,430,300,'USD 100 M+','ingresos mínimos de las empresas','#B9A3E8',fs=52)+
    '<div style="position:absolute;left:86px;top:1140px;width:908px;height:100px;background:#151316;color:#fff;font:800 36px/100px Poppins;text-align:center;letter-spacing:.06em;border-radius:20px">NO ES UN DATO DE PYMES</div>', F),
  (chip('LA LECCIÓN')+title('Si alguien revisa,','la IA '+hl('ahorra.'),96)+body('Mide cuánto tiempo te toma corregir lo que genera la IA.')+vflow(780), F),
- (serif('¿Y quién la',400,120)+'<div class="t" style="top:560px;font-size:150px"><span class="hl">revisa?</span></div>'+body('Te ayudamos a revisar cómo usas la IA en tu marketing.',800)+tape('Diagnóstico gratis de 15 minutos',960), foot('Fuente: Workday, comunicado del 14 ene 2026')),
+ (serif('¿Y quién la',400,120)+'<div class="t" style="top:560px;font-size:150px"><span class="hl">revisa?</span></div>'+body('Compártelo con quien redacta los títulos de tu marca.',800)+tape('Compartir este carrusel',960), foot('Fuente: Workday, comunicado del 14 ene 2026')),
 ]
 # ---------- TRIGGER ----------
 rays=''.join(f'<div style="position:absolute;left:{755+int(150*__import__("math").cos(a))-6}px;top:{855+int(150*__import__("math").sin(a))-28}px;width:12px;height:56px;background:#151316;border-radius:6px;transform:rotate({int(a*180/3.14159)+90}deg)"></div>' for a in [(-2.9+i*0.52) for i in range(0,9)])
