@@ -36,6 +36,7 @@ Plan del día de arranque: `docs/hoy-26-octubre.md`.
 | Jueves 5 nov, 09:00 | LinkedIn | Carrusel PDF (Editorial) | La cuenta que hago antes de invertir un peso | Cuánto te cuesta un cliente y cuánto te deja. Esa es la cuenta. |
 | Jueves 5 nov, 19:00 | TikTok | Video 30–45 s (Pregunta) | ¿Meta o Google? | Google capta a quien ya te busca. Meta te presenta a quien todavía no te conoce. |
 | Viernes 6 nov, 11:00 | Instagram | Reel (video propio) | ¿Tu presupuesto es muy chico? | Si no llegan suficientes ventas, la campaña no tiene con qué aprender. |
+| Viernes 6 nov, 12:30 | LinkedIn | Post (alternativa, movida desde el miércoles 4) | Lo primero que reviso en una cuenta de Performance Max | Pendiente de verificar la nota antes de programarla. |
 
 ## Semana 3 (9 nov al 15 nov)
 
