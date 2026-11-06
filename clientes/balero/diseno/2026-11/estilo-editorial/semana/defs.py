@@ -124,6 +124,17 @@ crm=[
    row2(790,'1','Recordatorios')+row2(930,'2','Registro central')+row2(1070,'3','Reportes sin armar'), F),
  (kick('Antes de comprar un CRM')+serif('¿Ya tienes tus',270,104)+'<div class="t" style="top:420px;font-size:150px"><span class="hl">reglas?</span></div>'+body('Lee el blog completo en balerocreativo.com.',640)+tape('Diagnóstico gratis de 15 minutos',1150), F),
 ]
-ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm}
+# ---------- MUSE ----------
+muse=[
+ (chip('NUEVO EN MÉXICO')+serif('Muse ya está',300,100)+big('EN MÉXICO',420,120)+serif('<span class="hl">un agente que actúa por ti.</span>',600,80)+tape('Desliza: qué puede hacer',1150), FD),
+ (chip('QUÉ HACE')+title('Revisa tu correo','y tu '+hl('agenda.'))+body('Conectas tu correo, tu calendario e Instagram. Muse revisa, acomoda y organiza.')+
+   row2(800,'✉','Correo: lo que importa primero')+row2(940,'◷','Agenda: acomoda tus horarios')+row2(1080,'✦','Instagram: lo que te escriben'), foot('Fuente: Meta, muse.ai')),
+ (chip('SIGUE TRABAJANDO')+title('Aunque cierres','la app.')+body('Muse sigue en segundo plano y también puede escribirte por WhatsApp.')+
+   row2(800,'◐','Sigue en segundo plano')+row2(940,'☎','Te escribe por WhatsApp')+row2(1080,'◎','Chatea por texto o por voz'), foot('Fuente: Meta, muse.ai')),
+ (chip('ANTES DE CONECTARLO')+title('Define qué le','das '+hl('permiso.'))+body('Un asistente con acceso a tu correo necesita reglas claras.')+
+   cmp(800,'bad','✗','ASÍ NO','Dar acceso a todo sin revisar',210)+cmp(1040,'good','✓','ASÍ SÍ','Revisar permisos y aprobar cada compra',210), F),
+ (serif('Guarda este',370,104)+big('CARRUSEL',490,100)+serif('<span class="hl">para cuando lo pruebes.</span>',610,96)+tape('Compartir este carrusel',788)+body('Compártelo con quien siempre tiene la bandeja de correo llena.',1020), foot('Fuente: Meta, muse.ai')),
+]
+ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse}
 if __name__=='__main__':
     for k,v in ALL.items(): print(k,build(k,v))
