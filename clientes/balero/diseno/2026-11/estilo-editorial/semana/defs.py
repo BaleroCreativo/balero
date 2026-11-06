@@ -125,14 +125,21 @@ crm=[
  (kick('Antes de comprar un CRM')+serif('¿Ya tienes tus',270,104)+'<div class="t" style="top:420px;font-size:150px"><span class="hl">reglas?</span></div>'+body('Lee el blog completo en balerocreativo.com.',640)+tape('Diagnóstico gratis de 15 minutos',1150), F),
 ]
 # ---------- MUSE ----------
+def im(n,x,y,w): return f'<img src="muse/img/{n}.png" style="position:absolute;left:{x}px;top:{y}px;width:{w}px">'
 muse=[
  (chip('NUEVO EN MÉXICO')+serif('Muse ya está',300,100)+big('EN MÉXICO',420,120)+serif('<span class="hl">un agente que actúa por ti.</span>',600,80)+tape('Desliza: qué puede hacer',1150), FD),
- (chip('QUÉ HACE')+title('Revisa tu correo','y tu '+hl('agenda.'))+body('Conectas tu correo, tu calendario e Instagram. Muse revisa, acomoda y organiza.')+
-   row2(800,'✉','Correo: lo que importa primero')+row2(940,'◷','Agenda: acomoda tus horarios')+row2(1080,'✦','Instagram: lo que te escriben'), foot('Fuente: Meta, muse.ai')),
- (chip('SIGUE TRABAJANDO')+title('Aunque cierres','la app.')+body('Muse sigue en segundo plano y también puede escribirte por WhatsApp.')+
-   row2(800,'◐','Sigue en segundo plano')+row2(940,'☎','Te escribe por WhatsApp')+row2(1080,'◎','Chatea por texto o por voz'), foot('Fuente: Meta, muse.ai')),
- (chip('ANTES DE CONECTARLO')+title('Define qué le','das '+hl('permiso.'))+body('Un asistente con acceso a tu correo necesita reglas claras.')+
-   cmp(800,'bad','✗','ASÍ NO','Dar acceso a todo sin revisar',210)+cmp(1040,'good','✓','ASÍ SÍ','Revisar permisos y aprobar cada compra',210), F),
+ (chip('1 · CORREO')+title('Empieza por tu',hl('correo.'))+body('Conectas tu correo y Muse lo lee. Te muestra primero lo que no puede esperar.',560)+
+   im('correo',86,820,380)+mini(520,840,474,200,'PRIMERO','Facturas, clientes y fechas que vencen')+mini(520,1070,474,200,'DESPUÉS','Lo demás, cuando tengas tiempo',bad=True), foot('Fuente: Meta, muse.ai')),
+ (chip('2 · AGENDA')+title('Acomoda tu',hl('agenda.'))+body('Conecta tu calendario. Muse ordena tus horarios para que sepas qué sigue.',560)+
+   mini(86,840,420,170,'HOY','Tres reuniones y un bloque libre')+mini(86,1040,420,170,'LA SEMANA','Tus horarios, ordenados',bg='#FFD23F')+im('agenda',560,830,340), foot('Fuente: Meta, muse.ai')),
+ (chip('3 · INSTAGRAM')+title('Revisa lo que',hl('te escriben.'))+body('Muse revisa los mensajes de tu cuenta de Instagram y te muestra lo que sigue pendiente.',560)+
+   row2(820,'◉','Mensajes de tu cuenta de Instagram')+row2(960,'✦','Lo pendiente, primero'), foot('Fuente: Meta, muse.ai')),
+ (chip('4 · WHATSAPP')+title('Te escribe',hl('por WhatsApp.'))+body('Muse también puede escribirte a WhatsApp. Le contestas por texto o por voz.',560)+
+   im('chat',260,800,560), foot('Fuente: Meta, muse.ai')),
+ (chip('5 · SIGUE TRABAJANDO')+title('Aunque cierres',hl('la app.'))+body('Muse sigue trabajando en segundo plano. No tienes que tener la app abierta.',560)+
+   im('luna',330,790,420), foot('Fuente: Meta, muse.ai')),
+ (chip('6 · ANTES DE CONECTARLO')+title('Define qué le',hl('das permiso.'))+body('Un asistente con acceso a tu correo necesita reglas claras.',560)+
+   im('candado',86,800,300)+mini(430,800,564,190,'ASÍ NO','Dar acceso a todo sin revisar',bad=True)+mini(430,1010,564,190,'ASÍ SÍ','Decide qué puede ver y qué no',bg='#FFD23F'), F),
  (serif('Guarda este',370,104)+big('CARRUSEL',490,100)+serif('<span class="hl">para cuando lo pruebes.</span>',610,96)+tape('Compartir este carrusel',788)+body('Compártelo con quien siempre tiene la bandeja de correo llena.',1020), foot('Fuente: Meta, muse.ai')),
 ]
 ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse}
