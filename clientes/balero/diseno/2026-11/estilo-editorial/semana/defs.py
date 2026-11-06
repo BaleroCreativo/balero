@@ -131,7 +131,7 @@ def col(n,fit='contain',pos='50% 50%'): return rl(n,86,800,420,480,fit,pos)
 def cards(*items): return ''.join(items)
 muse=[
  (chip('NUEVO EN MÉXICO')+serif('Muse ya está',300,100)+big('EN MÉXICO',420,120)+serif('<span class="hl">un agente que actúa por ti.</span>',600,80)+
-   rl('mascota',430,730,560,560,'cover')+f'<img src="muse/img/real-muse-logo.png" style="position:absolute;left:560px;top:160px;height:100px;width:auto">', FD),
+   rl('mascota',430,730,560,560,'cover')+f'<img src="muse/img/real-muse-logo.png" style="position:absolute;left:130px;top:1020px;height:180px;width:auto">', FD),
  (chip('1 · CORREO')+title('Empieza por tu',hl('correo.'))+body('Conectas tu correo y Muse lo lee. Te muestra primero lo que no puede esperar.',560)+
    col('messaging','cover','50% 12%')+mini(540,820,454,200,'PRIMERO','Facturas, clientes y fechas que vencen')+mini(540,1040,454,200,'DESPUÉS','El resto, cuando tengas tiempo',bad=True), FOOT),
  (chip('2 · AGENDA')+title('Acomoda tu',hl('agenda.'))+body('Conecta tu calendario. Muse ordena tus horarios para que sepas qué sigue.',560)+
