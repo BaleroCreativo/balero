@@ -133,15 +133,15 @@ muse=[
  (chip('NUEVO EN MÉXICO')+serif('Muse ya está',300,100)+big('EN MÉXICO',420,120)+serif('<span class="hl">un agente que actúa por ti.</span>',600,80)+
    rl('walkthrough',86,740,640,360,'cover')+tape('Desliza: qué puede hacer',1150), FD),
  (chip('1 · CORREO')+title('Empieza por tu',hl('correo.'))+body('Conectas tu correo y Muse lo lee. Te muestra primero lo que no puede esperar.',560)+
-   col('messaging','cover','50% 12%')+mini(540,820,454,200,'PRIMERO','Facturas, clientes y fechas que vencen')+mini(540,1040,454,200,'DESPUÉS','Lo que puede esperar a mañana',bad=True), FOOT),
+   col('messaging','cover','50% 12%')+mini(540,820,454,200,'PRIMERO','Facturas, clientes y fechas que vencen')+mini(540,1040,454,200,'DESPUÉS','El resto, cuando tengas tiempo',bad=True), FOOT),
  (chip('2 · AGENDA')+title('Acomoda tu',hl('agenda.'))+body('Conecta tu calendario. Muse ordena tus horarios para que sepas qué sigue.',560)+
-   col('goals')+mini(540,820,454,200,'OBJETIVOS','Correo y calendario, sincronizados')+mini(540,1040,454,200,'IDEAS','Prepara tu viaje',bg='#FFD23F'), FOOT),
+   col('goals')+mini(540,820,454,200,'OBJETIVOS','Tu correo y tu calendario, juntos')+mini(540,1040,454,200,'AVISOS','Te recuerda lo que viene',bg='#FFD23F'), FOOT),
  (chip('3 · INSTAGRAM')+title('Conecta tu',hl('Instagram.'))+body('Conecta tu cuenta de Instagram y Muse te muestra lo que sigue pendiente.',560)+
-   col('connectors')+mini(540,820,454,200,'CONECTA','Tu cuenta de Instagram, en Muse')+mini(540,1040,454,200,'LO PENDIENTE','Lo que sigue esperando tu respuesta',bg='#FFD23F'), FOOT),
+   col('connectors')+mini(540,820,454,200,'CONECTA','Tu cuenta de Instagram, en Muse')+mini(540,1040,454,200,'PENDIENTE','Lo que sigue por responder',bg='#FFD23F'), FOOT),
  (chip('4 · CHAT Y VOZ')+title('Chatea con Muse',hl('por texto o voz.'))+body('Le escribes o le hablas. Muse también puede escribirte por WhatsApp.',560)+
-   col('messaging','cover','50% 55%')+mini(540,820,454,200,'TEXTO','Escribe lo que necesitas, como en un chat')+mini(540,1040,454,200,'VOZ','Háblale y Muse responde',bg='#FFD23F'), FOOT),
+   col('messaging','cover','50% 55%')+mini(540,820,454,200,'TEXTO','Escribe lo que necesitas')+mini(540,1040,454,200,'VOZ','Háblale y Muse te responde',bg='#FFD23F'), FOOT),
  (chip('5 · SIGUE TRABAJANDO')+title('Aunque cierres',hl('la app.'))+body('Muse sigue trabajando en segundo plano. No tienes que tener la app abierta.',560)+
-   col('browser','cover','50% 55%')+mini(540,820,454,200,'SEGUNDO PLANO','Muse busca asientos mientras tú haces otra cosa')+mini(540,1040,454,200,'TE AVISA','Te escribe cuando hay algo que revisar',bg='#FFD23F'), FOOT),
+   col('browser','cover','50% 55%')+mini(540,820,454,200,'SEGUNDO PLANO','Busca asientos por ti')+mini(540,1040,454,200,'TE AVISA','Te escribe si hay algo que revisar',bg='#FFD23F'), FOOT),
  (chip('6 · ANTES DE CONECTARLO')+title('Define qué le',hl('das permiso.'))+body('Un asistente con acceso a tu correo necesita reglas claras.',560)+
    col('approvals','cover','50% 78%')+mini(540,820,454,200,'ASÍ NO','Dar acceso a todo sin revisar',bad=True)+mini(540,1040,454,200,'ASÍ SÍ','Decide qué puede ver y qué no',bg='#FFD23F'), FOOT),
  (serif('Guarda este',330,104)+big('CARRUSEL',450,100)+serif('<span class="hl">para cuando lo pruebes.</span>',570,96)+
