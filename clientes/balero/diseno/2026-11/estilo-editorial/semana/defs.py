@@ -148,6 +148,17 @@ muse=[
    f'<div class="body" style="top:1010px;width:440px">Compártelo con quien siempre tiene la bandeja de correo llena.</div>'+
    rl('secure-storage',640,860,300,380)+tape('Compartir este carrusel',760)  , foot('Fuente: Meta, muse.ai')),
 ]
-ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse}
+# ---------- ROAS APROBADO (guion 9 nov) ----------
+roasig=[
+ (kick('Pregunta de dueños de negocio')+serif('El ROAS no',290,104)+big('DESCUENTA',420,120)+big('TUS COSTOS.',540,120)+serif('<span class="hl">Tu ROAS puede verse bien y tu negocio perder dinero.</span>',760,56), FD),
+ (chip('QUÉ MIDE')+title('Lo que regresa','por cada '+hl('peso.'))+body('El ROAS es lo que vendes dividido entre lo que inviertes en anuncios.')+
+   stat(86,800,420,300,'$1','invertido en anuncios',fs=96)+stat(574,800,420,300,'$5','en ventas','#B9A3E8',fs=96)+serif('Eso es un ROAS de 5.',1180,70), foot('Ejemplo ilustrativo')),
+ (chip('LO QUE NO INCLUYE')+title('El ROAS no ve','tus '+hl('costos.'))+body('No descuenta el producto, el envío, las comisiones ni tu tiempo.')+
+   cmp(815,'bad','✗','NO INCLUYE','Producto, envío, comisiones y tu tiempo',190)+cmp(1025,'good','✓','SÍ TE DICE','Cuánto regresa cada peso en anuncios',190), F),
+ (chip('LO QUE SÍ DICE')+title('Pagar el anuncio','no es '+hl('ganar.'),100)+body('El ROAS compara campañas entre sí. Para saber si ganas, calcula cuánto te queda por venta.')+
+   serif('Calcula tu margen antes de subir el presupuesto.',1150,56), F),
+ (serif('¿Cuánto te queda',280,96)+big('DESPUÉS DE PAGAR',400,100)+serif('<span class="hl">el anuncio?</span>',560,96)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',1000), F),
+]
+ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig}
 if __name__=='__main__':
     for k,v in ALL.items(): print(k,build(k,v))
