@@ -165,19 +165,21 @@ roasig=[
    statc(86,820,908,230,'Tu margen','lo que te queda después de costos y anuncios',fs=80)+serif('Calcula tu margen antes de subir el presupuesto.',1110,56), F),
  (serif('Tú decides',280,96)+big('CUÁNTO TE QUEDA',400,100)+serif('<span class="hl">por venta.</span>',560,96)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',1000), F),
 ]
-# ---------- HUMOR (guion aprobado 10 nov) ----------
+# ---------- HUMOR (guion aprobado 10 nov, con ilustraciones) ----------
 def _cen2(h): return h.replace('style="','style="display:flex;flex-direction:column;justify-content:center;',1)
 def statH(*a,**k): return _cen2(stat(*a,**k))
 def cmpH(top,cls,sym,label,txt,h=230): return cmp(top,cls,sym,label,txt,h).replace('style="top','style="display:flex;align-items:center;top',1)
+ILU='/home/user/balero/.claude/skills/balero-imagenes/assets/ilustraciones-nuevas/'
+def ilu(n,x,y,w): return f'<img src="{ILU}{n}-cut.png" style="position:absolute;left:{x}px;top:{y}px;width:{w}px">'
 humor=[
- (serif('"Ya casi"',290,120)+big('LANZAMOS LA CAMPAÑA',420,96)+serif('<span class="hl">¿qué falta?</span>',680,90), FD),
+ (serif('"Ya casi"',280,120)+big('LANZAMOS LA',400,96)+big('CAMPAÑA',500,96)+serif('<span class="hl">¿qué falta?</span>',660,90)+ilu('cohete',560,700,440), FD),
  (chip('FRASE 1')+title('"Solo falta','el píxel."',100)+body('Lo que suele faltar no es un anuncio más: es saber qué vas a medir.',560)+
-   statH(86,800,908,260,'Píxel','todavía sin instalar',fs=96), F),
- (chip('FRASE 2')+title('"Ponle más','presupuesto."',96)+body('Más dinero sin medir solo acelera el gasto.',560)+
+   ilu('engranes',430,760,520)+serif('Configúralo antes.',1220,60), F),
+ (chip('FRASE 2')+title('"Ponle más','presupuesto."',96)+body('Más dinero sin medir solo acelera el gasto.',560)+ilu('cobro',806,590,170)+
    cmpH(800,'bad','✗','SIN MEDIR','Más dinero, mismas dudas',200)+cmpH(1030,'good','✓','MEDIDO','Sabes cuánto te queda por venta',200), F),
  (chip('FRASE 3')+title('"Mañana lo','revisamos."',100)+body('Mañana es lo mismo que hoy si no hay un número que revisar.',560)+
-   statH(86,800,908,260,'Hoy','es el día de medir',fs=96)+serif('Revisa antes de lanzar.',1150,64), F),
- (serif('Las campañas se',280,96)+big('MIDEN ANTES',400,100)+serif('<span class="hl">de lanzarse.</span>',560,96)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',1000), F),
+   ilu('cronometro',470,740,400)+serif('Revisa antes de lanzar.',1220,60), F),
+ (serif('Las campañas se',230,96)+big('MIDEN ANTES',350,100)+serif('<span class="hl">de lanzarse.</span>',510,96)+tape('Diagnóstico gratis de 15 minutos',740)+body('Escríbenos por mensaje directo.',930)+ilu('escudo',760,930,240), FD),
 ]
 ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor}
 if __name__=='__main__':
