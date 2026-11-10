@@ -150,7 +150,7 @@ muse=[
 ]
 # ---------- ROAS APROBADO (guion 9 nov) ----------
 roasig=[
- (kick('Pregunta de dueños de negocio')+serif('El ROAS no',290,104)+big('DESCUENTA',420,120)+big('TUS COSTOS.',540,120)+serif('<span class="hl">Tu ROAS puede verse bien y tu negocio perder dinero.</span>',760,56), FD),
+ (kick('Pregunta de dueños de negocio')+serif('El ROAS no',290,104)+big('DESCUENTA',420,120)+big('TUS COSTOS.',540,120)+serif('<span class="hl">Tu ROAS puede verse bien</span>',760,56)+serif('<span class="hl">y tu negocio perder dinero.</span>',836,56)+stat(86,1000,908,230,'ROAS','ventas ÷ inversión en anuncios',fs=96), FD),
  (chip('QUÉ MIDE')+title('Lo que regresa','por cada '+hl('peso.'))+body('El ROAS es lo que vendes dividido entre lo que inviertes en anuncios.')+
    stat(86,800,420,300,'$1','invertido en anuncios',fs=96)+stat(574,800,420,300,'$5','en ventas','#B9A3E8',fs=96)+serif('Eso es un ROAS de 5.',1180,70), foot('Ejemplo ilustrativo')),
  (chip('LO QUE NO INCLUYE')+title('El ROAS no ve','tus '+hl('costos.'))+body('No descuenta el producto, el envío, las comisiones ni tu tiempo.')+
