@@ -165,6 +165,20 @@ roasig=[
    statc(86,820,908,230,'Tu margen','lo que te queda después de costos y anuncios',fs=80)+serif('Calcula tu margen antes de subir el presupuesto.',1110,56), F),
  (serif('Tú decides',280,96)+big('CUÁNTO TE QUEDA',400,100)+serif('<span class="hl">por venta.</span>',560,96)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',1000), F),
 ]
-ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig}
+# ---------- HUMOR (guion aprobado 10 nov) ----------
+def _cen2(h): return h.replace('style="','style="display:flex;flex-direction:column;justify-content:center;',1)
+def statH(*a,**k): return _cen2(stat(*a,**k))
+def cmpH(top,cls,sym,label,txt,h=230): return cmp(top,cls,sym,label,txt,h).replace('style="top','style="display:flex;align-items:center;top',1)
+humor=[
+ (serif('"Ya casi"',290,120)+big('LANZAMOS LA CAMPAÑA',420,96)+serif('<span class="hl">¿qué falta?</span>',680,90), FD),
+ (chip('FRASE 1')+title('"Solo falta','el píxel."',100)+body('Lo que suele faltar no es un anuncio más: es saber qué vas a medir.',560)+
+   statH(86,800,908,260,'Píxel','todavía sin instalar',fs=96), F),
+ (chip('FRASE 2')+title('"Ponle más','presupuesto."',96)+body('Más dinero sin medir solo acelera el gasto.',560)+
+   cmpH(800,'bad','✗','SIN MEDIR','Más dinero, mismas dudas',200)+cmpH(1030,'good','✓','MEDIDO','Sabes cuánto te queda por venta',200), F),
+ (chip('FRASE 3')+title('"Mañana lo','revisamos."',100)+body('Mañana es lo mismo que hoy si no hay un número que revisar.',560)+
+   statH(86,800,908,260,'Hoy','es el día de medir',fs=96)+serif('Revisa antes de lanzar.',1150,64), F),
+ (serif('Las campañas se',280,96)+big('MIDEN ANTES',400,100)+serif('<span class="hl">de lanzarse.</span>',560,96)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',1000), F),
+]
+ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor}
 if __name__=='__main__':
     for k,v in ALL.items(): print(k,build(k,v))
