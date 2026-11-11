@@ -92,8 +92,8 @@ page(8,BE,BU,BR,('Para ti, que me lees',f'''
 <div class="a" style="left:600px;top:200px;width:400px;height:700px;border-radius:200px 200px 0 0;overflow:hidden">
 <img src="retrato.jpg" style="width:100%;height:100%;object-fit:cover;object-position:50% 30%"></div>
 '''))
-# 9 burnt: plantilla de promoción (placeholders, sin código ajeno)
-page(9,BU,BE,LI,('Herramienta · pendiente de verificar',f'''
-<div class="a h" style="left:80px;top:200px;font-size:130px;width:920px;color:{BE}">[TU PRODUCTO] <span class="s" style="color:{LI};font-size:140px">con [TU BENEFICIO].</span></div>
-<div class="a bub" style="left:80px;top:760px;width:920px;height:380px;background:#FAF3E6;color:{BU};font-size:44px;line-height:1.35;font-weight:500">[CÓDIGO O ENLACE]<br><span style="font-size:36px;color:{BR}">[VERIFICAR: condiciones y vigencia de la oferta antes de publicar]</span></div>
+# 9 burnt: código propio de la autora (confirmado por ella), texto original
+page(9,BU,BE,LI,('Herramienta que uso',f'''
+<div class="a h" style="left:80px;top:200px;font-size:130px;width:920px;color:{BE}">Pruébala con <span class="s" style="color:{LI};font-size:140px">mi código.</span></div>
+<div class="a bub" style="left:80px;top:700px;width:920px;height:420px;background:#FAF3E6;color:{BU};font-size:44px;line-height:1.35;font-weight:500">Mi código: <b>ECOKCV</b><br><span style="font-size:36px;color:{BR}">Canjéalo en la configuración de Muse dentro del plazo que indica la app.</span></div>
 '''))
