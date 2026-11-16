@@ -45,7 +45,8 @@ Sin gradientes, sin sombras, sin ocre ni naranja-amarillo.
 - Campos de color a pantalla completa.
 - Una palabra o elemento en lima por pieza, con resaltador ladeado −1°.
 - Alineación a la izquierda, margen de 80 px.
-- **Prohibido:** stock, imágenes generadas pulidas, íconos de línea genéricos, emojis como decoración, mascotas o personajes de otras marcas.
+- **Prohibido:** stock, imágenes generadas pulidas, íconos de línea genéricos y emojis como decoración.
+- **Personajes ajenos:** no usar mascotas o personajes de otras marcas sin permiso escrito de su dueño. Esto no es una preferencia de diseño, es un tema de derechos. Una mascota propia sí es válida.
 
 ## Formato de publicación
 - Instagram y LinkedIn: 1080 × 1350 (4:5).
