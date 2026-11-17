@@ -181,6 +181,48 @@ humor=[
    ilu('cronometro',470,740,400)+serif('Revisa antes de lanzar.',1220,60), F),
  (serif('Las campañas se',230,96)+big('MIDEN ANTES',350,100)+serif('<span class="hl">de lanzarse.</span>',510,96)+tape('Diagnóstico gratis de 15 minutos',740)+body('Escríbenos por mensaje directo.',930)+ilu('escudo',760,930,240), FD),
 ]
-ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor}
+# ---------- SEMANA 16 AL 22 NOV (diseños) ----------
+ILU16='/home/user/balero/.claude/skills/balero-imagenes/assets/ilustraciones-nuevas/'
+def ilu16(n,x,y,w): return f'<img src="{ILU16}{n}-cut.png" style="position:absolute;left:{x}px;top:{y}px;width:{w}px">'
+def row16(top,sym,txt): return row2(top,sym,txt)
+errores=[
+ (chip('3 ERRORES')+title('Tres errores al','responder '+hl('un lead.'),96)+body('Tardar, no preguntar y no dar un siguiente paso.',600)+
+   row16(800,'1','Tardar en contestar')+row16(940,'2','No preguntar qué necesita')+row16(1080,'3','No dar un siguiente paso'), FOOT),
+]
+tiempo=[
+ (serif('¿En cuánto tiempo',280,96)+big('VEO RESULTADOS?',400,96)+ilu16('cronometro',520,740,430), FD),
+ (chip('PRIMERO, MEDIR')+title('Sin medir no sabes','qué se '+hl('mueve.'),96)+body('Antes de todo, define qué vas a medir desde el día uno.',560)+ilu16('calc',560,780,380), F),
+ (chip('DESPUÉS, AJUSTAR')+title('Los cambios se ven','con '+hl('datos.'),96)+body('Ajustar sin datos de varias semanas es adivinar.',560)+ilu16('engranes',500,780,460), F),
+ (chip('LO QUE NO PROMETEMOS')+title('Ningún plazo','es '+hl('garantizado.'),96)+body('Depende del canal, del mercado y de lo que mides.',560)+ilu16('balanza',470,780,460), F),
+ (serif('Mide desde',300,100)+big('EL DÍA UNO.',420,100)+serif('<span class="hl">Diagnóstico gratis de 15 minutos.</span>',600,72)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',980), FD),
+]
+def cmpH16(top,cls,sym,label,txt,h=230): return cmp(top,cls,sym,label,txt,h).replace('style="top','style="display:flex;align-items:center;top',1)
+antes=[
+ (serif('Antes y después:',280,96)+big('FORMULARIO VS WHATSAPP',400,84)+ilu16('celular',520,760,430), FD),
+ (chip('ANTES')+title('Un formulario','y '+hl('días de espera.'),92)+body('Esperas un correo y nadie contesta el mismo día.',560)+
+   cmpH16(780,'bad','✗','ASÍ NO','Un formulario, un correo y días de espera',210), F),
+ (chip('DESPUÉS')+title('Escribes y','te '+hl('contestan.'),96)+body('Alguien responde con una pregunta concreta.',560)+
+   cmpH16(780,'good','✓','ASÍ SÍ','Una respuesta rápida y un siguiente paso',210), F),
+ (chip('LO QUE CAMBIA')+title('La charla empieza','en el '+hl('momento.'),92)+body('No días después, cuando el interés ya se enfrió.',560)+ilu16('ruta',470,780,440), F),
+ (serif('¿Cómo llega tu',280,96)+big('PRIMER CONTACTO?',400,88)+serif('<span class="hl">Revísalo.</span>',580,88)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',980), FD),
+]
+marketing=[
+ (serif('No hago',280,110)+big('MARKETING BONITO.',400,84)+serif('<span class="hl">Hago marketing que se mide.</span>',600,72)+ilu16('panel',520,820,420), FD),
+]
+lead=[
+ (serif('El lead que',280,100)+big('NO CONTESTÓ',400,96)+serif('<span class="hl">no está perdido.</span>',580,80)+ilu16('llamadas',520,760,430), FD),
+ (chip('CUÁNDO')+title('Retómalo al','día '+hl('siguiente.'),100)+body('No a la semana siguiente. Mientras más tarde, más se enfría.',560)+ilu16('calendario',500,780,440), F),
+ (chip('CÓMO')+title('Un mensaje corto','con una '+hl('pregunta.'),96)+body('Sin presionar y con un siguiente paso concreto.',560)+ilu16('clicchat',520,780,430), F),
+ (chip('QUÉ EVITAR')+title('Mensajes',''+hl('genéricos.'),96)+body('Ni repetir la misma oferta. El lead ya te escuchó: dale algo nuevo.',560)+ilu16('embudofuga',490,780,440), F),
+ (serif('Retómalo.',280,110)+big('NO LO DES POR',400,90)+big('MUERTO.',510,90)+tape('Diagnóstico gratis de 15 minutos',780)+body('Escríbenos por mensaje directo.',960), FD),
+]
+medir=[
+ (chip('PDF')+title('Qué se puede','medir.',96)+body('Lo que se ve la primera semana y lo que necesita más tiempo.',560)+ilu16('graficaflat',520,760,430), F),
+ (chip('DESDE EL DÍA UNO')+title('Contactos que','entran y su '+hl('origen.'),96)+body('Sin esto no sabes qué canal te trae clientes.',560)+ilu16('idea',520,780,420), F),
+ (chip('CON ALGUNAS SEMANAS')+title('Costo por',''+hl('contacto.'),96)+body('Y tiempo de respuesta. Se ven mejor con varias semanas de datos.',560)+ilu16('ventana',500,780,440), F),
+ (chip('CON MÁS TIEMPO')+title('Ventas cerradas','y su '+hl('margen.'),96)+body('Estas toman más semanas y dependen de tu proceso comercial.',560)+ilu16('cobro',520,780,420), F),
+ (serif('Empieza con',280,100)+big('DOS MÉTRICAS.',400,96)+serif('<span class="hl">Las demás, después.</span>',580,80)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',980), FD),
+]
+ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor,'errores':errores,'tiempo':tiempo,'antes':antes,'marketing':marketing,'lead':lead,'medir':medir}
 if __name__=='__main__':
     for k,v in ALL.items(): print(k,build(k,v))
