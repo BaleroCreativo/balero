@@ -198,7 +198,7 @@ tiempo=[
 ]
 def cmpH16(top,cls,sym,label,txt,h=230): return cmp(top,cls,sym,label,txt,h).replace('style="top','style="display:flex;align-items:center;top',1)
 antes=[
- (serif('Antes y después:',280,96)+big('FORMULARIO VS WHATSAPP',400,84)+ilu16('celular',520,760,430), FD),
+ (serif('Antes y después:',280,96)+big('FORMULARIO VS WHATSAPP',400,84)+f'<img src="real/chat-whatsapp.png" style="position:absolute;left:86px;top:700px;width:520px;height:auto;border-radius:26px;box-shadow:10px 12px 0 #151316">', FD),
  (chip('ANTES')+title('Un formulario','y '+hl('días de espera.'),92)+body('Esperas un correo y nadie contesta el mismo día.',560)+
    cmpH16(780,'bad','✗','ASÍ NO','Un formulario, un correo y días de espera',210), F),
  (chip('DESPUÉS')+title('Escribes y','te '+hl('contestan.'),96)+body('Alguien responde con una pregunta concreta.',560)+
