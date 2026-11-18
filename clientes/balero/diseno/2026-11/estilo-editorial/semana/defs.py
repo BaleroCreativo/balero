@@ -190,7 +190,7 @@ errores=[
    row16(800,'1','Tardar en contestar')+row16(940,'2','No preguntar qué necesita')+row16(1080,'3','No dar un siguiente paso'), FOOT),
 ]
 tiempo_li=[
- (f'<style>.dots{{display:none!important}}</style>'+serif('¿En cuánto tiempo',280,96)+big('VEO RESULTADOS?',400,96)+ilu16('cronometro',520,740,430), FOOT),
+ (f'<style>.dots{{display:none!important}}</style>'+serif('¿En cuánto tiempo',280,96)+big('VEO RESULTADOS?',400,96)+'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" style="position:absolute;left:520px;top:740px;width:430px;height:430px"><circle cx="200" cy="215" r="150" fill="#FFFFFF" stroke="#151316" stroke-width="12"/><rect x="176" y="40" width="48" height="36" fill="#151316"/><rect x="168" y="62" width="64" height="20" fill="#151316"/><path d="M200 215 L200 85 A130 130 0 0 1 330 215 Z" fill="#FFD23F"/><line x1="200" y1="215" x2="262" y2="180" stroke="#151316" stroke-width="12" stroke-linecap="round"/><circle cx="200" cy="215" r="14" fill="#151316"/><path d="M150 300 L185 330 L255 275" fill="none" stroke="#151316" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/></svg>', FOOT),
 ]
 tiempo=[
  (serif('¿En cuánto tiempo',280,96)+big('VEO RESULTADOS?',400,96)+ilu16('cronometro',520,740,430), FD),
