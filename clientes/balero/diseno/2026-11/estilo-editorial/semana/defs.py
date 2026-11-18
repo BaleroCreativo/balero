@@ -186,8 +186,11 @@ ILU16='/home/user/balero/.claude/skills/balero-imagenes/assets/ilustraciones-nue
 def ilu16(n,x,y,w): return f'<img src="{ILU16}{n}-cut.png" style="position:absolute;left:{x}px;top:{y}px;width:{w}px">'
 def row16(top,sym,txt): return row2(top,sym,txt)
 errores=[
- (chip('3 ERRORES')+title('Tres errores al','responder '+hl('un lead.'),96)+body('Tardar, no preguntar y no dar un siguiente paso.',600)+
+ (f'<style>.dots{{display:none!important}}</style>'+chip('3 ERRORES')+title('Tres errores al','responder '+hl('un lead.'),96)+body('Tardar, no preguntar y no dar un siguiente paso.',600)+
    row16(800,'1','Tardar en contestar')+row16(940,'2','No preguntar qué necesita')+row16(1080,'3','No dar un siguiente paso'), FOOT),
+]
+tiempo_li=[
+ (f'<style>.dots{{display:none!important}}</style>'+serif('¿En cuánto tiempo',280,96)+big('VEO RESULTADOS?',400,96)+ilu16('cronometro',520,740,430), FOOT),
 ]
 tiempo=[
  (serif('¿En cuánto tiempo',280,96)+big('VEO RESULTADOS?',400,96)+ilu16('cronometro',520,740,430), FD),
