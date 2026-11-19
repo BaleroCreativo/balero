@@ -277,22 +277,56 @@ def need(top,h,rng,txt,hi=False):
     return (f'<div style="position:absolute;left:86px;top:{top}px;width:908px;height:{h}px;background:{bg};border:4px solid #151316;border-radius:28px;box-shadow:9px 10px 0 #151316">'
       f'<div style="position:absolute;left:34px;top:0;bottom:0;display:flex;align-items:center;font:800 46px/1.05 Poppins;width:300px">{rng}</div>'
       f'<div style="position:absolute;left:360px;right:30px;top:0;bottom:0;display:flex;align-items:center;font:700 36px/1.2 {SS}">{txt}</div></div>')
+
+def av(x,y,sz,c,t):
+    return f'<div style="position:absolute;left:{x}px;top:{y}px;width:{sz}px;height:{sz}px;border-radius:50%;background:{c};border:3px solid #151316;font:800 {int(sz*0.4)}px/{sz-6}px Poppins;text-align:center">{t}</div>'
+def inb_row(i,name,time,prev,col,ini):
+    return (f'<div class="rw" id="rw{i}" style="position:absolute;left:106px;top:690px;width:868px;height:170px;background:#fff;border:3px solid #151316;border-radius:24px">'
+      +av(20,40,86,col,ini)+
+      f'<div style="position:absolute;left:128px;top:16px;font:800 32px Poppins">{name}</div>'
+      f'<div style="position:absolute;right:26px;top:20px;font:700 24px {SS};opacity:.7">{time}</div>'
+      f'<div style="position:absolute;left:128px;top:62px;right:150px;font:700 33px/1.15 {SS}">{prev}</div>'
+      f'<div class="sc" id="sc{i}" style="position:absolute;right:22px;top:104px;padding:6px 22px;background:#FFD23F;border:3px solid #151316;border-radius:30px;font:800 28px Poppins"></div></div>')
+def inbox():
+    card='<div style="position:absolute;left:86px;top:570px;width:908px;height:730px;background:#F6F4EF;border:4px solid #151316;border-radius:36px;box-shadow:10px 12px 0 #151316"></div>'
+    lab=('<div id="lbA" style="position:absolute;left:126px;top:604px;font:800 30px Poppins;letter-spacing:.12em">ORDEN DE LLEGADA</div>'
+         '<div id="lbB" style="position:absolute;left:126px;top:604px;font:800 30px Poppins;letter-spacing:.12em;opacity:0;background:#FFD23F;padding:2px 14px;margin-left:-14px">ORDEN POR PUNTAJE</div>')
+    rows=(inb_row(1,'Ana','9:02','Hola, ¿informes?','#B9A3E8','A')+inb_row(2,'Luis','9:05','¿Precio???','#FFD23F','L')+inb_row(3,'Marta','9:07','Quiero 2 para el viernes. ¿Hacen envío a Zapopan?','#E4572E','M'))
+    return card+lab+rows
+def chatwin():
+    card='<div style="position:absolute;left:86px;top:570px;width:908px;height:730px;background:#F6F4EF;border:4px solid #151316;border-radius:36px;box-shadow:10px 12px 0 #151316"></div>'
+    head=(f'<div style="position:absolute;left:86px;top:570px;width:908px;height:110px;background:#151316;border-radius:32px 32px 0 0"></div>'
+          +av(116,590,72,'#B9A3E8','M')+
+          '<div style="position:absolute;left:210px;top:596px;font:800 32px Poppins;color:#F6F4EF">Marta</div><div style="position:absolute;left:210px;top:638px;font:700 24px \'Source Sans Pro\';color:#F6F4EF;opacity:.8">en línea</div>')
+    ub=(f'<div id="ub" style="position:absolute;left:390px;top:730px;width:560px;padding:22px 30px;background:#fff;border:4px solid #151316;border-radius:30px 30px 8px 30px;box-shadow:7px 8px 0 #151316;font:700 38px/1.2 {SS}">Quiero 2 para el viernes. ¿Hacen envío a Zapopan?<div style="font:700 22px {SS};opacity:.6;text-align:right;margin-top:6px">9:07 ✓✓</div></div>')
+    ty=('<div id="ty" style="position:absolute;left:126px;top:990px;width:200px;height:92px;background:#FFD23F;border:4px solid #151316;border-radius:30px 30px 30px 8px;box-shadow:7px 8px 0 #151316">'
+        '<div class="dt" style="position:absolute;left:36px;top:34px;width:22px;height:22px;border-radius:50%;background:#151316"></div>'
+        '<div class="dt" style="position:absolute;left:89px;top:34px;width:22px;height:22px;border-radius:50%;background:#151316"></div>'
+        '<div class="dt" style="position:absolute;left:142px;top:34px;width:22px;height:22px;border-radius:50%;background:#151316"></div></div>')
+    rp=(f'<div id="rp" style="position:absolute;left:126px;top:960px;width:640px;padding:22px 30px;background:#FFD23F;border:4px solid #151316;border-radius:30px 30px 30px 8px;box-shadow:7px 8px 0 #151316;font:700 38px/1.2 {SS}">¡Sí! Hacemos envío a Zapopan. ¿Te lo confirmo para el viernes?<div style="font:700 22px {SS};opacity:.6;margin-top:6px">9:09</div></div>')
+    pill='<div id="pl" style="position:absolute;left:126px;top:1190px;padding:10px 30px;background:#B9A3E8;border:4px solid #151316;border-radius:40px;font:800 30px Poppins">Respondido en 2 minutos</div>'
+    return card+head+ub+ty+rp+pill
+def phone():
+    card='<div style="position:absolute;left:150px;top:690px;width:780px;height:600px;background:#F6F4EF;border:5px solid #151316;border-radius:48px 48px 0 0;box-shadow:12px 0 0 #151316;overflow:hidden"></div>'
+    top='<div style="position:absolute;left:150px;top:690px;width:780px;height:96px;background:#151316;border-radius:48px 48px 0 0"></div><div style="position:absolute;left:196px;top:716px;font:800 34px Poppins;color:#F6F4EF">Chats</div><div style="position:absolute;left:640px;top:714px;padding:6px 22px;background:#FFD23F;border:3px solid #F6F4EF;border-radius:30px;font:800 28px Poppins">8 sin responder</div>'
+    rows=''
+    for k,(n,t,c,ini,b) in enumerate([('Ana','¿Informes?','#B9A3E8','A','1'),('Luis','Hola, ¿precio???','#FFD23F','L','3'),('Marta','¿Me pueden cotizar?','#E4572E','M','1'),('Pedro','Quiero 2 para el viernes…','#B8B5BD','P','3')]):
+        y=800+k*122
+        rows+=f'<div style="position:absolute;left:170px;top:{y}px;width:740px;height:108px;background:#fff;border:3px solid #151316;border-radius:22px">'+av(16,12,76,c,ini)+f'<div style="position:absolute;left:112px;top:12px;font:800 30px Poppins">{n}</div><div style="position:absolute;left:112px;top:54px;font:700 32px {SS}">{t}</div><div style="position:absolute;right:22px;top:34px;width:48px;height:48px;border-radius:50%;background:#FFD23F;border:3px solid #151316;font:800 26px/42px Poppins;text-align:center">{b}</div></div>'
+    return card+top+rows
 lscore=[
- ('<style>#s1{background:#B9A3E8}</style>'+serif('Tienes 8 chats',250,96)+big('SIN CONTESTAR.',360,92)+serif('<span style="background:#FFD23F;padding:0 20px">¿Cuál va primero?</span>',480,98)+
-   bub(86,800,470,'¿Informes?',-3)+bub(170,940,520,'Hola, ¿precio???',2.5)+bub(86,1080,490,'¿Me pueden cotizar?',-2)+
-   '<div style="position:absolute;left:740px;top:800px;width:230px;height:230px;border-radius:50%;background:#FFD23F;border:5px solid #151316;box-shadow:10px 12px 0 #151316;font:800 150px/230px Poppins;text-align:center;transform:rotate(6deg)">8</div>'+
-   sticker('sin responder',705,1050,6), FD),
- (chip('EL PROBLEMA')+title('Orden de llegada:','gana '+hl('el primero.'),84)+body2('Pero el primero en llegar no siempre es quien más probablemente compra.',560)+
-   msg(720,1,'9:02','Hola, ¿informes?')+msg(900,2,'9:05','¿Precio???')+msg(1080,3,'9:07','Quiero 2 para el viernes. ¿Hacen envío a Zapopan?',True)+sticker('más puntos',690,1050,5), foot('Ejemplo ilustrativo')),
+ ('<style>#s1{background:#B9A3E8}</style>'+serif('Tienes 8 chats',250,96)+big('SIN CONTESTAR.',360,92)+serif('<span style="background:#FFD23F;padding:0 20px">¿Cuál va primero?</span>',480,98)+phone(), FD),
+ (chip('EL PROBLEMA')+title('Orden de llegada:','gana '+hl('el primero.'),84)+inbox(), foot('Ejemplo ilustrativo')),
  (chip('LA TABLA')+title('5 preguntas,','0 a 2 '+hl('puntos.'),96)+
    qrow(610,1,'¿Está en tu zona?')+qrow(750,2,'¿Pide algo específico?')+qrow(890,3,'¿Responde rápido?')+qrow(1030,4,'¿Da sus datos sin insistirle?')+qrow(1170,5,'¿Tiene fecha o urgencia?'), F),
  (chip('LA SUMA')+title('Suma y ordena.','Máximo: '+hl('10.'),96)+body2('Cada mañana, de mayor a menor. Arriba, a quién contestas primero.',590)+
    lead2(760,'Lead A','9',480)+lead2(940,'Lead B','5',270)+lead2(1120,'Lead C','2',100), foot('Ejemplo ilustrativo')),
  (chip('EL SEMÁFORO')+title('Tu puntaje','decide '+hl('qué haces.'),92)+sem(), F),
+ (chip('ZONA ROJA')+title('Contesta en','menos de '+hl('5 minutos.'),92)+chatwin(), foot('Ejemplo ilustrativo')),
  (chip('CUIDADO')+title('Actividad','no es '+hl('intención.'),100)+body2('Escribir mucho no es lo mismo que querer comprar.',590)+cmp6(), F),
  (chip('¿LO NECESITAS?')+title('Depende de','cuántos '+hl('leads.'),100)+body2('Guía del blog, por semana:',590)+
    need(680,150,'Menos de 15','No lo necesitas. Mejor, una cadencia de seguimiento.')+need(860,150,'15 a 60','El punto ideal para una hoja de cálculo.',True)+need(1040,150,'Más de 60','Conviene un CRM accesible que calcule el puntaje.'), F),
- ('<style>#s8{background:#B9A3E8}</style>'+serif('Empieza con',270,100)+big('UNA HOJA',385,104)+big('DE CÁLCULO.',505,104)+body2('Ajusta la tabla con tus últimas 30 conversaciones cerradas.',690)+tape('Blog completo en nuestra historia',900)+body2('Diagnóstico gratis de 15 minutos por mensaje directo.',1060), FOOT),
+ ('<style>#s9{background:#B9A3E8}</style>'+serif('Empieza con',270,100)+big('UNA HOJA',385,104)+big('DE CÁLCULO.',505,104)+body2('Ajusta la tabla con tus últimas 30 conversaciones cerradas.',690)+tape('Blog completo en nuestra historia',900)+body2('Diagnóstico gratis de 15 minutos por mensaje directo.',1060), FOOT),
 ]
 ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor,'errores':errores,'tiempo':tiempo,'antes':antes,'marketing':marketing,'lead':lead,'medir':medir,'cinco':cinco,'lscore':lscore}
 if __name__=='__main__':
