@@ -226,6 +226,10 @@ medir=[
  (chip('CON MÁS TIEMPO')+title('Ventas cerradas','y su '+hl('margen.'),96)+body('Estas toman más semanas y dependen de tu proceso comercial.',560)+ilu16('cobro',520,780,420), F),
  (serif('Empieza con',280,100)+big('DOS MÉTRICAS.',400,96)+serif('<span class="hl">Las demás, después.</span>',580,80)+tape('Diagnóstico gratis de 15 minutos',800)+body('Escríbenos por mensaje directo.',980), FD),
 ]
-ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor,'errores':errores,'tiempo':tiempo,'antes':antes,'marketing':marketing,'lead':lead,'medir':medir}
+cinco=[
+ (f'<style>.dots{{display:none!important}}</style>'+chip('CADA VIERNES')+title('Cinco números','para '+hl('medir.'),100)+
+   row2(640,'1','Leads nuevos de la semana')+row2(770,'2','Tiempo de primera respuesta')+row2(900,'3','Leads sin etapa clara')+row2(1030,'4','Conversión por etapa')+row2(1160,'5','Leads perdidos, con su motivo'), FOOT),
+]
+ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor,'errores':errores,'tiempo':tiempo,'antes':antes,'marketing':marketing,'lead':lead,'medir':medir,'cinco':cinco}
 if __name__=='__main__':
     for k,v in ALL.items(): print(k,build(k,v))
