@@ -230,6 +230,40 @@ cinco=[
  (f'<style>.dots{{display:none!important}}</style>'+chip('CADA VIERNES')+title('Cinco números','para '+hl('medir.'),100)+
    row2(640,'1','Leads nuevos de la semana')+row2(770,'2','Tiempo de primera respuesta')+row2(900,'3','Leads sin etapa clara')+row2(1030,'4','Conversión por etapa')+row2(1160,'5','Leads perdidos, con su motivo'), FOOT),
 ]
-ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor,'errores':errores,'tiempo':tiempo,'antes':antes,'marketing':marketing,'lead':lead,'medir':medir,'cinco':cinco}
+
+def lrow(top,col,rng,zona,txt):
+    c={'r':'#E4572E','y':'#FFD23F','g':'#B8B5BD'}[col]
+    return (f'<div style="position:absolute;left:86px;top:{top}px;width:908px;height:190px;background:#fff;border:4px solid #151316;border-radius:28px;box-shadow:9px 10px 0 #151316;overflow:hidden">'
+      f'<div style="position:absolute;left:0;top:0;bottom:0;width:150px;background:{c};border-right:4px solid #151316"></div>'
+      f'<div style="position:absolute;left:34px;top:55px;width:80px;height:80px;border-radius:50%;background:#fff;border:4px solid #151316"></div>'
+      f'<div style="position:absolute;left:190px;top:26px;font:800 34px Poppins;letter-spacing:.04em">{rng} · {zona}</div>'
+      f'<div style="position:absolute;left:190px;top:84px;right:30px;font:700 33px/1.2 \'Source Sans Pro\',sans-serif">{txt}</div></div>')
+def lead(top,name,pts,w):
+    return (f'<div style="position:absolute;left:86px;top:{top}px;width:908px;height:110px;background:#fff;border:4px solid #151316;border-radius:24px;box-shadow:8px 9px 0 #151316">'
+      f'<div style="position:absolute;left:34px;top:28px;font:800 36px Poppins">{name}</div>'
+      f'<div style="position:absolute;left:330px;top:34px;width:{w}px;height:36px;background:#FFD23F;border:4px solid #151316;border-radius:18px"></div>'
+      f'<div style="position:absolute;right:34px;top:22px;font:800 52px Poppins">{pts}</div></div>')
+def bub(x,y,w,t,rot):
+    return f'<div style="position:absolute;left:{x}px;top:{y}px;width:{w}px;padding:26px 34px;background:#fff;border:4px solid #151316;border-radius:30px;box-shadow:9px 10px 0 #151316;font:700 40px/1.15 \'Source Sans Pro\',sans-serif;transform:rotate({rot}deg)">{t}</div>'
+lscore=[
+ ('<style>#s1{background:#B9A3E8}</style>'+serif('¿A quién le',270,104)+big('CONTESTAS',390,112)+serif('<span class="hl">primero?</span>',520,134)+
+   bub(86,790,470,'¿Informes?',-3)+bub(170,930,520,'Hola, ¿precio???',2.5)+bub(86,1070,490,'¿Me pueden cotizar?',-2)+
+   '<div style="position:absolute;left:740px;top:790px;width:230px;height:230px;border-radius:50%;background:#FFD23F;border:5px solid #151316;box-shadow:10px 12px 0 #151316;font:800 150px/230px Poppins;text-align:center;transform:rotate(6deg)">8</div>'+
+   sticker('chats pendientes',690,1040,6), FD),
+ (chip('EL PROBLEMA')+title('Orden de llegada:','todos '+hl('valen igual.'),80)+body('Contestar al más reciente, o al que mandó tres signos de interrogación, deja dinero sobre la mesa.',600)+
+   cmp(840,'bad','✗','POR ORDEN DE LLEGADA','Todos los mensajes pesan lo mismo',210)+cmp(1080,'good','✓','CON PUNTAJE','Contestas primero a quien más probablemente compra',210), F),
+ (chip('LA TABLA')+title('5 preguntas,','0 a 2 '+hl('puntos.'),96)+
+   row2(640,'1','¿Está en tu zona de cobertura?')+row2(770,'2','¿Pide algo específico?')+row2(900,'3','¿Responde rápido?')+row2(1030,'4','¿Da sus datos sin insistirle?')+row2(1160,'5','¿Tiene fecha o urgencia?'), F),
+ (chip('LA SUMA')+title('Suma y ordena.','Máximo: '+hl('10.'),96)+body('Cada mañana, de mayor a menor puntaje. Las mejores oportunidades quedan arriba.',590)+
+   lead(800,'Lead A','9',500)+lead(940,'Lead B','5',270)+lead(1080,'Lead C','2',90), foot('Ejemplo ilustrativo')),
+ (chip('EL SEMÁFORO')+title('Qué haces con','cada '+hl('puntaje.'),96)+
+   lrow(600,'r','8 a 10','zona roja','Contesta en menos de 5 minutos, antes que a cualquier otro.')+
+   lrow(830,'y','4 a 7','zona amarilla','Responde en tu siguiente bloque de atención del día.')+
+   lrow(1060,'g','0 a 3','zona gris','Respuesta con plantilla corta, sin 20 minutos de atención.'), F),
+ (chip('CUIDADO')+title('Actividad','no es '+hl('intención.'),100)+body('Un lead que escribe diez veces al día pero vive fuera de tu zona no es un lead caliente.',600)+
+   cmp(840,'bad','✗','MUCHA ACTIVIDAD','Escribe sin parar, pero está fuera de tu zona',210)+cmp(1080,'good','✓','INTENCIÓN REAL','Pide algo específico, vive en tu zona y da fecha',210), F),
+ ('<style>#s7{background:#B9A3E8}#s7 .body{color:#151316}</style>'+serif('Empieza con',280,100)+big('UNA HOJA',400,104)+big('DE CÁLCULO.',520,104)+body('No necesitas un CRM para arrancar con lead scoring.',700)+tape('Blog completo en nuestra historia',900)+body('Diagnóstico gratis de 15 minutos por mensaje directo.',1060), FOOT),
+]
+ALL={'roas':roas,'stanford':stan,'workday':work,'trigger':trig,'chatgpt':chat,'enlaces':enl,'crm':crm,'muse':muse,'roasig':roasig,'humor':humor,'errores':errores,'tiempo':tiempo,'antes':antes,'marketing':marketing,'lead':lead,'medir':medir,'cinco':cinco,'lscore':lscore}
 if __name__=='__main__':
     for k,v in ALL.items(): print(k,build(k,v))
