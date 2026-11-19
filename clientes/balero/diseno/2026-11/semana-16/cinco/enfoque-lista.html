@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cinco números para medir · Enfoque en lista</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;800&display=swap" rel="stylesheet">
+<style>
+/* Paleta Balero: tinta #151316, crema #F6F4EF, amarillo #FFD23F */
+:root{--bg:#151316;--accent:#FFD23F;--text:#F6F4EF}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:var(--bg)}
+body{display:grid;place-items:center;overflow:hidden}
+/* Lienzo 16:9 que escala a cualquier pantalla */
+.stage{
+  position:relative;container-type:size;
+  width:min(100vw,calc(100vh*16/9));aspect-ratio:16/9;
+  background:var(--bg);color:var(--text);
+  font-family:'Poppins',system-ui,sans-serif;overflow:hidden;
+}
+/* Máscara degradada arriba y abajo */
+.view{
+  position:absolute;inset:0;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 24%,#000 76%,transparent 100%);
+          mask-image:linear-gradient(to bottom,transparent 0,#000 24%,#000 76%,transparent 100%);
+}
+.list{position:absolute;left:9cqw;right:6cqw;top:50%;list-style:none;will-change:transform}
+.item{
+  height:11cqw;display:flex;align-items:center;gap:2.6cqw;
+  font-weight:800;font-size:5.2cqw;line-height:1.05;letter-spacing:-.01em;
+  transform-origin:left center;white-space:nowrap;
+}
+.item .n{font-weight:600;font-size:.46em;opacity:.8;min-width:2.6cqw;letter-spacing:.08em}
+/* Sin movimiento: lista completa, nítida y estática */
+@media (prefers-reduced-motion:reduce){
+  .list{top:50%;transform:translateY(-50%)!important}
+  .item{opacity:1!important;filter:none!important;transform:none!important;color:var(--text)!important;height:9.4cqw}
+}
+</style>
+</head>
+<body>
+<main class="stage" id="stage" aria-label="Cinco números para medir tu seguimiento">
+  <div class="view">
+    <ol class="list" id="list">
+      <li class="item"><span class="n">01</span><span>Leads nuevos de la semana</span></li>
+      <li class="item"><span class="n">02</span><span>Tiempo de primera respuesta</span></li>
+      <li class="item"><span class="n">03</span><span>Leads sin etapa clara</span></li>
+      <li class="item"><span class="n">04</span><span>Conversión por etapa</span></li>
+      <li class="item"><span class="n">05</span><span>Leads perdidos, con su motivo</span></li>
+    </ol>
+  </div>
+</main>
+<script>
+(function(){
+  var STEP=1300,TRANS=600,LOOP=8000;           // ms: paso, transición y duración total del loop
+  var list=document.getElementById('list');
+  var items=[].slice.call(list.children);
+  var stage=document.getElementById('stage');
+  var N=items.length;
+  var ACC=[255,210,63],TXT=[246,244,239];
+  var ease=function(x){return x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2};
+  var mix=function(a,b,t){return 'rgb('+a.map(function(v,i){return Math.round(v+(b[i]-v)*t)}).join(',')+')'};
+
+  // Posición (fraccionaria) del elemento enfocado en el instante t del loop
+  function pos(t){
+    var p=0;
+    for(var k=1;k<N;k++){
+      var s=k*STEP;
+      if(t>=s+TRANS) p=k;
+      else if(t>s){p=(k-1)+ease((t-s)/TRANS);break}
+      else break;
+    }
+    // vuelve al primero durante los últimos 600 ms del loop
+    if(t>LOOP-TRANS) p=(N-1)*(1-ease((t-(LOOP-TRANS))/TRANS));
+    return p;
+  }
+  function render(t){
+    var p=pos(t%LOOP);
+    var H=items[0].offsetHeight;
+    list.style.transform='translateY('+(-(p+.5)*H)+'px)';
+    var blurMax=stage.clientWidth*.0045;
+    items.forEach(function(el,i){
+      var f=Math.max(0,1-Math.abs(i-p));        // 1 = enfocado, 0 = fuera de foco
+      el.style.opacity=(.3+.7*f).toFixed(3);
+      el.style.transform='scale('+(.85+.15*f).toFixed(3)+')';
+      el.style.filter='blur('+((1-f)*blurMax).toFixed(2)+'px)';
+      el.style.color=mix(TXT,ACC,f);
+    });
+  }
+  window.renderAt=render;                        // para exportar fotogramas
+  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)');
+  var start=performance.now(),raf;
+  function tick(now){
+    if(!window.__manual) render(now-start);
+    raf=requestAnimationFrame(tick);
+  }
+  function setup(){
+    cancelAnimationFrame(raf);
+    if(reduce.matches){list.style.transform='';items.forEach(function(el){el.removeAttribute('style')});return}
+    start=performance.now();raf=requestAnimationFrame(tick);
+  }
+  if(reduce.addEventListener) reduce.addEventListener('change',setup);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden)start=performance.now()});
+  window.addEventListener('resize',function(){if(reduce.matches)return;render(performance.now()-start)});
+  setup();
+})();
+</script>
+</body>
+</html>
