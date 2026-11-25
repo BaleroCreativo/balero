@@ -23,7 +23,7 @@ def img2video():
             '<div class="sc" style="left:468px;top:765px;font-size:96px">→</div>'+
             box(654,'#FFD23F','VIDEO',play))
 semana_b=[
- (NODOTS+chip('TAREA DE LA SEMANA')+title('Anota la hora','de '+hl('cinco chats.'),96)+body3('1. Anota a qué hora llegó el mensaje.<br>2. Anota a qué hora contestó una persona.<br>3. Resta: ese es tu tiempo de respuesta.',560)+tiempos(), foot('Los mensajes automáticos no cuentan')),
+ (NODOTS+chip('TAREA DE LA SEMANA')+title('Anota la hora','de '+hl('cinco chats.'),96)+body2('1. Anota cuándo llegó el mensaje.<br>2. Anota cuándo contestó una persona de tu empresa.<br>3. Resta: ese es tu tiempo de respuesta.',560,908)+tiempos(), foot('Los mensajes automáticos no cuentan')),
  (NODOTS+chip('META ADS')+title('De imagen','a '+hl('video.'),100)+body3('Meta ofrece generar video a partir de tus imágenes con IA.',600)+img2video()+
   row3(930,'1','Que siga reflejando tu marca',108,fs=38)+row3(1050,'2','Que se entienda sin sonido',108,fs=38)+row3(1170,'3','Que la oferta sea la misma',108,fs=38), foot('Revisa si lo tienes en tu cuenta')),
 ]
