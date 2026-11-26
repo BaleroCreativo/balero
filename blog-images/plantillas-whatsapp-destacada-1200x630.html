@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>6 plantillas de WhatsApp – Balero Creativo</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F7F6F0;--ink:#171417;--mor:#572C9B;--lila:#8B6FE8;--mark:#BBA2E7;--blob:#DCD2F7}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1200px;height:630px}
+.c{position:relative;width:1200px;height:630px;overflow:hidden;background:var(--bg);font-family:'Poppins',sans-serif;padding:60px;display:flex;flex-direction:column;align-items:center;justify-content:space-between}
+.blob{position:absolute;left:50%;top:50%;width:560px;height:560px;margin:-290px 0 0 -280px;border-radius:50%;background:var(--blob);opacity:.85;filter:blur(36px)}
+.main{position:relative;flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;padding-bottom:10px}
+.kicker{font:700 18px/1 'Poppins';letter-spacing:.28em;text-transform:uppercase;color:var(--ink);padding-bottom:10px;border-bottom:4px solid var(--mor)}
+h1{margin-top:28px;font-weight:400;font-size:46px;line-height:1.15;color:var(--ink);text-align:center}
+h1 i{font:italic 500 46px/1.15 'Playfair Display',serif}
+h1 b{font:800 46px/1.15 'Poppins';text-transform:uppercase;letter-spacing:-.01em}
+.sub{margin-top:18px;display:inline-block;background:var(--mark);padding:2px 8px;font:italic 500 26px/1.35 'Playfair Display',serif;color:var(--ink)}
+.chips{margin-top:46px;display:flex;gap:26px}
+.chip{display:flex;align-items:center;gap:16px;width:318px;height:88px;padding:0 22px 0 18px;background:#fff;border:2.5px solid var(--ink);border-radius:20px;box-shadow:4px 4px 0 var(--ink)}
+.badge{flex:none;width:46px;height:46px;border-radius:50%;background:var(--mark);border:2.5px solid var(--ink);display:flex;align-items:center;justify-content:center;font:800 21px/1 'Poppins';color:var(--ink)}
+.t{font:700 19px/1.2 'Poppins';color:var(--ink)}
+.d{margin-top:3px;font:400 14px/1.25 'Poppins';color:#6B6572}
+.chip.on{background:var(--mor)}
+.chip.on .badge{background:#fff;color:var(--mor);border-color:var(--ink)}
+.chip.on .t{color:#fff}.chip.on .d{color:#E6DDF7}
+.ft{position:relative;display:flex;align-items:center;gap:12px;font:700 19px/1 'Poppins';color:var(--ink)}
+.ft img{height:36px}
+</style></head><body>
+<div class="c">
+  <div class="blob"></div>
+  <div class="main">
+    <div class="kicker">Seguimiento comercial</div>
+    <h1><i>6 plantillas de</i> <b>WhatsApp</b></h1>
+    <p class="sub">Mensajes listos para copiar, pegar y personalizar.</p>
+    <div class="chips">
+      <div class="chip"><div class="badge">1</div><div><p class="t">Primer contacto</p><p class="d">Para el lead nuevo</p></div></div>
+      <div class="chip on"><div class="badge">2</div><div><p class="t">Seguimiento</p><p class="d">Cuando no responde</p></div></div>
+      <div class="chip"><div class="badge">3</div><div><p class="t">Reactivación</p><p class="d">Para retomar la charla</p></div></div>
+    </div>
+  </div>
+  <div class="ft"><img src="assets/balero-isotipo-negro.png" alt=""><span>Balero Creativo</span></div>
+</div>
+</body></html>
